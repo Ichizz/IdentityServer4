@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/profileservice.rst:4
+msgid "Profile Service"
+msgstr ""
+
+#: ../../reference/profileservice.rst:6
+msgid ""
+"Often IdentityServer requires identity information about users when "
+"creating tokens or when handling requests to the userinfo or "
+"introspection endpoints. By default, IdentityServer only has the claims "
+"in the authentication cookie to draw upon for this identity data."
+msgstr ""
+
+#: ../../reference/profileservice.rst:9
+msgid ""
+"It is impractical to put all of the possible claims needed for users into"
+" the cookie, so IdentityServer defines an extensibility point for "
+"allowing claims to be dynamically loaded as needed for a user. This "
+"extensibility point is the ``IProfileService`` and it is common for a "
+"developer to implement this interface to access a custom database or API "
+"that contains the identity data for users."
+msgstr ""
+
+#: ../../reference/profileservice.rst:13
+msgid "IProfileService APIs"
+msgstr ""
+
+#: ../../reference/profileservice.rst:16
+msgid "``GetProfileDataAsync``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:16
+msgid ""
+"The API that is expected to load claims for a user. It is passed an "
+"instance of ``ProfileDataRequestContext``."
+msgstr ""
+
+#: ../../reference/profileservice.rst:19
+msgid "``IsActiveAsync``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:19
+msgid ""
+"The API that is expected to indicate if a user is currently allowed to "
+"obtain tokens. It is passed an instance of ``IsActiveContext``."
+msgstr ""
+
+#: ../../reference/profileservice.rst:22
+msgid "ProfileDataRequestContext"
+msgstr ""
+
+#: ../../reference/profileservice.rst:24
+msgid ""
+"Models the request for user claims and is the vehicle to return those "
+"claims. It contains these properties:"
+msgstr ""
+
+#: ../../reference/profileservice.rst:26 ../../reference/profileservice.rst:54
+msgid "``Subject``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:27 ../../reference/profileservice.rst:55
+msgid "The ``ClaimsPrincipal`` modeling the user."
+msgstr ""
+
+#: ../../reference/profileservice.rst:28 ../../reference/profileservice.rst:56
+msgid "``Client``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:29 ../../reference/profileservice.rst:57
+msgid "The ``Client`` for which the claims are being requested."
+msgstr ""
+
+#: ../../reference/profileservice.rst:30
+msgid "``RequestedClaimTypes``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:31
+msgid "The collection of claim types being requested."
+msgstr ""
+
+#: ../../reference/profileservice.rst:32 ../../reference/profileservice.rst:58
+msgid "``Caller``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:33 ../../reference/profileservice.rst:59
+msgid ""
+"An identifier for the context in which the claims are being requested "
+"(e.g. an identity token, an access token, or the user info endpoint). The"
+" constant ``IdentityServerConstants.ProfileDataCallers`` contains the "
+"different constant values."
+msgstr ""
+
+#: ../../reference/profileservice.rst:34
+msgid "``IssuedClaims``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:35
+msgid ""
+"The list of ``Claim`` s that will be returned. This is expected to be "
+"populated by the custom ``IProfileService`` implementation."
+msgstr ""
+
+#: ../../reference/profileservice.rst:37
+msgid "``AddRequestedClaims``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:37
+msgid ""
+"Extension method on the ``ProfileDataRequestContext`` to populate the "
+"``IssuedClaims``, but first filters the claims based on "
+"``RequestedClaimTypes``."
+msgstr ""
+
+#: ../../reference/profileservice.rst:40
+msgid "Requested scopes and claims mapping"
+msgstr ""
+
+#: ../../reference/profileservice.rst:42
+msgid ""
+"The scopes requested by the client control what user claims are returned "
+"in the tokens to the client. The ``GetProfileDataAsync`` method is "
+"responsible for dynamically obtaining those claims based on the "
+"``RequestedClaimTypes`` collection on the ``ProfileDataRequestContext``."
+msgstr ""
+
+#: ../../reference/profileservice.rst:45
+msgid ""
+"The ``RequestedClaimTypes`` collection is populated based on the user "
+"claims defined on the :ref:`resources <refResources>` that model the "
+"scopes. If the scopes requested are an :ref:`identity resources "
+"<refIdentityResource>`, then the claims in the ``RequestedClaimTypes`` "
+"will be populated based on the user claim types defined in the "
+"``IdentityResource``. If the scopes requested are an :ref:`API resources "
+"<refApiResource>`, then the claims in the ``RequestedClaimTypes`` will be"
+" populated based on the user claim types defined in the ``ApiResource`` "
+"and/or the ``Scope``."
+msgstr ""
+
+#: ../../reference/profileservice.rst:50
+msgid "IsActiveContext"
+msgstr ""
+
+#: ../../reference/profileservice.rst:52
+msgid ""
+"Models the request to determine is the user is currently allowed to "
+"obtain tokens. It contains these properties:"
+msgstr ""
+
+#: ../../reference/profileservice.rst:60
+msgid "``IsActive``"
+msgstr ""
+
+#: ../../reference/profileservice.rst:61
+msgid ""
+"The flag indicating if the user is allowed to obtain tokens. This is "
+"expected to be assigned by the custom ``IProfileService`` implementation."
+msgstr ""
+

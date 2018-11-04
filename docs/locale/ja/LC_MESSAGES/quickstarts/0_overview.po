@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quickstarts/0_overview.rst:2
+msgid "Setup and Overview"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:4
+msgid "There are two fundamental ways to start a new IdentityServer project:"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:6
+msgid "start from scratch"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:7
+msgid "start with the ASP.NET Identity template in Visual Studio"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:9
+msgid ""
+"If you start from scratch, we provide a couple of helpers and in-memory "
+"stores, so you don't have to worry about persistence right from the "
+"start."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:12
+msgid ""
+"If you start with ASP.NET Identity, we provide an easy way to integrate "
+"with that as well."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:14
+msgid ""
+"The quickstarts provide step by step instructions for various common "
+"IdentityServer scenarios. They start with the absolute basics and become "
+"more complex - it is recommended you do them in order."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:18
+msgid ""
+"Every quickstart has a reference solution - you can find the code in the "
+"`IdentityServer4.Samples "
+"<https://github.com/IdentityServer/IdentityServer4.Samples>`_ repo in the"
+" quickstarts folder."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:23
+msgid "Basic setup"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:24
+msgid "The screen shots show Visual Studio - but this is not a requirement."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:26
+msgid "**Creating the quickstart IdentityServer**"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:28
+msgid "Start by creating a new ASP.NET Core project."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:32
+msgid "Then select the \"Empty\" option."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:36
+msgid "Next, add the `IdentityServer4` nuget package:"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:40
+msgid ""
+"Alternatively you can use Package Manager Console to add the dependency "
+"by running the following command:"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:42
+msgid "\"Install-Package IdentityServer4\""
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:44
+msgid ""
+"IdentityServer build numbers 1.x target ASP.NET Core 1.1, and "
+"IdentityServer build numbers 2.x targets ASP.NET Core 2.0 ."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:46
+msgid ""
+"IdentityServer uses the usual pattern to configure and add services to an"
+" ASP.NET Core host. In ``ConfigureServices`` the required services are "
+"configured and added to the DI system. In ``Configure`` the middleware is"
+" added to the HTTP pipeline."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:50
+msgid "Modify your ``Startup.cs`` file to look like this::"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:71
+msgid ""
+"``AddIdentityServer`` registers the IdentityServer services in DI. It "
+"also registers an in-memory store for runtime state. This is useful for "
+"development scenarios. For production scenarios you need a persistent or "
+"shared store like a database or cache for that. See the "
+":ref:`EntityFramework <refEntityFrameworkQuickstart>` quickstart for more"
+" information."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:75
+msgid ""
+"The ``AddDeveloperSigningCredential`` extension creates temporary key "
+"material for signing tokens. Again this might be useful to get started, "
+"but needs to be replaced by some persistent key material for production "
+"scenarios. See the :ref:`cryptography docs <refCrypto>` for more "
+"information."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:79
+msgid ""
+"IdentityServer is not yet ready to be launched. We will add the required "
+"services in the following quickstarts."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:82
+msgid "Modify hosting"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:84
+msgid ""
+"By default Visual Studio uses IIS Express to host your web project. This "
+"is totally fine, except that you won't be able to see the real time log "
+"output to the console."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:87
+msgid ""
+"IdentityServer makes extensive use of logging whereas the \"visible\" "
+"error message in the UI or returned to clients are deliberately vague."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:90
+msgid ""
+"We recommend to run IdentityServer in the console host. You can do this "
+"by switching the launch profile in Visual Studio. You also don't need to "
+"launch a browser every time you start IdentityServer - you can turn that "
+"off as well:"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:96
+msgid ""
+"In addition, it will be helpful to run IdentityServer on a consistent URL"
+" for these quickstarts. You should also configure this URL in the launch "
+"profile dialog above, and use ``http://localhost:5000/``. In the above "
+"screenshot  you can see this URL has been configured."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:100
+msgid ""
+"We recommend to configure the same port for IIS Express and self-hosting."
+" This way you can switch between the two without having to modify any "
+"configuration in your clients."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:102
+msgid ""
+"To then choose the console host when you launch, you must select it in "
+"the launch menu from Visual Studio:"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:107
+msgid "How to run the quickstart"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:108
+msgid ""
+"As mentioned above every quickstart has a reference solution - you can "
+"find the code in the `IdentityServer4.Samples "
+"<https://github.com/IdentityServer/IdentityServer4.Samples>`_ repo in the"
+" quickstarts folder."
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:112
+msgid ""
+"The easiest way to run the individual parts of a quickstart solution is "
+"to set the startup mode to \"current selection\". Right click the "
+"solution and select \"Set Startup Projects\":"
+msgstr ""
+
+#: ../../quickstarts/0_overview.rst:117
+msgid ""
+"Typically you start IdentityServer first, then the API, and then the "
+"client. Only run in the debugger if you actually want to debug. Otherwise"
+" Ctrl+F5 is the best way to run the projects."
+msgstr ""
+

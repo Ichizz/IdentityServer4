@@ -1,4 +1,5 @@
 .. _refClientCredentialsQuickstart:
+
 Protecting an API using Client Credentials
 ==========================================
 

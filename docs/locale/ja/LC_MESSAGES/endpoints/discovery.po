@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../endpoints/discovery.rst:4
+msgid "Discovery Endpoint"
+msgstr ""
+
+#: ../../endpoints/discovery.rst:6
+msgid ""
+"The discovery endpoint can be used to retrieve metadata about your "
+"IdentityServer - it returns information like the issuer name, key "
+"material, supported scopes etc. See the `spec <https://openid.net/specs"
+"/openid-connect-discovery-1_0.html>`_ for more details."
+msgstr ""
+
+#: ../../endpoints/discovery.rst:9
+msgid ""
+"The discovery endpoint is available via `/.well-known/openid-"
+"configuration` relative to the base address, e.g.::"
+msgstr ""
+
+#: ../../endpoints/discovery.rst:13
+msgid ""
+"You can use the `IdentityModel "
+"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
+"programmatically access the discovery endpoint from .NET code. For more "
+"information check the IdentityModel `docs "
+"<https://identitymodel.readthedocs.io/en/latest/client/discovery.html>`_."
+msgstr ""
+

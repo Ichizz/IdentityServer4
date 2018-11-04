@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../endpoints/authorize.rst:2
+msgid "Authorize Endpoint"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:4
+msgid ""
+"The authorize endpoint can be used to request tokens or authorization "
+"codes via the browser. This process typically involves authentication of "
+"the end-user and optionally consent."
+msgstr ""
+
+#: ../../endpoints/authorize.rst:7
+msgid ""
+"IdentityServer supports a subset of the OpenID Connect and OAuth 2.0 "
+"authorize request parameters. For a full list, see `here "
+"<https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest>`_."
+msgstr ""
+
+#: ../../endpoints/authorize.rst:9
+msgid "``client_id``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:10
+msgid "identifier of the client (required)."
+msgstr ""
+
+#: ../../endpoints/authorize.rst:11
+msgid "``scope``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:12
+msgid "one or more registered scopes (required)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:13
+msgid "``redirect_uri``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:14
+msgid ""
+"must exactly match one of the allowed redirect URIs for that client "
+"(required)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:26
+msgid "``response_type``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:16
+msgid "``id_token`` requests an identity token (only identity scopes are allowed)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:18
+msgid "``token`` requests an access token (only resource scopes are allowed)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:20
+msgid "``id_token token`` requests an identity token and an access token"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:22
+msgid "``code`` requests an authorization code"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:24
+msgid "``code id_token`` requests an authorization code and identity token"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:26
+msgid ""
+"``code id_token token`` requests an authorization code, identity token "
+"and access token"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:28
+msgid "``response_mode``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:29
+msgid ""
+"``form_post`` sends the token response as a form post instead of a "
+"fragment encoded redirect (optional)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:31
+msgid "``state``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:31
+msgid ""
+"identityserver will echo back the state value on the token response, this"
+" is for round tripping state between client and provider, correlating "
+"request and response and CSRF/replay protection. (recommended)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:35
+msgid "``nonce``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:34
+msgid ""
+"identityserver will echo back the nonce value in the identity token, this"
+" is for replay protection)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:36
+msgid "*Required for identity tokens via implicit grant.*"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:39
+msgid "``prompt``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:38
+msgid ""
+"``none`` no UI will be shown during the request. If this is not possible "
+"(e.g. because the user has to sign in or consent) an error is returned"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:40
+msgid ""
+"``login`` the login UI will be shown, even if the user is already signed-"
+"in and has a valid session"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:41
+msgid "``code_challenge``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:42
+msgid "sends the code challenge for PKCE"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:44
+msgid "``code_challenge_method``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:44
+msgid ""
+"``plain`` indicates that the challenge is using plain text (not "
+"recommended) ``S256`` indicates the the challenge is hashed with SHA256"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:46
+msgid "``login_hint``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:47
+msgid "can be used to pre-fill the username field on the login page"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:48
+msgid "``ui_locales``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:49
+msgid "gives a hint about the desired display language of the login UI"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:50
+msgid "``max_age``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:51
+msgid ""
+"if the user's logon session exceeds the max age (in seconds), the login "
+"UI will be shown"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:57
+msgid "``acr_values``"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:53
+msgid ""
+"allows passing in additional authentication related information - "
+"identityserver special cases the following proprietary acr_values:"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:55
+msgid ""
+"``idp:name_of_idp`` bypasses the login/home realm screen and forwards the"
+" user directly to the selected identity provider (if allowed per client "
+"configuration)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:57
+msgid ""
+"``tenant:name_of_tenant`` can be used to pass a tenant name to the login "
+"UI"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:59
+msgid "**Example**"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:71
+msgid "(URL encoding removed, and line breaks added for readability)"
+msgstr ""
+
+#: ../../endpoints/authorize.rst:73
+msgid ""
+"You can use the `IdentityModel "
+"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
+"programmatically create authorize requests .NET code. For more "
+"information check the IdentityModel `docs "
+"<https://identitymodel.readthedocs.io/en/latest/client/authorize.html>`_."
+msgstr ""
+

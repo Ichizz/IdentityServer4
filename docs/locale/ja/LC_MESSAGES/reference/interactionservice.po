@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/interactionservice.rst:4
+msgid "IdentityServer Interaction Service"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:6
+msgid ""
+"The ``IIdentityServerInteractionService`` interface is intended to "
+"provide services to be used by the user interface to communicate with "
+"IdentityServer, mainly pertaining to user interaction. It is available "
+"from the dependency injection system and would normally be injected as a "
+"constructor parameter into your MVC controllers for the user interface of"
+" IdentityServer."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:10
+msgid "IIdentityServerInteractionService APIs"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:13
+msgid "``GetAuthorizationContextAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:13
+msgid ""
+"Returns the ``AuthorizationRequest`` based on the ``returnUrl`` passed to"
+" the login or consent pages."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:16
+msgid "``IsValidReturnUrl``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:16
+msgid ""
+"Indicates if the ``returnUrl`` is a valid URL for redirect after login or"
+" consent."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:19
+msgid "``GetErrorContextAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:19
+msgid ""
+"Returns the ``ErrorMessage`` based on the ``errorId`` passed to the error"
+" page."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:22
+msgid "``GetLogoutContextAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:22
+msgid ""
+"Returns the ``LogoutRequest`` based on the ``logoutId`` passed to the "
+"logout page."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:28
+msgid "``CreateLogoutContextAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:25
+msgid ""
+"Used to create a ``logoutId`` if there is not one presently. This creates"
+" a cookie capturing all the current state needed for signout and the "
+"``logoutId`` identifies that cookie. This is typically used when there is"
+" no current ``logoutId`` and the logout page must capture the current "
+"user's state needed for sign-out prior to redirecting to an external "
+"identity provider for signout. The newly created ``logoutId`` would need "
+"to be round-tripped to the external identity provider at signout time, "
+"and then used on the signout callback page in the same way it would be on"
+" the normal logout page."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:31
+msgid "``GrantConsentAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:31
+msgid ""
+"Accepts a ``ConsentResponse`` to inform IdentityServer of the user's "
+"consent to a particular ``AuthorizationRequest``."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:34
+msgid "``GetAllUserConsentsAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:34
+msgid "Returns a collection of ``Consent`` for the user."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:37
+msgid "``RevokeUserConsentAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:37
+msgid "Revokes all of a user's consents and grants for a client."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:40
+msgid "``RevokeTokensForCurrentSessionAsync``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:40
+msgid ""
+"Revokes all of a user's consents and grants for clients the user has "
+"signed into during their current session."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:43
+msgid "AuthorizationRequest"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:44
+#: ../../reference/interactionservice.rst:84
+#: ../../reference/interactionservice.rst:108
+msgid "``ClientId``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:45
+#: ../../reference/interactionservice.rst:85
+msgid "The client identifier that initiated the request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:46
+msgid "``RedirectUri``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:47
+msgid "The URI to redirect the user to after successful authorization."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:48
+#: ../../reference/interactionservice.rst:73
+msgid "``DisplayMode``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:49
+#: ../../reference/interactionservice.rst:74
+msgid "The display mode passed from the authorization request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:50
+#: ../../reference/interactionservice.rst:75
+msgid "``UiLocales``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:51
+#: ../../reference/interactionservice.rst:76
+msgid "The UI locales passed from the authorization request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:54
+msgid "``IdP``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:53
+msgid ""
+"The external identity provider requested. This is used to bypass home "
+"realm discovery (HRD). This is provided via the \"idp:\" prefix to the "
+"``acr_values`` parameter on the authorize request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:57
+msgid "``Tenant``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:57
+msgid ""
+"The tenant requested. This is provided via the \"tenant:\" prefix to the "
+"``acr_values`` parameter on the authorize request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:60
+msgid "``LoginHint``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:60
+msgid ""
+"The expected username the user will use to login. This is requested from "
+"the client via the ``login_hint`` parameter on the authorize request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:62
+msgid "``PromptMode``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:63
+msgid "The prompt mode requested from the authorization request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:64
+msgid "``AcrValues``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:65
+msgid "The acr values passed from the authorization request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:66
+msgid "``ScopesRequested``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:67
+msgid "The scopes requested from the authorization request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:69
+#: ../../reference/interactionservice.rst:92
+msgid "``Parameters``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:69
+msgid "The entire parameter collection passed to the authorization request."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:72
+msgid "ErrorMessage"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:77
+msgid "``Error``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:78
+msgid "The error code."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:80
+msgid "``RequestId``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:80
+msgid ""
+"The per-request identifier. This can be used to display to the end user "
+"and can be used in diagnostics."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:83
+msgid "LogoutRequest"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:86
+msgid "``PostLogoutRedirectUri``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:87
+msgid "The URL to redirect the user to after they have logged out."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:88
+msgid "``SessionId``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:89
+msgid "The user's current session id."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:90
+msgid "``SignOutIFrameUrl``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:91
+msgid ""
+"The URL to render in an ``<iframe>`` on the logged out page to enable "
+"single sign-out."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:93
+msgid "The entire parameter collection passed to the end session endpoint."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:95
+msgid "``ShowSignoutPrompt``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:95
+msgid ""
+"Indicates if the user should be prompted for signout based upon the "
+"parameters passed to the end session endpoint."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:98
+msgid "ConsentResponse"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:99
+msgid "``ScopesConsented``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:100
+msgid "The collection of scopes the user consented to."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:102
+msgid "``RememberConsent``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:102
+msgid "Flag indicating if the user's consent is to be persisted."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:105
+msgid "Consent"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:106
+msgid "``SubjectId``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:107
+msgid "The subject id that granted the consent."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:109
+msgid "The client identifier for the consent."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:110
+msgid "``Scopes``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:111
+msgid "The collection of scopes consented to."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:112
+msgid "``CreationTime``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:113
+msgid "The date and time when the consent was granted."
+msgstr ""
+
+#: ../../reference/interactionservice.rst:114
+msgid "``Expiration``"
+msgstr ""
+
+#: ../../reference/interactionservice.rst:115
+msgid "The date and time when the consent will expire."
+msgstr ""
+

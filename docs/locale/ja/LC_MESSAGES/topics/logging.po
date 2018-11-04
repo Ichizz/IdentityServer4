@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/logging.rst:3
+msgid "Logging"
+msgstr ""
+
+#: ../../topics/logging.rst:4
+msgid ""
+"IdentityServer uses the standard logging facilities provided by ASP.NET "
+"Core. The Microsoft `documentation <https://docs.microsoft.com/en-"
+"us/aspnet/core/fundamentals/logging>`_ has a good intro and a description"
+" of the built-in logging providers."
+msgstr ""
+
+#: ../../topics/logging.rst:7
+msgid "We are roughly following the Microsoft guidelines for usage of log levels:"
+msgstr ""
+
+#: ../../topics/logging.rst:9
+msgid ""
+"``Trace`` For information that is valuable only to a developer "
+"troubleshooting an issue. These messages may contain sensitive "
+"application data like tokens and should not be enabled in a production "
+"environment."
+msgstr ""
+
+#: ../../topics/logging.rst:10
+msgid ""
+"``Debug`` For following the internal flow and understanding why certain "
+"decisions are made. Has short-term usefulness during development and "
+"debugging."
+msgstr ""
+
+#: ../../topics/logging.rst:11
+msgid ""
+"``Information`` For tracking the general flow of the application. These "
+"logs typically have some long-term value."
+msgstr ""
+
+#: ../../topics/logging.rst:12
+msgid ""
+"``Warning`` For abnormal or unexpected events in the application flow. "
+"These may include errors or other conditions that do not cause the "
+"application to stop, but which may need to be investigated."
+msgstr ""
+
+#: ../../topics/logging.rst:13
+msgid ""
+"``Error`` For errors and exceptions that cannot be handled. Examples: "
+"failed validation of a protocol request."
+msgstr ""
+
+#: ../../topics/logging.rst:14
+msgid ""
+"``Critical`` For failures that require immediate attention. Examples: "
+"missing store implementation, invalid key material..."
+msgstr ""
+
+#: ../../topics/logging.rst:17
+msgid "Setup for Serilog"
+msgstr ""
+
+#: ../../topics/logging.rst:18
+msgid "We personally like `Serilog <https://serilog.net/>`_ a lot. Give it a try."
+msgstr ""
+
+#: ../../topics/logging.rst:22
+msgid "ASP.NET Core 2.0+"
+msgstr ""
+
+#: ../../topics/logging.rst:23
+msgid ""
+"For the following configuration you need the ``Serilog.AspNetCore`` and "
+"``Serilog.Sinks.Console`` packages::"
+msgstr ""
+
+#: ../../topics/logging.rst:54
+msgid ".NET Core 1.0, 1.1"
+msgstr ""
+
+#: ../../topics/logging.rst:55
+msgid ""
+"For the following configuration you need the "
+"``Serilog.Extensions.Logging`` and ``Serilog.Sinks.Console`` packages::"
+msgstr ""
+

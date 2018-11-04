@@ -1,0 +1,456 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/client.rst:4
+msgid "Client"
+msgstr ""
+
+#: ../../reference/client.rst:6
+msgid ""
+"The ``Client`` class models an OpenID Connect or OAuth 2.0 client - e.g. "
+"a native application, a web application or a JS-based application."
+msgstr ""
+
+#: ../../reference/client.rst:11
+msgid "Basics"
+msgstr ""
+
+#: ../../reference/client.rst:13
+msgid "``Enabled``"
+msgstr ""
+
+#: ../../reference/client.rst:14
+msgid "Specifies if client is enabled. Defaults to `true`."
+msgstr ""
+
+#: ../../reference/client.rst:15
+msgid "``ClientId``"
+msgstr ""
+
+#: ../../reference/client.rst:16
+msgid "Unique ID of the client"
+msgstr ""
+
+#: ../../reference/client.rst:17
+msgid "``ClientSecrets``"
+msgstr ""
+
+#: ../../reference/client.rst:18
+msgid "List of client secrets - credentials to access the token endpoint."
+msgstr ""
+
+#: ../../reference/client.rst:19
+msgid "``RequireClientSecret``"
+msgstr ""
+
+#: ../../reference/client.rst:20
+msgid ""
+"Specifies whether this client needs a secret to request tokens from the "
+"token endpoint (defaults to ``true``)"
+msgstr ""
+
+#: ../../reference/client.rst:21
+msgid "``AllowedGrantTypes``"
+msgstr ""
+
+#: ../../reference/client.rst:22
+msgid ""
+"Specifies the grant types the client is allowed to use. Use the "
+"``GrantTypes`` class for common combinations."
+msgstr ""
+
+#: ../../reference/client.rst:23
+msgid "``RequirePkce``"
+msgstr ""
+
+#: ../../reference/client.rst:24
+msgid ""
+"Specifies whether clients using an authorization code based grant type "
+"must send a proof key"
+msgstr ""
+
+#: ../../reference/client.rst:25
+msgid "``AllowPlainTextPkce``"
+msgstr ""
+
+#: ../../reference/client.rst:26
+msgid ""
+"Specifies whether clients using PKCE can use a plain text code challenge "
+"(not recommended - and default to ``false``)"
+msgstr ""
+
+#: ../../reference/client.rst:27
+msgid "``RedirectUris``"
+msgstr ""
+
+#: ../../reference/client.rst:28
+msgid "Specifies the allowed URIs to return tokens or authorization codes to"
+msgstr ""
+
+#: ../../reference/client.rst:29
+msgid "``AllowedScopes``"
+msgstr ""
+
+#: ../../reference/client.rst:30
+msgid ""
+"By default a client has no access to any resources - specify the allowed "
+"resources by adding the corresponding scopes names"
+msgstr ""
+
+#: ../../reference/client.rst:31
+msgid "``AllowOfflineAccess``"
+msgstr ""
+
+#: ../../reference/client.rst:32
+msgid ""
+"Specifies whether this client can request refresh tokens (be requesting "
+"the ``offline_access`` scope)"
+msgstr ""
+
+#: ../../reference/client.rst:36
+msgid "``AllowAccessTokensViaBrowser``"
+msgstr ""
+
+#: ../../reference/client.rst:34
+msgid ""
+"Specifies whether this client is allowed to receive access tokens via the"
+" browser. This is useful to harden flows that allow multiple response "
+"types (e.g. by disallowing a hybrid flow client that is supposed to use "
+"`code id_token` to add the `token` response type and thus leaking the "
+"token to the browser."
+msgstr ""
+
+#: ../../reference/client.rst:39
+msgid "``Properties``"
+msgstr ""
+
+#: ../../reference/client.rst:39
+msgid "Dictionary to hold any custom client-specific values as needed."
+msgstr ""
+
+#: ../../reference/client.rst:42
+msgid "Authentication/Logout"
+msgstr ""
+
+#: ../../reference/client.rst:44
+msgid "``PostLogoutRedirectUris``"
+msgstr ""
+
+#: ../../reference/client.rst:45
+msgid ""
+"Specifies allowed URIs to redirect to after logout. See the `OIDC Connect"
+" Session Management spec <https://openid.net/specs/openid-connect-"
+"session-1_0.html>`_ for more details."
+msgstr ""
+
+#: ../../reference/client.rst:46
+msgid "``FrontChannelLogoutUri``"
+msgstr ""
+
+#: ../../reference/client.rst:47
+msgid ""
+"Specifies logout URI at client for HTTP based front-channel logout. See "
+"the `OIDC Front-Channel spec <https://openid.net/specs/openid-connect-"
+"frontchannel-1_0.html>`_ for more details."
+msgstr ""
+
+#: ../../reference/client.rst:48
+msgid "``FrontChannelLogoutSessionRequired``"
+msgstr ""
+
+#: ../../reference/client.rst:49
+msgid ""
+"Specifies if the user's session id should be sent to the "
+"FrontChannelLogoutUri. Defaults to true."
+msgstr ""
+
+#: ../../reference/client.rst:50
+msgid "``BackChannelLogoutUri``"
+msgstr ""
+
+#: ../../reference/client.rst:51
+msgid ""
+"Specifies logout URI at client for HTTP based back-channel logout. See "
+"the `OIDC Back-Channel spec <https://openid.net/specs/openid-connect-"
+"backchannel-1_0.html>`_ for more details."
+msgstr ""
+
+#: ../../reference/client.rst:52
+msgid "``BackChannelLogoutSessionRequired``"
+msgstr ""
+
+#: ../../reference/client.rst:53
+msgid ""
+"Specifies if the user's session id should be sent in the request to the "
+"BackChannelLogoutUri. Defaults to true."
+msgstr ""
+
+#: ../../reference/client.rst:54
+msgid "``EnableLocalLogin``"
+msgstr ""
+
+#: ../../reference/client.rst:55
+msgid ""
+"Specifies if this client can use local accounts, or external IdPs only. "
+"Defaults to `true`."
+msgstr ""
+
+#: ../../reference/client.rst:57
+msgid "``IdentityProviderRestrictions``"
+msgstr ""
+
+#: ../../reference/client.rst:57
+msgid ""
+"Specifies which external IdPs can be used with this client (if list is "
+"empty all IdPs are allowed). Defaults to empty."
+msgstr ""
+
+#: ../../reference/client.rst:60
+msgid "Token"
+msgstr ""
+
+#: ../../reference/client.rst:62
+msgid "``IdentityTokenLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:63
+msgid ""
+"Lifetime to identity token in seconds (defaults to 300 seconds / 5 "
+"minutes)"
+msgstr ""
+
+#: ../../reference/client.rst:64
+msgid "``AccessTokenLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:65
+msgid "Lifetime of access token in seconds (defaults to 3600 seconds / 1 hour)"
+msgstr ""
+
+#: ../../reference/client.rst:66
+msgid "``AuthorizationCodeLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:67
+msgid ""
+"Lifetime of authorization code in seconds (defaults to 300 seconds / 5 "
+"minutes)"
+msgstr ""
+
+#: ../../reference/client.rst:68
+msgid "``AbsoluteRefreshTokenLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:69
+msgid ""
+"Maximum lifetime of a refresh token in seconds. Defaults to 2592000 "
+"seconds / 30 days"
+msgstr ""
+
+#: ../../reference/client.rst:70
+msgid "``SlidingRefreshTokenLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:71
+msgid ""
+"Sliding lifetime of a refresh token in seconds. Defaults to 1296000 "
+"seconds / 15 days"
+msgstr ""
+
+#: ../../reference/client.rst:74
+msgid "``RefreshTokenUsage``"
+msgstr ""
+
+#: ../../reference/client.rst:73
+msgid ""
+"``ReUse`` the refresh token handle will stay the same when refreshing "
+"tokens"
+msgstr ""
+
+#: ../../reference/client.rst:75
+msgid ""
+"``OneTime`` the refresh token handle will be updated when refreshing "
+"tokens. This is the default."
+msgstr ""
+
+#: ../../reference/client.rst:78
+msgid "``RefreshTokenExpiration``"
+msgstr ""
+
+#: ../../reference/client.rst:77
+msgid ""
+"``Absolute`` the refresh token will expire on a fixed point in time "
+"(specified by the AbsoluteRefreshTokenLifetime)"
+msgstr ""
+
+#: ../../reference/client.rst:79
+msgid ""
+"``Sliding`` when refreshing the token, the lifetime of the refresh token "
+"will be renewed (by the amount specified in SlidingRefreshTokenLifetime)."
+" The lifetime will not exceed `AbsoluteRefreshTokenLifetime`."
+msgstr ""
+
+#: ../../reference/client.rst:80
+msgid "``UpdateAccessTokenClaimsOnRefresh``"
+msgstr ""
+
+#: ../../reference/client.rst:81
+msgid ""
+"Gets or sets a value indicating whether the access token (and its claims)"
+" should be updated on a refresh token request."
+msgstr ""
+
+#: ../../reference/client.rst:82
+msgid "``AccessTokenType``"
+msgstr ""
+
+#: ../../reference/client.rst:83
+msgid ""
+"Specifies whether the access token is a reference token or a self "
+"contained JWT token (defaults to `Jwt`)."
+msgstr ""
+
+#: ../../reference/client.rst:84
+msgid "``IncludeJwtId``"
+msgstr ""
+
+#: ../../reference/client.rst:85
+msgid ""
+"Specifies whether JWT access tokens should have an embedded unique ID "
+"(via the `jti` claim)."
+msgstr ""
+
+#: ../../reference/client.rst:86
+msgid "``AllowedCorsOrigins``"
+msgstr ""
+
+#: ../../reference/client.rst:87
+msgid ""
+"If specified, will be used by the default CORS policy service "
+"implementations (In-Memory and EF) to build a CORS policy for JavaScript "
+"clients."
+msgstr ""
+
+#: ../../reference/client.rst:88
+msgid "``Claims``"
+msgstr ""
+
+#: ../../reference/client.rst:89
+msgid ""
+"Allows settings claims for the client (will be included in the access "
+"token)."
+msgstr ""
+
+#: ../../reference/client.rst:90
+msgid "``AlwaysSendClientClaims``"
+msgstr ""
+
+#: ../../reference/client.rst:91
+msgid ""
+"If set, the client claims will be sent for every flow. If not, only for "
+"client credentials flow (default is `false`)"
+msgstr ""
+
+#: ../../reference/client.rst:92
+msgid "``AlwaysIncludeUserClaimsInIdToken``"
+msgstr ""
+
+#: ../../reference/client.rst:93
+msgid ""
+"When requesting both an id token and access token, should the user claims"
+" always be added to the id token instead of requring the client to use "
+"the userinfo endpoint. Default is `false`."
+msgstr ""
+
+#: ../../reference/client.rst:94
+msgid "``ClientClaimsPrefix``"
+msgstr ""
+
+#: ../../reference/client.rst:95
+msgid ""
+"If set, the prefix client claim types will be prefixed with. Defaults to "
+"`client_`. The intent is to make sure they don't accidentally collide "
+"with user claims."
+msgstr ""
+
+#: ../../reference/client.rst:97
+msgid "``PairWiseSubjectSalt``"
+msgstr ""
+
+#: ../../reference/client.rst:97
+msgid ""
+"Salt value used in pair-wise subjectId generation for users of this "
+"client."
+msgstr ""
+
+#: ../../reference/client.rst:100
+msgid "Consent Screen"
+msgstr ""
+
+#: ../../reference/client.rst:102
+msgid "``RequireConsent``"
+msgstr ""
+
+#: ../../reference/client.rst:103
+msgid "Specifies whether a consent screen is required. Defaults to `true`."
+msgstr ""
+
+#: ../../reference/client.rst:104
+msgid "``AllowRememberConsent``"
+msgstr ""
+
+#: ../../reference/client.rst:105
+msgid ""
+"Specifies whether user can choose to store consent decisions. Defaults to"
+" `true`."
+msgstr ""
+
+#: ../../reference/client.rst:106
+msgid "``ConsentLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:107
+msgid "Lifetime of a user consent in seconds. Defaults to null (no expiration)."
+msgstr ""
+
+#: ../../reference/client.rst:108
+msgid "``ClientName``"
+msgstr ""
+
+#: ../../reference/client.rst:109
+msgid "Client display name (used for logging and consent screen)"
+msgstr ""
+
+#: ../../reference/client.rst:110
+msgid "``ClientUri``"
+msgstr ""
+
+#: ../../reference/client.rst:111
+msgid "URI to further information about client (used on consent screen)"
+msgstr ""
+
+#: ../../reference/client.rst:112
+msgid "``LogoUri``"
+msgstr ""
+
+#: ../../reference/client.rst:113
+msgid "URI to client logo (used on consent screen)"
+msgstr ""
+

@@ -1,4 +1,5 @@
 .. _refExtensionGrants:
+
 Extension Grants
 ================
 

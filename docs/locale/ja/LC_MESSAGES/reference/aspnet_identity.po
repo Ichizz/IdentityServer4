@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/aspnet_identity.rst:4
+msgid "ASP.NET Identity Support"
+msgstr ""
+
+#: ../../reference/aspnet_identity.rst:6
+msgid ""
+"An ASP.NET Identity-based implementation is provided for managing the "
+"identity database for users of IdentityServer. This implementation "
+"implements the extensibility points in IdentityServer needed to load "
+"identity data for your users to emit claims into tokens."
+msgstr ""
+
+#: ../../reference/aspnet_identity.rst:9
+msgid ""
+"The repo for this support is located `here "
+"<https://github.com/IdentityServer/IdentityServer4.AspNetIdentity/>`_ and"
+" the NuGet package is `here "
+"<https://www.nuget.org/packages/IdentityServer4.AspNetIdentity>`_."
+msgstr ""
+
+#: ../../reference/aspnet_identity.rst:11
+msgid ""
+"To use this library, configure ASP.NET Identity normally. Then use the "
+"``AddAspNetIdentity`` extension method after the call to "
+"``AddIdentityServer``::"
+msgstr ""
+
+#: ../../reference/aspnet_identity.rst:24
+msgid ""
+"``AddAspNetIdentity`` requires as a generic parameter the class that "
+"models your user for ASP.NET Identity (and the same one passed to "
+"``AddIdentity`` to configure ASP.NET Identity). This configures "
+"IdentityServer to use the ASP.NET Identity implementations of "
+"``IUserClaimsPrincipalFactory``, ``IResourceOwnerPasswordValidator``, and"
+" ``IProfileService``. It also configures some of ASP.NET Identity's "
+"options for use with IdentityServer (such as claim types to use and "
+"authentication cookie settings)."
+msgstr ""
+

@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/ef.rst:4
+msgid "Entity Framework Support"
+msgstr ""
+
+#: ../../reference/ef.rst:6
+msgid ""
+"An EntityFramework-based implementation is provided for the configuration"
+" and operational data extensibility points in IdentityServer. The use of "
+"EntityFramework allows any EF-supported database to be used with this "
+"library."
+msgstr ""
+
+#: ../../reference/ef.rst:9
+msgid ""
+"The repo for this library is located `here "
+"<https://github.com/IdentityServer/IdentityServer4.EntityFramework/>`_ "
+"and the NuGet package is `here "
+"<https://www.nuget.org/packages/IdentityServer4.EntityFramework>`_."
+msgstr ""
+
+#: ../../reference/ef.rst:11
+msgid ""
+"The features provided by this library are broken down into two main "
+"areas: configuration store and operational store support. These two "
+"different areas can be used independently or together, based upon the "
+"needs of the hosting application."
+msgstr ""
+
+#: ../../reference/ef.rst:15
+msgid "Configuration Store support for Clients, Resources, and CORS settings"
+msgstr ""
+
+#: ../../reference/ef.rst:17
+msgid ""
+"If client, identity resource, API resource, or CORS data is desired to be"
+" loaded from a EF-supported database (rather than use in-memory "
+"configuration), then the configuration store can be used. This support "
+"provides implementations of the ``IClientStore``, ``IResourceStore``, and"
+" the ``ICorsPolicyService`` extensibility points. These implementations "
+"use a ``DbContext``-derived class called ``ConfigurationDbContext`` to "
+"model the tables in the database."
+msgstr ""
+
+#: ../../reference/ef.rst:22
+msgid ""
+"To use the configuration store support, use the ``AddConfigurationStore``"
+" extension method after the call to ``AddIdentityServer``::"
+msgstr ""
+
+#: ../../reference/ef.rst:39
+msgid ""
+"To configure the configuration store, use the "
+"``ConfigurationStoreOptions`` options object passed to the configuration "
+"callback."
+msgstr ""
+
+#: ../../reference/ef.rst:42
+msgid "ConfigurationStoreOptions"
+msgstr ""
+
+#: ../../reference/ef.rst:43
+msgid ""
+"This options class contains properties to control the configuration store"
+" and ``ConfigurationDbContext``."
+msgstr ""
+
+#: ../../reference/ef.rst:46 ../../reference/ef.rst:88
+msgid "``ConfigureDbContext``"
+msgstr ""
+
+#: ../../reference/ef.rst:46
+msgid ""
+"Delegate of type ``Action<DbContextOptionsBuilder>`` used as a callback "
+"to configure the underlying ``ConfigurationDbContext``. The delegate can "
+"configure the ``ConfigurationDbContext`` in the same way if EF were being"
+" used directly with ``AddDbContext``, which allows any EF-supported "
+"database to be used."
+msgstr ""
+
+#: ../../reference/ef.rst:50 ../../reference/ef.rst:90
+msgid "``DefaultSchema``"
+msgstr ""
+
+#: ../../reference/ef.rst:49
+msgid ""
+"Allows setting the default database schema name for all the tables in the"
+" ``ConfigurationDbContext``."
+msgstr ""
+
+#: ../../reference/ef.rst:53
+msgid ""
+"Operational Store support for authorization grants, consents, and tokens "
+"(refresh and reference)"
+msgstr ""
+
+#: ../../reference/ef.rst:55
+msgid ""
+"If authorization grants, consents, and tokens (refresh and reference) are"
+" desired to be loaded from a EF-supported database (rather than the "
+"default in-memory database), then the operational store can be used. This"
+" support provides implementations of the ``IPersistedGrantStore`` "
+"extensibility point. The implementation uses a ``DbContext``-derived "
+"class called ``PersistedGrantDbContext`` to model the table in the "
+"database."
+msgstr ""
+
+#: ../../reference/ef.rst:60
+msgid ""
+"To use the operational store support, use the ``AddOperationalStore`` "
+"extension method after the call to ``AddIdentityServer``::"
+msgstr ""
+
+#: ../../reference/ef.rst:81
+msgid ""
+"To configure the operational store, use the ``OperationalStoreOptions`` "
+"options object passed to the configuration callback."
+msgstr ""
+
+#: ../../reference/ef.rst:84
+msgid "OperationalStoreOptions"
+msgstr ""
+
+#: ../../reference/ef.rst:85
+msgid ""
+"This options class contains properties to control the operational store "
+"and ``PersistedGrantDbContext``."
+msgstr ""
+
+#: ../../reference/ef.rst:88
+msgid ""
+"Delegate of type ``Action<DbContextOptionsBuilder>`` used as a callback "
+"to configure the underlying ``PersistedGrantDbContext``. The delegate can"
+" configure the ``PersistedGrantDbContext`` in the same way if EF were "
+"being used directly with ``AddDbContext``, which allows any EF-supported "
+"database to be used."
+msgstr ""
+
+#: ../../reference/ef.rst:91
+msgid ""
+"Allows setting the default database schema name for all the tables in the"
+" ``PersistedGrantDbContext``."
+msgstr ""
+
+#: ../../reference/ef.rst:92
+msgid "``EnableTokenCleanup``"
+msgstr ""
+
+#: ../../reference/ef.rst:93
+msgid ""
+"Indicates whether stale entries will be automatically cleaned up from the"
+" database. The default is ``false``."
+msgstr ""
+
+#: ../../reference/ef.rst:96
+msgid "``TokenCleanupInterval``"
+msgstr ""
+
+#: ../../reference/ef.rst:95
+msgid "The token cleanup interval (in seconds). The default is 3600 (1 hour)."
+msgstr ""
+
+#: ../../reference/ef.rst:99
+msgid ""
+"Database creation and schema changes across different versions of "
+"IdentityServer"
+msgstr ""
+
+#: ../../reference/ef.rst:101
+msgid ""
+"It is very likely that across different versions of IdentityServer (and "
+"the EF support) that the database schema will change to accommodate new "
+"and changing features."
+msgstr ""
+
+#: ../../reference/ef.rst:103
+msgid ""
+"We do not provide any support for creating your database or migrating "
+"your data from one version to another. You are expected to manage the "
+"database creation, schema changes, and data migration in any way your "
+"organization sees fit."
+msgstr ""
+
+#: ../../reference/ef.rst:106
+msgid ""
+"Using EF migrations is one possible approach to this. If you do wish to "
+"use migrations, then see the :ref:`EF quickstart "
+"<refEntityFrameworkQuickstart>` for samples on how to get started, or "
+"consult the Microsoft `documentation on EF migrations "
+"<https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet>`_."
+msgstr ""
+
+#: ../../reference/ef.rst:109
+msgid ""
+"We also publish `sample SQL scripts "
+"<https://github.com/IdentityServer/IdentityServer4.EntityFramework/tree/release/src/Host/Migrations/IdentityServer>`_"
+" for the current version of the database schema."
+msgstr ""
+

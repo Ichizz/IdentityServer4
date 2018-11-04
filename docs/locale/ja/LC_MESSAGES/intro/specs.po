@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/specs.rst:2
+msgid "Supported Specifications"
+msgstr ""
+
+#: ../../intro/specs.rst:4
+msgid "IdentityServer implements the following specifications:"
+msgstr ""
+
+#: ../../intro/specs.rst:7
+msgid "OpenID Connect"
+msgstr ""
+
+#: ../../intro/specs.rst:9
+msgid ""
+"OpenID Connect Core 1.0 (`spec <http://openid.net/specs/openid-connect-"
+"core-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:10
+msgid ""
+"OpenID Connect Discovery 1.0 (`spec <http://openid.net/specs/openid-"
+"connect-discovery-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:11
+msgid ""
+"OpenID Connect Session Management 1.0 - draft 28 (`spec "
+"<http://openid.net/specs/openid-connect-session-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:12
+msgid ""
+"OpenID Connect Front-Channel Logout 1.0 - draft 02 (`spec "
+"<https://openid.net/specs/openid-connect-frontchannel-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:13
+msgid ""
+"OpenID Connect Back-Channel Logout 1.0 - draft 04 (`spec "
+"<https://openid.net/specs/openid-connect-backchannel-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:16
+msgid "OAuth 2.0"
+msgstr ""
+
+#: ../../intro/specs.rst:18
+msgid "OAuth 2.0 (`RFC 6749 <http://tools.ietf.org/html/rfc6749>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:19
+msgid ""
+"OAuth 2.0 Bearer Token Usage (`RFC 6750 "
+"<http://tools.ietf.org/html/rfc6750>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:20
+msgid ""
+"OAuth 2.0 Multiple Response Types (`spec "
+"<http://openid.net/specs/oauth-v2-multiple-response-types-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:21
+msgid ""
+"OAuth 2.0 Form Post Response Mode (`spec "
+"<http://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:22
+msgid ""
+"OAuth 2.0 Token Revocation (`RFC 7009 "
+"<https://tools.ietf.org/html/rfc7009>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:23
+msgid ""
+"OAuth 2.0 Token Introspection (`RFC 7662 "
+"<https://tools.ietf.org/html/rfc7662>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:24
+msgid ""
+"Proof Key for Code Exchange (`RFC 7636 "
+"<https://tools.ietf.org/html/rfc7636>`_)"
+msgstr ""
+
+#: ../../intro/specs.rst:25
+msgid ""
+"JSON Web Tokens for Client Authentication (`RFC 7523 "
+"<https://tools.ietf.org/html/rfc7523>`_)"
+msgstr ""
+

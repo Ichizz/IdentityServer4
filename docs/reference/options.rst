@@ -1,4 +1,5 @@
 .. _refOptions:
+
 IdentityServer Options
 ======================
 

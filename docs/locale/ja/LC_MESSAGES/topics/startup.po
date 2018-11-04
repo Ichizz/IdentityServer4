@@ -1,0 +1,396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/startup.rst:4
+msgid "Startup"
+msgstr ""
+
+#: ../../topics/startup.rst:6
+msgid ""
+"IdentityServer is a combination of middleware and services. All "
+"configuration is done in your startup class."
+msgstr ""
+
+#: ../../topics/startup.rst:10
+msgid "Configuring services"
+msgstr ""
+
+#: ../../topics/startup.rst:11
+msgid "You add the IdentityServer services to the DI system by calling::"
+msgstr ""
+
+#: ../../topics/startup.rst:18
+msgid ""
+"Optionally you can pass in options into this call. See :ref:`here "
+"<refOptions>` for details on options."
+msgstr ""
+
+#: ../../topics/startup.rst:20
+msgid ""
+"This will return you a builder object that in turn has a number of "
+"convenience methods to wire up additional services."
+msgstr ""
+
+#: ../../topics/startup.rst:25
+msgid "Key material"
+msgstr ""
+
+#: ../../topics/startup.rst:28
+msgid "``AddSigningCredential``"
+msgstr ""
+
+#: ../../topics/startup.rst:28
+msgid ""
+"Adds a signing key service that provides the specified key material to "
+"the various token creation/validation services. You can pass in either an"
+" ``X509Certificate2``, a ``SigningCredential`` or a reference to a "
+"certificate from the certificate store."
+msgstr ""
+
+#: ../../topics/startup.rst:32
+msgid "``AddDeveloperSigningCredential``"
+msgstr ""
+
+#: ../../topics/startup.rst:31
+msgid ""
+"Creates temporary key material at startup time. This is for dev only "
+"scenarios when you don't have a certificate to use. The generated key "
+"will be persisted to the file system so it stays stable between server "
+"restarts (can be disabled by passing ``false``). This addresses issues "
+"when the client/api metadata caches get out of sync during development."
+msgstr ""
+
+#: ../../topics/startup.rst:37
+msgid "``AddValidationKey``"
+msgstr ""
+
+#: ../../topics/startup.rst:35
+msgid ""
+"Adds a key for validating tokens. They will be used by the internal token"
+" validator and will show up in the discovery document. You can pass in "
+"either an ``X509Certificate2``, a ``SigningCredential`` or a reference to"
+" a certificate from the certificate store. This is useful for key roll-"
+"over scenarios."
+msgstr ""
+
+#: ../../topics/startup.rst:40
+msgid "In-Memory configuration stores"
+msgstr ""
+
+#: ../../topics/startup.rst:42
+msgid ""
+"The various \"in-memory\" configuration APIs allow for configuring "
+"IdentityServer from an in-memory list of configuration objects. These "
+"\"in-memory\" collections can be hard-coded in the hosting application, "
+"or could be loaded dynamically from a configuration file or a database. "
+"By design, though, these collections are only created when the hosting "
+"application is starting up."
+msgstr ""
+
+#: ../../topics/startup.rst:46
+msgid ""
+"Use of these configuration APIs are designed for use when prototyping, "
+"developing, and/or testing where it is not necessary to dynamically "
+"consult database at runtime for the configuration data. This style of "
+"configuration might also be appropriate for production scenarios if the "
+"configuration rarely changes, or it is not inconvenient to require "
+"restarting the application if the value must be changed."
+msgstr ""
+
+#: ../../topics/startup.rst:49
+msgid "``AddInMemoryClients``"
+msgstr ""
+
+#: ../../topics/startup.rst:50
+msgid ""
+"Registers ``IClientStore`` and ``ICorsPolicyService`` implementations "
+"based on the in-memory collection of ``Client`` configuration objects."
+msgstr ""
+
+#: ../../topics/startup.rst:51
+msgid "``AddInMemoryIdentityResources``"
+msgstr ""
+
+#: ../../topics/startup.rst:52
+msgid ""
+"Registers ``IResourceStore`` implementation based on the in-memory "
+"collection of ``IdentityResource`` configuration objects."
+msgstr ""
+
+#: ../../topics/startup.rst:54
+msgid "``AddInMemoryApiResources``"
+msgstr ""
+
+#: ../../topics/startup.rst:54
+msgid ""
+"Registers ``IResourceStore`` implementation based on the in-memory "
+"collection of ``ApiResource`` configuration objects."
+msgstr ""
+
+#: ../../topics/startup.rst:57
+msgid "Test stores"
+msgstr ""
+
+#: ../../topics/startup.rst:59
+msgid ""
+"The ``TestUser`` class models a user, their credentials, and claims in "
+"IdentityServer. Use of ``TestUser`` is simiar to the use of the \"in-"
+"memory\" stores in that it is intended for when prototyping, developing, "
+"and/or testing. The use of ``TestUser`` is not recommended in production."
+msgstr ""
+
+#: ../../topics/startup.rst:66
+msgid "``AddTestUsers``"
+msgstr ""
+
+#: ../../topics/startup.rst:64
+msgid ""
+"Registers ``TestUserStore`` based on a collection of ``TestUser`` "
+"objects. ``TestUserStore`` is used by the default quickstart UI. Also "
+"registers implementations of ``IProfileService`` and "
+"``IResourceOwnerPasswordValidator``."
+msgstr ""
+
+#: ../../topics/startup.rst:69
+msgid "Additional services"
+msgstr ""
+
+#: ../../topics/startup.rst:72
+msgid "``AddExtensionGrantValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:72
+msgid ""
+"Adds ``IExtensionGrantValidator`` implementation for use with extension "
+"grants."
+msgstr ""
+
+#: ../../topics/startup.rst:75
+msgid "``AddSecretParser``"
+msgstr ""
+
+#: ../../topics/startup.rst:75
+msgid ""
+"Adds ``ISecretParser`` implementation for parsing client or API resource "
+"credentials."
+msgstr ""
+
+#: ../../topics/startup.rst:78
+msgid "``AddSecretValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:78
+msgid ""
+"Adds ``ISecretValidator`` implementation for validating client or API "
+"resource credentials against a credential store."
+msgstr ""
+
+#: ../../topics/startup.rst:81
+msgid "``AddResourceOwnerValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:81
+msgid ""
+"Adds ``IResourceOwnerPasswordValidator`` implementation for validating "
+"user credentials for the resource owner password credentials grant type."
+msgstr ""
+
+#: ../../topics/startup.rst:85
+msgid "``AddProfileService``"
+msgstr ""
+
+#: ../../topics/startup.rst:84
+msgid ""
+"Adds ``IProfileService`` implementation for connecting to your "
+":ref:`custom user profile store<refProfileService>`. The "
+"``DefaultProfileService`` class provides the default implementation which"
+" relies upon the authentication cookie as the only source of claims for "
+"issuing in tokens."
+msgstr ""
+
+#: ../../topics/startup.rst:89
+msgid "``AddAuthorizeInteractionResponseGenerator``"
+msgstr ""
+
+#: ../../topics/startup.rst:88
+msgid ""
+"Adds ``IAuthorizeInteractionResponseGenerator`` implementation to "
+"customize logic at authorization endpoint for when a user must be shown a"
+" UI for error, login, consent, or any other custom page. The "
+"``AuthorizeInteractionResponseGenerator`` class provides a default "
+"implementation, so consider deriving from this existing class if you need"
+" to augment the existing behavior."
+msgstr ""
+
+#: ../../topics/startup.rst:92
+msgid "``AddCustomAuthorizeRequestValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:92
+msgid ""
+"Adds ``ICustomAuthorizeRequestValidator`` implementation to customize "
+"request parameter validation at the authorization endpoint."
+msgstr ""
+
+#: ../../topics/startup.rst:95
+msgid "``AddCustomTokenRequestValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:95
+msgid ""
+"Adds ``ICustomTokenRequestValidator`` implementation to customize request"
+" parameter validation at the token endpoint."
+msgstr ""
+
+#: ../../topics/startup.rst:98
+msgid "``AddRedirectUriValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:98
+msgid ""
+"Adds ``IRedirectUriValidator`` implementation to customize redirect URI "
+"validation."
+msgstr ""
+
+#: ../../topics/startup.rst:101
+msgid "``AddAppAuthRedirectUriValidator``"
+msgstr ""
+
+#: ../../topics/startup.rst:101
+msgid ""
+"Adds a an \"AppAuth\" (OAuth 2.0 for Native Apps) compliant redirect URI "
+"validator (does strict validation but also allows http://127.0.0.1 with "
+"random port)."
+msgstr ""
+
+#: ../../topics/startup.rst:104
+msgid "``AddJwtBearerClientAuthentication``"
+msgstr ""
+
+#: ../../topics/startup.rst:104
+msgid "Adds support for client authentication using JWT bearer assertions."
+msgstr ""
+
+#: ../../topics/startup.rst:107
+msgid "Caching"
+msgstr ""
+
+#: ../../topics/startup.rst:109
+msgid ""
+"Client and resource configuration data is used frequently by "
+"IdentityServer. If this data is being loaded from a database or other "
+"external store, then it might be expensive to frequently re-load the same"
+" data."
+msgstr ""
+
+#: ../../topics/startup.rst:114
+msgid "``AddInMemoryCaching``"
+msgstr ""
+
+#: ../../topics/startup.rst:113
+msgid ""
+"To use any of the caches described below, an implementation of "
+"``ICache<T>`` must be registered in DI. This API registers a default in-"
+"memory implementation of ``ICache<T>`` that's based on ASP.NET Core's "
+"``MemoryCache``."
+msgstr ""
+
+#: ../../topics/startup.rst:118
+msgid "``AddClientStoreCache``"
+msgstr ""
+
+#: ../../topics/startup.rst:117
+msgid ""
+"Registers a ``IClientStore`` decorator implementation which will maintain"
+" an in-memory cache of ``Client`` configuration objects. The cache "
+"duration is configurable on the ``Caching`` configuration options on the "
+"``IdentityServerOptions``."
+msgstr ""
+
+#: ../../topics/startup.rst:122
+msgid "``AddResourceStoreCache``"
+msgstr ""
+
+#: ../../topics/startup.rst:121
+msgid ""
+"Registers a ``IResourceStore`` decorator implementation which will "
+"maintain an in-memory cache of ``IdentityResource`` and ``ApiResource`` "
+"configuration objects. The cache duration is configurable on the "
+"``Caching`` configuration options on the ``IdentityServerOptions``."
+msgstr ""
+
+#: ../../topics/startup.rst:126
+msgid "``AddCorsPolicyCache``"
+msgstr ""
+
+#: ../../topics/startup.rst:125
+msgid ""
+"Registers a ``ICorsPolicyService`` decorator implementation which will "
+"maintain an in-memory cache of the results of the CORS policy service "
+"evaluation. The cache duration is configurable on the ``Caching`` "
+"configuration options on the ``IdentityServerOptions``."
+msgstr ""
+
+#: ../../topics/startup.rst:128
+msgid "Further customization of the cache is possible:"
+msgstr ""
+
+#: ../../topics/startup.rst:130
+msgid ""
+"The default caching relies upon the ``ICache<T>`` implementation. If you "
+"wish to customize the caching behavior for the specific configuration "
+"objects, you can replace this implementation in the dependency injection "
+"system."
+msgstr ""
+
+#: ../../topics/startup.rst:133
+msgid ""
+"The default implementation of the ``ICache<T>`` itself relies upon the "
+"``IMemoryCache`` interface (and ``MemoryCache`` implementation) provided "
+"by .NET. If you wish to customize the in-memory caching behavior, you can"
+" replace the ``IMemoryCache`` implementation in the dependency injection "
+"system."
+msgstr ""
+
+#: ../../topics/startup.rst:137
+msgid "Configuring the pipeline"
+msgstr ""
+
+#: ../../topics/startup.rst:138
+msgid "You need to add IdentityServer to the pipeline by calling::"
+msgstr ""
+
+#: ../../topics/startup.rst:145
+msgid ""
+"``UseIdentityServer`` includes a call to ``UseAuthentication``, so it's "
+"not necessary to have both."
+msgstr ""
+
+#: ../../topics/startup.rst:147
+msgid "There is no additional configuration for the middleware."
+msgstr ""
+
+#: ../../topics/startup.rst:149
+msgid ""
+"Be aware that order matters in the pipeline. For example, you will want "
+"to add IdentitySever before the UI framework that implements the login "
+"screen."
+msgstr ""
+

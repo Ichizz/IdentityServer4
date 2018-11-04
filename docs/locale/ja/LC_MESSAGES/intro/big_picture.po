@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/big_picture.rst:2
+msgid "The Big Picture"
+msgstr ""
+
+#: ../../intro/big_picture.rst:4
+msgid "Most modern applications look more or less like this:"
+msgstr ""
+
+#: ../../intro/big_picture.rst:8
+msgid "The most common interactions are:"
+msgstr ""
+
+#: ../../intro/big_picture.rst:10
+msgid "Browsers communicate with web applications"
+msgstr ""
+
+#: ../../intro/big_picture.rst:12
+msgid ""
+"Web applications communicate with web APIs (sometimes on their own, "
+"sometimes on behalf of a user)"
+msgstr ""
+
+#: ../../intro/big_picture.rst:14
+msgid "Browser-based applications communicate with web APIs"
+msgstr ""
+
+#: ../../intro/big_picture.rst:16
+msgid "Native applications communicate with web APIs"
+msgstr ""
+
+#: ../../intro/big_picture.rst:18
+msgid "Server-based applications communicate with web APIs"
+msgstr ""
+
+#: ../../intro/big_picture.rst:20
+msgid ""
+"Web APIs communicate with web APIs (sometimes on their own, sometimes on "
+"behalf of a user)"
+msgstr ""
+
+#: ../../intro/big_picture.rst:22
+msgid ""
+"Typically each and every layer (front-end, middle-tier and back-end) has "
+"to protect resources and implement authentication and/or authorization – "
+"often against the same user store."
+msgstr ""
+
+#: ../../intro/big_picture.rst:25
+msgid ""
+"Outsourcing these fundamental security functions to a security token "
+"service prevents duplicating that functionality across those applications"
+" and endpoints."
+msgstr ""
+
+#: ../../intro/big_picture.rst:27
+msgid ""
+"Restructuring the application to support a security token service leads "
+"to the following architecture and protocols:"
+msgstr ""
+
+#: ../../intro/big_picture.rst:31
+msgid "Such a design divides security concerns into two parts:"
+msgstr ""
+
+#: ../../intro/big_picture.rst:34
+msgid "Authentication"
+msgstr ""
+
+#: ../../intro/big_picture.rst:35
+msgid ""
+"Authentication is needed when an application needs to know the identity "
+"of the current user. Typically these applications manage data on behalf "
+"of that user and need to make sure that this user can only access the "
+"data for which he is allowed. The most common example for that is "
+"(classic) web applications – but native and JS-based applications also "
+"have a need for authentication."
+msgstr ""
+
+#: ../../intro/big_picture.rst:40
+msgid ""
+"The most common authentication protocols are SAML2p, WS-Federation and "
+"OpenID Connect – SAML2p being the most popular and the most widely "
+"deployed."
+msgstr ""
+
+#: ../../intro/big_picture.rst:43
+msgid ""
+"OpenID Connect is the newest of the three, but is considered to be the "
+"future because it has the most potential for modern applications. It was "
+"built for mobile application scenarios right from the start and is "
+"designed to be API friendly."
+msgstr ""
+
+#: ../../intro/big_picture.rst:48
+msgid "API Access"
+msgstr ""
+
+#: ../../intro/big_picture.rst:49
+msgid ""
+"Applications have two fundamental ways with which they communicate with "
+"APIs – using the application identity, or delegating the user’s identity."
+" Sometimes both methods need to be combined."
+msgstr ""
+
+#: ../../intro/big_picture.rst:52
+msgid ""
+"OAuth2 is a protocol that allows applications to request access tokens "
+"from a security token service and use them to communicate with APIs. This"
+" delegation reduces complexity in both the client applications as well as"
+" the APIs since authentication and authorization can be centralized."
+msgstr ""
+
+#: ../../intro/big_picture.rst:57
+msgid "OpenID Connect and OAuth 2.0 – better together"
+msgstr ""
+
+#: ../../intro/big_picture.rst:58
+msgid ""
+"OpenID Connect and OAuth 2.0 are very similar – in fact OpenID Connect is"
+" an extension on top of OAuth 2.0. The two fundamental security concerns,"
+" authentication and API access, are combined into a  single protocol - "
+"often with a single round trip to the security token service."
+msgstr ""
+
+#: ../../intro/big_picture.rst:61
+msgid ""
+"We believe that the combination of OpenID Connect and OAuth 2.0 is the "
+"best approach to secure modern applications for the foreseeable future. "
+"IdentityServer4 is an implementation of these two protocols and is highly"
+" optimized to solve the typical security problems of today’s mobile, "
+"native and web applications."
+msgstr ""
+
+#: ../../intro/big_picture.rst:66
+msgid "How IdentityServer4 can help"
+msgstr ""
+
+#: ../../intro/big_picture.rst:67
+msgid ""
+"IdentityServer is middleware that adds the spec compliant OpenID Connect "
+"and OAuth 2.0 endpoints to an arbitrary ASP.NET Core application."
+msgstr ""
+
+#: ../../intro/big_picture.rst:69
+msgid ""
+"Typically, you build (or re-use) an application that contains a login and"
+" logout page (and maybe consent - depending on your needs), and the "
+"IdentityServer middleware adds the necessary protocol heads to it, so "
+"that client applications can talk to it using those standard protocols."
+msgstr ""
+
+#: ../../intro/big_picture.rst:74
+msgid ""
+"The hosting application can be as complex as you want, but we typically "
+"recommend to keep the attack surface as small as possible by including "
+"authentication related UI only."
+msgstr ""
+

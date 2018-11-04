@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/discovery.rst:2
+msgid "Discovery"
+msgstr ""
+
+#: ../../topics/discovery.rst:4
+msgid ""
+"The discovery document can be found at *https://baseaddress/.well-known"
+"/openid-configuration*. It contains information about the endpoints, key "
+"material and features of your IdentityServer."
+msgstr ""
+
+#: ../../topics/discovery.rst:7
+msgid ""
+"By default all information is included in the discovery document, but by "
+"using configuration options, you can hide individual sections, e.g.::"
+msgstr ""
+
+#: ../../topics/discovery.rst:19
+msgid "Extending discovery"
+msgstr ""
+
+#: ../../topics/discovery.rst:20
+msgid "You can add custom entries to the discovery document, e.g::"
+msgstr ""
+
+#: ../../topics/discovery.rst:33
+msgid ""
+"When you add a custom value that starts with ~/ it will be expanded to an"
+" absolute path below the IdentityServer base address, e.g.::"
+msgstr ""
+
+#: ../../topics/discovery.rst:37
+msgid ""
+"If you want to take full control over the rendering of the discovery (and"
+" jwks) document, you can implement the ``IDiscoveryResponseGenerator`` "
+"interface (or derive from our default implementation)."
+msgstr ""
+

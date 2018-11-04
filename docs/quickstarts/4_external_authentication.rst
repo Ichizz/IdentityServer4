@@ -1,4 +1,5 @@
 .. _refExternalAuthenticationQuickstart:
+
 Adding Support for External Authentication
 ==========================================
 

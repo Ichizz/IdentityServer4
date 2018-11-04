@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../endpoints/token.rst:2
+msgid "Token Endpoint"
+msgstr ""
+
+#: ../../endpoints/token.rst:4
+msgid ""
+"The token endpoint can be used to programmatically request tokens. It "
+"supports the ``password``, ``authorization_code``, ``client_credentials``"
+" and ``refresh_token`` grant types). Furthermore the token endpoint can "
+"be extended to support extension grant types."
+msgstr ""
+
+#: ../../endpoints/token.rst:8
+msgid ""
+"IdentityServer supports a subset of the OpenID Connect and OAuth 2.0 "
+"token request parameters. For a full list, see `here "
+"<http://openid.net/specs/openid-connect-core-1_0.html#TokenRequest>`_."
+msgstr ""
+
+#: ../../endpoints/token.rst:10
+msgid "``client_id``"
+msgstr ""
+
+#: ../../endpoints/token.rst:11
+msgid "client identifier (required)"
+msgstr ""
+
+#: ../../endpoints/token.rst:12
+msgid "``client_secret``"
+msgstr ""
+
+#: ../../endpoints/token.rst:13
+msgid ""
+"client secret either in the post body, or as a basic authentication "
+"header. Optional."
+msgstr ""
+
+#: ../../endpoints/token.rst:14
+msgid "``grant_type``"
+msgstr ""
+
+#: ../../endpoints/token.rst:15
+msgid ""
+"``authorization_code``, ``client_credentials``, ``password``, "
+"``refresh_token`` or custom"
+msgstr ""
+
+#: ../../endpoints/token.rst:16
+msgid "``scope``"
+msgstr ""
+
+#: ../../endpoints/token.rst:17
+msgid ""
+"one or more registered scopes. If not specified, a token for all "
+"explicitly allowed scopes will be issued."
+msgstr ""
+
+#: ../../endpoints/token.rst:18
+msgid "``redirect_uri``"
+msgstr ""
+
+#: ../../endpoints/token.rst:19
+msgid "required for the ``authorization_code`` grant type"
+msgstr ""
+
+#: ../../endpoints/token.rst:20
+msgid "``code``"
+msgstr ""
+
+#: ../../endpoints/token.rst:21
+msgid "the authorization code (required for ``authorization_code`` grant type)"
+msgstr ""
+
+#: ../../endpoints/token.rst:22
+msgid "``code_verifier``"
+msgstr ""
+
+#: ../../endpoints/token.rst:23
+msgid "PKCE proof key"
+msgstr ""
+
+#: ../../endpoints/token.rst:24
+msgid "``username``"
+msgstr ""
+
+#: ../../endpoints/token.rst:25
+msgid "resource owner username (required for ``password`` grant type)"
+msgstr ""
+
+#: ../../endpoints/token.rst:26
+msgid "``password``"
+msgstr ""
+
+#: ../../endpoints/token.rst:27
+msgid "resource owner password (required for ``password`` grant type)"
+msgstr ""
+
+#: ../../endpoints/token.rst:32
+msgid "``acr_values``"
+msgstr ""
+
+#: ../../endpoints/token.rst:29
+msgid ""
+"allows passing in additional authentication related information for the "
+"``password`` grant type - identityserver special cases the following "
+"proprietary acr_values:"
+msgstr ""
+
+#: ../../endpoints/token.rst:31
+msgid ""
+"``idp:name_of_idp`` bypasses the login/home realm screen and forwards the"
+" user directly to the selected identity provider (if allowed per client "
+"configuration)"
+msgstr ""
+
+#: ../../endpoints/token.rst:33
+msgid ""
+"``tenant:name_of_tenant`` can be used to pass a tenant name to the token "
+"endpoint"
+msgstr ""
+
+#: ../../endpoints/token.rst:35
+msgid "``refresh_token``"
+msgstr ""
+
+#: ../../endpoints/token.rst:35
+msgid "the refresh token (required for ``refresh_token`` grant type)"
+msgstr ""
+
+#: ../../endpoints/token.rst:38
+msgid "Example"
+msgstr ""
+
+#: ../../endpoints/token.rst:50
+msgid "(Form-encoding removed and line breaks added for readability)"
+msgstr ""
+
+#: ../../endpoints/token.rst:52
+msgid ""
+"You can use the `IdentityModel "
+"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
+"programmatically access the token endpoint from .NET code. For more "
+"information check the IdentityModel `docs "
+"<https://identitymodel.readthedocs.io/en/latest/client/token.html>`_."
+msgstr ""
+

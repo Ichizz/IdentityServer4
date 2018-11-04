@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/windows.rst:2
+msgid "Windows Authentication"
+msgstr ""
+
+#: ../../topics/windows.rst:4
+msgid ""
+"On supported platforms, you can use IdentityServer to authenticate users "
+"using Windows authentication (e.g. against Active Directory). Currently "
+"Windows authentication is available when you host IdentityServer using:"
+msgstr ""
+
+#: ../../topics/windows.rst:7
+msgid ""
+"`Kestrel <https://docs.microsoft.com/en-"
+"us/aspnet/core/fundamentals/servers/kestrel>`_ on Windows using IIS and "
+"the IIS integration package"
+msgstr ""
+
+#: ../../topics/windows.rst:8
+msgid ""
+"`HTTP.sys <https://docs.microsoft.com/en-"
+"us/aspnet/core/fundamentals/servers/httpsys>`_ server on Windows"
+msgstr ""
+
+#: ../../topics/windows.rst:10
+msgid ""
+"In both cases, Windows authentication is triggered by using the "
+"``ChallengeAsync`` API on the ``HttpContext`` using the scheme "
+"``\"Windows\"``. The account controller in our `quickstart UI "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI>`_ "
+"implements the necessary logic."
+msgstr ""
+
+#: ../../topics/windows.rst:14
+msgid "Using Kestrel"
+msgstr ""
+
+#: ../../topics/windows.rst:15
+msgid ""
+"When using Kestrel, you must run \"behind\" IIS and use the IIS "
+"integration::"
+msgstr ""
+
+#: ../../topics/windows.rst:26
+msgid ""
+"Kestrel is automatically configured when using the "
+"``WebHost.CreateDefaultBuilder`` approach for setting up the "
+"``WebHostBuilder``."
+msgstr ""
+
+#: ../../topics/windows.rst:28
+msgid ""
+"Also the virtual directory in IIS (or IIS Express) must have Windows and "
+"anonymous authentication enabled."
+msgstr ""
+
+#: ../../topics/windows.rst:30
+msgid ""
+"The IIS integration layer will configure a Windows authentication handler"
+" into DI that can be invoked via the authentication service. Typically in"
+" IdentityServer it is advisable to disable this automatic behavior. This "
+"is done in ``ConfigureServices``::"
+msgstr ""
+
+#: ../../topics/windows.rst:40
+msgid ""
+"By default, the display name is empty, and the Windows authentication "
+"button will not show up in the quickstart UI. You need to set a display "
+"name if you rely on automatic discovery of external providers."
+msgstr ""
+

@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/options.rst:4
+msgid "IdentityServer Options"
+msgstr ""
+
+#: ../../reference/options.rst:8
+msgid "``IssuerUri``"
+msgstr ""
+
+#: ../../reference/options.rst:7
+msgid ""
+"Set the issuer name that will appear in the discovery document and the "
+"issued JWT tokens. It is recommended to not set this property, which "
+"infers the issuer name from the host name that is used by the clients."
+msgstr ""
+
+#: ../../reference/options.rst:11
+msgid "``PublicOrigin``"
+msgstr ""
+
+#: ../../reference/options.rst:11
+msgid ""
+"The origin of this server instance, e.g. https://myorigin.com. If not "
+"set, the origin name is inferred from the request."
+msgstr ""
+
+#: ../../reference/options.rst:14
+msgid "Endpoints"
+msgstr ""
+
+#: ../../reference/options.rst:15
+msgid ""
+"Allows enabling/disabling individual endpoints, e.g. token, authorize, "
+"userinfo etc."
+msgstr ""
+
+#: ../../reference/options.rst:17
+msgid ""
+"By default all endpoints are enabled, but you can lock down your server "
+"by disabling endpoint that you don't need."
+msgstr ""
+
+#: ../../reference/options.rst:20
+msgid "Discovery"
+msgstr ""
+
+#: ../../reference/options.rst:21
+msgid ""
+"Allows enabling/disabling various sections of the discovery document, "
+"e.g. endpoints, scopes, claims, grant types etc."
+msgstr ""
+
+#: ../../reference/options.rst:23
+msgid ""
+"The ``CustomEntries`` dictionary allows adding custom elements to the "
+"discovery document."
+msgstr ""
+
+#: ../../reference/options.rst:26
+msgid "Authentication"
+msgstr ""
+
+#: ../../reference/options.rst:28
+msgid "``CookieLifetime``"
+msgstr ""
+
+#: ../../reference/options.rst:28
+msgid ""
+"The authentication cookie lifetime (only effective if the IdentityServer-"
+"provided cookie handler is used)."
+msgstr ""
+
+#: ../../reference/options.rst:31
+msgid "``CookieSlidingExpiration``"
+msgstr ""
+
+#: ../../reference/options.rst:31
+msgid ""
+"Specified if the cookie should be sliding or not (only effective if the "
+"IdentityServer-provided cookie handler is used)."
+msgstr ""
+
+#: ../../reference/options.rst:34
+msgid "``RequireAuthenticatedUserForSignOutMessage``"
+msgstr ""
+
+#: ../../reference/options.rst:34
+msgid ""
+"Indicates if user must be authenticated to accept parameters to end "
+"session endpoint. Defaults to false."
+msgstr ""
+
+#: ../../reference/options.rst:37
+msgid "``CheckSessionCookieName``"
+msgstr ""
+
+#: ../../reference/options.rst:37
+msgid "The name of the cookie used for the check session endpoint."
+msgstr ""
+
+#: ../../reference/options.rst:40
+msgid "``RequireCspFrameSrcForSignout``"
+msgstr ""
+
+#: ../../reference/options.rst:40
+msgid ""
+"If set, will require frame-src CSP headers being emitting on the end "
+"session callback endpoint which renders iframes to clients for front-"
+"channel signout notification. Defaults to true."
+msgstr ""
+
+#: ../../reference/options.rst:43
+msgid "Events"
+msgstr ""
+
+#: ../../reference/options.rst:44
+msgid ""
+"Allows configuring if and which events should be submitted to a "
+"registered event sink. See :ref:`here <refEvents>` for more information "
+"on events."
+msgstr ""
+
+#: ../../reference/options.rst:47
+msgid "InputLengthRestrictions"
+msgstr ""
+
+#: ../../reference/options.rst:48
+msgid ""
+"Allows setting length restrictions on various protocol parameters like "
+"client id, scope, redirect URI etc."
+msgstr ""
+
+#: ../../reference/options.rst:51
+msgid "UserInteraction"
+msgstr ""
+
+#: ../../reference/options.rst:53
+msgid "``LoginUrl``, ``LogoutUrl``, ``ConsentUrl``, ``ErrorUrl``"
+msgstr ""
+
+#: ../../reference/options.rst:54
+msgid "Sets the the URLs for the login, logout, consent and error pages."
+msgstr ""
+
+#: ../../reference/options.rst:55
+msgid "``LoginReturnUrlParameter``"
+msgstr ""
+
+#: ../../reference/options.rst:56
+msgid ""
+"Sets the name of the return URL parameter passed to the login page. "
+"Defaults to *returnUrl*."
+msgstr ""
+
+#: ../../reference/options.rst:57
+msgid "``LogoutIdParameter``"
+msgstr ""
+
+#: ../../reference/options.rst:58
+msgid ""
+"Sets the name of the logout message id parameter passed to the logout "
+"page. Defaults to *logoutId*."
+msgstr ""
+
+#: ../../reference/options.rst:59
+msgid "``ConsentReturnUrlParameter``"
+msgstr ""
+
+#: ../../reference/options.rst:60
+msgid ""
+"Sets the name of the return URL parameter passed to the consent page. "
+"Defaults to *returnUrl*."
+msgstr ""
+
+#: ../../reference/options.rst:61
+msgid "``ErrorIdParameter``"
+msgstr ""
+
+#: ../../reference/options.rst:62
+msgid ""
+"Sets the name of the error message id parameter passed to the error page."
+" Defaults to *errorId*."
+msgstr ""
+
+#: ../../reference/options.rst:63
+msgid "``CustomRedirectReturnUrlParameter``"
+msgstr ""
+
+#: ../../reference/options.rst:64
+msgid ""
+"Sets the name of the return URL parameter passed to a custom redirect "
+"from the authorization endpoint. Defaults to *returnUrl*."
+msgstr ""
+
+#: ../../reference/options.rst:70
+msgid "``CookieMessageThreshold``"
+msgstr ""
+
+#: ../../reference/options.rst:66
+msgid ""
+"Certain interactions between IdentityServer and some UI pages require a "
+"cookie to pass state and context (any of the pages above that have a "
+"configurable \"message id\" parameter). Since browsers have limits on the"
+" number of cookies and their size, this setting is used to prevent too "
+"many cookies being created. The value sets the maximum number of message "
+"cookies of any type that will be created. The oldest message cookies will"
+" be purged once the limit has been reached. This effectively indicates "
+"how many tabs can be opened by a user when using IdentityServer."
+msgstr ""
+
+#: ../../reference/options.rst:73
+msgid "Caching"
+msgstr ""
+
+#: ../../reference/options.rst:74
+msgid ""
+"These setting only apply if the respective caching has been enabled in "
+"the services configuration in startup."
+msgstr ""
+
+#: ../../reference/options.rst:77
+msgid "``ClientStoreExpiration``"
+msgstr ""
+
+#: ../../reference/options.rst:77
+msgid "Cache duration of client configuration loaded from the client store."
+msgstr ""
+
+#: ../../reference/options.rst:80
+msgid "``ResourceStoreExpiration``"
+msgstr ""
+
+#: ../../reference/options.rst:80
+msgid ""
+"Cache duration of identity and API resource configuration loaded from the"
+" resource store."
+msgstr ""
+
+#: ../../reference/options.rst:83
+msgid "CORS"
+msgstr ""
+
+#: ../../reference/options.rst:84
+msgid ""
+"IdentityServer supports CORS for some of its endpoints. The underlying "
+"CORS implementation is provided from ASP.NET Core, and as such it is "
+"automatically registered in the dependency injection system."
+msgstr ""
+
+#: ../../reference/options.rst:90
+msgid "``CorsPolicyName``"
+msgstr ""
+
+#: ../../reference/options.rst:88
+msgid ""
+"Name of the CORS policy that will be evaluated for CORS requests into "
+"IdentityServer (defaults to ``\"IdentityServer4\"``). The policy provider"
+" that handles this is implemented in terms of the ``ICorsPolicyService`` "
+"registered in the dependency injection system. If you wish to customize "
+"the set of CORS origins allowed to connect, then it is recommended that "
+"you provide a custom implementation of ``ICorsPolicyService``."
+msgstr ""
+
+#: ../../reference/options.rst:94
+msgid "``CorsPaths``"
+msgstr ""
+
+#: ../../reference/options.rst:93
+msgid ""
+"The endpoints within IdentityServer where CORS is supported. Defaults to "
+"the discovery, user info, token, and revocation endpoints."
+msgstr ""
+
+#: ../../reference/options.rst:98
+msgid "``PreflightCacheDuration``"
+msgstr ""
+
+#: ../../reference/options.rst:97
+msgid ""
+"`Nullable<TimeSpan>` indicating the value to be used in the preflight "
+"`Access-Control-Max-Age` response header. Defaults to `null` indicating "
+"no caching header is set on the response."
+msgstr ""
+
+#: ../../reference/options.rst:101
+msgid "CSP (Content Security Policy)"
+msgstr ""
+
+#: ../../reference/options.rst:102
+msgid "IdentityServer emits CSP headers for some responses, where appropriate."
+msgstr ""
+
+#: ../../reference/options.rst:105
+msgid "``Level``"
+msgstr ""
+
+#: ../../reference/options.rst:105
+msgid ""
+"The level of CSP to use. CSP Level 2 is used by default, but if older "
+"browsers must be supported then this be changed to ``CspLevel.One`` to "
+"accomodate them."
+msgstr ""
+
+#: ../../reference/options.rst:107
+msgid "``AddDeprecatedHeader``"
+msgstr ""
+
+#: ../../reference/options.rst:108
+msgid ""
+"Indicates if the older ``X-Content-Security-Policy`` CSP header should "
+"also be emitted (in addition to the standards-based header value). "
+"Defaults to true."
+msgstr ""
+

@@ -1,4 +1,5 @@
 .. _refProtectingApis:
+
 Protecting APIs
 ===============
 IdentityServer issues access tokens in the `JWT <https://tools.ietf.org/html/rfc7519>`_ (JSON Web Token) format by default.

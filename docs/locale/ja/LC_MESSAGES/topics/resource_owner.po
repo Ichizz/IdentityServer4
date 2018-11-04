@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/resource_owner.rst:4
+msgid "Resource Owner Password Validation"
+msgstr ""
+
+#: ../../topics/resource_owner.rst:6
+msgid ""
+"If you want to use the OAuth 2.0 resource owner password credential grant"
+" (aka ``password``), you need to implement and register the "
+"``IResourceOwnerPasswordValidator`` interface::"
+msgstr ""
+
+#: ../../topics/resource_owner.rst:17
+msgid ""
+"On the context you will find already parsed protocol parameters like "
+"``UserName`` and ``Password``, but also the raw request if you want to "
+"look at other input data."
+msgstr ""
+
+#: ../../topics/resource_owner.rst:19
+msgid ""
+"Your job is then to implement the password validation and set the "
+"``Result`` on the context accordingly. See the "
+":ref:`GrantValidationResult <refGrantValidationResult>` documentation."
+msgstr ""
+

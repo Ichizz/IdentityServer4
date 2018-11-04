@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/extension_grants.rst:4
+msgid "Extension Grants"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:6
+msgid ""
+"OAuth 2.0 defines standard grant types for the token endpoint, such as "
+"``password``, ``authorization_code`` and ``refresh_token``. Extension "
+"grants are a way to add support for non-standard token issuance scenarios"
+" like token translation, delegation, or custom credentials."
+msgstr ""
+
+#: ../../topics/extension_grants.rst:8
+msgid ""
+"You can add support for additional grant types by implementing the "
+"``IExtensionGrantValidator`` interface::"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:27
+msgid "The ``ExtensionGrantValidationContext`` object gives you access to:"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:29
+msgid ""
+"the incoming token request - both the well-known validated values, as "
+"well as any custom values (via the ``Raw`` collection)"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:30
+msgid "the result - either error or success"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:31
+msgid "custom response parameters"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:33
+msgid "To register the extension grant, add it to DI::"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:39
+msgid "Example: Simple delegation using an extension grant"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:40
+msgid ""
+"Imagine the following scenario - a front end client calls a middle tier "
+"API using a token acquired via an interactive flow (e.g. hybrid flow). "
+"This middle tier API (API 1) now wants to call a back end API (API 2) on "
+"behalf of the interactive user:"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:45
+msgid ""
+"In other words, the middle tier API (API 1) needs an access token "
+"containing the user's identity, but with the scope of the back end API "
+"(API 2)."
+msgstr ""
+
+#: ../../topics/extension_grants.rst:47
+msgid ""
+"You might have heard of the term *poor man's delegation* where the access"
+" token from the front end is simply forwarded to the back end. This has "
+"some shortcomings, e.g. *API 2* must now accept the *API 1* scope which "
+"would allow the user to call *API 2* directly. Also - you might want to "
+"add some delegation specific claims into the token, e.g. the fact that "
+"the call path is via *API 1*."
+msgstr ""
+
+#: ../../topics/extension_grants.rst:49
+msgid "**Implementing the extension grant**"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:51
+msgid ""
+"The front end would send the token to API 1, and now this token needs to "
+"be exchanged at IdentityServer with a new token for API 2."
+msgstr ""
+
+#: ../../topics/extension_grants.rst:53
+msgid ""
+"On the wire the call to token service for the exchange could look like "
+"this::"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:63
+msgid ""
+"It's the job of the extension grant validator to handle that request by "
+"validating the incoming token, and returning a result that represents the"
+" new token::"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:101
+msgid "Don't forget to register the validator with DI."
+msgstr ""
+
+#: ../../topics/extension_grants.rst:103
+msgid "**Registering the delegation client**"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:105
+msgid ""
+"You need a client registration in IdentityServer that allows a client to "
+"use this new extension grant, e.g.::"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:123
+msgid "**Calling the token endpoint**"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:125
+msgid ""
+"In API 1 you can now construct the HTTP payload yourself, or use the "
+"*IdentityModel* helper library::"
+msgstr ""
+
+#: ../../topics/extension_grants.rst:142
+msgid ""
+"The ``TokenResponse.AccessToken`` will now contain the delegation access "
+"token."
+msgstr ""
+

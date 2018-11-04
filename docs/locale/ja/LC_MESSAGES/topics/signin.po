@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/signin.rst:4
+msgid "Sign-in"
+msgstr ""
+
+#: ../../topics/signin.rst:6
+msgid ""
+"In order for IdentityServer to issue tokens on behalf of a user, that "
+"user must sign-in to IdentityServer."
+msgstr ""
+
+#: ../../topics/signin.rst:9
+msgid "Cookie authentication"
+msgstr ""
+
+#: ../../topics/signin.rst:10
+msgid ""
+"Authentication is tracked with a cookie managed by the `cookie "
+"authentication <https://docs.microsoft.com/en-"
+"us/aspnet/core/security/authentication/cookie>`_ handler from ASP.NET "
+"Core."
+msgstr ""
+
+#: ../../topics/signin.rst:12
+msgid ""
+"IdentityServer registers two cookie handlers (one for the authentication "
+"session and one for temporary external cookies). These are used by "
+"default and you can get their names from the ``IdentityServerConstants`` "
+"class (``DefaultCookieAuthenticationScheme`` and "
+"``ExternalCookieAuthenticationScheme``) if you want to reference them "
+"manually."
+msgstr ""
+
+#: ../../topics/signin.rst:15
+msgid ""
+"We only expose basic settings for these cookies (expiration and sliding),"
+" and you can register your own cookie handlers if you need more control. "
+"IdentityServer uses whichever cookie handler matches the "
+"``DefaultAuthenticateScheme`` as configured on the "
+"``AuthenticationOptions`` when using ``AddAuthentication`` from ASP.NET "
+"Core."
+msgstr ""
+
+#: ../../topics/signin.rst:19
+msgid "Overriding cookie handler configuration"
+msgstr ""
+
+#: ../../topics/signin.rst:20
+msgid ""
+"If you wish to use your own cookie authentication handler, then you must "
+"configure it yourself. This must be done in ``ConfigureServices`` after "
+"registering IdentityServer in DI (with ``AddIdentityServer``). For "
+"example::"
+msgstr ""
+
+#: ../../topics/signin.rst:37
+msgid ""
+"IdentityServer internally calls both ``AddAuthentication`` and "
+"``AddCookie`` with a custom scheme (via the constant "
+"``IdentityServerConstants.DefaultCookieAuthenticationScheme``), so to "
+"override them you must make the same calls after ``AddIdentityServer``."
+msgstr ""
+
+#: ../../topics/signin.rst:40
+msgid "Login User Interface and Identity Management System"
+msgstr ""
+
+#: ../../topics/signin.rst:41
+msgid ""
+"IdentityServer does not provide any user-interface or user database for "
+"user authentication. These are things you are expected to provide or "
+"develop yourself."
+msgstr ""
+
+#: ../../topics/signin.rst:44
+msgid ""
+"If you need a starting point for a basic UI (login, logout, consent and "
+"manage grants), you can use our `quickstart UI "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI>`_."
+msgstr ""
+
+#: ../../topics/signin.rst:47
+msgid ""
+"The quickstart UI authenticates users against an in-memory database. You "
+"would replace those bits with access to your real user store. We have "
+"samples that use :ref:`ASP.NET Identity <refAspNetIdentityQuickstart>`."
+msgstr ""
+
+#: ../../topics/signin.rst:51
+msgid "Login Workflow"
+msgstr ""
+
+#: ../../topics/signin.rst:52
+msgid ""
+"When IdentityServer receives a request at the authorization endpoint and "
+"the user is not authenticated, the user will be redirected to the "
+"configured login page. You must inform IdentityServer of the path to your"
+" login page via the ``UserInteraction`` settings on the :ref:`options "
+"<refOptions>` (the default is ``/account/login``). A ``returnUrl`` "
+"parameter will be passed informing your login page where the user should "
+"be redirected once login is complete."
+msgstr ""
+
+#: ../../topics/signin.rst:58
+msgid ""
+"Beware `open-redirect attacks "
+"<https://en.wikipedia.org/wiki/URL_redirection#Security_issues>`_ via the"
+" ``returnUrl`` parameter. You should validate that the ``returnUrl`` "
+"refers to well-known location. See the :ref:`interaction service "
+"<refInteractionService>` for APIs to validate the ``returnUrl`` "
+"parameter."
+msgstr ""
+
+#: ../../topics/signin.rst:61
+msgid "Login Context"
+msgstr ""
+
+#: ../../topics/signin.rst:62
+msgid ""
+"On your login page you might require information about the context of the"
+" request in order to customize the login experience (such as client, "
+"prompt parameter, IdP hint, or something else). This is made available "
+"via the ``GetAuthorizationContextAsync`` API on the the :ref:`interaction"
+" service <refInteractionService>`."
+msgstr ""
+
+#: ../../topics/signin.rst:67
+msgid "Issuing a cookie and Claims"
+msgstr ""
+
+#: ../../topics/signin.rst:68
+msgid ""
+"There are authentication-related extension methods on the ``HttpContext``"
+" from ASP.NET Core to issue the authentication cookie and sign a user in."
+" The authentication scheme used must match the cookie handler you are "
+"using (see above)."
+msgstr ""
+
+#: ../../topics/signin.rst:71
+msgid ""
+"When you sign the user in you must issue at least a ``sub`` claim and a "
+"``name`` claim. IdentityServer also provides a few ``SignInAsync`` "
+"extension methods on the ``HttpContext`` to make this more convenient."
+msgstr ""
+
+#: ../../topics/signin.rst:74
+msgid ""
+"You can also optionally issue an ``idp`` claim (for the identity provider"
+" name), an ``amr`` claim (for the authentication method used), and/or an "
+"``auth_time`` claim (for the epoch time a user authenticated). If you do "
+"not provide these, then IdentityServer will provide default values."
+msgstr ""
+

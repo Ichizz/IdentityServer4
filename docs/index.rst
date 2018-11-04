@@ -28,7 +28,6 @@ It enables the following features in your applications:
    :caption: Introduction
 
    intro/big_picture
-   intro/architecture
    intro/terminology
    intro/specs
    intro/packaging
@@ -56,12 +55,6 @@ It enables the following features in your applications:
    :maxdepth: 3
    :hidden:
    :caption: Configuration
-
-   configuration/startup
-   configuration/resources
-   configuration/clients
-   configuration/mvc
-   configuration/apis
 
 .. toctree::
    :maxdepth: 3

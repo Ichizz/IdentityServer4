@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quickstarts/6_aspnet_identity.rst:4
+msgid "Using ASP.NET Core Identity"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:6
+msgid ""
+"IdentityServer is designed for flexibility and part of that is allowing "
+"you to use any database you want for your users and their data (including"
+" passwords). If you are starting with a new user database, then ASP.NET "
+"Identity is one option you could choose. This quickstart shows how to use"
+" ASP.NET Identity with IdentityServer."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:10
+msgid ""
+"This quickstart assumes you've been through all of the prior quickstarts."
+" The approach this quickstart takes to using ASP.NET Identity is to "
+"create a new project from the ASP.NET Identity template in Visual Studio."
+" This new project will replace the prior IdentityServer project we built "
+"up from scratch in the previous quickstarts. All the other projects in "
+"this solution (for the clients and the API) will remain the same."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:16
+msgid "New Project for ASP.NET Identity"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:18
+msgid ""
+"The first step is to add a new project for ASP.NET Identity to your "
+"solution. Given that a lot of code is required for ASP.NET Identity, it "
+"makes sense to use the template from Visual Studio. You will eventually "
+"delete the old project for IdentityServer (assuming you were following "
+"the other quickstarts), but there are several items that you will need to"
+" migrate over (or rewrite from scratch as described in the prior "
+"quickstarts)."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:22
+msgid "Start by creating a new \"ASP.NET Core Web Application\" project."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:26
+msgid ""
+"Then select the \"Web Application Template (Model-View-Controller)\" "
+"option."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:30
+msgid ""
+"Then click the \"Change Authentication\" button, and choose \"Individual "
+"User Accounts\" (which means to use ASP.NET Identity):"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:34
+msgid ""
+"Finally, your new project dialog should look something like this. Once it"
+" does, click \"OK\" to create the project."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:39
+msgid "Modify hosting"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:41
+msgid ""
+"Don't forget to modify the hosting (`as described here <0_overview.html"
+"#modify-hosting>`_) to run on port 5000. This is important so the "
+"existing clients and api projects will continue to work."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:45
+msgid "Add IdentityServer packages"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:47
+msgid ""
+"Add the ``IdentityServer4.AspNetIdentity`` NuGet package. This depends on"
+" the ``IdentityServer4`` package, so that's automatically added as a "
+"transitive dependency."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:54
+msgid "Scopes and Clients Configuration"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:56
+msgid ""
+"Despite this being a new project for IdentityServer, we still need the "
+"same scope and client configuration as the prior quickstarts. Copy the "
+"configuration class (in `Config.cs "
+"<https://github.com/IdentityServer/IdentityServer4.Samples/blob/release/Quickstarts/5_HybridFlowAuthenticationWithApiAccess/src/QuickstartIdentityServer/Config.cs>`_)"
+" you used for the previous quickstarts into this new project."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:59
+msgid ""
+"One change to the configuration that is necessary (for now) is to disable"
+" consent for the MVC client. We've not yet copied over the consent code "
+"from the prior IdentityServer project, so for now make this one "
+"modification to the MVC client and set ``RequireConsent=false``::"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:88
+msgid "Configure IdentityServer"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:90
+msgid ""
+"As before, IdentityServer needs to be configured in both "
+"``ConfigureServices`` and in ``Configure`` in `Startup.cs`."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:92
+msgid "**ConfigureServices**"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:94
+msgid ""
+"This shows both the template code generated for ASP.NET Identity, plus "
+"the additions needed for IdentityServer (at the end). In the previous "
+"quickstarts, the ``AddTestUsers`` extension method was used to register "
+"the users, but in this situation we replace that extension method with "
+"``AddAspNetIdentity`` to use the ASP.NET Identity users instead. The "
+"``AddAspNetIdentity`` extension method requires a generic parameter which"
+" is your ASP.NET Identity user type (the same one needed in the "
+"``AddIdentity`` method from the template)."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:124
+msgid ""
+"It's important when using ASP.NET Identity that IdentityServer be "
+"registered *after* ASP.NET Identity in the DI system because "
+"IdentityServer is overwriting some configuration from ASP.NET Identity."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:126
+msgid "**Configure**"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:128
+msgid ""
+"This shows both the template code generated for ASP.NET Identity, plus "
+"the call to ``UseIdentityServer`` which replaces the call to "
+"``UseAuthentication``."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:160
+msgid "Creating the user database"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:162
+msgid ""
+"Given that this is a new ASP.NET Identity project, you will need to "
+"create the database. You can do this by running a command prompt from the"
+" project directory and running ``dotnet ef database update -c "
+"ApplicationDbContext``, like this:"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:168
+msgid "Creating a user"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:169
+msgid ""
+"At this point, you should be able to run the project and create/register "
+"a user in the database. Launch the application, and from the home page "
+"click the \"Register\" link:"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:174
+msgid "And on the register page create a new user account:"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:178
+msgid ""
+"Now that you have a user account, you should be able to login, use the "
+"clients, and invoke the APIs."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:181
+msgid "Logging in with the MVC client"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:183
+msgid ""
+"Launch the MVC client application, and you should be able to click the "
+"\"Secure\" link to get logged in."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:187
+msgid ""
+"You should be redirected to the ASP.NET Identity login page. Login with "
+"your newly created user:"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:192
+msgid ""
+"After login you should skip the consent page (given the change we made "
+"above), and be immediately redirected back to the MVC client application "
+"where your user's claims should be listed."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:196
+msgid ""
+"You should also be able to click \"Call API using application identity\" "
+"to invoke the API on behalf of the user:"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:200
+msgid "And now you've logged in with a user from ASP.NET Identity."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:203
+msgid "What's Next?"
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:205
+msgid ""
+"The prior quickstart project for IdentityServer provided a consent page, "
+"an error page, and a logout page. The code for these missing pieces can "
+"simply be copied over from the prior quickstart project into this one. "
+"Once you've done that, then you can finally delete/remove the old "
+"IdentityServer project. Also, once you've done this don't forget to re-"
+"enable the ``RequireConsent=true`` flag on the MVC client configuration."
+msgstr ""
+
+#: ../../quickstarts/6_aspnet_identity.rst:210
+msgid ""
+"The `sample code for this quickstart "
+"<https://github.com/IdentityServer/IdentityServer4.Samples/tree/dev/Quickstarts/6_AspNetIdentity>`_"
+" has already done these steps for you, so you can get started quickly "
+"with all of these features. Enjoy!"
+msgstr ""
+

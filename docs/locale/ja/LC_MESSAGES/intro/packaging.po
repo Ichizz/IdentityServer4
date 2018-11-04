@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/packaging.rst:2
+msgid "Packaging and Builds"
+msgstr ""
+
+#: ../../intro/packaging.rst:4
+msgid "IdentityServer consists of a number of nuget packages."
+msgstr ""
+
+#: ../../intro/packaging.rst:7
+msgid "IdentityServer4"
+msgstr ""
+
+#: ../../intro/packaging.rst:8
+msgid ""
+"`nuget <https://www.nuget.org/packages/IdentityServer4/>`_ | `github "
+"<https://github.com/identityserver/IdentityServer4>`_"
+msgstr ""
+
+#: ../../intro/packaging.rst:10
+msgid ""
+"Contains the core IdentityServer object model, services and middleware. "
+"Only contains support for in-memory configuration and user stores - but "
+"you can plug-in support for other stores via the configuration. This is "
+"what the other repos and packages are about."
+msgstr ""
+
+#: ../../intro/packaging.rst:14
+msgid "Quickstart UI"
+msgstr ""
+
+#: ../../intro/packaging.rst:15
+msgid ""
+"`github "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI>`_"
+msgstr ""
+
+#: ../../intro/packaging.rst:17
+msgid "Contains a simple starter UI including login, logout and consent pages."
+msgstr ""
+
+#: ../../intro/packaging.rst:20
+msgid "Access token validation handler"
+msgstr ""
+
+#: ../../intro/packaging.rst:21
+msgid ""
+"`nuget "
+"<https://www.nuget.org/packages/IdentityServer4.AccessTokenValidation>`_ "
+"| `github "
+"<https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation>`_"
+msgstr ""
+
+#: ../../intro/packaging.rst:23
+msgid ""
+"ASP.NET Core authentication handler for validating tokens in APIs. The "
+"handler allows supporting both JWT and reference tokens in the same API."
+msgstr ""
+
+#: ../../intro/packaging.rst:26
+msgid "ASP.NET Core Identity"
+msgstr ""
+
+#: ../../intro/packaging.rst:27
+msgid ""
+"`nuget <https://www.nuget.org/packages/IdentityServer4.AspNetIdentity>`_ "
+"| `github "
+"<https://github.com/IdentityServer/IdentityServer4.AspNetIdentity>`_"
+msgstr ""
+
+#: ../../intro/packaging.rst:29
+msgid ""
+"ASP.NET Core Identity integration package for IdentityServer. This "
+"package provides a simple configuration API to use the ASP.NET Identity "
+"management library for your IdentityServer users."
+msgstr ""
+
+#: ../../intro/packaging.rst:33
+msgid "EntityFramework Core"
+msgstr ""
+
+#: ../../intro/packaging.rst:34
+msgid ""
+"`nuget <https://www.nuget.org/packages/IdentityServer4.EntityFramework>`_"
+" | `github "
+"<https://github.com/IdentityServer/IdentityServer4.EntityFramework>`_"
+msgstr ""
+
+#: ../../intro/packaging.rst:36
+msgid ""
+"EntityFramework Core storage implementation for IdentityServer. This "
+"package provides an EntityFramework implementation for the configuration "
+"and operational stores in IdentityServer."
+msgstr ""
+
+#: ../../intro/packaging.rst:40
+msgid "Dev builds"
+msgstr ""
+
+#: ../../intro/packaging.rst:41
+msgid ""
+"In addition we publish dev/interim builds to MyGet. Add the following "
+"feed to your Visual Studio if you want to give them a try:"
+msgstr ""
+
+#: ../../intro/packaging.rst:44
+msgid "https://www.myget.org/F/identity/"
+msgstr ""
+

@@ -1,4 +1,5 @@
 .. _refEvents:
+
 Events
 ======
 While logging is more low level "printf" style - events represent higher level information about certain operations in IdentityServer.

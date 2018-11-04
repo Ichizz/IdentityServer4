@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quickstarts/community.rst:2
+msgid "Community quickstarts & samples"
+msgstr ""
+
+#: ../../quickstarts/community.rst:3
+msgid ""
+"These samples are not maintained by the IdentityServer organization. The "
+"IdentityServer organization happily links to community samples, but can't"
+" make any guarantees about the samples. Please contact the authors "
+"directly."
+msgstr ""
+
+#: ../../quickstarts/community.rst:8
+msgid "Various ASP.NET Core security samples"
+msgstr ""
+
+#: ../../quickstarts/community.rst:9
+msgid "https://github.com/leastprivilege/AspNetCoreSecuritySamples"
+msgstr ""
+
+#: ../../quickstarts/community.rst:12
+msgid "IdentityServer4 EF and ASP.NET Identity"
+msgstr ""
+
+#: ../../quickstarts/community.rst:13
+msgid ""
+"`This "
+"<https://github.com/IdentityServer/IdentityServer4.Samples/tree/release/Quickstarts/Combined_AspNetIdentity_and_EntityFrameworkStorage>`_"
+" sample combines the EF and ASP.NET Identity quickstarts (#6 and #8)."
+msgstr ""
+
+#: ../../quickstarts/community.rst:16
+msgid "Co-hosting IdentityServer4 and a Web API"
+msgstr ""
+
+#: ../../quickstarts/community.rst:17
+msgid ""
+"This sample shows how to host an API in the same host as the "
+"IdentityServer that is protecting the API."
+msgstr ""
+
+#: ../../quickstarts/community.rst:19
+msgid "https://github.com/brockallen/IdentityServerAndApi"
+msgstr ""
+
+#: ../../quickstarts/community.rst:22
+msgid "IdentityServer4 samples for MongoDB"
+msgstr ""
+
+#: ../../quickstarts/community.rst:23
+msgid ""
+"IdentityServer4-mongo: Similar to Quickstart #8 EntityFramework "
+"configuration but using MongoDB for the configuration data."
+msgstr ""
+
+#: ../../quickstarts/community.rst:24
+msgid ""
+"IdentityServer4-mongo-AspIdentity: More elaborated sample based on uses "
+"ASP.NET Identity for identity management that uses using MongoDB for the "
+"configuration data"
+msgstr ""
+
+#: ../../quickstarts/community.rst:26
+msgid "https://github.com/souzartn/IdentityServer4.Samples.Mongo"
+msgstr ""
+
+#: ../../quickstarts/community.rst:29
+msgid "Exchanging external tokens from Facebook, Google and Twitter"
+msgstr ""
+
+#: ../../quickstarts/community.rst:30
+msgid ""
+"Shows how to exchange an external authentication token to an identity "
+"server acesss token using an extension grant"
+msgstr ""
+
+#: ../../quickstarts/community.rst:32
+msgid "https://github.com/waqaskhan540/IdentityServerExternalAuth"
+msgstr ""
+
+#: ../../quickstarts/community.rst:35
+msgid "ASP.NET Core MVC RazorPages template for IdentityServer4 Quickstart UI"
+msgstr ""
+
+#: ../../quickstarts/community.rst:37
+msgid ""
+"`Razor Pages based QuickStart sample "
+"<https://github.com/IdentityServer4Contrib/IdentityServer4.Contrib.Templates.RazorPages>`_"
+" by `Martin Fletcher <https://github.com/martinfletcher>`_."
+msgstr ""
+
+#: ../../quickstarts/community.rst:41
+msgid ".NET Core and ASP.NET Core \"Platform\" scenario"
+msgstr ""
+
+#: ../../quickstarts/community.rst:42
+msgid ""
+"Shows an interaction of trusted \"internal\" applications and "
+"\"external\" applications with .NET Core 2.0 and ASP.NET Core 2.0 "
+"applications"
+msgstr ""
+
+#: ../../quickstarts/community.rst:44
+msgid "https://github.com/BenjaminAbt/Samples.AspNetCore-IdentityServer4"
+msgstr ""
+
+#: ../../quickstarts/community.rst:48
+msgid "Securing a Node API with tokens from IdentityServer4 using JWKS"
+msgstr ""
+
+#: ../../quickstarts/community.rst:49
+msgid ""
+"Shows how to secure a Node (Express) API using the JWKS endpoint and "
+"RS256 algorithm from IdentityServer4."
+msgstr ""
+
+#: ../../quickstarts/community.rst:50
+msgid ""
+"Provides an alternative to the NodeJsApi sample from "
+"IdentityServer4.Samples using higher quality - production ready modules."
+msgstr ""
+
+#: ../../quickstarts/community.rst:52
+msgid "https://github.com/lyphtec/idsvr4-node-jwks"
+msgstr ""
+

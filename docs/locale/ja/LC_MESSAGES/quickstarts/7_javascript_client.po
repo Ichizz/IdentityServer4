@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quickstarts/7_javascript_client.rst:4
+msgid "Adding a JavaScript client"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:6
+msgid ""
+"This quickstart will show how to build a JavaScript client application. "
+"The user will login to IdentityServer, invoke the web API with an access "
+"token issued by IdentityServer, and logout of IdentityServer."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:10
+msgid "New Project for the JavaScript client"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:12
+msgid ""
+"Create a new project for the JavaScript application. It can simply be an "
+"empty web project, or an empty ASP.NET Core application. This quickstart "
+"will use an empty ASP.NET Core application."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:16
+msgid "Create a new ASP.NET Core web application:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:20
+msgid "Choose the \"Empty\" template:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:24
+msgid "Click the \"OK\" button to create the project."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:27
+msgid "Modify hosting"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:29
+msgid ""
+"Modify the hosting (`as described here <0_overview.html#modify-"
+"hosting>`_) to run on port 5003."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:32
+msgid "Add the static file middleware"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:34
+msgid ""
+"Given that this project is designed to mainly run client-side, we need "
+"ASP.NET Core to serve up the static HTML and JavaScript files that will "
+"make up our application. The static file middleware is designed to do "
+"this."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:37
+msgid ""
+"Register the static file middleware in `Startup.cs` in the ``Configure`` "
+"method::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:45
+msgid ""
+"This middleware will now serve up static files from the application's "
+"`~/wwwroot` folder. This is where we will put our HTML and JavaScript "
+"files."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:49
+msgid "Reference oidc-client"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:51
+msgid ""
+"In the MVC project, we used a library to handle the OpenID Connect "
+"protocol. In this project we need a similar library, except one that "
+"works in JavaScript and is designed to run in the browser. The `oidc-"
+"client library <https://github.com/IdentityModel/oidc-client-js>`_ is one"
+" such library. It is available via `NPM <https://github.com/IdentityModel"
+"/oidc-client-js>`_, `Bower <https://bower.io/search/?q=oidc-client>`_,  "
+"as well as a `direct download <https://github.com/IdentityModel/oidc-"
+"client-js/tree/master/dist>`_ from github."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:56
+msgid "**NPM**"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:58
+msgid "If you want to use NPM to download `oidc-client`, then follow these steps:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:60
+msgid "Add a new NPM package file to your project and name it `package.json`:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:64
+msgid "In `package.json` add a ``dependency`` to ``oidc-client``::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:70
+msgid ""
+"Once you have saved this file, Visual Studio should automatically restore"
+" these packages into a folder called `node_modules`:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:74
+msgid ""
+"Locate the file called `oidc-client.js` in the `~/node_modules/oidc-"
+"client/dist` folder and copy it into your application's `~/wwwroot` "
+"folder. There are more sophisticated ways of copying your NPM packages "
+"into `~/wwwroot`, but those techniques are beyond the scope of this "
+"quickstart."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:78
+msgid "Add your HTML and JavaScript files"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:80
+msgid ""
+"Next is to add your HTML and JavaScript files to `~/wwwroot`. We will "
+"have two HTML files and one application-specific JavaScript file (in "
+"addition to the `oidc-client.js` library). In `~/wwwroot`, add a HTML "
+"file named `index.html` and `callback.html`, and add a JavaScript file "
+"called `app.js`."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:84
+msgid "**index.html**"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:86
+msgid ""
+"This will be the main page in our application. It will simply contain the"
+" HTML for the buttons for the user to login, logout, and call the web "
+"API. It will also contain the ``<script>`` tags to include our two "
+"JavaScript files. It will also contain a ``<pre>`` used for showing "
+"messages to the user."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:91
+msgid "It should look like this::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:111
+msgid "**app.js**"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:113
+msgid ""
+"This will contain the main code for our application. The first thing is "
+"to add a helper function to log messages to the ``<pre>``::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:130
+msgid "Next, add code to register \"click\" event handlers to the three buttons::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:136
+msgid ""
+"Next, we can use the ``UserManager`` class in the `oidc-client` library "
+"to manage the OpenID Connect protocol. It requires similar configuration "
+"that was necessary in the MVC Client (albeit with different values). Add "
+"this code to configure and instantiate the ``UserManager``::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:150
+msgid ""
+"Next, the ``UserManager`` provides a ``getUser`` API to know if the user "
+"is logged into the JavaScript application. It uses a JavaScript "
+"``Promise`` to return the results asynchronously. The returned ``User`` "
+"object has a ``profile`` property which contains the claims for the user."
+" Add this code to detect if the user is logged into the JavaScript "
+"application::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:164
+msgid ""
+"Next, we want to implement the ``login``, ``api``, and ``logout`` "
+"functions. The ``UserManager`` provides a ``signinRedirect`` to log the "
+"user in, and a ``signoutRedirect`` to log the user out. The ``User`` "
+"object that we obtained in the above code also has an ``access_token`` "
+"property which can be used to authenticate with a web API. The "
+"``access_token`` will be passed to the web API via the `Authorization` "
+"header with the `Bearer` scheme. Add this code to implement those three "
+"functions in our application::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:192
+msgid ""
+"See: `Protecting an API using Client Credentials "
+"<http://docs.identityserver.io/en/release/quickstarts/1_client_credentials.html>`"
+" for information on how to create the api used in the code above."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:194
+msgid "**callback.html**"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:196
+msgid ""
+"This HTML file is the designated ``redirect_uri`` page once the user has "
+"logged into IdentityServer. It will complete the OpenID Connect protocol "
+"sign-in handshake with IdentityServer. The code for this is all provided "
+"by the ``UserManager`` class we used earlier. Once the sign-in is "
+"complete, we can then redirect the user back to the main `index.html` "
+"page. Add this code to complete the signin process::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:221
+msgid "Add a client registration to IdentityServer for the JavaScript client"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:223
+msgid ""
+"Now that the client application is ready to go, we need to define a "
+"configuration entry in IdentityServer for this new JavaScript client. In "
+"the IdentityServer project locate the client configuration (in "
+"`Config.cs`). Add a new `Client` to the list for our new JavaScript "
+"application. It should have the configuration listed below::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:249
+msgid "Allowing Ajax calls to the Web API with CORS"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:251
+msgid ""
+"One last bit of configuration that is necessary is to configure CORS in "
+"the web API project. This will allow Ajax calls to be made from "
+"`http://localhost:5003` to `http://localhost:5001`."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:254
+msgid "**Configure CORS**"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:256
+msgid ""
+"Add the CORS services to the dependency injection system in "
+"``ConfigureServices`` in `Startup.cs`::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:285
+msgid "Add the CORS middleware to the pipeline in ``Configure``::"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:297
+msgid "Run the JavaScript application"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:299
+msgid "Now you should be able to run the JavaScript client application:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:303
+msgid ""
+"Click the \"Login\" button to sign the user in. Once the user is returned"
+" back to the JavaScript application, you should see their profile "
+"information:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:308
+msgid "And click the \"API\" button to invoke the web API:"
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:312
+msgid "And finally click \"Logout\" to sign the user out."
+msgstr ""
+
+#: ../../quickstarts/7_javascript_client.rst:316
+msgid ""
+"You now have the start of a JavaScript client application that uses "
+"IdentityServer for sign-in, sign-out, and authenticating calls to web "
+"APIs."
+msgstr ""
+

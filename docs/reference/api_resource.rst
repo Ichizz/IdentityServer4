@@ -1,4 +1,5 @@
 .. _refApiResource:
+
 API Resource
 =================
 This class model an API resource.

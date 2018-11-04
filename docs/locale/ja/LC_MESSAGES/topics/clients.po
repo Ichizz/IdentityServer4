@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/clients.rst:2
+msgid "Defining Clients"
+msgstr ""
+
+#: ../../topics/clients.rst:4
+msgid ""
+"Clients represent applications that can request tokens from your "
+"identityserver."
+msgstr ""
+
+#: ../../topics/clients.rst:6
+msgid ""
+"The details vary, but you typically define the following common settings "
+"for a client:"
+msgstr ""
+
+#: ../../topics/clients.rst:8
+msgid "a unique client ID"
+msgstr ""
+
+#: ../../topics/clients.rst:9
+msgid "a secret if needed"
+msgstr ""
+
+#: ../../topics/clients.rst:10
+msgid "the allowed interactions with the token service (called a grant type)"
+msgstr ""
+
+#: ../../topics/clients.rst:11
+msgid ""
+"a network location where identity and/or access token gets sent to "
+"(called a redirect URI)"
+msgstr ""
+
+#: ../../topics/clients.rst:12
+msgid "a list of scopes (aka resources) the client is allowed to access"
+msgstr ""
+
+#: ../../topics/clients.rst:14
+msgid ""
+"At runtime, clients are retrieved via an implementation of the "
+"``IClientStore``. This allows loading them from arbitrary data sources "
+"like config files or databases. For this document we will use the in-"
+"memory version of the client store. You can wire up the in-memory store "
+"in ``ConfigureServices`` via the ``AddInMemoryClients`` extensions "
+"method."
+msgstr ""
+
+#: ../../topics/clients.rst:17
+msgid "Defining a client for server to server communication"
+msgstr ""
+
+#: ../../topics/clients.rst:18
+msgid ""
+"In this scenario no interactive user is present - a service (aka client) "
+"wants to communicate with an API (aka scope)::"
+msgstr ""
+
+#: ../../topics/clients.rst:39
+msgid ""
+"Defining browser-based JavaScript client (e.g. SPA) for user "
+"authentication and delegated access and API"
+msgstr ""
+
+#: ../../topics/clients.rst:40
+msgid ""
+"This client uses the so called implicit flow to request an identity and "
+"access token from JavaScript::"
+msgstr ""
+
+#: ../../topics/clients.rst:68
+msgid ""
+"Defining a server-side web application (e.g. MVC) for use authentication "
+"and delegated API access"
+msgstr ""
+
+#: ../../topics/clients.rst:69
+msgid ""
+"Interactive server side (or native desktop/mobile) applications use the "
+"hybrid flow. This flow gives you the best security because the access "
+"tokens are transmitted via back-channel calls only (and gives you access "
+"to refresh tokens)::"
+msgstr ""
+

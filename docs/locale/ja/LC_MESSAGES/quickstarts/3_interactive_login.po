@@ -1,0 +1,355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quickstarts/3_interactive_login.rst:4
+msgid "Adding User Authentication with OpenID Connect"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:6
+msgid ""
+"In this quickstart we want to add support for interactive user "
+"authentication via the OpenID Connect protocol to our IdentityServer."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:9
+msgid ""
+"Once that is in place, we will create an MVC application that will use "
+"IdentityServer for authentication."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:13
+msgid "Adding the UI"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:14
+msgid ""
+"All the protocol support needed for OpenID Connect is already built into "
+"IdentityServer. You need to provide the necessary UI parts for login, "
+"logout, consent and error."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:17
+msgid ""
+"While the look & feel as well as the exact workflows will probably always"
+" differ in every IdentityServer implementation, we provide an MVC-based "
+"sample UI that you can use as a starting point."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:20
+msgid ""
+"This UI can be found in the `Quickstart UI repo "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI/tree/release>`_."
+" You can either clone or download this repo and drop the controllers, "
+"views, models and CSS into your IdentityServer web application."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:23
+msgid ""
+"Alternatively you can run this command from the command line in the same "
+"directory as your IdentityServer web application to automate the "
+"download::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:29
+msgid "For Unix/Linux::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:33
+msgid ""
+"Once you have added the MVC UI assets, you will also need to add MVC to "
+"the hosting application, both in the DI system and in the pipeline. Add "
+"MVC to ``ConfigureServices`` with the ``AddMvc`` extension method::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:48
+msgid ""
+"Add MVC as the last middleware in the pipeline in ``Configure`` with the "
+"``UseMvc`` extension method::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:63
+msgid ""
+"See the `readme "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI/blob/release/README.md>`_"
+" for the quickstart UI for more information."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:65
+msgid ""
+"The ``release`` branch of the UI repo has the UI that matches the latest "
+"stable release. The ``dev`` branch goes along with the current dev build "
+"of IdentityServer4. If you are looking for a specific version of the UI -"
+" check the tags."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:67
+msgid ""
+"Spend some time inspecting the controllers and models, the better you "
+"understand them, the easier it will be to make future modifications. Most"
+" of the code lives in the \"Quickstart\" folder using a \"feature "
+"folder\" style. If this style doesn't suit you, feel free to organize the"
+" code in any way you want."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:73
+msgid "Creating an MVC client"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:74
+msgid ""
+"Next you will add an MVC application to your solution. Use the ASP.NET "
+"Core \"Web Application\" (i.e. MVC) template for that. Don't configure "
+"the \"Authentication\" settings in the wizard -- you will do this "
+"manually in this quickstart. Once you've created the project, configure "
+"the application to use port 5002 (see the overview part for instructions "
+"on how to do that)."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:79
+msgid ""
+"To add support for OpenID Connect authentication to the MVC application, "
+"add the following to ``ConfigureServices`` in ``Startup``::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:105
+msgid ""
+"``AddAuthentication`` adds the authentication services to DI. We are "
+"using a cookie as the primary means to authenticate a user (via "
+"``\"Cookies\"`` as the ``DefaultScheme``). We set the "
+"``DefaultChallengeScheme`` to ``\"oidc\"`` because when we need the user "
+"to login, we will be using the OpenID Connect scheme."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:109
+msgid "We then use ``AddCookie`` to add the handler that can process cookies."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:111
+msgid ""
+"Finally, ``AddOpenIdConnect`` is used to configure the handler that "
+"perform the OpenID Connect protocol. The ``Authority`` indicates that we "
+"are trusting IdentityServer. We then identify this client via the "
+"``ClientId``. ``SignInScheme`` is used to issue a cookie using the cookie"
+" handler once the OpenID Connect protocol is complete. And ``SaveTokens``"
+" is used to persist the tokens from IdentityServer in the cookie (as they"
+" will be needed later)."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:117
+msgid ""
+"As well, we've turned off the JWT claim type mapping to allow well-known "
+"claims (e.g. 'sub' and 'idp') to flow through unmolested::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:121
+msgid ""
+"And then to ensure the authentication services execute on each request, "
+"add ``UseAuthentication`` to ``Configure`` in ``Startup``::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:140
+msgid ""
+"The authentication middleware should be added before the MVC in the "
+"pipeline."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:142
+msgid ""
+"The last step is to trigger the authentication handshake. For that go to "
+"the home controller and add the ``[Authorize]`` on one of the actions. "
+"Also modify the view of that action to display the claims of the user, "
+"e.g.::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:154
+msgid ""
+"If you now navigate to that controller using the browser, a redirect "
+"attempt will be made to IdentityServer - this will result in an error "
+"because the MVC client is not registered yet."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:158
+msgid "Adding support for OpenID Connect Identity Scopes"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:159
+msgid ""
+"Similar to OAuth 2.0, OpenID Connect also uses the scopes concept. Again,"
+" scopes represent something you want to protect and that clients want to "
+"access. In contrast to OAuth, scopes in OIDC don't represent APIs, but "
+"identity data like user id, name or email address."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:164
+msgid ""
+"Add support for the standard ``openid`` (subject id) and ``profile`` "
+"(first name, last name etc..) scopes by adding a new helper (in "
+"``Config.cs``) to create a collection of ``IdentityResource`` objects::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:176
+msgid ""
+"All standard scopes and their corresponding claims can be found in the "
+"OpenID Connect `specification <https://openid.net/specs/openid-connect-"
+"core-1_0.html#ScopeClaims>`_"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:178
+msgid ""
+"You will then need to add these identity resources to your IdentityServer"
+" configuration in ``Startup.cs``. Use the "
+"``AddInMemoryIdentityResources`` extension method where you call "
+"``AddIdentityServer()``::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:195
+msgid "Adding a client for OpenID Connect implicit flow"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:196
+msgid ""
+"The last step is to add a new configuration entry for the MVC client to "
+"IdentityServer."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:198
+msgid ""
+"OpenID Connect-based clients are very similar to the OAuth 2.0 clients we"
+" added so far. But since the flows in OIDC are always interactive, we "
+"need to add some redirect URLs to our configuration."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:201
+msgid "Add the following to your clients configuration::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:232
+msgid "Testing the client"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:233
+msgid "Now finally everything should be in place for the new MVC client."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:235
+msgid ""
+"Trigger the authentication handshake by navigating to the protected "
+"controller action. You should see a redirect to the login page at "
+"IdentityServer."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:240
+msgid ""
+"After successful login, the user is presented with the consent screen. "
+"Here the user can decide if he wants to release his identity information "
+"to the client application."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:243
+msgid ""
+"Consent can be turned off on a per client basis using the "
+"``RequireConsent`` property on the client object."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:247
+msgid ""
+"..and finally the browser redirects back to the client application, which"
+" shows the claims of the user."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:252
+msgid ""
+"During development you might sometimes see an exception stating that the "
+"token could not be validated. This is due to the fact that the signing "
+"key material is created on the fly and kept in-memory only. This "
+"exception happens when the client and IdentityServer get out of sync. "
+"Simply repeat the operation at the client, the next time the metadata has"
+" caught up, and everything should work normal again."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:255
+msgid "Adding sign-out"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:256
+msgid "The very last step is to add sign-out to the MVC client."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:258
+msgid ""
+"With an authentication service like IdentityServer, it is not enough to "
+"clear the local application cookies. In addition you also need to make a "
+"roundtrip to IdentityServer to clear the central single sign-on session."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:261
+msgid ""
+"The exact protocol steps are implemented inside the OpenID Connect "
+"middleware, simply add the following code to some controller to trigger "
+"the sign-out::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:270
+msgid ""
+"This will clear the local cookie and then redirect to IdentityServer. "
+"IdentityServer will clear its cookies and then give the user a link to "
+"return back to the MVC application."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:274
+msgid "Further experiments"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:275
+msgid ""
+"As mentioned above, the OpenID Connect middleware asks for the *profile* "
+"scope by default. This scope also includes claims like *name* or "
+"*website*."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:278
+msgid ""
+"Let's add these claims to the user, so IdentityServer can put them into "
+"the identity token::"
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:311
+msgid ""
+"Next time you authenticate, your claims page will now show the additional"
+" claims."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:313
+msgid ""
+"Feel free to add more claims - and also more scopes. The ``Scope`` "
+"property on the OpenID Connect middleware is where you configure which "
+"scopes will be sent to IdentityServer during authentication."
+msgstr ""
+
+#: ../../quickstarts/3_interactive_login.rst:316
+msgid ""
+"It is also noteworthy, that the retrieval of claims for tokens is an "
+"extensibility point - ``IProfileService``. Since we are using "
+"``AddTestUsers``, the ``TestUserProfileService`` is used by default. You "
+"can inspect the source code `here "
+"<https://github.com/IdentityServer/IdentityServer4/blob/dev/src/Test/TestUserProfileService.cs>`_"
+" to see how it works."
+msgstr ""
+

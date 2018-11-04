@@ -51,7 +51,7 @@ For the following configuration you need the ``Serilog.AspNetCore`` and ``Serilo
     }
     
 .NET Core 1.0, 1.1
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 For the following configuration you need the ``Serilog.Extensions.Logging`` and ``Serilog.Sinks.Console`` packages::
 
     public class Program

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-03 19:16+0900\n"
+"PO-Revision-Date: 2018-11-04 15:51+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.2\n"
+
+#: ../../index.rst:2
+msgid "Welcome to IdentityServer4"
+msgstr "ようこそ! IdentityServer4"
+
+#: ../../index.rst:7
+msgid ""
+"IdentityServer4 is an OpenID Connect and OAuth 2.0 framework for ASP.NET "
+"Core 2."
+msgstr ""
+"IdentityServer4は、ASP.NET Core 2用のOpenID ConnectおよびOAuth 2.0フレー"
+"ムワークです。"
+
+#: ../../index.rst:9
+msgid "It enables the following features in your applications:"
+msgstr "これにより、アプリケーションで次の機能が有効になります。:"
+
+#: ../../index.rst:11
+msgid ""
+"**Authentication as a Service:** Centralized login logic and workflow "
+"for all of your applications (web, native, mobile, services). "
+"IdentityServer is an officially `certified <https://openid.net/"
+"certification/>`_ implementation of OpenID Connect."
+msgstr ""
+"**Authentication as a Service:** すべてのアプリケーション (web、ネイティ"
+"ブ、モバイル、サービス) のための集中ログインロジックとワークフロー。"
+"IdentityServer は、正式に `認定された <https://openid.net/certification/"
+">`_ OpenID Connect の実装です。"
+
+#: ../../index.rst:13
+msgid ""
+"**Single Sign-on / Sign-out:** Single sign-on (and out) over multiple "
+"application types."
+msgstr ""
+"**Single Sign-on / Sign-out:** 複数のアプリケーションタイプに対してシング"
+"ルサインオン (およびシングルアウト)。"
+
+#: ../../index.rst:15
+msgid ""
+"**Access Control for APIs:** Issue access tokens for APIs for various "
+"types of clients, e.g. server to server, web applications, SPAs and "
+"native/mobile apps."
+msgstr ""
+"**Access Control for APIs:** さまざまなタイプのクライアントのAPIのアクセ"
+"ストークンを発行します（例： サーバー間、Webアプリケーション、SPA、および"
+"ネイティブ/モバイルのアプリ。"
+
+#: ../../index.rst:17
+msgid ""
+"**Federation Gateway:** Support for external identity providers like "
+"Azure Active Directory, Google, Facebook etc. This shields your "
+"applications from the details of how to connect to these external "
+"providers."
+msgstr ""
+"**Federation Gateway:** Azure Active Directory、Google、Facebookなどの外"
+"部IDプロバイダをサポートしているため、これらの外部プロバイダへの接続方法"
+"の詳細からアプリケーションを保護することができます。"
+
+#: ../../index.rst:19
+msgid ""
+"**Focus on Customization:** The most important part - many aspects of "
+"IdentityServer can be customized to fit **your** needs. Since "
+"IdentityServer is a framework and not a boxed product or a SaaS, you can "
+"write code to adapt the system the way it makes sense for your scenarios."
+msgstr ""
+"**Focus on Customization:** 最も重要な部分 - IdentityServerの多くの側面"
+"は、 **お客様** のニーズに合わせてカスタマイズできます。 IdentityServerは"
+"フレームワークであり、箱入りの製品やSaaSではないので、シナリオに合った方"
+"法でシステムを適応させるためのコードを書くことができます。"
+
+#: ../../index.rst:21
+msgid ""
+"**Mature Open Source:** IdentityServer uses the permissive `Apache 2 "
+"<https://www.apache.org/licenses/LICENSE-2.0>`_ license that allows "
+"building commercial products on top of it. It is also part of the `.NET "
+"Foundation <https://dotnetfoundation.org/>`_ which provides governance "
+"and legal backing."
+msgstr ""
+"**Mature Open Source:** IdentityServerは商用製品の構築を可能にする許可的"
+"な `Apache 2 <https://www.apache.org/licenses/LICENSE-2.0>`_ ライセンスを"
+"使用しています。 ガバナンスと法的支援を提供する `.NET Foundation "
+"<https://dotnetfoundation.org/>`_ の一部です。"
+
+#: ../../index.rst:23
+msgid ""
+"**Free and Commercial Support:** If you need help building or running "
+"your identity platform, :ref:`let us know <refSupport>`. There are "
+"several ways we can help you out."
+msgstr ""
+"**Free and Commercial Support:** Identity platformの構築や実行に役立つ必"
+"要がある場合は、:ref:`当社にご連絡ください <refSupport>` 。 私たちがあな"
+"たを助けるいくつかの方法があります。"

@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/resources.rst:4
+msgid "Defining Resources"
+msgstr ""
+
+#: ../../topics/resources.rst:6
+msgid ""
+"The first thing you will typically define in your system are the "
+"resources that you want to protect. That could be identity information of"
+" your users, like profile data or email addresses, or access to APIs."
+msgstr ""
+
+#: ../../topics/resources.rst:9
+msgid ""
+"You can define resources using a C# object model - or load them from a "
+"data store. An implementation of ``IResourceStore`` deals with these low-"
+"level details. For this document we are using the in-memory "
+"implementation."
+msgstr ""
+
+#: ../../topics/resources.rst:12
+msgid "Defining identity resources"
+msgstr ""
+
+#: ../../topics/resources.rst:13
+msgid ""
+"Identity resources are data like user ID, name, or email address of a "
+"user. An identity resource has a unique name, and you can assign "
+"arbitrary claim types to it. These claims will then be included in the "
+"identity token for the user. The client will use the ``scope`` parameter "
+"to request access to an identity resource."
+msgstr ""
+
+#: ../../topics/resources.rst:17
+msgid ""
+"The OpenID Connect specification specifies a couple of `standard "
+"<https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims>`_ "
+"identity resources. The minimum requirement is, that you provide support "
+"for emitting a unique ID for your users - also called the subject id. "
+"This is done by exposing the standard identity resource called "
+"``openid``::"
+msgstr ""
+
+#: ../../topics/resources.rst:29
+msgid ""
+"The `IdentityResources` class supports all scopes defined in the "
+"specification (openid, email, profile, telephone, and address). If you "
+"want to support them all, you can add them to your list of supported "
+"identity resources::"
+msgstr ""
+
+#: ../../topics/resources.rst:45
+msgid "Defining custom identity resources"
+msgstr ""
+
+#: ../../topics/resources.rst:46
+msgid ""
+"You can also define custom identity resources. Create a new "
+"`IdentityResource` class, give it a name and optionally a display name "
+"and description and define which user claims should be included in the "
+"identity token when this resource gets requested::"
+msgstr ""
+
+#: ../../topics/resources.rst:64
+msgid ""
+"See the :ref:`reference <refIdentityResource>` section for more "
+"information on identity resource settings."
+msgstr ""
+
+#: ../../topics/resources.rst:67
+msgid "Defining API resources"
+msgstr ""
+
+#: ../../topics/resources.rst:68
+msgid ""
+"To allow clients to request access tokens for APIs, you need to define "
+"API resources, e.g.::"
+msgstr ""
+
+#: ../../topics/resources.rst:70
+msgid ""
+"To get access tokens for APIs, you also need to register them as a scope."
+" This time the scope type is of type `Resource`::"
+msgstr ""
+
+#: ../../topics/resources.rst:111
+msgid ""
+"See the :ref:`reference <refApiResource>` section for more information on"
+" API resource settings."
+msgstr ""
+
+#: ../../topics/resources.rst:113
+msgid ""
+"The user claims defined by resources are loaded by the "
+":ref:`IProfileService <refProfileService>` extensibility point."
+msgstr ""
+

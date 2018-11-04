@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/add_protocols.rst:2
+msgid "Adding new Protocols"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:4
+msgid ""
+"IdentityServer4 allows adding support for other protocols besides the "
+"built-in support for OpenID Connect and OAuth 2.0."
+msgstr ""
+
+#: ../../topics/add_protocols.rst:7
+msgid ""
+"You can add those additional protocol endpoints either as middleware or "
+"using e.g. MVC controllers. In both cases you have access to the ASP.NET "
+"Core DI system which allows re-using our internal services like access to"
+" client definitions or key material."
+msgstr ""
+
+#: ../../topics/add_protocols.rst:11
+msgid ""
+"A sample for adding WS-Federation support can be found `here "
+"<https://github.com/IdentityServer/IdentityServer4.WsFederation>`_."
+msgstr ""
+
+#: ../../topics/add_protocols.rst:14
+msgid "Typical authentication workflow"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:15
+msgid "An authentication request typically works like this:"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:17
+msgid "authentication request arrives at protocol endpoint"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:18
+msgid "protocol endpoint does input validation"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:22
+msgid ""
+"redirection to login page with a return URL set back to protocol endpoint"
+" (if user is anonymous)"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:20
+msgid ""
+"access to current request details via the "
+"``IIdentityServerInteractionService``"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:21
+msgid ""
+"authentication of user (either locally or via external authentication "
+"middleware)"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:22
+msgid "signing in the user"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:23
+msgid "redirect back to protocol endpoint"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:24
+msgid "creation of protocol response (token creation and redirect back to client)"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:27
+msgid "Useful IdentityServer services"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:28
+msgid ""
+"To achieve the above workflow, some interaction points with "
+"IdentityServer are needed."
+msgstr ""
+
+#: ../../topics/add_protocols.rst:30
+msgid "**Access to configuration and redirecting to the login page**"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:32
+msgid ""
+"You can get access to the IdentityServer configuration by injecting the "
+"``IdentityServerOptions`` class into your code. This, e.g. has the "
+"configured path to the login page::"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:43
+msgid "**Interaction between the login page and current protocol request**"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:45
+msgid ""
+"The ``IIdentityServerInteractionService`` supports turning a protocol "
+"return URL into a parsed and validated context object::"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:50
+msgid ""
+"By default the interaction service only understands OpenID Connect "
+"protocol messages. To extend support, you can write your own "
+"``IReturnUrlParser``::"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:59
+msgid "..and then register the parser in DI::"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:63
+msgid ""
+"This allows the login page to get to information like the client "
+"configuration and other protocol parameters."
+msgstr ""
+
+#: ../../topics/add_protocols.rst:66
+msgid ""
+"**Access to configuration and key material for creating the protocol "
+"response**"
+msgstr ""
+
+#: ../../topics/add_protocols.rst:68
+msgid ""
+"By injecting the ``IKeyMaterialService`` into your code, you get access "
+"to the configured signing credential and validation keys::"
+msgstr ""
+

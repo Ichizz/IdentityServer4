@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/reference_tokens.rst:2
+msgid "Reference Tokens"
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:3
+msgid "Access tokens can come in two flavours - self-contained or reference."
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:5
+msgid ""
+"A JWT token would be a self-contained access token - it's a protected "
+"data structure with claims and an expiration. Once an API has learned "
+"about the key material, it can validate self-contained tokens without "
+"needing to communicate with the issuer. This makes JWTs hard to revoke. "
+"They will stay valid until they expire."
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:9
+msgid ""
+"When using reference tokens - IdentityServer will store the contents of "
+"the token in a data store and will only issue a unique identifier for "
+"this token back to the client. The API receiving this reference must then"
+" open a back-channel communication to IdentityServer to validate the "
+"token."
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:14
+msgid "You can switch the token type of a client using the following setting::"
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:18
+msgid ""
+"IdentityServer provides an implementation of the OAuth 2.0 introspection "
+"specification which allows APIs to dereference the tokens. You can either"
+" use our dedicated `introspection middleware "
+"<https://github.com/IdentityModel/IdentityModel.AspNetCore.OAuth2Introspection>`_"
+" or use the `identity server authentication middleware "
+"<https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation>`_"
+" which can validate both JWTs and reference tokens."
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:22
+msgid ""
+"The introspection endpoint requires authentication - since the client of "
+"an introspection endpoint is an API, you configure the secret on the "
+"``ApiResource``::"
+msgstr ""
+
+#: ../../topics/reference_tokens.rst:29
+msgid ""
+"See :ref:`here <refProtectingApis>` for more information on how to "
+"configure the IdentityServer authentication middleware for APIs."
+msgstr ""
+

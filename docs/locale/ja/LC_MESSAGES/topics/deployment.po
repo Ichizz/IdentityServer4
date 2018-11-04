@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/deployment.rst:2
+msgid "Deployment"
+msgstr ""
+
+#: ../../topics/deployment.rst:3
+msgid ""
+"Your identity server is `just` a standard ASP.NET Core application "
+"including the IdentityServer middleware. Read the official Microsoft "
+"`documentation <https://docs.microsoft.com/en-"
+"us/aspnet/core/publishing>`_ on publishing and deployment first."
+msgstr ""
+
+#: ../../topics/deployment.rst:7
+msgid "Typical architecture"
+msgstr ""
+
+#: ../../topics/deployment.rst:8
+msgid ""
+"Typically you will design your IdentityServer deployment for high "
+"availability:"
+msgstr ""
+
+#: ../../topics/deployment.rst:12
+msgid ""
+"IdentityServer itself is stateless and does not require server affinity -"
+" but there is data that needs to be shared between the instances."
+msgstr ""
+
+#: ../../topics/deployment.rst:15
+msgid "Configuration data"
+msgstr ""
+
+#: ../../topics/deployment.rst:16
+msgid "This typically includes:"
+msgstr ""
+
+#: ../../topics/deployment.rst:18
+msgid "resources"
+msgstr ""
+
+#: ../../topics/deployment.rst:19
+msgid "clients"
+msgstr ""
+
+#: ../../topics/deployment.rst:20
+msgid ""
+"startup configuration, e.g. key material, external provider settings "
+"etc..."
+msgstr ""
+
+#: ../../topics/deployment.rst:22
+msgid ""
+"The way you store that data depends on your environment. In situations "
+"where configuration data rarely changes we recommend using the in-memory "
+"stores and code or configuration files."
+msgstr ""
+
+#: ../../topics/deployment.rst:24
+msgid ""
+"In highly dynamic environments (e.g. Saas) we recommend using a database "
+"or configuration service to load configuration dynamically."
+msgstr ""
+
+#: ../../topics/deployment.rst:26
+msgid ""
+"IdentityServer supports code configuration and configuration files (see "
+"`here <https://docs.microsoft.com/en-"
+"us/aspnet/core/fundamentals/configuration>`_) out of the box. For "
+"databases we provide support for `Entity Framework Core "
+"<https://github.com/IdentityServer/IdentityServer4.EntityFramework>`_ "
+"based databases."
+msgstr ""
+
+#: ../../topics/deployment.rst:29
+msgid ""
+"You can also build your own configuration stores by implementing "
+"``IResourceStore`` and ``IClientStore``."
+msgstr ""
+
+#: ../../topics/deployment.rst:32
+msgid "Key material"
+msgstr ""
+
+#: ../../topics/deployment.rst:34
+msgid ""
+"Another important piece of startup configuration is your key material, "
+"see :ref:`here <refCrypto>` for more details on key material and "
+"cryptography."
+msgstr ""
+
+#: ../../topics/deployment.rst:37
+msgid "Operational data"
+msgstr ""
+
+#: ../../topics/deployment.rst:38
+msgid ""
+"For certain operations, IdentityServer needs a persistence store to keep "
+"state, this includes:"
+msgstr ""
+
+#: ../../topics/deployment.rst:40
+msgid "issuing authorization codes"
+msgstr ""
+
+#: ../../topics/deployment.rst:41
+msgid "issuing reference and refresh tokens"
+msgstr ""
+
+#: ../../topics/deployment.rst:42
+msgid "storing consent"
+msgstr ""
+
+#: ../../topics/deployment.rst:44
+msgid ""
+"You can either use a traditional database for storing operational data, "
+"or use a cache with persistence features like Redis. The EF Core "
+"implementation mentioned above has also support for operational data."
+msgstr ""
+
+#: ../../topics/deployment.rst:47
+msgid ""
+"You can also implement support for your own custom storage mechanism by "
+"implementing ``IPersistedGrantStore`` - by default IdentityServer injects"
+" an in-memory version."
+msgstr ""
+
+#: ../../topics/deployment.rst:50
+msgid "ASP.NET Core data protection"
+msgstr ""
+
+#: ../../topics/deployment.rst:51
+msgid ""
+"ASP.NET Core itself needs shared key material for protecting sensitive "
+"data like cookies, state strings etc. See the official docs `here "
+"<https://docs.microsoft.com/en-us/aspnet/core/security/data-"
+"protection/>`_."
+msgstr ""
+
+#: ../../topics/deployment.rst:54
+msgid ""
+"You can either re-use one of the above persistence store or use something"
+" simple like a shared file if possible."
+msgstr ""
+

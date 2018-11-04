@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../misc/videos.rst:2
+msgid "Videos"
+msgstr ""
+
+#: ../../misc/videos.rst:4
+msgid "2018"
+msgstr ""
+
+#: ../../misc/videos.rst:5
+msgid ""
+"`17/01 [NDC London] -- IdentityServer v2 on ASP.NET Core v2 - an Update "
+"<https://vimeo.com/254635632>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:6
+msgid ""
+"`17/01 [NDC London] -- Implementing authorization for web apps and APIs "
+"(aka PolicyServer announcement) <https://vimeo.com/254635640>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:7
+msgid ""
+"`17/01 [DotNetRocks] -- IdentityServer and PolicyServer on DotNetRocks "
+"<https://dotnetrocks.com/?show=1515>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:10
+msgid "2017"
+msgstr ""
+
+#: ../../misc/videos.rst:11
+msgid ""
+"`14/09 [Microsoft Learning] -- Introduction to IdentityServer for ASP.NET"
+" Core - Brock Allen <https://mva.microsoft.com/en-US/training-courses"
+"/introduction-to-identityserver-for-aspnet-core-17945>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:12
+msgid ""
+"`14/06 [NDC Oslo] -- Implementing Authorization for Web Applications and "
+"APIs <https://vimeo.com/223982185>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:13
+msgid ""
+"`22/02 [NDC Mini Copenhagen] -- IdentityServer4: New & Improved for "
+"ASP.NET Core - Dominick Baier <https://vimeo.com/215352044>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:14
+msgid ""
+"`02/02 [DotNetRocks] -- IdentityServer4 on DotNetRocks "
+"<https://www.dotnetrocks.com/?show=1409>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:15
+msgid ""
+"`16/01 [NDC London] -- IdentityServer4: New and Improved for ASP.NET Core"
+" <https://vimeo.com/204141878>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:16
+msgid ""
+"`16/01 [NDC London] -- Building JavaScript and mobile/native Clients for "
+"Token-based Architectures <https://vimeo.com/205451987>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:19
+msgid "2016"
+msgstr ""
+
+#: ../../misc/videos.rst:20
+msgid ""
+"`The history of .NET identity and IdentityServer Channel9 interview "
+"<https://channel9.msdn.com/events/Seth-on-the-Road/NDC-London-2016"
+"/Dominick-Baier-on-Identity-Server>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:21
+msgid ""
+"`Authentication & secure API access for native & mobile Applications - "
+"Dominick Baier <https://vimeo.com/171942749>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:22
+msgid "`ASP.NET Identity 3 - Brock Allen <https://vimeo.com/172009501>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:23
+msgid ""
+"`Introduction to IdentityServer3 - Brock Allen "
+"<https://vimeo.com/154172925>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:26
+msgid "2015"
+msgstr ""
+
+#: ../../misc/videos.rst:27
+msgid ""
+"`Securing Web APIs – Patterns & Anti-Patterns - Dominick Baier "
+"<https://vimeo.com/131635255>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:28
+msgid ""
+"`Authentication and authorization in modern JavaScript web applications –"
+" how hard can it be? - Brock Allen <https://vimeo.com/131636653>`_"
+msgstr ""
+
+#: ../../misc/videos.rst:31
+msgid "2014"
+msgstr ""
+
+#: ../../misc/videos.rst:32
+msgid ""
+"`Unifying Authentication & Delegated API Access for Mobile, Web and the "
+"Desktop with OpenID Connect and OAuth 2 - Dominick Baier "
+"<https://vimeo.com/113604459>`_"
+msgstr ""
+

@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/identity_resource.rst:4
+msgid "Identity Resource"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:6
+msgid "This class models an identity resource."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:8
+msgid "``Enabled``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:9
+msgid ""
+"Indicates if this resource is enabled and can be requested. Defaults to "
+"true."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:10
+msgid "``Name``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:11
+msgid ""
+"The unique name of the identity resource. This is the value a client will"
+" use for the scope parameter in the authorize request."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:12
+msgid "``DisplayName``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:13
+#: ../../reference/identity_resource.rst:15
+msgid "This value will be used e.g. on the consent screen."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:14
+msgid "``Description``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:16
+msgid "``Required``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:17
+msgid ""
+"Specifies whether the user can de-select the scope on the consent screen "
+"(if the consent screen wants to implement such a feature). Defaults to "
+"false."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:18
+msgid "``Emphasize``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:19
+msgid ""
+"Specifies whether the consent screen will emphasize this scope (if the "
+"consent screen wants to implement such a feature). Use this setting for "
+"sensitive or important scopes. Defaults to false."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:20
+msgid "``ShowInDiscoveryDocument``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:21
+msgid ""
+"Specifies whether this scope is shown in the discovery document. Defaults"
+" to true."
+msgstr ""
+
+#: ../../reference/identity_resource.rst:22
+msgid "``UserClaims``"
+msgstr ""
+
+#: ../../reference/identity_resource.rst:23
+msgid ""
+"List of associated user claim types that should be included in the "
+"identity token."
+msgstr ""
+

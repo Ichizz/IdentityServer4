@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/events.rst:4
+msgid "Events"
+msgstr ""
+
+#: ../../topics/events.rst:5
+msgid ""
+"While logging is more low level \"printf\" style - events represent "
+"higher level information about certain operations in IdentityServer. "
+"Events are structured data and include event IDs, success/failure "
+"information, categories and details. This makes it easy to query and "
+"analyze them and extract useful information that can be used for further "
+"processing."
+msgstr ""
+
+#: ../../topics/events.rst:9
+msgid ""
+"Events work great with event stores like `ELK "
+"<https://www.elastic.co/webinars/introduction-elk-stack>`_, `Seq "
+"<https://getseq.net/>`_ or `Splunk <https://www.splunk.com/>`_."
+msgstr ""
+
+#: ../../topics/events.rst:12
+msgid "Emitting events"
+msgstr ""
+
+#: ../../topics/events.rst:13
+msgid ""
+"Events are not turned on by default - but can be globally configured in "
+"the ``ConfigureServices`` method, e.g.::"
+msgstr ""
+
+#: ../../topics/events.rst:22
+msgid ""
+"To emit an event use the ``IEventService`` from the DI container and call"
+" the ``RaiseAsync`` method, e.g.::"
+msgstr ""
+
+#: ../../topics/events.rst:39
+msgid "Custom sinks"
+msgstr ""
+
+#: ../../topics/events.rst:40
+msgid ""
+"Our default event sink will simply serialize the event class to JSON and "
+"forward it to the ASP.NET Core logging system. If you want to connect to "
+"a custom event store, implement the ``IEventSink`` interface and register"
+" it with DI."
+msgstr ""
+
+#: ../../topics/events.rst:43
+msgid "The following example uses `Seq <https://getseq.net/>`_ to emit events::"
+msgstr ""
+
+#: ../../topics/events.rst:78
+msgid ""
+"Add the ``Serilog.Sinks.Seq`` package to your host to make the above code"
+" work."
+msgstr ""
+
+#: ../../topics/events.rst:81
+msgid "Built-in events"
+msgstr ""
+
+#: ../../topics/events.rst:82
+msgid "The following events are defined in IdentityServer:"
+msgstr ""
+
+#: ../../topics/events.rst:84
+msgid "``ApiAuthenticationFailureEvent`` & ``ApiAuthenticationSuccessEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:85
+msgid ""
+"Gets raised for successful/failed API authentication at the introspection"
+" endpoint."
+msgstr ""
+
+#: ../../topics/events.rst:86
+msgid ""
+"``ClientAuthenticationSuccessEvent`` & "
+"``ClientAuthenticationFailureEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:87
+msgid ""
+"Gets raised for successful/failed client authentication at the token "
+"endpoint."
+msgstr ""
+
+#: ../../topics/events.rst:88
+msgid "``TokenIssuedSuccessEvent`` & ``TokenIssuedFailureEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:89
+msgid ""
+"Gets raised for successful/failed attempts to request identity tokens, "
+"access tokens, refresh tokens and authorization codes."
+msgstr ""
+
+#: ../../topics/events.rst:90
+msgid "``TokenIntrospectionSuccessEvent`` & ``TokenIntrospectionFailureEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:91
+msgid "Gets raised for successful token introspection requests."
+msgstr ""
+
+#: ../../topics/events.rst:92
+msgid "``TokenRevokedSuccessEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:93
+msgid "Gets raised for successful token revocation requests."
+msgstr ""
+
+#: ../../topics/events.rst:94
+msgid "``UserLoginSuccessEvent`` & ``UserLoginFailureEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:95
+msgid "Gets raised by the quickstart UI for successful/failed user logins."
+msgstr ""
+
+#: ../../topics/events.rst:96
+msgid "``UserLogoutSuccessEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:97
+msgid "Gets raised for successful logout requests."
+msgstr ""
+
+#: ../../topics/events.rst:98
+msgid "``ConsentGrantedEvent`` & ``ConsentDeniedEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:99
+msgid "Gets raised in the consent UI."
+msgstr ""
+
+#: ../../topics/events.rst:101
+msgid "``UnhandledExceptionEvent``"
+msgstr ""
+
+#: ../../topics/events.rst:101
+msgid "Gets raised for unhandled exceptions."
+msgstr ""
+
+#: ../../topics/events.rst:104
+msgid "Custom events"
+msgstr ""
+
+#: ../../topics/events.rst:105
+msgid "You can create your own events and emit them via our infrastructure."
+msgstr ""
+
+#: ../../topics/events.rst:107
+msgid ""
+"You need to derive from our base ``Event`` class which injects contextual"
+" information like activity ID, timestamp, etc. Your derived class can "
+"then add arbitrary data fields specific to the event context::"
+msgstr ""
+

@@ -1,4 +1,5 @@
 .. _refSignOutFederated:
+
 Federated Sign-out
 ==================
 

@@ -1,4 +1,5 @@
 .. _refSignOut:
+
 Sign-out
 ========
 

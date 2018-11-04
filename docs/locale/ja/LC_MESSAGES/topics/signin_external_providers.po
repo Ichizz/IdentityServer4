@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/signin_external_providers.rst:4
+msgid "Sign-in with External Identity Providers"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:6
+msgid ""
+"ASP.NET Core has a flexible way to deal with external authentication. "
+"This involves a couple of steps."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:8
+msgid ""
+"If you are using ASP.NET Identity, many of the underlying technical "
+"details are hidden from you. It is recommended that you also read the "
+"Microsoft `docs <https://docs.microsoft.com/en-"
+"us/aspnet/core/security/authentication/social/>`_ and do the ASP.NET "
+"Identity :ref:`quickstart <refAspNetIdentityQuickstart>`."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:11
+msgid "Adding authentication handlers for external providers"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:12
+msgid ""
+"The protocol implementation that is needed to talk to an external "
+"provider is encapsulated in an *authentication handler*. Some providers "
+"use proprietary protocols (e.g. social providers like Facebook) and some "
+"use standard protocols, e.g. OpenID Connect, WS-Federation or SAML2p."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:15
+msgid ""
+"See this :ref:`quickstart <refExternalAuthenticationQuickstart>` for "
+"step-by-step instructions for adding external authentication and "
+"configuring it."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:18
+msgid "The role of cookies"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:19
+msgid ""
+"One option on an external authentication handlers is called "
+"``SignInScheme``, e.g.::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:30
+msgid ""
+"The signin scheme specifies the name of the cookie handler that will "
+"temporarily store the outcome of the external authentication, e.g. the "
+"claims that got sent by the external provider. This is necessary, since "
+"there are typically a couple of redirects involved until you are done "
+"with the external authentication process."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:34
+msgid ""
+"Given that this is such a common practise, IdentityServer registers a "
+"cookie handler specifically for this external provider workflow. The "
+"scheme is represented via the "
+"``IdentityServerConstants.ExternalCookieAuthenticationScheme`` constant. "
+"If you were to use our external cookie handler, then for the "
+"``SignInScheme`` above you'd assign the value to be the "
+"``IdentityServerConstants.ExternalCookieAuthenticationScheme`` constant::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:47
+msgid "You can also register your own custom cookie handler instead, like this::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:59
+msgid ""
+"For specialized scenarios, you can also short-circuit the external cookie"
+" mechanism and forward the external user directly to the main cookie "
+"handler. This typically involves handling events on the external handler "
+"to make sure you do the correct claims transformation from the external "
+"identity source."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:62
+msgid "Triggering the authentication handler"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:63
+msgid ""
+"You invoke an external authentication handler via the ``ChallengeAsync`` "
+"extension method on the ``HttpContext`` (or using the MVC "
+"``ChallengeResult``)."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:65
+msgid ""
+"You typically want to pass in some options to the challenge operation, "
+"e.g. the path to your callback page and the name of the provider for "
+"bookkeeping, e.g.::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:82
+msgid "Handling the callback and signing in the user"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:83
+msgid "On the callback page your typical tasks are:"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:85
+msgid "inspect the identity returned by the external provider."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:86
+msgid ""
+"make a decision how you want to deal with that user. This might be "
+"different based on the fact if this is a new user or a returning user."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:87
+msgid "new users might need additional steps and UI before they are allowed in."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:88
+msgid ""
+"probably create a new internal user account that is linked to the "
+"external provider."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:89
+msgid "store the external claims that you want to keep."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:90
+msgid "delete the temporary cookie"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:91
+msgid "sign-in the user"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:93
+msgid "**Inspecting the external identity**::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:129
+msgid "**Clean-up and sign-in**::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:146
+msgid "State, URL length, and ISecureDataFormat"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:147
+msgid ""
+"When redirecting to an external provider for sign-in, frequently state "
+"from the client application must be round-tripped. This means that state "
+"is captured prior to leaving the client and preserved until the user has "
+"returned to the client application. Many protocols, including OpenID "
+"Connect, allow passing some sort of state as a parameter as part of the "
+"request, and the identity provider will return that state on the "
+"response. The OpenID Connect authentication handler provided by ASP.NET "
+"Core utilizes this feature of the protocol, and that is how it implements"
+" the ``returnUrl`` feature mentioned above."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:152
+msgid ""
+"The problem with storing state in a request parameter is that the request"
+" URL can get too large (over the common limit of 2000 characters). The "
+"OpenID Connect authentication handler does provide an extensibility point"
+" to store the state in your server, rather than in the request URL. You "
+"can implement this yourself by implementing "
+"``ISecureDataFormat<AuthenticationProperties>`` and configuring it on the"
+" `OpenIdConnectOptions "
+"<https://github.com/aspnet/Security/blob/dev/src/Microsoft.AspNetCore.Authentication.OpenIdConnect/OpenIdConnectOptions.cs#L248>`_."
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:156
+msgid ""
+"Fortunately, IdentityServer provides an implementation of this for you, "
+"backed by the ``IDistributedCache`` implementation registered in the DI "
+"container (e.g. the standard ``MemoryDistributedCache``). To use the "
+"IdentityServer provided secure data format implementation, simply call "
+"the ``AddOidcStateDataFormatterCache`` extension method on the "
+"``IServiceCollection`` when configuring DI. If no parameters are passed, "
+"then all OpenID Connect handlers configured will use the IdentityServer "
+"provided secure data format implementation::"
+msgstr ""
+
+#: ../../topics/signin_external_providers.rst:181
+msgid ""
+"If only particular schemes are to be configured, then pass those schemes "
+"as parameters::"
+msgstr ""
+

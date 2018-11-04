@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/support.rst:4
+msgid "Support and Consulting Options"
+msgstr ""
+
+#: ../../intro/support.rst:6
+msgid ""
+"We have several free and commercial support and consulting options for "
+"IdentityServer."
+msgstr ""
+
+#: ../../intro/support.rst:9
+msgid "Free support"
+msgstr ""
+
+#: ../../intro/support.rst:10
+msgid "Free support is community-based and uses public forums"
+msgstr ""
+
+#: ../../intro/support.rst:12
+msgid "**StackOverflow**"
+msgstr ""
+
+#: ../../intro/support.rst:14
+msgid ""
+"There's an ever growing community of people using IdentityServer that "
+"monitor questions on StackOverflow. If time permits, we also try to "
+"answer as many questions as possible"
+msgstr ""
+
+#: ../../intro/support.rst:17
+msgid ""
+"You can subscribe to all IdentityServer4 related questions using this "
+"feed:"
+msgstr ""
+
+#: ../../intro/support.rst:19
+msgid "https://stackoverflow.com/questions/tagged/?tagnames=identityserver4&sort=newest"
+msgstr ""
+
+#: ../../intro/support.rst:21
+msgid "Please use the ``IdentityServer4`` tag when asking new questions"
+msgstr ""
+
+#: ../../intro/support.rst:23
+msgid "**Gitter**"
+msgstr ""
+
+#: ../../intro/support.rst:25
+msgid "You can chat with other IdentityServer4 users in our Gitter chat room:"
+msgstr ""
+
+#: ../../intro/support.rst:27
+msgid "https://gitter.im/IdentityServer/IdentityServer4"
+msgstr ""
+
+#: ../../intro/support.rst:29
+msgid "**Reporting a bug**"
+msgstr ""
+
+#: ../../intro/support.rst:31
+msgid ""
+"If you think you have found a bug or unexpected behavior, please open an "
+"issue on the Github `issue tracker "
+"<https://github.com/IdentityServer/IdentityServer4/issues>`_. We try to "
+"get back to you ASAP. Please understand that we also have day jobs, and "
+"might be too busy to reply immediately."
+msgstr ""
+
+#: ../../intro/support.rst:34
+msgid ""
+"Also check the `contribution "
+"<https://github.com/IdentityServer/IdentityServer4/blob/dev/CONTRIBUTING.md>`_"
+" guidelines before posting."
+msgstr ""
+
+#: ../../intro/support.rst:37
+msgid "Commercial support"
+msgstr ""
+
+#: ../../intro/support.rst:38
+msgid ""
+"We are doing consulting, mentoring and custom software development around"
+" identity & access control architecture in general, and IdentityServer in"
+" particular. Please `get in touch <mailto:contact@identityserver.io>`_ "
+"with us to discuss possible options."
+msgstr ""
+
+#: ../../intro/support.rst:41
+msgid "**Training**"
+msgstr ""
+
+#: ../../intro/support.rst:43
+msgid ""
+"We are regularly doing workshops around identity & access control for "
+"modern applications. Check the agenda and upcoming public dates  `here "
+"<https://identityserver.io/training>`_. We can also perform the training "
+"privately at your company. `Contact us "
+"<mailto:contact@identityserver.io>`_ to request the training on-site."
+msgstr ""
+
+#: ../../intro/support.rst:48
+msgid "**Admin UI, Identity Express and SAML2p support**"
+msgstr ""
+
+#: ../../intro/support.rst:50
+msgid ""
+"There are a couple of commercial add-on products available from our "
+"partners, check https://www.identityserver.com/products/."
+msgstr ""
+

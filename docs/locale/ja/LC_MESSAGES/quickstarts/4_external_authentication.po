@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quickstarts/4_external_authentication.rst:4
+msgid "Adding Support for External Authentication"
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:6
+msgid ""
+"Next we will add support for external authentication. This is really "
+"easy, because all you really need is an ASP.NET Core compatible "
+"authentication handler."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:9
+msgid ""
+"ASP.NET Core itself ships with support for Google, Facebook, Twitter, "
+"Microsoft Account and OpenID Connect. In addition you can find "
+"implementations for many other authentication providers `here "
+"<https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers>`_."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:13
+msgid "Adding Google support"
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:14
+msgid ""
+"To be able to use Google for authentication, you first need to register "
+"with them. This is done at their developer `console "
+"<https://console.developers.google.com/>`_. Create a new project, enable "
+"the Google+ API and configure the callback address of your local "
+"IdentityServer by adding the */signin-google* path to your base-address "
+"(e.g. http://localhost:5000/signin-google)."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:19
+msgid ""
+"If you are running on port 5000 - you can simply use the client id/secret"
+" from the code snippet below, since this is pre-registered by us."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:22
+msgid ""
+"Start by adding the Google authentication handler to DI. This is done by "
+"adding this snippet to ``ConfigureServices`` in ``Startup``::"
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:47
+msgid ""
+"By default, IdentityServer configures a cookie handler specifically for "
+"the results of external authentication (with the scheme based on the "
+"constant ``IdentityServerConstants.ExternalCookieAuthenticationScheme``)."
+" The configuration for the Google handler is then using that cookie "
+"handler. For a better understanding of how this is done, see the "
+"``AccountController`` class under the `Quickstart` folder."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:51
+msgid ""
+"Now run the MVC client and try to authenticate - you will see a Google "
+"button on the login page:"
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:55
+msgid ""
+"After authentication, you can see that the claims are now being sourced "
+"from Google data."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:60
+msgid "Further experiments"
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:61
+msgid ""
+"You can add an additional external provider. We have a `cloud-hosted demo"
+" <https://demo.identityserver.io>`_ version of IdentityServer4 which you "
+"can integrate using OpenID Connect."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:64
+msgid "Add the OpenId Connect handler to DI::"
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:89
+msgid ""
+"And now a user should be able to use the cloud-hosted demo identity "
+"provider."
+msgstr ""
+
+#: ../../quickstarts/4_external_authentication.rst:91
+msgid ""
+"The quickstart UI auto-provisions external users. As an external user "
+"logs in for the first time, a new local user is created, and all the "
+"external claims are copied over and associated with the new user. The way"
+" you deal with such a situation is completely up to you though. Maybe you"
+" want to show some sort of registration UI first. The source code for the"
+" default quickstart can be found `here "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI>`_. The "
+"controller where auto-provisioning is executed can be found `here "
+"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI/blob/release/Quickstart/Account/AccountController.cs>`_."
+msgstr ""
+

@@ -1,4 +1,5 @@
 .. _refResources:
+
 Defining Resources
 ==================
 

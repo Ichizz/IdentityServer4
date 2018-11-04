@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/test.rst:2
+msgid "Demo Server and Tests"
+msgstr ""
+
+#: ../../intro/test.rst:4
+msgid ""
+"You can try IdentityServer4 with your favourite client library. We have a"
+" test instance at `demo.identityserver.io "
+"<https://demo.identityserver.io>`_. On the main page you can find "
+"instructions on how to configure your client and how to call an API."
+msgstr ""
+
+#: ../../intro/test.rst:7
+msgid ""
+"Furthermore we have a repo that exercises a variety of IdentityServer and"
+" Web API combinations (IdentityServer 3 and 4, ASP.NET Core and Katana). "
+"We use this test harness to make sure all permutations work. You can test"
+" it yourself by cloning `this "
+"<https://github.com/IdentityServer/CrossVersionIntegrationTests>`_ repo."
+msgstr ""
+

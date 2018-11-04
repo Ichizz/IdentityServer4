@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../topics/refresh_tokens.rst:2
+msgid "Refresh Tokens"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:3
+msgid ""
+"Since access tokens have finite lifetimes, refresh tokens allow "
+"requesting new access tokens without user interaction."
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:5
+msgid ""
+"Refresh tokens are supported for the following flows: authorization code,"
+" hybrid and resource owner password credential flow. The clients needs to"
+" be explicitly authorized to request refresh tokens by setting "
+"``AllowOfflineAccess`` to ``true``."
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:9
+msgid "Additional client settings"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:10
+msgid "``AbsoluteRefreshTokenLifetime``"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:11
+msgid ""
+"Maximum lifetime of a refresh token in seconds. Defaults to 2592000 "
+"seconds / 30 days. Zero allows refresh tokens that, when used with "
+"``RefreshTokenExpiration = Sliding`` only expire after the "
+"SlidingRefreshTokenLifetime is passed."
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:12
+msgid "``SlidingRefreshTokenLifetime``"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:13
+msgid ""
+"Sliding lifetime of a refresh token in seconds. Defaults to 1296000 "
+"seconds / 15 days"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:16
+msgid "``RefreshTokenUsage``"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:15
+msgid ""
+"``ReUse`` the refresh token handle will stay the same when refreshing "
+"tokens"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:17
+msgid ""
+"``OneTime`` the refresh token handle will be updated when refreshing "
+"tokens"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:20
+msgid "``RefreshTokenExpiration``"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:19
+msgid ""
+"``Absolute`` the refresh token will expire on a fixed point in time "
+"(specified by the AbsoluteRefreshTokenLifetime)"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:21
+msgid ""
+"``Sliding`` when refreshing the token, the lifetime of the refresh token "
+"will be renewed (by the amount specified in SlidingRefreshTokenLifetime)."
+" The lifetime will not exceed `AbsoluteRefreshTokenLifetime`."
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:22
+msgid "``UpdateAccessTokenClaimsOnRefresh``"
+msgstr ""
+
+#: ../../topics/refresh_tokens.rst:23
+msgid ""
+"Gets or sets a value indicating whether the access token (and its claims)"
+" should be updated on a refresh token request."
+msgstr ""
+

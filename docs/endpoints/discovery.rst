@@ -1,4 +1,5 @@
 .. _refDiscovery:
+
 Discovery Endpoint
 ==================
 

@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 15:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/terminology.rst:2
+msgid "Terminology"
+msgstr ""
+
+#: ../../intro/terminology.rst:4
+msgid ""
+"The specs, documentation and object model use a certain terminology that "
+"you should be aware of."
+msgstr ""
+
+#: ../../intro/terminology.rst:9
+msgid "IdentityServer"
+msgstr ""
+
+#: ../../intro/terminology.rst:10
+msgid ""
+"IdentityServer is an OpenID Connect provider - it implements the OpenID "
+"Connect and OAuth 2.0 protocols."
+msgstr ""
+
+#: ../../intro/terminology.rst:12
+msgid ""
+"Different literature uses different terms for the same role - you "
+"probably also find security token service, identity provider, "
+"authorization server, IP-STS and more."
+msgstr ""
+
+#: ../../intro/terminology.rst:15
+msgid ""
+"But they are in a nutshell all the same: a piece of software that issues "
+"security tokens to clients."
+msgstr ""
+
+#: ../../intro/terminology.rst:17
+msgid "IdentityServer has a number of jobs and features - including:"
+msgstr ""
+
+#: ../../intro/terminology.rst:19
+msgid "protect your resources"
+msgstr ""
+
+#: ../../intro/terminology.rst:21
+msgid ""
+"authenticate users using a local account store or via an external "
+"identity provider"
+msgstr ""
+
+#: ../../intro/terminology.rst:23
+msgid "provide session management and single sign-on"
+msgstr ""
+
+#: ../../intro/terminology.rst:25
+msgid "manage and authenticate clients"
+msgstr ""
+
+#: ../../intro/terminology.rst:27
+msgid "issue identity and access tokens to clients"
+msgstr ""
+
+#: ../../intro/terminology.rst:29
+msgid "validate tokens"
+msgstr ""
+
+#: ../../intro/terminology.rst:32
+msgid "User"
+msgstr ""
+
+#: ../../intro/terminology.rst:33
+msgid "A user is a human that is using a registered client to access resources."
+msgstr ""
+
+#: ../../intro/terminology.rst:36
+msgid "Client"
+msgstr ""
+
+#: ../../intro/terminology.rst:37
+msgid ""
+"A client is a piece of software that requests tokens from IdentityServer "
+"- either for authenticating a user (requesting an identity token) or for "
+"accessing a resource (requesting an access token). A client must be first"
+" registered with IdentityServer before it can request tokens."
+msgstr ""
+
+#: ../../intro/terminology.rst:40
+msgid ""
+"Examples for clients are web applications, native mobile or desktop "
+"applications, SPAs, server processes etc."
+msgstr ""
+
+#: ../../intro/terminology.rst:43
+msgid "Resources"
+msgstr ""
+
+#: ../../intro/terminology.rst:44
+msgid ""
+"Resources are something you want to protect with IdentityServer - either "
+"identity data of your users, or APIs."
+msgstr ""
+
+#: ../../intro/terminology.rst:46
+msgid ""
+"Every resource has a unique name - and clients use this name to specify "
+"to which resources they want to get access to."
+msgstr ""
+
+#: ../../intro/terminology.rst:48
+msgid ""
+"**Identity data** Identity information (aka claims) about a user, e.g. "
+"name or email address."
+msgstr ""
+
+#: ../../intro/terminology.rst:51
+msgid ""
+"**APIs** APIs resources represent functionality a client wants to invoke "
+"- typically modelled as Web APIs, but not necessarily."
+msgstr ""
+
+#: ../../intro/terminology.rst:55
+msgid "Identity Token"
+msgstr ""
+
+#: ../../intro/terminology.rst:56
+msgid ""
+"An identity token represents the outcome of an authentication process. It"
+" contains at a bare minimum an identifier for the user (called the `sub` "
+"aka subject claim) and information about how and when the user "
+"authenticated.  It can contain additional identity data."
+msgstr ""
+
+#: ../../intro/terminology.rst:60
+msgid "Access Token"
+msgstr ""
+
+#: ../../intro/terminology.rst:61
+msgid ""
+"An access token allows access to an API resource. Clients request access "
+"tokens and forward them to the API. Access tokens contain information "
+"about the client and the user (if present). APIs use that information to "
+"authorize access to their data."
+msgstr ""
+
