@@ -1,13 +1,14 @@
-# IdentityServer4 documentation
+﻿# IdentityServer4 documentation
 
-The folder contains the documentation for identityserver4.
+このフォルダには、IdentityServer4のドキュメントが含まれています。
 
-We are using [Read the docs](https://readthedocs.org/) to host the documentation and the rendered version
-can be found [here](https://identityserver4.readthedocs.io).
+[Read the docs](https://readthedocs.org/)を使用してドキュメントとレンダリングされたバージョンをホストしています。
+[日本語](https://identityserver4-ja.readthedocs.io/)はここにあります。
+[原文](https://identityserver4.readthedocs.io)はここにあります。
 
-Doc pages are authored in ReStructuredText (RST) - you can find a primer [here](http://www.sphinx-doc.org/en/stable/rest.html).
+DocページはReStructuredText（RST）で作成されています - あなたは[ここ](http://www.sphinx-doc.org/en/stable/rest.html)にプライマーを見つけることができます。
 
-You can find more information about RTD and Sphinx under the following links:
+RTDおよびSphinxについての詳細は、次のリンクを参照してください。:
 
 * [Read the Docs documentation](https://docs.readthedocs.io/en/latest/index.html)
 * [Sphinx](http://www.sphinx-doc.org/)
