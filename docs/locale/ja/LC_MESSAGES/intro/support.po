@@ -4,37 +4,40 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-04 17:27+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../intro/support.rst:4
 msgid "Support and Consulting Options"
-msgstr ""
+msgstr "サポートとコンサルティングのオプション"
 
 #: ../../intro/support.rst:6
 msgid ""
-"We have several free and commercial support and consulting options for "
-"IdentityServer."
+"We have several free and commercial support and consulting options for IdentityServer."
 msgstr ""
+"IdentityServerには、いくつかの無料で商業的なサポートとコンサルティングのオプションがあ"
+"ります。"
 
 #: ../../intro/support.rst:9
 msgid "Free support"
-msgstr ""
+msgstr "無償サポート"
 
 #: ../../intro/support.rst:10
 msgid "Free support is community-based and uses public forums"
-msgstr ""
+msgstr "無料のサポートはコミュニティベースで、パブリックフォーラムを使用しています"
 
 #: ../../intro/support.rst:12
 msgid "**StackOverflow**"
@@ -42,16 +45,17 @@ msgstr ""
 
 #: ../../intro/support.rst:14
 msgid ""
-"There's an ever growing community of people using IdentityServer that "
-"monitor questions on StackOverflow. If time permits, we also try to "
-"answer as many questions as possible"
+"There's an ever growing community of people using IdentityServer that monitor "
+"questions on StackOverflow. If time permits, we also try to answer as many questions "
+"as possible"
 msgstr ""
+"StackOverflowに関する質問を監視するIdentityServerを使用する人が増え続けています。 時間"
+"が許せば、可能な限り多くの質問にも答えようとします"
 
 #: ../../intro/support.rst:17
-msgid ""
-"You can subscribe to all IdentityServer4 related questions using this "
-"feed:"
+msgid "You can subscribe to all IdentityServer4 related questions using this feed:"
 msgstr ""
+"このフィードを使用して、すべてのIdentityServer4関連の質問に登録することができます。:"
 
 #: ../../intro/support.rst:19
 msgid "https://stackoverflow.com/questions/tagged/?tagnames=identityserver4&sort=newest"
@@ -59,7 +63,7 @@ msgstr ""
 
 #: ../../intro/support.rst:21
 msgid "Please use the ``IdentityServer4`` tag when asking new questions"
-msgstr ""
+msgstr "新しい質問をするときに ``IdentityServer4`` タグを使用してください"
 
 #: ../../intro/support.rst:23
 msgid "**Gitter**"
@@ -67,7 +71,7 @@ msgstr ""
 
 #: ../../intro/support.rst:25
 msgid "You can chat with other IdentityServer4 users in our Gitter chat room:"
-msgstr ""
+msgstr "Gitterチャットルームの他のIdentityServer4ユーザとチャットすることができます:"
 
 #: ../../intro/support.rst:27
 msgid "https://gitter.im/IdentityServer/IdentityServer4"
@@ -79,31 +83,38 @@ msgstr ""
 
 #: ../../intro/support.rst:31
 msgid ""
-"If you think you have found a bug or unexpected behavior, please open an "
-"issue on the Github `issue tracker "
-"<https://github.com/IdentityServer/IdentityServer4/issues>`_. We try to "
-"get back to you ASAP. Please understand that we also have day jobs, and "
+"If you think you have found a bug or unexpected behavior, please open an issue on the "
+"Github `issue tracker <https://github.com/IdentityServer/IdentityServer4/issues>`_. "
+"We try to get back to you ASAP. Please understand that we also have day jobs, and "
 "might be too busy to reply immediately."
 msgstr ""
+"バグや予期しない動作が見つかったと思われる場合は、Githubで `問題 <https://github.com/"
+"IdentityServer/IdentityServer4/issues>`_ を開いてください。 私たちはできるだけ早くあな"
+"たにお返しをしようとします。 私たちも日々仕事をしていることを理解してください。また、"
+"忙しくてすぐに返信することはできません。"
 
 #: ../../intro/support.rst:34
 msgid ""
-"Also check the `contribution "
-"<https://github.com/IdentityServer/IdentityServer4/blob/dev/CONTRIBUTING.md>`_"
-" guidelines before posting."
+"Also check the `contribution <https://github.com/IdentityServer/IdentityServer4/blob/"
+"dev/CONTRIBUTING.md>`_ guidelines before posting."
 msgstr ""
+"また、投稿する前に `指針 <https://github.com/IdentityServer/IdentityServer4/blob/dev/"
+"CONTRIBUTING.md>`_ もチェックしてください。"
 
 #: ../../intro/support.rst:37
 msgid "Commercial support"
-msgstr ""
+msgstr "商用サポート"
 
 #: ../../intro/support.rst:38
 msgid ""
-"We are doing consulting, mentoring and custom software development around"
-" identity & access control architecture in general, and IdentityServer in"
-" particular. Please `get in touch <mailto:contact@identityserver.io>`_ "
-"with us to discuss possible options."
+"We are doing consulting, mentoring and custom software development around identity & "
+"access control architecture in general, and IdentityServer in particular. Please `get "
+"in touch <mailto:contact@identityserver.io>`_ with us to discuss possible options."
 msgstr ""
+"私たちは、アイデンティティ＆アクセス制御アーキテクチャー、特にIdentityServer、特に"
+"IdentityServerのコンサルティング、メンタリング、カスタムソフトウェア開発を行っていま"
+"す。 可能なオプションについて議論するために、 `私たちと <mailto:"
+"contact@identityserver.io>`_ 連絡してください。"
 
 #: ../../intro/support.rst:41
 msgid "**Training**"
@@ -111,12 +122,17 @@ msgstr ""
 
 #: ../../intro/support.rst:43
 msgid ""
-"We are regularly doing workshops around identity & access control for "
-"modern applications. Check the agenda and upcoming public dates  `here "
-"<https://identityserver.io/training>`_. We can also perform the training "
-"privately at your company. `Contact us "
-"<mailto:contact@identityserver.io>`_ to request the training on-site."
+"We are regularly doing workshops around identity & access control for modern "
+"applications. Check the agenda and upcoming public dates  `here <https://"
+"identityserver.io/training>`_. We can also perform the training privately at your "
+"company. `Contact us <mailto:contact@identityserver.io>`_ to request the training on-"
+"site."
 msgstr ""
+"私たちは定期的に最新のアプリケーションのためのアイデンティティとアクセス制御に関する"
+"ワークショップを行っています。 議題や今後開催される公開日程は `こちら <https://"
+"identityserver.io/training>`_ をご覧ください。私たちはあなたの会社で個人的に訓練を行う"
+"こともできます。 現場でのトレーニングを依頼するには、`お問い合わせください <mailto:"
+"contact@identityserver.io>`_。"
 
 #: ../../intro/support.rst:48
 msgid "**Admin UI, Identity Express and SAML2p support**"
@@ -124,7 +140,8 @@ msgstr ""
 
 #: ../../intro/support.rst:50
 msgid ""
-"There are a couple of commercial add-on products available from our "
-"partners, check https://www.identityserver.com/products/."
+"There are a couple of commercial add-on products available from our partners, check "
+"https://www.identityserver.com/products/."
 msgstr ""
-
+"当社のパートナーから市販されているいくつかのアドオン製品があります。https://www."
+"identityserver.com/products/をご確認ください。"
