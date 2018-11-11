@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 16:57+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../misc/videos.rst:2
 msgid "Videos"
-msgstr ""
+msgstr "ビデオ"
 
 #: ../../misc/videos.rst:4
 msgid "2018"
@@ -50,9 +52,9 @@ msgstr ""
 
 #: ../../misc/videos.rst:11
 msgid ""
-"`14/09 [Microsoft Learning] -- Introduction to IdentityServer for ASP.NET"
-" Core - Brock Allen <https://mva.microsoft.com/en-US/training-courses"
-"/introduction-to-identityserver-for-aspnet-core-17945>`_"
+"`14/09 [Microsoft Learning] -- Introduction to IdentityServer for ASP."
+"NET Core - Brock Allen <https://mva.microsoft.com/en-US/training-courses/"
+"introduction-to-identityserver-for-aspnet-core-17945>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:12
@@ -63,20 +65,20 @@ msgstr ""
 
 #: ../../misc/videos.rst:13
 msgid ""
-"`22/02 [NDC Mini Copenhagen] -- IdentityServer4: New & Improved for "
-"ASP.NET Core - Dominick Baier <https://vimeo.com/215352044>`_"
+"`22/02 [NDC Mini Copenhagen] -- IdentityServer4: New & Improved for ASP."
+"NET Core - Dominick Baier <https://vimeo.com/215352044>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:14
 msgid ""
-"`02/02 [DotNetRocks] -- IdentityServer4 on DotNetRocks "
-"<https://www.dotnetrocks.com/?show=1409>`_"
+"`02/02 [DotNetRocks] -- IdentityServer4 on DotNetRocks <https://www."
+"dotnetrocks.com/?show=1409>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:15
 msgid ""
-"`16/01 [NDC London] -- IdentityServer4: New and Improved for ASP.NET Core"
-" <https://vimeo.com/204141878>`_"
+"`16/01 [NDC London] -- IdentityServer4: New and Improved for ASP.NET "
+"Core <https://vimeo.com/204141878>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:16
@@ -92,8 +94,8 @@ msgstr ""
 #: ../../misc/videos.rst:20
 msgid ""
 "`The history of .NET identity and IdentityServer Channel9 interview "
-"<https://channel9.msdn.com/events/Seth-on-the-Road/NDC-London-2016"
-"/Dominick-Baier-on-Identity-Server>`_"
+"<https://channel9.msdn.com/events/Seth-on-the-Road/NDC-London-2016/"
+"Dominick-Baier-on-Identity-Server>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:21
@@ -108,8 +110,8 @@ msgstr ""
 
 #: ../../misc/videos.rst:23
 msgid ""
-"`Introduction to IdentityServer3 - Brock Allen "
-"<https://vimeo.com/154172925>`_"
+"`Introduction to IdentityServer3 - Brock Allen <https://vimeo."
+"com/154172925>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:26
@@ -118,14 +120,14 @@ msgstr ""
 
 #: ../../misc/videos.rst:27
 msgid ""
-"`Securing Web APIs – Patterns & Anti-Patterns - Dominick Baier "
-"<https://vimeo.com/131635255>`_"
+"`Securing Web APIs – Patterns & Anti-Patterns - Dominick Baier <https://"
+"vimeo.com/131635255>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:28
 msgid ""
-"`Authentication and authorization in modern JavaScript web applications –"
-" how hard can it be? - Brock Allen <https://vimeo.com/131636653>`_"
+"`Authentication and authorization in modern JavaScript web applications "
+"– how hard can it be? - Brock Allen <https://vimeo.com/131636653>`_"
 msgstr ""
 
 #: ../../misc/videos.rst:31
@@ -135,7 +137,6 @@ msgstr ""
 #: ../../misc/videos.rst:32
 msgid ""
 "`Unifying Authentication & Delegated API Access for Mobile, Web and the "
-"Desktop with OpenID Connect and OAuth 2 - Dominick Baier "
-"<https://vimeo.com/113604459>`_"
+"Desktop with OpenID Connect and OAuth 2 - Dominick Baier <https://vimeo."
+"com/113604459>`_"
 msgstr ""
-

@@ -4,49 +4,59 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 16:55+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/startup.rst:4
 msgid "Startup"
-msgstr ""
+msgstr "スタートアップ"
 
 #: ../../topics/startup.rst:6
 msgid ""
 "IdentityServer is a combination of middleware and services. All "
 "configuration is done in your startup class."
 msgstr ""
+"IdentityServerは、ミドルウェアとサービスの組み合わせです。すべての設定は"
+"スタートアップクラスで行われます。"
 
 #: ../../topics/startup.rst:10
 msgid "Configuring services"
-msgstr ""
+msgstr "サービスの設定"
 
 #: ../../topics/startup.rst:11
 msgid "You add the IdentityServer services to the DI system by calling::"
 msgstr ""
+"IdentityServerサービスをDIシステムに追加するには、次の関数を呼び出しま"
+"す。::"
 
 #: ../../topics/startup.rst:18
 msgid ""
 "Optionally you can pass in options into this call. See :ref:`here "
 "<refOptions>` for details on options."
 msgstr ""
+"オプションで、この呼び出しにオプションを渡すことができます。オプションの"
+"詳細については :ref:`ここを <refOptions>` 参照してください。"
 
 #: ../../topics/startup.rst:20
 msgid ""
 "This will return you a builder object that in turn has a number of "
 "convenience methods to wire up additional services."
 msgstr ""
+"これはビルダーオブジェクトを返します。ビルダーオブジェクトには、追加の"
+"サービスを結ぶ便利なメソッドが多数あります。"
 
 #: ../../topics/startup.rst:25
 msgid "Key material"
@@ -59,10 +69,13 @@ msgstr ""
 #: ../../topics/startup.rst:28
 msgid ""
 "Adds a signing key service that provides the specified key material to "
-"the various token creation/validation services. You can pass in either an"
-" ``X509Certificate2``, a ``SigningCredential`` or a reference to a "
+"the various token creation/validation services. You can pass in either "
+"an ``X509Certificate2``, a ``SigningCredential`` or a reference to a "
 "certificate from the certificate store."
 msgstr ""
+"指定された鍵素材をさまざまなトークン作成/検証サービスに提供する署名鍵サー"
+"ビスを追加します。 ``X509Certificate2`` 、 ``SigningCredential`` または証"
+"明書ストアからの証明書への参照を渡すことができます。"
 
 #: ../../topics/startup.rst:32
 msgid "``AddDeveloperSigningCredential``"
@@ -76,6 +89,11 @@ msgid ""
 "restarts (can be disabled by passing ``false``). This addresses issues "
 "when the client/api metadata caches get out of sync during development."
 msgstr ""
+"起動時に一時的なキーマテリアルを作成します。これは、開発者が使用する証明"
+"書を持っていない場合のみのシナリオです。生成された鍵はファイルシステムに"
+"永続化され、サーバの再起動の間に安定した状態になります（渡すことで無効に"
+"することができます ``false`` ）。これは、開発中にクライアント/ apiメタ"
+"データキャッシュが同期しなくなった場合の問題を解決します。"
 
 #: ../../topics/startup.rst:37
 msgid "``AddValidationKey``"
@@ -83,12 +101,17 @@ msgstr ""
 
 #: ../../topics/startup.rst:35
 msgid ""
-"Adds a key for validating tokens. They will be used by the internal token"
-" validator and will show up in the discovery document. You can pass in "
-"either an ``X509Certificate2``, a ``SigningCredential`` or a reference to"
-" a certificate from the certificate store. This is useful for key roll-"
-"over scenarios."
+"Adds a key for validating tokens. They will be used by the internal "
+"token validator and will show up in the discovery document. You can pass "
+"in either an ``X509Certificate2``, a ``SigningCredential`` or a "
+"reference to a certificate from the certificate store. This is useful "
+"for key roll-over scenarios."
 msgstr ""
+"トークンを検証するためのキーを追加します。それらは内部トークンバリデー"
+"ターによって使用され、ディスカバリー文書に表示されます。 "
+"``X509Certificate2``、 ``SigningCredential`` または証明書ストアからの証明"
+"書への参照を渡すことができます。これは、重要なロールオーバーシナリオに役"
+"立ちます。"
 
 #: ../../topics/startup.rst:40
 msgid "In-Memory configuration stores"
@@ -103,6 +126,12 @@ msgid ""
 "By design, though, these collections are only created when the hosting "
 "application is starting up."
 msgstr ""
+"さまざまな「メモリー内」構成APIを使用すると、構成オブジェクトのメモリー内"
+"リストからIdentityServerを構成できます。これらの「インメモリ」コレクショ"
+"ンは、ホスティングアプリケーションでハードコーディングすることも、構成"
+"ファイルやデータベースから動的にロードすることもできます。ただし、設計"
+"上、これらのコレクションはホスティングアプリケーションの起動時にのみ作成"
+"されます。"
 
 #: ../../topics/startup.rst:46
 msgid ""
@@ -113,6 +142,11 @@ msgid ""
 "configuration rarely changes, or it is not inconvenient to require "
 "restarting the application if the value must be changed."
 msgstr ""
+"これらの構成APIの使用は、実行時に構成データをデータベースに動的に照会する"
+"必要がないプロトタイピング、開発、および/またはテストの際に使用するために"
+"設計されています。この構成のスタイルは、構成がほとんど変更されない場合"
+"や、値を変更する必要がある場合にアプリケーションを再起動する必要がある場"
+"合には、実動シナリオにも適しています。"
 
 #: ../../topics/startup.rst:49
 msgid "``AddInMemoryClients``"
@@ -218,11 +252,11 @@ msgstr ""
 
 #: ../../topics/startup.rst:84
 msgid ""
-"Adds ``IProfileService`` implementation for connecting to your "
-":ref:`custom user profile store<refProfileService>`. The "
-"``DefaultProfileService`` class provides the default implementation which"
-" relies upon the authentication cookie as the only source of claims for "
-"issuing in tokens."
+"Adds ``IProfileService`` implementation for connecting to your :ref:"
+"`custom user profile store<refProfileService>`. The "
+"``DefaultProfileService`` class provides the default implementation "
+"which relies upon the authentication cookie as the only source of claims "
+"for issuing in tokens."
 msgstr ""
 
 #: ../../topics/startup.rst:89
@@ -232,11 +266,11 @@ msgstr ""
 #: ../../topics/startup.rst:88
 msgid ""
 "Adds ``IAuthorizeInteractionResponseGenerator`` implementation to "
-"customize logic at authorization endpoint for when a user must be shown a"
-" UI for error, login, consent, or any other custom page. The "
+"customize logic at authorization endpoint for when a user must be shown "
+"a UI for error, login, consent, or any other custom page. The "
 "``AuthorizeInteractionResponseGenerator`` class provides a default "
-"implementation, so consider deriving from this existing class if you need"
-" to augment the existing behavior."
+"implementation, so consider deriving from this existing class if you "
+"need to augment the existing behavior."
 msgstr ""
 
 #: ../../topics/startup.rst:92
@@ -255,8 +289,8 @@ msgstr ""
 
 #: ../../topics/startup.rst:95
 msgid ""
-"Adds ``ICustomTokenRequestValidator`` implementation to customize request"
-" parameter validation at the token endpoint."
+"Adds ``ICustomTokenRequestValidator`` implementation to customize "
+"request parameter validation at the token endpoint."
 msgstr ""
 
 #: ../../topics/startup.rst:98
@@ -296,8 +330,8 @@ msgstr ""
 msgid ""
 "Client and resource configuration data is used frequently by "
 "IdentityServer. If this data is being loaded from a database or other "
-"external store, then it might be expensive to frequently re-load the same"
-" data."
+"external store, then it might be expensive to frequently re-load the "
+"same data."
 msgstr ""
 
 #: ../../topics/startup.rst:114
@@ -318,10 +352,10 @@ msgstr ""
 
 #: ../../topics/startup.rst:117
 msgid ""
-"Registers a ``IClientStore`` decorator implementation which will maintain"
-" an in-memory cache of ``Client`` configuration objects. The cache "
-"duration is configurable on the ``Caching`` configuration options on the "
-"``IdentityServerOptions``."
+"Registers a ``IClientStore`` decorator implementation which will "
+"maintain an in-memory cache of ``Client`` configuration objects. The "
+"cache duration is configurable on the ``Caching`` configuration options "
+"on the ``IdentityServerOptions``."
 msgstr ""
 
 #: ../../topics/startup.rst:122
@@ -364,9 +398,9 @@ msgstr ""
 msgid ""
 "The default implementation of the ``ICache<T>`` itself relies upon the "
 "``IMemoryCache`` interface (and ``MemoryCache`` implementation) provided "
-"by .NET. If you wish to customize the in-memory caching behavior, you can"
-" replace the ``IMemoryCache`` implementation in the dependency injection "
-"system."
+"by .NET. If you wish to customize the in-memory caching behavior, you "
+"can replace the ``IMemoryCache`` implementation in the dependency "
+"injection system."
 msgstr ""
 
 #: ../../topics/startup.rst:137
@@ -393,4 +427,3 @@ msgid ""
 "to add IdentitySever before the UI framework that implements the login "
 "screen."
 msgstr ""
-

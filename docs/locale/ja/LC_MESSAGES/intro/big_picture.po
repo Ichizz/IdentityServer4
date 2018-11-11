@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 17:10+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../intro/big_picture.rst:2
 msgid "The Big Picture"
@@ -24,39 +26,43 @@ msgstr ""
 
 #: ../../intro/big_picture.rst:4
 msgid "Most modern applications look more or less like this:"
-msgstr ""
+msgstr "最近のアプリケーションのほとんどは、このように見えます。:"
 
 #: ../../intro/big_picture.rst:8
 msgid "The most common interactions are:"
-msgstr ""
+msgstr "最も一般的な相互作用は次のとおりです。:"
 
 #: ../../intro/big_picture.rst:10
 msgid "Browsers communicate with web applications"
-msgstr ""
+msgstr "ブラウザはウェブアプリケーションと通信する"
 
 #: ../../intro/big_picture.rst:12
 msgid ""
 "Web applications communicate with web APIs (sometimes on their own, "
 "sometimes on behalf of a user)"
 msgstr ""
+"WebアプリケーションはWeb APIと通信します（時には、ユーザー自身のために、"
+"時にはユーザーのために）"
 
 #: ../../intro/big_picture.rst:14
 msgid "Browser-based applications communicate with web APIs"
-msgstr ""
+msgstr "ブラウザベースのアプリケーションはWeb APIと通信します"
 
 #: ../../intro/big_picture.rst:16
 msgid "Native applications communicate with web APIs"
-msgstr ""
+msgstr "ネイティブアプリケーションはWeb APIと通信します"
 
 #: ../../intro/big_picture.rst:18
 msgid "Server-based applications communicate with web APIs"
-msgstr ""
+msgstr "サーバーベースのアプリケーションがWeb APIと通信する"
 
 #: ../../intro/big_picture.rst:20
 msgid ""
 "Web APIs communicate with web APIs (sometimes on their own, sometimes on "
 "behalf of a user)"
 msgstr ""
+"Web APIはWeb APIと通信します（時には、ユーザー自身のために、時にはユー"
+"ザーのために）"
 
 #: ../../intro/big_picture.rst:22
 msgid ""
@@ -64,27 +70,34 @@ msgid ""
 "to protect resources and implement authentication and/or authorization – "
 "often against the same user store."
 msgstr ""
+"通常、各層（フロントエンド、ミドルエンド、バックエンド）は、リソースを保"
+"護し、認証や認可を実装する必要があります。"
 
 #: ../../intro/big_picture.rst:25
 msgid ""
 "Outsourcing these fundamental security functions to a security token "
-"service prevents duplicating that functionality across those applications"
-" and endpoints."
+"service prevents duplicating that functionality across those "
+"applications and endpoints."
 msgstr ""
+"これらの基本セキュリティー機能をセキュリティー・トークン・サービスにアウ"
+"トソーシングすると、それらのアプリケーションとエンドポイント間でその機能"
+"が重複することはありません。"
 
 #: ../../intro/big_picture.rst:27
 msgid ""
 "Restructuring the application to support a security token service leads "
 "to the following architecture and protocols:"
 msgstr ""
+"セキュリティトークンサービスをサポートするようにアプリケーションを再構築"
+"すると、次のアーキテクチャとプロトコルが使用されます。:"
 
 #: ../../intro/big_picture.rst:31
 msgid "Such a design divides security concerns into two parts:"
-msgstr ""
+msgstr "このような設計は、セキュリティ上の懸念を2つの部分に分けます。:"
 
 #: ../../intro/big_picture.rst:34
 msgid "Authentication"
-msgstr ""
+msgstr "認証"
 
 #: ../../intro/big_picture.rst:35
 msgid ""
@@ -95,6 +108,11 @@ msgid ""
 "(classic) web applications – but native and JS-based applications also "
 "have a need for authentication."
 msgstr ""
+"アプリケーションが現在のユーザーの身元を知る必要がある場合、認証が必要で"
+"す。通常、これらのアプリケーションはそのユーザーに代わってデータを管理"
+"し、このユーザーが許可されているデータにのみアクセスできるようにする必要"
+"があります。そのための最も一般的な例は、（古典的な）Webアプリケーションで"
+"すが、ネイティブおよびJSベースのアプリケーションでも認証が必要です。"
 
 #: ../../intro/big_picture.rst:40
 msgid ""
@@ -102,6 +120,8 @@ msgid ""
 "OpenID Connect – SAML2p being the most popular and the most widely "
 "deployed."
 msgstr ""
+"最も一般的な認証プロトコルは、SAML2p、WS-Federation、OpenID Connectです。"
+"SA​​ML2pが最も普及し、最も広く普及しています。"
 
 #: ../../intro/big_picture.rst:43
 msgid ""
@@ -110,64 +130,91 @@ msgid ""
 "built for mobile application scenarios right from the start and is "
 "designed to be API friendly."
 msgstr ""
+"OpenID Connectは3つのうち最新のものですが、現代的なアプリケーションの可能"
+"性が最も高いため、将来のものと考えられています。当初からモバイルアプリ"
+"ケーションのシナリオ用に開発されたもので、APIに対応するように設計されてい"
+"ます。"
 
 #: ../../intro/big_picture.rst:48
 msgid "API Access"
-msgstr ""
+msgstr "APIアクセス"
 
 #: ../../intro/big_picture.rst:49
 msgid ""
 "Applications have two fundamental ways with which they communicate with "
-"APIs – using the application identity, or delegating the user’s identity."
-" Sometimes both methods need to be combined."
+"APIs – using the application identity, or delegating the user’s "
+"identity. Sometimes both methods need to be combined."
 msgstr ""
+"アプリケーションには、アプリケーションIDを使用するか、またはユーザーのID"
+"を委任する、APIと通信する2つの基本的な方法があります。場合によっては、両"
+"方の方法を組み合わせる必要があります。"
 
 #: ../../intro/big_picture.rst:52
 msgid ""
 "OAuth2 is a protocol that allows applications to request access tokens "
-"from a security token service and use them to communicate with APIs. This"
-" delegation reduces complexity in both the client applications as well as"
-" the APIs since authentication and authorization can be centralized."
+"from a security token service and use them to communicate with APIs. "
+"This delegation reduces complexity in both the client applications as "
+"well as the APIs since authentication and authorization can be "
+"centralized."
 msgstr ""
+"OAuth2は、アプリケーションがセキュリティトークンサービスからのアクセス"
+"トークンを要求し、それらを使用してAPIと通信できるようにするプロトコルで"
+"す。この委任により、認証と承認を一元化できるため、クライアントアプリケー"
+"ションとAPIの両方の複雑さが軽減されます。"
 
 #: ../../intro/big_picture.rst:57
 msgid "OpenID Connect and OAuth 2.0 – better together"
-msgstr ""
+msgstr "OpenID ConnectとOAuth 2.0 - より良い連携"
 
 #: ../../intro/big_picture.rst:58
 msgid ""
-"OpenID Connect and OAuth 2.0 are very similar – in fact OpenID Connect is"
-" an extension on top of OAuth 2.0. The two fundamental security concerns,"
-" authentication and API access, are combined into a  single protocol - "
-"often with a single round trip to the security token service."
+"OpenID Connect and OAuth 2.0 are very similar – in fact OpenID Connect "
+"is an extension on top of OAuth 2.0. The two fundamental security "
+"concerns, authentication and API access, are combined into a  single "
+"protocol - often with a single round trip to the security token service."
 msgstr ""
+"OpenID ConnectとOAuth 2.0は非常によく似ています - 実際、OpenID Connectは"
+"OAuth 2.0の上に拡張されています。基本的なセキュリティ上の2つの懸念事項、"
+"認証とAPIアクセスは、1つのプロトコルに統合されます。セキュリティトークン"
+"サービスへの1回のラウンドトリップが頻繁に行われます。"
 
 #: ../../intro/big_picture.rst:61
 msgid ""
 "We believe that the combination of OpenID Connect and OAuth 2.0 is the "
 "best approach to secure modern applications for the foreseeable future. "
-"IdentityServer4 is an implementation of these two protocols and is highly"
-" optimized to solve the typical security problems of today’s mobile, "
-"native and web applications."
+"IdentityServer4 is an implementation of these two protocols and is "
+"highly optimized to solve the typical security problems of today’s "
+"mobile, native and web applications."
 msgstr ""
+"OpenID ConnectとOAuth 2.0の組み合わせは、近い将来、最新のアプリケーション"
+"を保護するための最良のアプローチだと考えています。IdentityServer4は、これ"
+"ら2つのプロトコルの実装であり、今日のモバイル、ネイティブ、およびWebアプ"
+"リケーションの典型的なセキュリティ問題を解決するために高度に最適化されて"
+"います。"
 
 #: ../../intro/big_picture.rst:66
 msgid "How IdentityServer4 can help"
-msgstr ""
+msgstr "IdentityServer4がどのように役立つか"
 
 #: ../../intro/big_picture.rst:67
 msgid ""
 "IdentityServer is middleware that adds the spec compliant OpenID Connect "
 "and OAuth 2.0 endpoints to an arbitrary ASP.NET Core application."
 msgstr ""
+"IdentityServerは、仕様準拠のOpenID ConnectおよびOAuth 2.0エンドポイントを"
+"任意のASP.NET Coreアプリケーションに追加するミドルウェアです。"
 
 #: ../../intro/big_picture.rst:69
 msgid ""
-"Typically, you build (or re-use) an application that contains a login and"
-" logout page (and maybe consent - depending on your needs), and the "
+"Typically, you build (or re-use) an application that contains a login "
+"and logout page (and maybe consent - depending on your needs), and the "
 "IdentityServer middleware adds the necessary protocol heads to it, so "
 "that client applications can talk to it using those standard protocols."
 msgstr ""
+"通常、ログインとログアウト・ページを含むアプリケーションを構築（または再"
+"利用）します（必要に応じて合意することもできます）。IdentityServerミドル"
+"ウェアは、クライアント・アプリケーションがそれに対話できるように、必要な"
+"プロトコル・ヘッドを追加しますそれらの標準プロトコルを使用しています。"
 
 #: ../../intro/big_picture.rst:74
 msgid ""
@@ -175,4 +222,6 @@ msgid ""
 "recommend to keep the attack surface as small as possible by including "
 "authentication related UI only."
 msgstr ""
-
+"ホスティングアプリケーションは、必要なだけ複雑にすることができますが、認"
+"証関連のUIだけを含めることで、攻撃の可能性をできるだけ小さくすることをお"
+"勧めします。"

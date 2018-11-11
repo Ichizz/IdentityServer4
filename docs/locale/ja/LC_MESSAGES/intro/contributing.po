@@ -4,78 +4,90 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 17:32+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../intro/contributing.rst:2
 msgid "Contributing"
-msgstr ""
+msgstr "貢献する"
 
 #: ../../intro/contributing.rst:3
 msgid ""
 "We are very open to community contributions, but there are a couple of "
-"guidelines you should follow so we can handle this without too much "
-"effort."
+"guidelines you should follow so we can handle this without too much effort."
 msgstr ""
+"私たちはコミュニティの貢献には非常にオープンですが、あまり努力することなくこ"
+"れを処理できるようにするためのガイドラインがいくつかあります。"
 
 #: ../../intro/contributing.rst:6
 msgid "How to contribute?"
-msgstr ""
+msgstr "貢献する方法？"
 
 #: ../../intro/contributing.rst:7
 msgid ""
-"The easiest way to contribute is to open an issue and start a discussion."
-" Then we can decide if and how a feature or a change could be "
-"implemented. If you should submit a pull request with code changes, start"
-" with a description, only make the minimal changes to start with and "
-"provide tests that cover those changes."
+"The easiest way to contribute is to open an issue and start a discussion. "
+"Then we can decide if and how a feature or a change could be implemented. "
+"If you should submit a pull request with code changes, start with a "
+"description, only make the minimal changes to start with and provide tests "
+"that cover those changes."
 msgstr ""
+"貢献する最も簡単な方法は、問題を開いてディスカッションを開始することです。次"
+"に、機能や変更を実装できるかどうか、どのように実装するかを決定できます。コー"
+"ドの変更を伴うプルリクエストを提出する必要がある場合は、説明から始めて、最小"
+"限の変更を開始し、その変更をカバーするテストを提供してください。"
 
 #: ../../intro/contributing.rst:11
 msgid ""
-"Also read this first: `Being a good open source citizen "
-"<https://hackernoon.com/being-a-good-open-source-citizen-"
-"9060d0ab9732#.x3hocgw85>`_"
+"Also read this first: `Being a good open source citizen <https://hackernoon."
+"com/being-a-good-open-source-citizen-9060d0ab9732#.x3hocgw85>`_"
 msgstr ""
+"これも最初に読んでください：`Being a good open source citizen <https://"
+"hackernoon.com/being-a-good-open-source-citizen-9060d0ab9732#.x3hocgw85>`_"
 
 #: ../../intro/contributing.rst:14
 msgid "General feedback and discussions?"
-msgstr ""
+msgstr "一般的なフィードバックとディスカッション"
 
 #: ../../intro/contributing.rst:15
 msgid ""
-"Please start a discussion on the `core repo issue tracker "
-"<https://github.com/IdentityServer/IdentityServer4/issues>`_."
+"Please start a discussion on the `core repo issue tracker <https://github."
+"com/IdentityServer/IdentityServer4/issues>`_."
 msgstr ""
+"`core repo issue tracker <https://github.com/IdentityServer/IdentityServer4/"
+"issues>`_ に関するディスカッションを開始してください。"
 
 #: ../../intro/contributing.rst:18
 msgid "Platform"
-msgstr ""
+msgstr "プラットフォーム"
 
 #: ../../intro/contributing.rst:19
 msgid ""
-"IdentityServer is built against ASP.NET Core 2 and runs on .NET Framework"
-" 4.6.1 (and higher) and .NET Core 2 (and higher)."
+"IdentityServer is built against ASP.NET Core 2 and runs on .NET Framework "
+"4.6.1 (and higher) and .NET Core 2 (and higher)."
 msgstr ""
+"IdentityServerはASP.NET Core 2に対して構築され、.NET Framework 4.6.1（以上）"
+"および.NET Core 2（以上）で動作します。"
 
 #: ../../intro/contributing.rst:22
 msgid "Bugs and feature requests?"
-msgstr ""
+msgstr "バグや機能要求？"
 
 #: ../../intro/contributing.rst:23
 msgid "Please log a new issue in the appropriate GitHub repo:"
-msgstr ""
+msgstr "適切なGitHubリポジトリに新しい問題を記録してください:"
 
 #: ../../intro/contributing.rst:25
 msgid "`Core <https://github.com/IdentityServer/IdentityServer4>`_"
@@ -87,13 +99,13 @@ msgstr ""
 
 #: ../../intro/contributing.rst:27
 msgid ""
-"`AccessTokenValidation "
-"<https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation>`_"
+"`AccessTokenValidation <https://github.com/IdentityServer/IdentityServer4."
+"AccessTokenValidation>`_"
 msgstr ""
 
 #: ../../intro/contributing.rst:30
 msgid "Other discussions"
-msgstr ""
+msgstr "その他の議論"
 
 #: ../../intro/contributing.rst:31
 msgid "https://gitter.im/IdentityServer/IdentityServer4"
@@ -101,7 +113,7 @@ msgstr ""
 
 #: ../../intro/contributing.rst:34
 msgid "Contributing code and content"
-msgstr ""
+msgstr "貢献するコードとコンテンツ"
 
 #: ../../intro/contributing.rst:35
 msgid ""
@@ -109,37 +121,45 @@ msgid ""
 "contribute any code or content. This is an automated process that will "
 "start after you opened a pull request."
 msgstr ""
+"コードやコンテンツを提供する前に、コントリビュータライセンス契約に署名する必"
+"要があります。これは、プルリクエストを開いた後に開始される自動プロセスです。"
 
 #: ../../intro/contributing.rst:38
 msgid "**We only accept PRs to the dev branch.**"
-msgstr ""
+msgstr "**私たちはdevブランチに対してのみPRを受け付けます。**"
 
 #: ../../intro/contributing.rst:41
 msgid "Contribution projects"
-msgstr ""
+msgstr "貢献プロジェクト"
 
 #: ../../intro/contributing.rst:42
 msgid ""
-"We very much appreciate if you start a contribution project (e.g. support"
-" for Database X or Configuration Store Y). Tell us about it so we can "
-"tweet and link it in our docs."
+"We very much appreciate if you start a contribution project (e.g. support "
+"for Database X or Configuration Store Y). Tell us about it so we can tweet "
+"and link it in our docs."
 msgstr ""
+"貢献プロジェクトを開始すると非常に感謝します（例えば、データベースXまたは構"
+"成ストアYのサポート）。それについて私達に教えてください。"
 
 #: ../../intro/contributing.rst:45
 msgid ""
-"We generally don't want to take ownership of those contribution "
-"libraries, we are already really busy supporting the core projects."
+"We generally don't want to take ownership of those contribution libraries, "
+"we are already really busy supporting the core projects."
 msgstr ""
+"私たちは一般的に、これらの寄付図書館の所有権を奪いたくないので、私たちはすで"
+"にコアプロジェクトのサポートに忙しいです。"
 
 #: ../../intro/contributing.rst:47
 msgid "**Naming conventions**"
-msgstr ""
+msgstr "**命名規則**"
 
 #: ../../intro/contributing.rst:49
 msgid ""
-"As of October 2017, the IdentityServer4.* nuget namespace is reserved for"
-" our packages. Please use the following naming conventions:"
+"As of October 2017, the IdentityServer4.* nuget namespace is reserved for "
+"our packages. Please use the following naming conventions:"
 msgstr ""
+"2017年10月現在、IdentityServer4。* nuget名前空間はパッケージ用に予約されてい"
+"ます。次の命名規則を使用してください："
 
 #: ../../intro/contributing.rst:51
 msgid "YourProjectName.IdentityServer4"
@@ -147,9 +167,8 @@ msgstr ""
 
 #: ../../intro/contributing.rst:53
 msgid "or"
-msgstr ""
+msgstr "または"
 
 #: ../../intro/contributing.rst:55
 msgid "IdentityServer4.Contrib.YourProjectName"
 msgstr ""
-

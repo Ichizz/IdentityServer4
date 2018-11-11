@@ -4,39 +4,40 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 17:04+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../misc/blogs.rst:2
 msgid "Blog posts"
-msgstr ""
+msgstr "ブログ記事"
 
 #: ../../misc/blogs.rst:5
 msgid "Team posts"
-msgstr ""
+msgstr "チームの投稿"
 
 #: ../../misc/blogs.rst:6
 msgid ""
-"`Platforms where you can run IdentityServer4 "
-"<https://leastprivilege.com/2017/01/15/platforms-where-you-can-run-"
-"identityserver4/>`_"
+"`Platforms where you can run IdentityServer4 <https://leastprivilege."
+"com/2017/01/15/platforms-where-you-can-run-identityserver4/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:7
 msgid ""
-"`Optimizing Tokens for size <https://leastprivilege.com/2016/12/14"
-"/optimizing-identity-tokens-for-size/>`_"
+"`Optimizing Tokens for size <https://leastprivilege.com/2016/12/14/"
+"optimizing-identity-tokens-for-size/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:8
@@ -47,46 +48,45 @@ msgstr ""
 
 #: ../../misc/blogs.rst:9
 msgid ""
-"`Bootstraping OpenID Connect: Discovery "
-"<https://leastprivilege.com/2017/01/06/bootstrapping-openid-connect-"
-"discovery/>`_"
+"`Bootstraping OpenID Connect: Discovery <https://leastprivilege."
+"com/2017/01/06/bootstrapping-openid-connect-discovery/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:10
 msgid ""
-"`Extending IdentityServer4 with WS-Federation Support "
-"<https://leastprivilege.com/2017/03/03/extending-identityserver4-with-ws-"
+"`Extending IdentityServer4 with WS-Federation Support <https://"
+"leastprivilege.com/2017/03/03/extending-identityserver4-with-ws-"
 "federation-support/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:11
 msgid ""
-"`Announcing IdentityServer4 RC1 "
-"<https://leastprivilege.com/2016/09/06/identityserver4-rc1/>`_"
+"`Announcing IdentityServer4 RC1 <https://leastprivilege.com/2016/09/06/"
+"identityserver4-rc1/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:12
 msgid ""
-"`Getting Started with IdentityServer 4 <https://www.scottbrady91.com"
-"/Identity-Server/Getting-Started-with-IdentityServer-4>`_"
+"`Getting Started with IdentityServer 4 <https://www.scottbrady91.com/"
+"Identity-Server/Getting-Started-with-IdentityServer-4>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:13
 msgid ""
-"`IdentityServer 4 SharePoint Integration using WS-Federation "
-"<https://www.scottbrady91.com/Identity-Server/IdentityServer-4"
-"-SharePoint-Integration-using-WS-Federation>`_"
+"`IdentityServer 4 SharePoint Integration using WS-Federation <https://"
+"www.scottbrady91.com/Identity-Server/IdentityServer-4-SharePoint-"
+"Integration-using-WS-Federation>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:14
 msgid ""
-"`IdentityServer and Swagger <https://www.scottbrady91.com/Identity-Server"
-"/ASPNET-Core-Swagger-UI-Authorization-using-IdentityServer4>`__"
+"`IdentityServer and Swagger <https://www.scottbrady91.com/Identity-"
+"Server/ASPNET-Core-Swagger-UI-Authorization-using-IdentityServer4>`__"
 msgstr ""
 
 #: ../../misc/blogs.rst:17
 msgid "What's new posts"
-msgstr ""
+msgstr "新しい記事"
 
 #: ../../misc/blogs.rst:18
 msgid ""
@@ -98,54 +98,52 @@ msgstr ""
 
 #: ../../misc/blogs.rst:19
 msgid ""
-"`New in IdentityServer4: Clients without Secrets "
-"<https://leastprivilege.com/2016/09/13/new-in-identityserver4-clients-"
-"without-secrets/>`_"
+"`New in IdentityServer4: Clients without Secrets <https://leastprivilege."
+"com/2016/09/13/new-in-identityserver4-clients-without-secrets/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:20
 msgid ""
-"`New in IdentityServer4: Default Scopes "
-"<https://leastprivilege.com/2016/09/14/new-in-identityserver4-default-"
-"scopes/>`_"
+"`New in IdentityServer4: Default Scopes <https://leastprivilege."
+"com/2016/09/14/new-in-identityserver4-default-scopes/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:21
 msgid ""
-"`New in IdentityServer4: Support for Extension Grants "
-"<https://leastprivilege.com/2016/09/20/new-in-identityserver4-support-"
-"for-extension-grants/>`_"
+"`New in IdentityServer4: Support for Extension Grants <https://"
+"leastprivilege.com/2016/09/20/new-in-identityserver4-support-for-"
+"extension-grants/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:22
 msgid ""
-"`New in IdentityServer4: Resource Owner Password Validation "
-"<https://leastprivilege.com/2016/09/29/new-in-identityserver4-resource-"
-"owner-password-validation/>`_"
+"`New in IdentityServer4: Resource Owner Password Validation <https://"
+"leastprivilege.com/2016/09/29/new-in-identityserver4-resource-owner-"
+"password-validation/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:23
 msgid ""
-"`New in IdentityServer4: Resource-based Configuration "
-"<https://leastprivilege.com/2016/12/01/new-in-identityserver4-resource-"
-"based-configuration/>`_"
+"`New in IdentityServer4: Resource-based Configuration <https://"
+"leastprivilege.com/2016/12/01/new-in-identityserver4-resource-based-"
+"configuration/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:24
 msgid ""
-"`New in IdentityServer4: Events <https://leastprivilege.com/2017/03/30"
-"/new-in-identityserver4-events/>`_"
+"`New in IdentityServer4: Events <https://leastprivilege.com/2017/03/30/"
+"new-in-identityserver4-events/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:27
 msgid "Community posts"
-msgstr ""
+msgstr "コミュニティの投稿"
 
 #: ../../misc/blogs.rst:28
 msgid ""
-"`IdentityServer localization using ui_locales "
-"<https://damienbod.com/2017/11/11/identityserver4-localization-using-"
-"ui_locales-and-the-query-string>`_"
+"`IdentityServer localization using ui_locales <https://damienbod."
+"com/2017/11/11/identityserver4-localization-using-ui_locales-and-the-"
+"query-string>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:29
@@ -157,22 +155,22 @@ msgstr ""
 
 #: ../../misc/blogs.rst:30
 msgid ""
-"`IdentityServer4 on the ASP.NET Team Blog "
-"<https://blogs.msdn.microsoft.com/webdev/2017/01/23/asp-net-core-"
-"authentication-with-identityserver4/>`_"
+"`IdentityServer4 on the ASP.NET Team Blog <https://blogs.msdn.microsoft."
+"com/webdev/2017/01/23/asp-net-core-authentication-with-identityserver4/"
+">`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:31
 msgid ""
-"`Angular2 OpenID Connect Implicit Flow with IdentityServer4 "
-"<https://damienbod.com/2016/03/02/angular2-openid-connect-implicit-flow-"
-"with-identityserver4/>`_"
+"`Angular2 OpenID Connect Implicit Flow with IdentityServer4 <https://"
+"damienbod.com/2016/03/02/angular2-openid-connect-implicit-flow-with-"
+"identityserver4/>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:32
 msgid ""
-"`Full Server Logout with IdentityServer4 and OpenID Connect Implicit Flow"
-" <https://damienbod.com/2016/09/16/full-server-logout-with-"
+"`Full Server Logout with IdentityServer4 and OpenID Connect Implicit "
+"Flow <https://damienbod.com/2016/09/16/full-server-logout-with-"
 "identityserver4-and-openid-connect-implicit-flow/>`_"
 msgstr ""
 
@@ -185,31 +183,31 @@ msgstr ""
 
 #: ../../misc/blogs.rst:34
 msgid ""
-"`Secure your .NETCore web applications using IdentityServer 4 "
-"<https://social.technet.microsoft.com/wiki/contents/articles/37169"
-".secure-your-netcore-web-applications-using-identityserver-4.aspx>`_"
+"`Secure your .NETCore web applications using IdentityServer 4 <https://"
+"social.technet.microsoft.com/wiki/contents/articles/37169.secure-your-"
+"netcore-web-applications-using-identityserver-4.aspx>`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:35
 msgid ""
 "`ASP.NET Core IdentityServer4 Resource Owner Password Flow with custom "
 "UserRepository <https://damienbod.com/2017/04/14/asp-net-core-"
-"identityserver4-resource-owner-password-flow-with-custom-"
-"userrepository/>`_"
+"identityserver4-resource-owner-password-flow-with-custom-userrepository/"
+">`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:36
 msgid ""
 "`Secure ASP.NET Core MVC with Angular using IdentityServer4 OpenID "
 "Connect Hybrid Flow <https://damienbod.com/2017/05/06/secure-asp-net-"
-"core-mvc-with-angular-using-identityserver4-openid-connect-hybrid-"
-"flow//>`_"
+"core-mvc-with-angular-using-identityserver4-openid-connect-hybrid-flow//"
+">`_"
 msgstr ""
 
 #: ../../misc/blogs.rst:37
 msgid ""
-"`Adding an external Microsoft login to IdentityServer4 "
-"<https://damienbod.com/2017/07/11/adding-an-external-microsoft-login-to-"
+"`Adding an external Microsoft login to IdentityServer4 <https://"
+"damienbod.com/2017/07/11/adding-an-external-microsoft-login-to-"
 "identityserver4/>`_"
 msgstr ""
 
@@ -219,4 +217,3 @@ msgid ""
 "<https://damienbod.com/2017/07/14/implementing-two-factor-authentication-"
 "with-identityserver4-and-twilio/>`_"
 msgstr ""
-

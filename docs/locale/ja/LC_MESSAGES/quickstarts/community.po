@@ -4,31 +4,35 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 18:07+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../quickstarts/community.rst:2
 msgid "Community quickstarts & samples"
-msgstr ""
+msgstr "コミュニティのクイックスタートとサンプル"
 
 #: ../../quickstarts/community.rst:3
 msgid ""
 "These samples are not maintained by the IdentityServer organization. The "
-"IdentityServer organization happily links to community samples, but can't"
-" make any guarantees about the samples. Please contact the authors "
-"directly."
+"IdentityServer organization happily links to community samples, but can't "
+"make any guarantees about the samples. Please contact the authors directly."
 msgstr ""
+"これらのサンプルは、IdentityServer組織によって管理されていません。"
+"IdentityServer組織はコミュニティサンプルにうまくリンクしますが、サンプルにつ"
+"いては何ら保証することはできません。著者に直接お問い合わせください。"
 
 #: ../../quickstarts/community.rst:8
 msgid "Various ASP.NET Core security samples"
@@ -44,10 +48,14 @@ msgstr ""
 
 #: ../../quickstarts/community.rst:13
 msgid ""
-"`This "
-"<https://github.com/IdentityServer/IdentityServer4.Samples/tree/release/Quickstarts/Combined_AspNetIdentity_and_EntityFrameworkStorage>`_"
-" sample combines the EF and ASP.NET Identity quickstarts (#6 and #8)."
+"`This <https://github.com/IdentityServer/IdentityServer4.Samples/tree/"
+"release/Quickstarts/Combined_AspNetIdentity_and_EntityFrameworkStorage>`_ "
+"sample combines the EF and ASP.NET Identity quickstarts (#6 and #8)."
 msgstr ""
+"`この <https://github.com/IdentityServer/IdentityServer4.Samples/tree/"
+"release/Quickstarts/Combined_AspNetIdentity_and_EntityFrameworkStorage>`_ サ"
+"ンプルでは、​​EFとASP.NET IDのクイックスタート（＃6と＃8）を組み合わせていま"
+"す。"
 
 #: ../../quickstarts/community.rst:16
 msgid "Co-hosting IdentityServer4 and a Web API"
@@ -55,9 +63,11 @@ msgstr ""
 
 #: ../../quickstarts/community.rst:17
 msgid ""
-"This sample shows how to host an API in the same host as the "
-"IdentityServer that is protecting the API."
+"This sample shows how to host an API in the same host as the IdentityServer "
+"that is protecting the API."
 msgstr ""
+"このサンプルは、APIを保護しているIdentityServerと同じホストにAPIをホストする"
+"方法を示しています。"
 
 #: ../../quickstarts/community.rst:19
 msgid "https://github.com/brockallen/IdentityServerAndApi"
@@ -72,13 +82,17 @@ msgid ""
 "IdentityServer4-mongo: Similar to Quickstart #8 EntityFramework "
 "configuration but using MongoDB for the configuration data."
 msgstr ""
+"IdentityServer4-mongo：Quickstart＃8 EntityFrameworkの設定と似ていますが、"
+"MongoDBを設定データとして使用しています。"
 
 #: ../../quickstarts/community.rst:24
 msgid ""
-"IdentityServer4-mongo-AspIdentity: More elaborated sample based on uses "
-"ASP.NET Identity for identity management that uses using MongoDB for the "
+"IdentityServer4-mongo-AspIdentity: More elaborated sample based on uses ASP."
+"NET Identity for identity management that uses using MongoDB for the "
 "configuration data"
 msgstr ""
+"IdentityServer4-mongo-AspIdentity：より洗練されたサンプルは、MongoDBを使用し"
+"て設定データを使用するアイデンティティ管理用のASP.NET IDを使用します。"
 
 #: ../../quickstarts/community.rst:26
 msgid "https://github.com/souzartn/IdentityServer4.Samples.Mongo"
@@ -93,6 +107,8 @@ msgid ""
 "Shows how to exchange an external authentication token to an identity "
 "server acesss token using an extension grant"
 msgstr ""
+"拡張認証を使用して外部認証トークンをIDサーバーのacesssトークンに交換する方法"
+"を示します。"
 
 #: ../../quickstarts/community.rst:32
 msgid "https://github.com/waqaskhan540/IdentityServerExternalAuth"
@@ -104,9 +120,9 @@ msgstr ""
 
 #: ../../quickstarts/community.rst:37
 msgid ""
-"`Razor Pages based QuickStart sample "
-"<https://github.com/IdentityServer4Contrib/IdentityServer4.Contrib.Templates.RazorPages>`_"
-" by `Martin Fletcher <https://github.com/martinfletcher>`_."
+"`Razor Pages based QuickStart sample <https://github.com/"
+"IdentityServer4Contrib/IdentityServer4.Contrib.Templates.RazorPages>`_ by "
+"`Martin Fletcher <https://github.com/martinfletcher>`_."
 msgstr ""
 
 #: ../../quickstarts/community.rst:41
@@ -115,10 +131,11 @@ msgstr ""
 
 #: ../../quickstarts/community.rst:42
 msgid ""
-"Shows an interaction of trusted \"internal\" applications and "
-"\"external\" applications with .NET Core 2.0 and ASP.NET Core 2.0 "
-"applications"
+"Shows an interaction of trusted \"internal\" applications and \"external\" "
+"applications with .NET Core 2.0 and ASP.NET Core 2.0 applications"
 msgstr ""
+"信頼できる「内部」アプリケーションと「外部」アプリケーションとの、.NET Core "
+"2.0およびASP.NET Core 2.0アプリケーションとの相互作用を示します。"
 
 #: ../../quickstarts/community.rst:44
 msgid "https://github.com/BenjaminAbt/Samples.AspNetCore-IdentityServer4"
@@ -130,17 +147,20 @@ msgstr ""
 
 #: ../../quickstarts/community.rst:49
 msgid ""
-"Shows how to secure a Node (Express) API using the JWKS endpoint and "
-"RS256 algorithm from IdentityServer4."
+"Shows how to secure a Node (Express) API using the JWKS endpoint and RS256 "
+"algorithm from IdentityServer4."
 msgstr ""
+"IdentityServer4のJWKSエンドポイントとRS256アルゴリズムを使用してノード"
+"（Express）APIを保護する方法を示します。"
 
 #: ../../quickstarts/community.rst:50
 msgid ""
-"Provides an alternative to the NodeJsApi sample from "
-"IdentityServer4.Samples using higher quality - production ready modules."
+"Provides an alternative to the NodeJsApi sample from IdentityServer4."
+"Samples using higher quality - production ready modules."
 msgstr ""
+"高品質の実稼働準備完了モジュールを使用するIdentityServer4.SamplesのNodeJsApi"
+"サンプルの代替品を提供します。"
 
 #: ../../quickstarts/community.rst:52
 msgid "https://github.com/lyphtec/idsvr4-node-jwks"
 msgstr ""
-

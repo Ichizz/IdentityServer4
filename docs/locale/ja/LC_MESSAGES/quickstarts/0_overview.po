@@ -4,48 +4,53 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-11 18:03+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../quickstarts/0_overview.rst:2
 msgid "Setup and Overview"
-msgstr ""
+msgstr "セットアップと概要"
 
 #: ../../quickstarts/0_overview.rst:4
 msgid "There are two fundamental ways to start a new IdentityServer project:"
 msgstr ""
+"新しいIdentityServerプロジェクトを開始するには、基本的に2つの方法がありま"
+"す。:"
 
 #: ../../quickstarts/0_overview.rst:6
 msgid "start from scratch"
-msgstr ""
+msgstr "ゼロから始めます"
 
 #: ../../quickstarts/0_overview.rst:7
 msgid "start with the ASP.NET Identity template in Visual Studio"
-msgstr ""
+msgstr "Visual StudioでASP.NET IDテンプレートを使い始める"
 
 #: ../../quickstarts/0_overview.rst:9
 msgid ""
 "If you start from scratch, we provide a couple of helpers and in-memory "
-"stores, so you don't have to worry about persistence right from the "
-"start."
+"stores, so you don't have to worry about persistence right from the start."
 msgstr ""
+"「ゼロから始めます」から始めれば、いくつかのヘルパーとメモリ内のストアが提"
+"供されるので、最初から永続性について心配する必要はありません。"
 
 #: ../../quickstarts/0_overview.rst:12
 msgid ""
 "If you start with ASP.NET Identity, we provide an easy way to integrate "
 "with that as well."
-msgstr ""
+msgstr "ASP.NET Identityを使い始めると、簡単に統合することができます。"
 
 #: ../../quickstarts/0_overview.rst:14
 msgid ""
@@ -53,22 +58,29 @@ msgid ""
 "IdentityServer scenarios. They start with the absolute basics and become "
 "more complex - it is recommended you do them in order."
 msgstr ""
+"クイックスタートは、さまざまな一般的なIdentityServerシナリオのためのステッ"
+"プバイステップの指示を提供します。彼らは絶対的な基本から始まり、より複雑に"
+"なります - あなたがそれらを順番に行うことが推奨されます。"
 
 #: ../../quickstarts/0_overview.rst:18
 msgid ""
 "Every quickstart has a reference solution - you can find the code in the "
-"`IdentityServer4.Samples "
-"<https://github.com/IdentityServer/IdentityServer4.Samples>`_ repo in the"
-" quickstarts folder."
+"`IdentityServer4.Samples <https://github.com/IdentityServer/"
+"IdentityServer4.Samples>`_ repo in the quickstarts folder."
 msgstr ""
+"すべてのクイックスタートには参照ソリューションがあります。このコード は、"
+"quickstartsフォルダの `IdentityServer4.Samples <https://github.com/"
+"IdentityServer/IdentityServer4.Samples>`_ リポジトリにあります。"
 
 #: ../../quickstarts/0_overview.rst:23
 msgid "Basic setup"
-msgstr ""
+msgstr "基本設定"
 
 #: ../../quickstarts/0_overview.rst:24
 msgid "The screen shots show Visual Studio - but this is not a requirement."
 msgstr ""
+"スクリーンショットにはVisual Studioが表示されます。 - これは必須条件ではあ"
+"りません。"
 
 #: ../../quickstarts/0_overview.rst:26
 msgid "**Creating the quickstart IdentityServer**"
@@ -76,21 +88,23 @@ msgstr ""
 
 #: ../../quickstarts/0_overview.rst:28
 msgid "Start by creating a new ASP.NET Core project."
-msgstr ""
+msgstr "まず、新しいASP.NET coreプロジェクトを作成します。"
 
 #: ../../quickstarts/0_overview.rst:32
 msgid "Then select the \"Empty\" option."
-msgstr ""
+msgstr "「Empty」オプションを選択します。"
 
 #: ../../quickstarts/0_overview.rst:36
 msgid "Next, add the `IdentityServer4` nuget package:"
-msgstr ""
+msgstr "次に、 `IdentityServer4` nuget パッケージを追加します。:"
 
 #: ../../quickstarts/0_overview.rst:40
 msgid ""
-"Alternatively you can use Package Manager Console to add the dependency "
-"by running the following command:"
+"Alternatively you can use Package Manager Console to add the dependency by "
+"running the following command:"
 msgstr ""
+"別の方法として、パッケージマネージャコンソールを使用して、次のコマンドを実"
+"行して依存関係を追加することもできます。:"
 
 #: ../../quickstarts/0_overview.rst:42
 msgid "\"Install-Package IdentityServer4\""
@@ -101,28 +115,38 @@ msgid ""
 "IdentityServer build numbers 1.x target ASP.NET Core 1.1, and "
 "IdentityServer build numbers 2.x targets ASP.NET Core 2.0 ."
 msgstr ""
+"IdentityServerビルド番号1.xターゲットASP.NETコア1.1、およびアイデンティティ"
+"サーバービルド番号2.xはASP.NETコア2.0をターゲットとしています。"
 
 #: ../../quickstarts/0_overview.rst:46
 msgid ""
-"IdentityServer uses the usual pattern to configure and add services to an"
-" ASP.NET Core host. In ``ConfigureServices`` the required services are "
-"configured and added to the DI system. In ``Configure`` the middleware is"
-" added to the HTTP pipeline."
+"IdentityServer uses the usual pattern to configure and add services to an "
+"ASP.NET Core host. In ``ConfigureServices`` the required services are "
+"configured and added to the DI system. In ``Configure`` the middleware is "
+"added to the HTTP pipeline."
 msgstr ""
+"IdentityServerは、通常のパターンを使用してASP.NETコアホストにサービスを設定"
+"し、追加します。 ``ConfigureServices`` 必要なサービス構成され、DIシステムに"
+"加え。では ``Configure`` ミドルウェアHTTPパイプラインに追加されます。"
 
 #: ../../quickstarts/0_overview.rst:50
 msgid "Modify your ``Startup.cs`` file to look like this::"
-msgstr ""
+msgstr "``Startup.cs`` ファイルを次のように変更します。::"
 
 #: ../../quickstarts/0_overview.rst:71
 msgid ""
-"``AddIdentityServer`` registers the IdentityServer services in DI. It "
-"also registers an in-memory store for runtime state. This is useful for "
+"``AddIdentityServer`` registers the IdentityServer services in DI. It also "
+"registers an in-memory store for runtime state. This is useful for "
 "development scenarios. For production scenarios you need a persistent or "
-"shared store like a database or cache for that. See the "
-":ref:`EntityFramework <refEntityFrameworkQuickstart>` quickstart for more"
-" information."
+"shared store like a database or cache for that. See the :ref:"
+"`EntityFramework <refEntityFrameworkQuickstart>` quickstart for more "
+"information."
 msgstr ""
+"``AddIdentityServer`` DIにIdentityServerサービスを登録します。また、実行時"
+"状態のインメモリ・ストアも登録します。これは開発シナリオに役立ちます。実動"
+"シナリオでは、データベースまたはキャッシュのような永続ストアまたは共有スト"
+"アが必要です。詳細については、 :ref:`EntityFramework "
+"<refEntityFrameworkQuickstart>` のクイックスタートを参照してください。"
 
 #: ../../quickstarts/0_overview.rst:75
 msgid ""
@@ -132,16 +156,23 @@ msgid ""
 "scenarios. See the :ref:`cryptography docs <refCrypto>` for more "
 "information."
 msgstr ""
+"AddDeveloperSigningCredential拡張子は、署名トークンのための一時的なキーマテ"
+"リアルを作成します。これはやり直すのにも役立つかもしれませんが、実動シナリ"
+"オのためのいくつかの永続的なキーマテリアルに置き換える必要があります。詳細"
+"については、:ref:`cryptography docs <refCrypto>` のドキュメントを参照してく"
+"ださい。"
 
 #: ../../quickstarts/0_overview.rst:79
 msgid ""
 "IdentityServer is not yet ready to be launched. We will add the required "
 "services in the following quickstarts."
 msgstr ""
+"IdentityServerはまだ起動する準備ができていません。以下のクイックスタートで"
+"必要なサービスを追加します。"
 
 #: ../../quickstarts/0_overview.rst:82
 msgid "Modify hosting"
-msgstr ""
+msgstr "ホスティングの変更"
 
 #: ../../quickstarts/0_overview.rst:84
 msgid ""
@@ -149,65 +180,92 @@ msgid ""
 "is totally fine, except that you won't be able to see the real time log "
 "output to the console."
 msgstr ""
+"既定では、Visual StudioはIIS Expressを使用してWebプロジェクトをホストしま"
+"す。コンソールにリアルタイムのログ出力を見ることができないことを除いて、こ"
+"れはまったく問題ありません。"
 
 #: ../../quickstarts/0_overview.rst:87
 msgid ""
 "IdentityServer makes extensive use of logging whereas the \"visible\" "
 "error message in the UI or returned to clients are deliberately vague."
 msgstr ""
+"IdentityServerはロギングを大量に使用しますが、UIの「表示可能な」エラーメッ"
+"セージまたはクライアントに返されるエラーメッセージは意図的に曖昧です。"
 
 #: ../../quickstarts/0_overview.rst:90
 msgid ""
-"We recommend to run IdentityServer in the console host. You can do this "
-"by switching the launch profile in Visual Studio. You also don't need to "
+"We recommend to run IdentityServer in the console host. You can do this by "
+"switching the launch profile in Visual Studio. You also don't need to "
 "launch a browser every time you start IdentityServer - you can turn that "
 "off as well:"
 msgstr ""
+"コンソールホストでIdentityServerを実行することをお勧めします。これは、"
+"Visual Studioで起動プロファイルを切り替えることで実行できます。また、"
+"IdentityServerを起動するたびにブラウザを起動する必要はありません。これをオ"
+"フにすることもできます。:"
 
 #: ../../quickstarts/0_overview.rst:96
 msgid ""
-"In addition, it will be helpful to run IdentityServer on a consistent URL"
-" for these quickstarts. You should also configure this URL in the launch "
+"In addition, it will be helpful to run IdentityServer on a consistent URL "
+"for these quickstarts. You should also configure this URL in the launch "
 "profile dialog above, and use ``http://localhost:5000/``. In the above "
 "screenshot  you can see this URL has been configured."
 msgstr ""
+"さらに、これらのクイックスタートの一貫したURLでIdentityServerを実行すると便"
+"利です。また、上記の起動プロファイルダイアログでこのURLを設定し、使用する必"
+"要があります ``http://localhost:5000/`` 。上のスクリーンショットでは、この"
+"URLが設定されていることがわかります。"
 
 #: ../../quickstarts/0_overview.rst:100
 msgid ""
-"We recommend to configure the same port for IIS Express and self-hosting."
-" This way you can switch between the two without having to modify any "
+"We recommend to configure the same port for IIS Express and self-hosting. "
+"This way you can switch between the two without having to modify any "
 "configuration in your clients."
 msgstr ""
+"IIS Expressと自己ホスティングに同じポートを設定することをお勧めします。この"
+"方法で、クライアントの設定を変更することなく、2つの間で切り替えることができ"
+"ます。"
 
 #: ../../quickstarts/0_overview.rst:102
 msgid ""
-"To then choose the console host when you launch, you must select it in "
-"the launch menu from Visual Studio:"
+"To then choose the console host when you launch, you must select it in the "
+"launch menu from Visual Studio:"
 msgstr ""
+"起動時にコンソールホストを選択するには、Visual Studioの起動メニューでコン"
+"ソールホストを選択する必要があります。:"
 
 #: ../../quickstarts/0_overview.rst:107
 msgid "How to run the quickstart"
-msgstr ""
+msgstr "クイックスタートの実行方法"
 
 #: ../../quickstarts/0_overview.rst:108
 msgid ""
 "As mentioned above every quickstart has a reference solution - you can "
-"find the code in the `IdentityServer4.Samples "
-"<https://github.com/IdentityServer/IdentityServer4.Samples>`_ repo in the"
-" quickstarts folder."
+"find the code in the `IdentityServer4.Samples <https://github.com/"
+"IdentityServer/IdentityServer4.Samples>`_ repo in the quickstarts folder."
 msgstr ""
+"前述のとおり、すべてのクイックスタートには参照ソリューションがあります。こ"
+"のコード は、quickstartsフォルダの `IdentityServer4.Samples <https://"
+"github.com/IdentityServer/IdentityServer4.Samples>`_ レポで見つけることがで"
+"き ます。"
 
 #: ../../quickstarts/0_overview.rst:112
 msgid ""
-"The easiest way to run the individual parts of a quickstart solution is "
-"to set the startup mode to \"current selection\". Right click the "
-"solution and select \"Set Startup Projects\":"
+"The easiest way to run the individual parts of a quickstart solution is to "
+"set the startup mode to \"current selection\". Right click the solution "
+"and select \"Set Startup Projects\":"
 msgstr ""
+"クイックスタートソリューションの個々の部分を実行する最も簡単な方法は、起動"
+"モードを「現在の選択」に設定することです。ソリューションを右クリックし、"
+"[Startup Projectsを設定]を選択します。:"
 
 #: ../../quickstarts/0_overview.rst:117
 msgid ""
 "Typically you start IdentityServer first, then the API, and then the "
-"client. Only run in the debugger if you actually want to debug. Otherwise"
-" Ctrl+F5 is the best way to run the projects."
+"client. Only run in the debugger if you actually want to debug. Otherwise "
+"Ctrl+F5 is the best way to run the projects."
 msgstr ""
-
+"通常、まずIdentityServerを起動してから、APIを起動してから、クライアントを起"
+"動します。実際にデバッグしたい場合は、デバッガでのみ実行してください。それ"
+"以外の場合は、プロジェクトを実行するにはCtrl + F5を使用するのが最善の方法で"
+"す。"
