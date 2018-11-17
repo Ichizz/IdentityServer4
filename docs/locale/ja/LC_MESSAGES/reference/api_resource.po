@@ -4,27 +4,29 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:50+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../reference/api_resource.rst:4
 msgid "API Resource"
-msgstr ""
+msgstr "APIリソース"
 
 #: ../../reference/api_resource.rst:5
 msgid "This class model an API resource."
-msgstr ""
+msgstr "このクラスはAPIリソースをモデル化します。"
 
 #: ../../reference/api_resource.rst:7
 msgid "``Enabled``"
@@ -32,9 +34,9 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:8
 msgid ""
-"Indicates if this resource is enabled and can be requested. Defaults to "
-"true."
+"Indicates if this resource is enabled and can be requested. Defaults to true."
 msgstr ""
+"このリソースが有効であり、要求できるかどうかを示します。デフォルトはtrueです。"
 
 #: ../../reference/api_resource.rst:9 ../../reference/api_resource.rst:28
 msgid "``Name``"
@@ -43,9 +45,10 @@ msgstr ""
 #: ../../reference/api_resource.rst:10
 msgid ""
 "The unique name of the API. This value is used for authentication with "
-"introspection and will be added to the audience of the outgoing access "
-"token."
+"introspection and will be added to the audience of the outgoing access token."
 msgstr ""
+"APIの一意の名前。この値はイントロスペクションでの認証に使用され、発信アクセス"
+"トークンのオーディエンスに追加されます。"
 
 #: ../../reference/api_resource.rst:11 ../../reference/api_resource.rst:30
 msgid "``DisplayName``"
@@ -54,7 +57,7 @@ msgstr ""
 #: ../../reference/api_resource.rst:12 ../../reference/api_resource.rst:14
 #: ../../reference/api_resource.rst:31 ../../reference/api_resource.rst:33
 msgid "This value can be used e.g. on the consent screen."
-msgstr ""
+msgstr "この値は、例えば同意画面で使用できます。"
 
 #: ../../reference/api_resource.rst:13 ../../reference/api_resource.rst:32
 msgid "``Description``"
@@ -66,9 +69,11 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:16
 msgid ""
-"The API secret is used for the introspection endpoint. The API can "
-"authenticate with introspection using the API name and secret."
+"The API secret is used for the introspection endpoint. The API can authenticate "
+"with introspection using the API name and secret."
 msgstr ""
+"イントロスペクションエンドポイントにはAPIシークレットが使用されます。APIは、API"
+"名とシークレットを使用してイントロスペクションで認証できます。"
 
 #: ../../reference/api_resource.rst:17 ../../reference/api_resource.rst:41
 msgid "``UserClaims``"
@@ -76,9 +81,9 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:18
 msgid ""
-"List of associated user claim types that should be included in the access"
-" token."
+"List of associated user claim types that should be included in the access token."
 msgstr ""
+"アクセストークンに含める必要がある、関連するユーザークレームタイプのリスト。"
 
 #: ../../reference/api_resource.rst:21
 msgid "``Scopes``"
@@ -86,9 +91,10 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:20
 msgid ""
-"An API must have at least one scope. Each scope can have different "
-"settings."
+"An API must have at least one scope. Each scope can have different settings."
 msgstr ""
+"APIには少なくとも1つのスコープが必要です。各スコープは異なる設定を持つことができ"
+"ます。"
 
 #: ../../reference/api_resource.rst:24
 msgid "Scopes"
@@ -96,15 +102,17 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:25
 msgid ""
-"In the simple case an API has exactly one scope. But there are cases "
-"where you might want to sub-divide the functionality of an API, and give "
-"different clients access to different parts."
+"In the simple case an API has exactly one scope. But there are cases where you "
+"might want to sub-divide the functionality of an API, and give different "
+"clients access to different parts."
 msgstr ""
+"単純なケースでは、APIのスコープは1つだけです。しかし、APIの機能を細かく分割し"
+"て、異なるクライアントが異なる部分にアクセスできるようにしたい場合があります。"
 
 #: ../../reference/api_resource.rst:29
 msgid ""
-"The unique name of the scope. This is the value a client will use for the"
-" scope parameter in the authorize/token request."
+"The unique name of the scope. This is the value a client will use for the scope "
+"parameter in the authorize/token request."
 msgstr ""
 
 #: ../../reference/api_resource.rst:34
@@ -113,10 +121,11 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:35
 msgid ""
-"Specifies whether the user can de-select the scope on the consent screen "
-"(if the consent screen wants to implement such a feature). Defaults to "
-"false."
+"Specifies whether the user can de-select the scope on the consent screen (if "
+"the consent screen wants to implement such a feature). Defaults to false."
 msgstr ""
+"同意画面でスコープの選択を解除できるかどうかを指定します（同意画面でそのような機"
+"能を実装したい場合）。デフォルトはfalseです。"
 
 #: ../../reference/api_resource.rst:36
 msgid "``Emphasize``"
@@ -124,10 +133,13 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:37
 msgid ""
-"Specifies whether the consent screen will emphasize this scope (if the "
-"consent screen wants to implement such a feature). Use this setting for "
-"sensitive or important scopes. Defaults to false."
+"Specifies whether the consent screen will emphasize this scope (if the consent "
+"screen wants to implement such a feature). Use this setting for sensitive or "
+"important scopes. Defaults to false."
 msgstr ""
+"同意画面がこの範囲を強調するかどうかを指定します（同意画面でそのような機能を実装"
+"したい場合）。この設定は、機密または重要なスコープに使用します。デフォルトは"
+"falseです。"
 
 #: ../../reference/api_resource.rst:38
 msgid "``ShowInDiscoveryDocument``"
@@ -135,40 +147,44 @@ msgstr ""
 
 #: ../../reference/api_resource.rst:39
 msgid ""
-"Specifies whether this scope is shown in the discovery document. Defaults"
-" to true."
+"Specifies whether this scope is shown in the discovery document. Defaults to "
+"true."
 msgstr ""
+"このスコープが検出文書に表示されるかどうかを指定します。デフォルトはtrueです。"
 
 #: ../../reference/api_resource.rst:41
 msgid ""
-"List of associated user claim types that should be included in the access"
-" token. The claims specified here will be added to the list of claims "
-"specified for the API."
+"List of associated user claim types that should be included in the access "
+"token. The claims specified here will be added to the list of claims specified "
+"for the API."
 msgstr ""
 
 #: ../../reference/api_resource.rst:44
 msgid "Convenience Constructor Behavior"
-msgstr ""
+msgstr "コンビニエンスコンストラクタの動作"
 
 #: ../../reference/api_resource.rst:46
 msgid "Just a note about the constructors provided for the ``ApiResource`` class."
-msgstr ""
+msgstr "ApiResourceクラスに提供されたコンストラクタについてのメモ。"
 
 #: ../../reference/api_resource.rst:48
 msgid ""
 "For full control over the data in the ``ApiResource``, use the default "
-"constructor with no parameters. You would use this approach if you wanted"
-" to configure multiple scopes per API. For example::"
+"constructor with no parameters. You would use this approach if you wanted to "
+"configure multiple scopes per API. For example::"
 msgstr ""
+"のデータを完全に制御するにはApiResource、パラメータなしのデフォルトのコンストラ"
+"クタを使用します。APIごとに複数のスコープを設定する場合は、この方法を使用しま"
+"す。例えば："
 
 #: ../../reference/api_resource.rst:71
 msgid ""
-"For simpler scenarios where you only require one scope per API, then "
-"several convenience constructors which accept a ``name`` are provided. "
-"For example::"
+"For simpler scenarios where you only require one scope per API, then several "
+"convenience constructors which accept a ``name`` are provided. For example::"
 msgstr ""
+"APIごとに1つのスコープしか必要としない簡単なシナリオでは、aを受け入れるいくつか"
+"の便利なコンストラクタnameが提供されます。例えば："
 
 #: ../../reference/api_resource.rst:76
 msgid "Using the convenience constructor is equivalent to this::"
-msgstr ""
-
+msgstr "便利なコンストラクタの使い方は次のようになります："

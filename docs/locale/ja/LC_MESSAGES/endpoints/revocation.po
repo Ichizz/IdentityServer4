@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:30+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../endpoints/revocation.rst:2
 msgid "Revocation Endpoint"
-msgstr ""
+msgstr "失効エンドポイント"
 
 #: ../../endpoints/revocation.rst:4
 msgid ""
@@ -28,6 +30,9 @@ msgid ""
 "refresh token. It implements the token revocation specification `(RFC "
 "7009) <https://tools.ietf.org/html/rfc7009>`_."
 msgstr ""
+"このエンドポイントによって、アクセストークン（参照トークンのみ）の取り消"
+"しとトークンのリフレッシュが可能になります。これは、トークン取り消し仕様"
+"（RFC 7009）を実装しています。"
 
 #: ../../endpoints/revocation.rst:7
 msgid "``token``"
@@ -35,7 +40,7 @@ msgstr ""
 
 #: ../../endpoints/revocation.rst:8
 msgid "the token to revoke (required)"
-msgstr ""
+msgstr "取り消すトークン（必須）"
 
 #: ../../endpoints/revocation.rst:10
 msgid "``token_type_hint``"
@@ -43,18 +48,22 @@ msgstr ""
 
 #: ../../endpoints/revocation.rst:10
 msgid "either ``access_token`` or ``refresh_token`` (optional)"
-msgstr ""
+msgstr "いずれか ``access_token`` または ``refresh_token`` （オプション）"
 
 #: ../../endpoints/revocation.rst:13
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../endpoints/revocation.rst:24
 msgid ""
-"You can use the `IdentityModel "
-"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
-"programmatically access the revocation endpoint from .NET code. For more "
-"information check the IdentityModel `docs "
-"<https://identitymodel.readthedocs.io/en/latest/client/revocation.html>`_."
+"You can use the `IdentityModel <https://github.com/IdentityModel/"
+"IdentityModel2>`_ client library to programmatically access the "
+"revocation endpoint from .NET code. For more information check the "
+"IdentityModel `docs <https://identitymodel.readthedocs.io/en/latest/"
+"client/revocation.html>`_."
 msgstr ""
-
+"`IdentityModel <https://github.com/IdentityModel/IdentityModel2>`_ クライ"
+"アントライブラリを使用して、.NETコードから取り消しエンドポイントにプログ"
+"ラムでアクセスすることができます。詳細については、IdentityModelの `ドキュ"
+"メント <https://identitymodel.readthedocs.io/en/latest/client/revocation."
+"html>`_ を参照してください。"

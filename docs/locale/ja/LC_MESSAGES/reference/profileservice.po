@@ -4,41 +4,52 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:56+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../reference/profileservice.rst:4
 msgid "Profile Service"
-msgstr ""
+msgstr "プロファイルサービス"
 
 #: ../../reference/profileservice.rst:6
 msgid ""
 "Often IdentityServer requires identity information about users when "
-"creating tokens or when handling requests to the userinfo or "
-"introspection endpoints. By default, IdentityServer only has the claims "
-"in the authentication cookie to draw upon for this identity data."
+"creating tokens or when handling requests to the userinfo or introspection "
+"endpoints. By default, IdentityServer only has the claims in the "
+"authentication cookie to draw upon for this identity data."
 msgstr ""
+"IdentityServerでは、トークンを作成するときや、ユーザー情報やイントロスペク"
+"ションエンドポイントへの要求を処理するときに、ユーザーに関する識別情報が必要"
+"になることがよくあります。デフォルトでは、IdentityServerはこのIDデータを取得"
+"するための認証クッキーの主張のみを持ちます。"
 
 #: ../../reference/profileservice.rst:9
 msgid ""
-"It is impractical to put all of the possible claims needed for users into"
-" the cookie, so IdentityServer defines an extensibility point for "
-"allowing claims to be dynamically loaded as needed for a user. This "
-"extensibility point is the ``IProfileService`` and it is common for a "
-"developer to implement this interface to access a custom database or API "
-"that contains the identity data for users."
+"It is impractical to put all of the possible claims needed for users into "
+"the cookie, so IdentityServer defines an extensibility point for allowing "
+"claims to be dynamically loaded as needed for a user. This extensibility "
+"point is the ``IProfileService`` and it is common for a developer to "
+"implement this interface to access a custom database or API that contains "
+"the identity data for users."
 msgstr ""
+"ユーザにとって必要なすべての可能なクレームをクッキーに入れることは実用的では"
+"ないので、IdentityServerは、クレームをユーザの必要に応じて動的にロードするた"
+"めの拡張ポイントを定義します。この拡張性のポイントは、IProfileService開発者"
+"がこのインターフェイスを実装して、ユーザーのIDデータを含むカスタムデータベー"
+"スまたはAPIにアクセスすることが一般的です。"
 
 #: ../../reference/profileservice.rst:13
 msgid "IProfileService APIs"
@@ -53,6 +64,8 @@ msgid ""
 "The API that is expected to load claims for a user. It is passed an "
 "instance of ``ProfileDataRequestContext``."
 msgstr ""
+"ユーザーの申し立てを読み込むAPIです。のインスタンスが渡されます"
+"ProfileDataRequestContext。"
 
 #: ../../reference/profileservice.rst:19
 msgid "``IsActiveAsync``"
@@ -63,6 +76,8 @@ msgid ""
 "The API that is expected to indicate if a user is currently allowed to "
 "obtain tokens. It is passed an instance of ``IsActiveContext``."
 msgstr ""
+"ユーザーが現在トークンを取得できるかどうかを示すことが期待されるAPI。のイン"
+"スタンスが渡されますIsActiveContext。"
 
 #: ../../reference/profileservice.rst:22
 msgid "ProfileDataRequestContext"
@@ -73,6 +88,8 @@ msgid ""
 "Models the request for user claims and is the vehicle to return those "
 "claims. It contains these properties:"
 msgstr ""
+"ユーザーのクレームに対するリクエストをモデル化し、そのクレームを返却する手段"
+"です。これには、次のプロパティが含まれます。"
 
 #: ../../reference/profileservice.rst:26 ../../reference/profileservice.rst:54
 msgid "``Subject``"
@@ -80,7 +97,7 @@ msgstr ""
 
 #: ../../reference/profileservice.rst:27 ../../reference/profileservice.rst:55
 msgid "The ``ClaimsPrincipal`` modeling the user."
-msgstr ""
+msgstr "ClaimsPrincipalユーザーのモデリング。"
 
 #: ../../reference/profileservice.rst:28 ../../reference/profileservice.rst:56
 msgid "``Client``"
@@ -88,7 +105,7 @@ msgstr ""
 
 #: ../../reference/profileservice.rst:29 ../../reference/profileservice.rst:57
 msgid "The ``Client`` for which the claims are being requested."
-msgstr ""
+msgstr "Clientクレームが要求されています。"
 
 #: ../../reference/profileservice.rst:30
 msgid "``RequestedClaimTypes``"
@@ -96,7 +113,7 @@ msgstr ""
 
 #: ../../reference/profileservice.rst:31
 msgid "The collection of claim types being requested."
-msgstr ""
+msgstr "要求されているクレームタイプのコレクション。"
 
 #: ../../reference/profileservice.rst:32 ../../reference/profileservice.rst:58
 msgid "``Caller``"
@@ -104,11 +121,15 @@ msgstr ""
 
 #: ../../reference/profileservice.rst:33 ../../reference/profileservice.rst:59
 msgid ""
-"An identifier for the context in which the claims are being requested "
-"(e.g. an identity token, an access token, or the user info endpoint). The"
-" constant ``IdentityServerConstants.ProfileDataCallers`` contains the "
+"An identifier for the context in which the claims are being requested (e.g. "
+"an identity token, an access token, or the user info endpoint). The "
+"constant ``IdentityServerConstants.ProfileDataCallers`` contains the "
 "different constant values."
 msgstr ""
+"クレームが要求されているコンテキストの識別子（例えば、アイデンティティトーク"
+"ン、アクセストークン、またはユーザー情報エンドポイント）。定数"
+"IdentityServerConstants.ProfileDataCallersにはさまざまな定数値が含まれていま"
+"す。"
 
 #: ../../reference/profileservice.rst:34
 msgid "``IssuedClaims``"
@@ -119,6 +140,8 @@ msgid ""
 "The list of ``Claim`` s that will be returned. This is expected to be "
 "populated by the custom ``IProfileService`` implementation."
 msgstr ""
+"Claim返されるリスト。これは、カスタムIProfileService実装によって設定されると"
+"予想されます。"
 
 #: ../../reference/profileservice.rst:37
 msgid "``AddRequestedClaims``"
@@ -130,31 +153,44 @@ msgid ""
 "``IssuedClaims``, but first filters the claims based on "
 "``RequestedClaimTypes``."
 msgstr ""
+"の拡張メソッドは、ProfileDataRequestContextにIssuedClaims基づいてクレームを"
+"最初にフィルターに掛けるRequestedClaimTypes。"
 
 #: ../../reference/profileservice.rst:40
 msgid "Requested scopes and claims mapping"
-msgstr ""
+msgstr "要求されたスコープとクレームマッピング"
 
 #: ../../reference/profileservice.rst:42
 msgid ""
-"The scopes requested by the client control what user claims are returned "
-"in the tokens to the client. The ``GetProfileDataAsync`` method is "
-"responsible for dynamically obtaining those claims based on the "
-"``RequestedClaimTypes`` collection on the ``ProfileDataRequestContext``."
+"The scopes requested by the client control what user claims are returned in "
+"the tokens to the client. The ``GetProfileDataAsync`` method is responsible "
+"for dynamically obtaining those claims based on the ``RequestedClaimTypes`` "
+"collection on the ``ProfileDataRequestContext``."
 msgstr ""
+"クライアントによって要求されたスコープは、トークンでクライアントに返される"
+"ユーザークレームを制御します。GetProfileDataAsyncこの方法は、動的に基づいて"
+"これらの請求項を取得する責任があるRequestedClaimTypesのコレクション"
+"ProfileDataRequestContext。"
 
 #: ../../reference/profileservice.rst:45
 msgid ""
 "The ``RequestedClaimTypes`` collection is populated based on the user "
 "claims defined on the :ref:`resources <refResources>` that model the "
 "scopes. If the scopes requested are an :ref:`identity resources "
-"<refIdentityResource>`, then the claims in the ``RequestedClaimTypes`` "
-"will be populated based on the user claim types defined in the "
+"<refIdentityResource>`, then the claims in the ``RequestedClaimTypes`` will "
+"be populated based on the user claim types defined in the "
 "``IdentityResource``. If the scopes requested are an :ref:`API resources "
-"<refApiResource>`, then the claims in the ``RequestedClaimTypes`` will be"
-" populated based on the user claim types defined in the ``ApiResource`` "
-"and/or the ``Scope``."
+"<refApiResource>`, then the claims in the ``RequestedClaimTypes`` will be "
+"populated based on the user claim types defined in the ``ApiResource`` and/"
+"or the ``Scope``."
 msgstr ""
+"RequestedClaimTypesコレクションは、上に定義されたユーザの請求に基づいて移入"
+"されたリソースのスコープをモデル化します。要求されたスコープがアイデンティ"
+"ティリソースである場合、そのアイデンティティのクレームは、で"
+"RequestedClaimTypes定義されたユーザークレームタイプに基づいて設定されます"
+"IdentityResource。要求されたスコープである場合、APIリソース、その後に、特許"
+"請求の範囲は、RequestedClaimTypesで定義されたユーザ要求の種類に基づいて移入"
+"されApiResource、および/またはScope。"
 
 #: ../../reference/profileservice.rst:50
 msgid "IsActiveContext"
@@ -162,9 +198,11 @@ msgstr ""
 
 #: ../../reference/profileservice.rst:52
 msgid ""
-"Models the request to determine is the user is currently allowed to "
-"obtain tokens. It contains these properties:"
+"Models the request to determine is the user is currently allowed to obtain "
+"tokens. It contains these properties:"
 msgstr ""
+"決定する要求のモデルは、現在ユーザーがトークンを取得できることです。これに"
+"は、次のプロパティが含まれます。"
 
 #: ../../reference/profileservice.rst:60
 msgid "``IsActive``"
@@ -175,4 +213,5 @@ msgid ""
 "The flag indicating if the user is allowed to obtain tokens. This is "
 "expected to be assigned by the custom ``IProfileService`` implementation."
 msgstr ""
-
+"ユーザーがトークンを取得できるかどうかを示すフラグ。これは、カスタム"
+"IProfileService実装によって割り当てられることが期待されます。"

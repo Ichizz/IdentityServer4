@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 22:11+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../reference/options.rst:4
 msgid "IdentityServer Options"
-msgstr ""
+msgstr "IdentityServerのオプション"
 
 #: ../../reference/options.rst:8
 msgid "``IssuerUri``"
@@ -29,9 +31,12 @@ msgstr ""
 #: ../../reference/options.rst:7
 msgid ""
 "Set the issuer name that will appear in the discovery document and the "
-"issued JWT tokens. It is recommended to not set this property, which "
-"infers the issuer name from the host name that is used by the clients."
+"issued JWT tokens. It is recommended to not set this property, which infers "
+"the issuer name from the host name that is used by the clients."
 msgstr ""
+"ディスカバリ文書に表示される発行者名と発行されたJWTトークンを設定します。クラ"
+"イアントが使用するホスト名から発行者名を推測するこのプロパティを設定しないこ"
+"とをお勧めします。"
 
 #: ../../reference/options.rst:11
 msgid "``PublicOrigin``"
@@ -39,9 +44,11 @@ msgstr ""
 
 #: ../../reference/options.rst:11
 msgid ""
-"The origin of this server instance, e.g. https://myorigin.com. If not "
-"set, the origin name is inferred from the request."
+"The origin of this server instance, e.g. https://myorigin.com. If not set, "
+"the origin name is inferred from the request."
 msgstr ""
+"このサーバーインスタンスの起点です（例：https : //myorigin.com）。設定されて"
+"いない場合は、要求元名が推測されます。"
 
 #: ../../reference/options.rst:14
 msgid "Endpoints"
@@ -52,12 +59,16 @@ msgid ""
 "Allows enabling/disabling individual endpoints, e.g. token, authorize, "
 "userinfo etc."
 msgstr ""
+"token、authorize、userinfoなど、個々のエンドポイントを有効/無効にすることがで"
+"きます。"
 
 #: ../../reference/options.rst:17
 msgid ""
-"By default all endpoints are enabled, but you can lock down your server "
-"by disabling endpoint that you don't need."
+"By default all endpoints are enabled, but you can lock down your server by "
+"disabling endpoint that you don't need."
 msgstr ""
+"デフォルトではすべてのエンドポイントが有効になっていますが、必要のないエンド"
+"ポイントを無効にすることでサーバーをロックダウンすることができます。"
 
 #: ../../reference/options.rst:20
 msgid "Discovery"
@@ -65,19 +76,23 @@ msgstr ""
 
 #: ../../reference/options.rst:21
 msgid ""
-"Allows enabling/disabling various sections of the discovery document, "
-"e.g. endpoints, scopes, claims, grant types etc."
+"Allows enabling/disabling various sections of the discovery document, e.g. "
+"endpoints, scopes, claims, grant types etc."
 msgstr ""
+"検出文書のさまざまなセクション（エンドポイント、スコープ、クレーム、グラント"
+"タイプなど）の有効化/無効化を許可します。"
 
 #: ../../reference/options.rst:23
 msgid ""
 "The ``CustomEntries`` dictionary allows adding custom elements to the "
 "discovery document."
 msgstr ""
+"CustomEntries辞書は、探索ドキュメントへのカスタム要素を追加することができま"
+"す。"
 
 #: ../../reference/options.rst:26
 msgid "Authentication"
-msgstr ""
+msgstr "認証"
 
 #: ../../reference/options.rst:28
 msgid "``CookieLifetime``"
@@ -88,6 +103,8 @@ msgid ""
 "The authentication cookie lifetime (only effective if the IdentityServer-"
 "provided cookie handler is used)."
 msgstr ""
+"認証Cookieの有効期間（IdentityServer提供のCookieハンドラが使用されている場合"
+"のみ有効）。"
 
 #: ../../reference/options.rst:31
 msgid "``CookieSlidingExpiration``"
@@ -98,6 +115,8 @@ msgid ""
 "Specified if the cookie should be sliding or not (only effective if the "
 "IdentityServer-provided cookie handler is used)."
 msgstr ""
+"クッキーをスライドさせるかどうかを指定します（IdentityServer提供のCookieハン"
+"ドラが使用されている場合のみ有効）。"
 
 #: ../../reference/options.rst:34
 msgid "``RequireAuthenticatedUserForSignOutMessage``"
@@ -105,9 +124,11 @@ msgstr ""
 
 #: ../../reference/options.rst:34
 msgid ""
-"Indicates if user must be authenticated to accept parameters to end "
-"session endpoint. Defaults to false."
+"Indicates if user must be authenticated to accept parameters to end session "
+"endpoint. Defaults to false."
 msgstr ""
+"セッションエンドポイントを終了するパラメータを受け入れるためにユーザーを認証"
+"する必要があるかどうかを示します。デフォルトはfalseです。"
 
 #: ../../reference/options.rst:37
 msgid "``CheckSessionCookieName``"
@@ -115,7 +136,7 @@ msgstr ""
 
 #: ../../reference/options.rst:37
 msgid "The name of the cookie used for the check session endpoint."
-msgstr ""
+msgstr "チェック・セッション・エンドポイントに使用されるCookieの名前。"
 
 #: ../../reference/options.rst:40
 msgid "``RequireCspFrameSrcForSignout``"
@@ -123,10 +144,13 @@ msgstr ""
 
 #: ../../reference/options.rst:40
 msgid ""
-"If set, will require frame-src CSP headers being emitting on the end "
-"session callback endpoint which renders iframes to clients for front-"
-"channel signout notification. Defaults to true."
+"If set, will require frame-src CSP headers being emitting on the end session "
+"callback endpoint which renders iframes to clients for front-channel signout "
+"notification. Defaults to true."
 msgstr ""
+"設定されている場合は、フロント・チャネル・サインアウト通知のためにiframeをク"
+"ライアントにレンダリングするend-sessionコールバック・エンドポイントでframe-"
+"src CSPヘッダーを送信する必要があります。デフォルトはtrueです。"
 
 #: ../../reference/options.rst:43
 msgid "Events"
@@ -134,10 +158,11 @@ msgstr ""
 
 #: ../../reference/options.rst:44
 msgid ""
-"Allows configuring if and which events should be submitted to a "
-"registered event sink. See :ref:`here <refEvents>` for more information "
-"on events."
+"Allows configuring if and which events should be submitted to a registered "
+"event sink. See :ref:`here <refEvents>` for more information on events."
 msgstr ""
+"ifおよび登録されたイベントシンクに送信するイベントを設定できるようにします。"
+"イベントの詳細については、こちらを参照してください。"
 
 #: ../../reference/options.rst:47
 msgid "InputLengthRestrictions"
@@ -148,6 +173,8 @@ msgid ""
 "Allows setting length restrictions on various protocol parameters like "
 "client id, scope, redirect URI etc."
 msgstr ""
+"クライアントID、スコープ、リダイレクトURIなどのさまざまなプロトコルパラメータ"
+"の長さ制限を設定できます。"
 
 #: ../../reference/options.rst:51
 msgid "UserInteraction"
@@ -160,6 +187,7 @@ msgstr ""
 #: ../../reference/options.rst:54
 msgid "Sets the the URLs for the login, logout, consent and error pages."
 msgstr ""
+"ログイン、ログアウト、同意、エラー、デバイス確認ページのURLを設定します。"
 
 #: ../../reference/options.rst:55
 msgid "``LoginReturnUrlParameter``"
@@ -167,9 +195,11 @@ msgstr ""
 
 #: ../../reference/options.rst:56
 msgid ""
-"Sets the name of the return URL parameter passed to the login page. "
-"Defaults to *returnUrl*."
+"Sets the name of the return URL parameter passed to the login page. Defaults "
+"to *returnUrl*."
 msgstr ""
+"ログインページに渡される戻りURLパラメータの名前を設定します。デフォルトは"
+"returnUrlです。"
 
 #: ../../reference/options.rst:57
 msgid "``LogoutIdParameter``"
@@ -177,9 +207,11 @@ msgstr ""
 
 #: ../../reference/options.rst:58
 msgid ""
-"Sets the name of the logout message id parameter passed to the logout "
-"page. Defaults to *logoutId*."
+"Sets the name of the logout message id parameter passed to the logout page. "
+"Defaults to *logoutId*."
 msgstr ""
+"ログアウトページに渡されるログアウトメッセージIDパラメータの名前を設定しま"
+"す。デフォルトはlogoutIdです。"
 
 #: ../../reference/options.rst:59
 msgid "``ConsentReturnUrlParameter``"
@@ -190,6 +222,8 @@ msgid ""
 "Sets the name of the return URL parameter passed to the consent page. "
 "Defaults to *returnUrl*."
 msgstr ""
+"同意ページに渡される戻りURLパラメータの名前を設定します。デフォルトは"
+"returnUrlです。"
 
 #: ../../reference/options.rst:61
 msgid "``ErrorIdParameter``"
@@ -197,9 +231,11 @@ msgstr ""
 
 #: ../../reference/options.rst:62
 msgid ""
-"Sets the name of the error message id parameter passed to the error page."
-" Defaults to *errorId*."
+"Sets the name of the error message id parameter passed to the error page. "
+"Defaults to *errorId*."
 msgstr ""
+"エラーページに渡されるエラーメッセージIDパラメータの名前を設定します。デフォ"
+"ルトはerrorIdです。"
 
 #: ../../reference/options.rst:63
 msgid "``CustomRedirectReturnUrlParameter``"
@@ -207,9 +243,11 @@ msgstr ""
 
 #: ../../reference/options.rst:64
 msgid ""
-"Sets the name of the return URL parameter passed to a custom redirect "
-"from the authorization endpoint. Defaults to *returnUrl*."
+"Sets the name of the return URL parameter passed to a custom redirect from "
+"the authorization endpoint. Defaults to *returnUrl*."
 msgstr ""
+"承認エンドポイントからのカスタムリダイレクトに渡される戻りURLパラメータの名前"
+"を設定します。デフォルトはreturnUrlです。"
 
 #: ../../reference/options.rst:70
 msgid "``CookieMessageThreshold``"
@@ -219,13 +257,21 @@ msgstr ""
 msgid ""
 "Certain interactions between IdentityServer and some UI pages require a "
 "cookie to pass state and context (any of the pages above that have a "
-"configurable \"message id\" parameter). Since browsers have limits on the"
-" number of cookies and their size, this setting is used to prevent too "
-"many cookies being created. The value sets the maximum number of message "
-"cookies of any type that will be created. The oldest message cookies will"
-" be purged once the limit has been reached. This effectively indicates "
-"how many tabs can be opened by a user when using IdentityServer."
+"configurable \"message id\" parameter). Since browsers have limits on the "
+"number of cookies and their size, this setting is used to prevent too many "
+"cookies being created. The value sets the maximum number of message cookies "
+"of any type that will be created. The oldest message cookies will be purged "
+"once the limit has been reached. This effectively indicates how many tabs "
+"can be opened by a user when using IdentityServer."
 msgstr ""
+"IdentityServerと一部のUIページとの間の特定のやりとりには、状態とコンテキスト"
+"を渡すためのCookieが必要です（上記のいずれのページにも設定可能な「メッセージ"
+"ID」パラメータがあります）。ブラウザにはCookieの数とそのサイズに制限があるた"
+"め、この設定はあまりに多くのCookieが作成されないようにするために使用されま"
+"す。この値は、作成されるすべてのタイプのメッセージCookieの最大数を設定しま"
+"す。限度に達すると、最も古いメッセージCookieがパージされます。これは、"
+"IdentityServerを使用するときにユーザーが開くことができるタブの数を効果的に示"
+"します。"
 
 #: ../../reference/options.rst:73
 msgid "Caching"
@@ -233,9 +279,11 @@ msgstr ""
 
 #: ../../reference/options.rst:74
 msgid ""
-"These setting only apply if the respective caching has been enabled in "
-"the services configuration in startup."
+"These setting only apply if the respective caching has been enabled in the "
+"services configuration in startup."
 msgstr ""
+"これらの設定は、起動時にサービス設定でそれぞれのキャッシングが有効になってい"
+"る場合にのみ適用されます。"
 
 #: ../../reference/options.rst:77
 msgid "``ClientStoreExpiration``"
@@ -243,7 +291,7 @@ msgstr ""
 
 #: ../../reference/options.rst:77
 msgid "Cache duration of client configuration loaded from the client store."
-msgstr ""
+msgstr "クライアントストアからロードされたクライアント構成のキャッシュ期間。"
 
 #: ../../reference/options.rst:80
 msgid "``ResourceStoreExpiration``"
@@ -251,9 +299,9 @@ msgstr ""
 
 #: ../../reference/options.rst:80
 msgid ""
-"Cache duration of identity and API resource configuration loaded from the"
-" resource store."
-msgstr ""
+"Cache duration of identity and API resource configuration loaded from the "
+"resource store."
+msgstr "リソースストアからロードされたIDとAPIリソース構成のキャッシュ期間。"
 
 #: ../../reference/options.rst:83
 msgid "CORS"
@@ -261,10 +309,13 @@ msgstr ""
 
 #: ../../reference/options.rst:84
 msgid ""
-"IdentityServer supports CORS for some of its endpoints. The underlying "
-"CORS implementation is provided from ASP.NET Core, and as such it is "
+"IdentityServer supports CORS for some of its endpoints. The underlying CORS "
+"implementation is provided from ASP.NET Core, and as such it is "
 "automatically registered in the dependency injection system."
 msgstr ""
+"IdentityServerは、そのエンドポイントの一部でCORSをサポートしています。基礎と"
+"なるCORS実装はASP.NET Coreから提供され、依存関係注入システムに自動的に登録さ"
+"れます。"
 
 #: ../../reference/options.rst:90
 msgid "``CorsPolicyName``"
@@ -273,12 +324,17 @@ msgstr ""
 #: ../../reference/options.rst:88
 msgid ""
 "Name of the CORS policy that will be evaluated for CORS requests into "
-"IdentityServer (defaults to ``\"IdentityServer4\"``). The policy provider"
-" that handles this is implemented in terms of the ``ICorsPolicyService`` "
-"registered in the dependency injection system. If you wish to customize "
-"the set of CORS origins allowed to connect, then it is recommended that "
-"you provide a custom implementation of ``ICorsPolicyService``."
+"IdentityServer (defaults to ``\"IdentityServer4\"``). The policy provider "
+"that handles this is implemented in terms of the ``ICorsPolicyService`` "
+"registered in the dependency injection system. If you wish to customize the "
+"set of CORS origins allowed to connect, then it is recommended that you "
+"provide a custom implementation of ``ICorsPolicyService``."
 msgstr ""
+"IdentityServerへのCORS要求に対して評価されるCORSポリシーの名前（デフォルト値"
+"\"IdentityServer4\"）。これを処理するポリシープロバイダICorsPolicyServiceは、"
+"依存関係注入システムに登録されている点で実装されています。接続が許可されてい"
+"るCORS起点のセットをカスタマイズする場合は、のカスタム実装を提供することをお"
+"勧めしますICorsPolicyService。"
 
 #: ../../reference/options.rst:94
 msgid "``CorsPaths``"
@@ -286,9 +342,12 @@ msgstr ""
 
 #: ../../reference/options.rst:93
 msgid ""
-"The endpoints within IdentityServer where CORS is supported. Defaults to "
-"the discovery, user info, token, and revocation endpoints."
+"The endpoints within IdentityServer where CORS is supported. Defaults to the "
+"discovery, user info, token, and revocation endpoints."
 msgstr ""
+"CORSがサポートされているIdentityServer内のエンドポイント。デフォルトでは、"
+"ディスカバリー、ユーザー情報、トークン、および取り消しエンドポイントが使用さ"
+"れます。"
 
 #: ../../reference/options.rst:98
 msgid "``PreflightCacheDuration``"
@@ -297,9 +356,12 @@ msgstr ""
 #: ../../reference/options.rst:97
 msgid ""
 "`Nullable<TimeSpan>` indicating the value to be used in the preflight "
-"`Access-Control-Max-Age` response header. Defaults to `null` indicating "
-"no caching header is set on the response."
+"`Access-Control-Max-Age` response header. Defaults to `null` indicating no "
+"caching header is set on the response."
 msgstr ""
+"プリフライトAccess-Control-Max-Age応答ヘッダーで使用される値を示すNullable "
+"<TimeSpan>。応答にキャッシュヘッダーが設定されていないことを示すデフォルトは"
+"nullです。"
 
 #: ../../reference/options.rst:101
 msgid "CSP (Content Security Policy)"
@@ -308,6 +370,8 @@ msgstr ""
 #: ../../reference/options.rst:102
 msgid "IdentityServer emits CSP headers for some responses, where appropriate."
 msgstr ""
+"IdentityServerは、必要に応じて、いくつかの応答に対してCSPヘッダーを発行しま"
+"す。"
 
 #: ../../reference/options.rst:105
 msgid "``Level``"
@@ -319,6 +383,9 @@ msgid ""
 "browsers must be supported then this be changed to ``CspLevel.One`` to "
 "accomodate them."
 msgstr ""
+"使用するCSPのレベル。CSPレベル2がデフォルトで使用されますが、古いブラウザをサ"
+"ポートする必要がある場合は、これCspLevel.Oneに合わせてこれを変更してくださ"
+"い。"
 
 #: ../../reference/options.rst:107
 msgid "``AddDeprecatedHeader``"
@@ -326,8 +393,9 @@ msgstr ""
 
 #: ../../reference/options.rst:108
 msgid ""
-"Indicates if the older ``X-Content-Security-Policy`` CSP header should "
-"also be emitted (in addition to the standards-based header value). "
-"Defaults to true."
+"Indicates if the older ``X-Content-Security-Policy`` CSP header should also "
+"be emitted (in addition to the standards-based header value). Defaults to "
+"true."
 msgstr ""
-
+"古いX-Content-Security-PolicyCSPヘッダーも（標準ベースのヘッダー値に加えて）"
+"発行する必要があるかどうかを示します。デフォルトはtrueです。"

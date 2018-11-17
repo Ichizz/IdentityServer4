@@ -4,30 +4,34 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:35+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../endpoints/userinfo.rst:2
 msgid "UserInfo Endpoint"
-msgstr ""
+msgstr "UserInfoエンドポイント"
 
 #: ../../endpoints/userinfo.rst:4
 msgid ""
 "The UserInfo endpoint can be used to retrieve identity information about "
-"a user (see `spec <http://openid.net/specs/openid-connect-"
-"core-1_0.html#UserInfo>`_)."
+"a user (see `spec <http://openid.net/specs/openid-connect-core-1_0."
+"html#UserInfo>`_)."
 msgstr ""
+"UserInfoエンドポイントを使用して、ユーザーに関する識別情報を取得できます"
+"（仕様を参照）。"
 
 #: ../../endpoints/userinfo.rst:6
 msgid ""
@@ -35,17 +39,22 @@ msgid ""
 "Depending on the granted scopes, the UserInfo endpoint will return the "
 "mapped claims (at least the `openid` scope is required)."
 msgstr ""
+"呼び出し元は、ユーザーを表す有効なアクセストークンを送信する必要がありま"
+"す。付与されたスコープに応じて、UserInfoエンドポイントはマップされたク"
+"レームを返します（少なくともopenidスコープが必要です）。"
 
 #: ../../endpoints/userinfo.rst:10
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../endpoints/userinfo.rst:33
 msgid ""
-"You can use the `IdentityModel "
-"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
-"programmatically access the userinfo endpoint from .NET code. For more "
-"information check the IdentityModel `docs "
-"<https://identitymodel.readthedocs.io/en/latest/client/userinfo.html>`_."
+"You can use the `IdentityModel <https://github.com/IdentityModel/"
+"IdentityModel2>`_ client library to programmatically access the userinfo "
+"endpoint from .NET code. For more information check the IdentityModel "
+"`docs <https://identitymodel.readthedocs.io/en/latest/client/userinfo."
+"html>`_."
 msgstr ""
-
+"IdentityModelクライアント・ライブラリーを使用して、.NETコードからuserinfo"
+"エンドポイントにプログラムでアクセスできます。詳細については、"
+"IdentityModelのドキュメントを参照してください。"

@@ -4,37 +4,44 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:43+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../endpoints/authorize.rst:2
 msgid "Authorize Endpoint"
-msgstr ""
+msgstr "エンドポイントの認証"
 
 #: ../../endpoints/authorize.rst:4
 msgid ""
-"The authorize endpoint can be used to request tokens or authorization "
-"codes via the browser. This process typically involves authentication of "
-"the end-user and optionally consent."
+"The authorize endpoint can be used to request tokens or authorization codes via "
+"the browser. This process typically involves authentication of the end-user and "
+"optionally consent."
 msgstr ""
+"承認エンドポイントは、ブラウザを介してトークンまたは認証コードを要求するために使"
+"用できます。このプロセスは、通常、エンドユーザの認証とオプションで同意する必要が"
+"あります。"
 
 #: ../../endpoints/authorize.rst:7
 msgid ""
-"IdentityServer supports a subset of the OpenID Connect and OAuth 2.0 "
-"authorize request parameters. For a full list, see `here "
-"<https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest>`_."
+"IdentityServer supports a subset of the OpenID Connect and OAuth 2.0 authorize "
+"request parameters. For a full list, see `here <https://openid.net/specs/openid-"
+"connect-core-1_0.html#AuthRequest>`_."
 msgstr ""
+"IdentityServerは、OpenID ConnectおよびOAuth 2.0認証要求パラメータのサブセットを"
+"サポートしています。完全なリストについては、こちらを参照してください。"
 
 #: ../../endpoints/authorize.rst:9
 msgid "``client_id``"
@@ -42,7 +49,7 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:10
 msgid "identifier of the client (required)."
-msgstr ""
+msgstr "クライアントの識別子（必須）。"
 
 #: ../../endpoints/authorize.rst:11
 msgid "``scope``"
@@ -50,7 +57,7 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:12
 msgid "one or more registered scopes (required)"
-msgstr ""
+msgstr "1つまたは複数の登録スコープ（必須）"
 
 #: ../../endpoints/authorize.rst:13
 msgid "``redirect_uri``"
@@ -58,9 +65,10 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:14
 msgid ""
-"must exactly match one of the allowed redirect URIs for that client "
-"(required)"
+"must exactly match one of the allowed redirect URIs for that client (required)"
 msgstr ""
+"そのクライアントの許可されたリダイレクトURIの1つに完全に一致する必要があります"
+"（必須）"
 
 #: ../../endpoints/authorize.rst:26
 msgid "``response_type``"
@@ -69,28 +77,32 @@ msgstr ""
 #: ../../endpoints/authorize.rst:16
 msgid "``id_token`` requests an identity token (only identity scopes are allowed)"
 msgstr ""
+"id_token アイデンティティトークンを要求します（アイデンティティスコープのみが許"
+"可されます）"
 
 #: ../../endpoints/authorize.rst:18
 msgid "``token`` requests an access token (only resource scopes are allowed)"
-msgstr ""
+msgstr "token アクセストークンを要求します（リソーススコープのみが許可されます）"
 
 #: ../../endpoints/authorize.rst:20
 msgid "``id_token token`` requests an identity token and an access token"
-msgstr ""
+msgstr "id_token token アイデンティティトークンとアクセストークンを要求する"
 
 #: ../../endpoints/authorize.rst:22
 msgid "``code`` requests an authorization code"
-msgstr ""
+msgstr "code 承認コードを要求する"
 
 #: ../../endpoints/authorize.rst:24
 msgid "``code id_token`` requests an authorization code and identity token"
-msgstr ""
+msgstr "code id_token 認可コードとアイデンティティトークンを要求する"
 
 #: ../../endpoints/authorize.rst:26
 msgid ""
-"``code id_token token`` requests an authorization code, identity token "
-"and access token"
+"``code id_token token`` requests an authorization code, identity token and "
+"access token"
 msgstr ""
+"code id_token token 認証コード、アイデンティティトークン、およびアクセストークン"
+"を要求する"
 
 #: ../../endpoints/authorize.rst:28
 msgid "``response_mode``"
@@ -98,9 +110,11 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:29
 msgid ""
-"``form_post`` sends the token response as a form post instead of a "
-"fragment encoded redirect (optional)"
+"``form_post`` sends the token response as a form post instead of a fragment "
+"encoded redirect (optional)"
 msgstr ""
+"form_post フラグメントエンコードされたリダイレクト（オプション）ではなく、フォー"
+"ムのポストとしてトークンレスポンスを送信します。"
 
 #: ../../endpoints/authorize.rst:31
 msgid "``state``"
@@ -108,10 +122,13 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:31
 msgid ""
-"identityserver will echo back the state value on the token response, this"
-" is for round tripping state between client and provider, correlating "
-"request and response and CSRF/replay protection. (recommended)"
+"identityserver will echo back the state value on the token response, this is "
+"for round tripping state between client and provider, correlating request and "
+"response and CSRF/replay protection. (recommended)"
 msgstr ""
+"identityserverは、トークンレスポンスに状態値をエコーバックします。これは、クライ"
+"アントとプロバイダ間のラウンドトリップ状態であり、要求と応答とCSRF /再生保護を関"
+"連づけます。（推奨）"
 
 #: ../../endpoints/authorize.rst:35
 msgid "``nonce``"
@@ -119,13 +136,15 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:34
 msgid ""
-"identityserver will echo back the nonce value in the identity token, this"
-" is for replay protection)"
+"identityserver will echo back the nonce value in the identity token, this is "
+"for replay protection)"
 msgstr ""
+"identityserverは、IDトークンのnonce値をエコーバックします。これはリプレイ保護用"
+"です）"
 
 #: ../../endpoints/authorize.rst:36
 msgid "*Required for identity tokens via implicit grant.*"
-msgstr ""
+msgstr "*暗黙的な認可を使用してアイデンティティトークンに必要です。*"
 
 #: ../../endpoints/authorize.rst:39
 msgid "``prompt``"
@@ -133,15 +152,19 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:38
 msgid ""
-"``none`` no UI will be shown during the request. If this is not possible "
-"(e.g. because the user has to sign in or consent) an error is returned"
+"``none`` no UI will be shown during the request. If this is not possible (e.g. "
+"because the user has to sign in or consent) an error is returned"
 msgstr ""
+"none要求中にUIは表示されません。これが不可能な場合（ユーザーがサインインまたは同"
+"意する必要があるなど）、エラーが返されます"
 
 #: ../../endpoints/authorize.rst:40
 msgid ""
-"``login`` the login UI will be shown, even if the user is already signed-"
-"in and has a valid session"
+"``login`` the login UI will be shown, even if the user is already signed-in and "
+"has a valid session"
 msgstr ""
+"login ユーザーが既にサインインしていて有効なセッションを持っていてもログインUIが"
+"表示されます"
 
 #: ../../endpoints/authorize.rst:41
 msgid "``code_challenge``"
@@ -149,7 +172,7 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:42
 msgid "sends the code challenge for PKCE"
-msgstr ""
+msgstr "コードチャレンジをPKCEに送信する"
 
 #: ../../endpoints/authorize.rst:44
 msgid "``code_challenge_method``"
@@ -157,9 +180,11 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:44
 msgid ""
-"``plain`` indicates that the challenge is using plain text (not "
-"recommended) ``S256`` indicates the the challenge is hashed with SHA256"
+"``plain`` indicates that the challenge is using plain text (not recommended) "
+"``S256`` indicates the the challenge is hashed with SHA256"
 msgstr ""
+"plainチャレンジがプレーンテキストを使用していることを示します（推奨されませ"
+"ん）。S256チャレンジがSHA256でハッシュされていることを示します"
 
 #: ../../endpoints/authorize.rst:46
 msgid "``login_hint``"
@@ -168,6 +193,7 @@ msgstr ""
 #: ../../endpoints/authorize.rst:47
 msgid "can be used to pre-fill the username field on the login page"
 msgstr ""
+"ログインページのユーザー名フィールドをあらかじめ入力するために使用できます"
 
 #: ../../endpoints/authorize.rst:48
 msgid "``ui_locales``"
@@ -175,7 +201,7 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:49
 msgid "gives a hint about the desired display language of the login UI"
-msgstr ""
+msgstr "ログインUIの表示言語に関するヒントを表示します"
 
 #: ../../endpoints/authorize.rst:50
 msgid "``max_age``"
@@ -183,9 +209,11 @@ msgstr ""
 
 #: ../../endpoints/authorize.rst:51
 msgid ""
-"if the user's logon session exceeds the max age (in seconds), the login "
-"UI will be shown"
+"if the user's logon session exceeds the max age (in seconds), the login UI will "
+"be shown"
 msgstr ""
+"ユーザーのログオンセッションが最大経過時間（秒）を超えた場合、ログインUIが表示さ"
+"れます"
 
 #: ../../endpoints/authorize.rst:57
 msgid "``acr_values``"
@@ -196,34 +224,37 @@ msgid ""
 "allows passing in additional authentication related information - "
 "identityserver special cases the following proprietary acr_values:"
 msgstr ""
+"追加の認証関連情報を渡すことができます - identityserver特別な場合、次の独自の"
+"acr_values："
 
 #: ../../endpoints/authorize.rst:55
 msgid ""
-"``idp:name_of_idp`` bypasses the login/home realm screen and forwards the"
-" user directly to the selected identity provider (if allowed per client "
-"configuration)"
+"``idp:name_of_idp`` bypasses the login/home realm screen and forwards the user "
+"directly to the selected identity provider (if allowed per client configuration)"
 msgstr ""
+"idp:name_of_idp ログイン/ホーム領域の画面をバイパスし、選択したアイデンティティ"
+"プロバイダに直接ユーザーを転送します（クライアント構成ごとに許可されている場合）"
 
 #: ../../endpoints/authorize.rst:57
 msgid ""
-"``tenant:name_of_tenant`` can be used to pass a tenant name to the login "
-"UI"
-msgstr ""
+"``tenant:name_of_tenant`` can be used to pass a tenant name to the login UI"
+msgstr "tenant:name_of_tenant テナント名をログインUIに渡すことができます"
 
 #: ../../endpoints/authorize.rst:59
 msgid "**Example**"
-msgstr ""
+msgstr "**例**"
 
 #: ../../endpoints/authorize.rst:71
 msgid "(URL encoding removed, and line breaks added for readability)"
-msgstr ""
+msgstr "（URLエンコードが削除され、読みやすくするため改行が追加されました）"
 
 #: ../../endpoints/authorize.rst:73
 msgid ""
-"You can use the `IdentityModel "
-"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
-"programmatically create authorize requests .NET code. For more "
-"information check the IdentityModel `docs "
-"<https://identitymodel.readthedocs.io/en/latest/client/authorize.html>`_."
+"You can use the `IdentityModel <https://github.com/IdentityModel/"
+"IdentityModel2>`_ client library to programmatically create authorize requests ."
+"NET code. For more information check the IdentityModel `docs <https://"
+"identitymodel.readthedocs.io/en/latest/client/authorize.html>`_."
 msgstr ""
-
+"IdentityModelクライアントライブラリを使用して、認証要求.NETコードをプログラムで"
+"作成することができます。詳細については、IdentityModelのドキュメントを参照してく"
+"ださい。"

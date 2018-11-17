@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:32+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../endpoints/introspection.rst:2
 msgid "Introspection Endpoint"
@@ -24,43 +26,53 @@ msgstr ""
 
 #: ../../endpoints/introspection.rst:4
 msgid ""
-"The introspection endpoint is an implementation of `RFC 7662 "
-"<https://tools.ietf.org/html/rfc7662>`_."
-msgstr ""
+"The introspection endpoint is an implementation of `RFC 7662 <https://"
+"tools.ietf.org/html/rfc7662>`_."
+msgstr "イントロスペクションエンドポイントは、RFC 7662の実装です。"
 
 #: ../../endpoints/introspection.rst:6
 msgid ""
-"It can be used to validate reference tokens (or JWTs if the consumer does"
-" not have support for appropriate JWT or cryptographic libraries). The "
-"introspection endpoint requires authentication - since the client of an "
-"introspection endpoint is an API, you configure the secret on the "
+"It can be used to validate reference tokens (or JWTs if the consumer "
+"does not have support for appropriate JWT or cryptographic libraries). "
+"The introspection endpoint requires authentication - since the client of "
+"an introspection endpoint is an API, you configure the secret on the "
 "``ApiResource``."
 msgstr ""
+"これは、参照トークン（または消費者が適切なJWTまたは暗号ライブラリをサポー"
+"トしていない場合はJWT）を検証するために使用できます。イントロスペクション"
+"エンドポイントは、認証が必要です。イントロスペクションエンドポイントのク"
+"ライアントはAPIなので、あなたはシークレットを設定しますApiResource。"
 
 #: ../../endpoints/introspection.rst:10
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../endpoints/introspection.rst:21
 msgid ""
 "A successful response will return a status code of 200 and either an "
 "active or inactive token::"
 msgstr ""
+"応答が成功すると、ステータスコード200およびアクティブトークンまたは非アク"
+"ティブトークンが返されます。"
 
 #: ../../endpoints/introspection.rst:30
 msgid "Unknown or expired tokens will be marked as inactive::"
 msgstr ""
+"未知のトークンまたは期限切れのトークンは、非アクティブとしてマークされま"
+"す。"
 
 #: ../../endpoints/introspection.rst:38
 msgid "An invalid request will return a 400, an unauthorized request 401."
-msgstr ""
+msgstr "無効なリクエストは400、不正なリクエスト401を返します。"
 
 #: ../../endpoints/introspection.rst:40
 msgid ""
-"You can use the `IdentityModel "
-"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
-"programmatically access the introspection endpoint from .NET code. For "
-"more information check the IdentityModel `docs "
-"<https://identitymodel.readthedocs.io/en/latest/client/introspection.html>`_."
+"You can use the `IdentityModel <https://github.com/IdentityModel/"
+"IdentityModel2>`_ client library to programmatically access the "
+"introspection endpoint from .NET code. For more information check the "
+"IdentityModel `docs <https://identitymodel.readthedocs.io/en/latest/"
+"client/introspection.html>`_."
 msgstr ""
-
+"IdentityModelクライアントライブラリを使用して、.NETコードからイントロスペ"
+"クションエンドポイントにプログラムでアクセスできます。詳細については、"
+"IdentityModelのドキュメントを参照してください。"

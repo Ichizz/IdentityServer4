@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 22:04+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../reference/ef.rst:4
 msgid "Entity Framework Support"
@@ -24,27 +26,32 @@ msgstr ""
 
 #: ../../reference/ef.rst:6
 msgid ""
-"An EntityFramework-based implementation is provided for the configuration"
-" and operational data extensibility points in IdentityServer. The use of "
+"An EntityFramework-based implementation is provided for the configuration "
+"and operational data extensibility points in IdentityServer. The use of "
 "EntityFramework allows any EF-supported database to be used with this "
 "library."
 msgstr ""
+"EntityFrameworkベースの実装は、IdentityServerの構成データと操作上のデータ拡"
+"張ポイントに提供されます。EntityFrameworkを使用すると、EFでサポートされてい"
+"るデータベースをこのライブラリで使用できます。"
 
 #: ../../reference/ef.rst:9
 msgid ""
-"The repo for this library is located `here "
-"<https://github.com/IdentityServer/IdentityServer4.EntityFramework/>`_ "
-"and the NuGet package is `here "
-"<https://www.nuget.org/packages/IdentityServer4.EntityFramework>`_."
-msgstr ""
+"The repo for this library is located `here <https://github.com/"
+"IdentityServer/IdentityServer4.EntityFramework/>`_ and the NuGet package is "
+"`here <https://www.nuget.org/packages/IdentityServer4.EntityFramework>`_."
+msgstr "このライブラリのレポはここにあり、NuGetパッケージはここにあります。"
 
 #: ../../reference/ef.rst:11
 msgid ""
-"The features provided by this library are broken down into two main "
-"areas: configuration store and operational store support. These two "
-"different areas can be used independently or together, based upon the "
-"needs of the hosting application."
+"The features provided by this library are broken down into two main areas: "
+"configuration store and operational store support. These two different "
+"areas can be used independently or together, based upon the needs of the "
+"hosting application."
 msgstr ""
+"このライブラリーが提供する機能は、構成ストアとオペレーティング・ストアの2つ"
+"の主要な領域に分かれています。これらの2つの異なる領域は、ホスティングアプリ"
+"ケーションのニーズに応じて、単独でまたは一緒に使用できます。"
 
 #: ../../reference/ef.rst:15
 msgid "Configuration Store support for Clients, Resources, and CORS settings"
@@ -52,27 +59,36 @@ msgstr ""
 
 #: ../../reference/ef.rst:17
 msgid ""
-"If client, identity resource, API resource, or CORS data is desired to be"
-" loaded from a EF-supported database (rather than use in-memory "
+"If client, identity resource, API resource, or CORS data is desired to be "
+"loaded from a EF-supported database (rather than use in-memory "
 "configuration), then the configuration store can be used. This support "
-"provides implementations of the ``IClientStore``, ``IResourceStore``, and"
-" the ``ICorsPolicyService`` extensibility points. These implementations "
-"use a ``DbContext``-derived class called ``ConfigurationDbContext`` to "
-"model the tables in the database."
+"provides implementations of the ``IClientStore``, ``IResourceStore``, and "
+"the ``ICorsPolicyService`` extensibility points. These implementations use "
+"a ``DbContext``-derived class called ``ConfigurationDbContext`` to model "
+"the tables in the database."
 msgstr ""
+"クライアント、IDリソース、APIリソース、またはCORSデータを、EFでサポートされ"
+"ているデータベース（インメモリ構成を使用するのではなく）からロードする必要が"
+"ある場合は、構成ストアを使用できます。このサポートは、実装の提供"
+"IClientStore、IResourceStoreおよびICorsPolicyService拡張ポイント。これらの実"
+"装では、データベース内のテーブルをモデル化するためにDbContext呼び出される継"
+"承クラスを使用ConfigurationDbContextします。"
 
 #: ../../reference/ef.rst:22
 msgid ""
-"To use the configuration store support, use the ``AddConfigurationStore``"
-" extension method after the call to ``AddIdentityServer``::"
+"To use the configuration store support, use the ``AddConfigurationStore`` "
+"extension method after the call to ``AddIdentityServer``::"
 msgstr ""
+"構成ストアサポートを使用するにはAddConfigurationStore、次の呼び出しの後に拡"
+"張メソッドを使用しますAddIdentityServer。"
 
 #: ../../reference/ef.rst:39
 msgid ""
-"To configure the configuration store, use the "
-"``ConfigurationStoreOptions`` options object passed to the configuration "
-"callback."
+"To configure the configuration store, use the ``ConfigurationStoreOptions`` "
+"options object passed to the configuration callback."
 msgstr ""
+"構成ストアを構成するConfigurationStoreOptionsには、構成コールバックに渡され"
+"たオプションオブジェクトを使用します。"
 
 #: ../../reference/ef.rst:42
 msgid "ConfigurationStoreOptions"
@@ -80,9 +96,11 @@ msgstr ""
 
 #: ../../reference/ef.rst:43
 msgid ""
-"This options class contains properties to control the configuration store"
-" and ``ConfigurationDbContext``."
+"This options class contains properties to control the configuration store "
+"and ``ConfigurationDbContext``."
 msgstr ""
+"このオプションクラスには、構成ストアとコンポーネントを制御するプロパティが含"
+"まれていますConfigurationDbContext。"
 
 #: ../../reference/ef.rst:46 ../../reference/ef.rst:88
 msgid "``ConfigureDbContext``"
@@ -90,12 +108,16 @@ msgstr ""
 
 #: ../../reference/ef.rst:46
 msgid ""
-"Delegate of type ``Action<DbContextOptionsBuilder>`` used as a callback "
-"to configure the underlying ``ConfigurationDbContext``. The delegate can "
-"configure the ``ConfigurationDbContext`` in the same way if EF were being"
-" used directly with ``AddDbContext``, which allows any EF-supported "
-"database to be used."
+"Delegate of type ``Action<DbContextOptionsBuilder>`` used as a callback to "
+"configure the underlying ``ConfigurationDbContext``. The delegate can "
+"configure the ``ConfigurationDbContext`` in the same way if EF were being "
+"used directly with ``AddDbContext``, which allows any EF-supported database "
+"to be used."
 msgstr ""
+"Action<DbContextOptionsBuilder>基底を構成するコールバックとして使用される型"
+"のデリゲートConfigurationDbContext。デリゲートはConfigurationDbContext、EFが"
+"直接使用されている場合と同じ方法でAddDbContextEFをサポートするデータベースを"
+"使用できます。"
 
 #: ../../reference/ef.rst:50 ../../reference/ef.rst:90
 msgid "``DefaultSchema``"
@@ -103,9 +125,11 @@ msgstr ""
 
 #: ../../reference/ef.rst:49
 msgid ""
-"Allows setting the default database schema name for all the tables in the"
-" ``ConfigurationDbContext``."
+"Allows setting the default database schema name for all the tables in the "
+"``ConfigurationDbContext``."
 msgstr ""
+"のすべてのテーブルのデフォルトのデータベーススキーマ名を設定できます"
+"ConfigurationDbContext。"
 
 #: ../../reference/ef.rst:53
 msgid ""
@@ -115,26 +139,34 @@ msgstr ""
 
 #: ../../reference/ef.rst:55
 msgid ""
-"If authorization grants, consents, and tokens (refresh and reference) are"
-" desired to be loaded from a EF-supported database (rather than the "
-"default in-memory database), then the operational store can be used. This"
-" support provides implementations of the ``IPersistedGrantStore`` "
-"extensibility point. The implementation uses a ``DbContext``-derived "
-"class called ``PersistedGrantDbContext`` to model the table in the "
-"database."
+"If authorization grants, consents, and tokens (refresh and reference) are "
+"desired to be loaded from a EF-supported database (rather than the default "
+"in-memory database), then the operational store can be used. This support "
+"provides implementations of the ``IPersistedGrantStore`` extensibility "
+"point. The implementation uses a ``DbContext``-derived class called "
+"``PersistedGrantDbContext`` to model the table in the database."
 msgstr ""
+"認可付与、同意、およびトークン（リフレッシュと参照）をEFサポートデータベース"
+"（デフォルトのインメモリデータベースではなく）からロードすることが望まれる場"
+"合、運用ストアを使用できます。このサポートは、IPersistedGrantStore拡張ポイン"
+"トの実装を提供します。この実装では、データベース内のテーブルをモデル化するた"
+"めにDbContext呼び出さPersistedGrantDbContextれた継承クラスを使用します。"
 
 #: ../../reference/ef.rst:60
 msgid ""
 "To use the operational store support, use the ``AddOperationalStore`` "
 "extension method after the call to ``AddIdentityServer``::"
 msgstr ""
+"操作可能なストアサポートを使用するにはAddOperationalStore、次の呼び出しの後"
+"に拡張メソッドを使用しますAddIdentityServer。"
 
 #: ../../reference/ef.rst:81
 msgid ""
 "To configure the operational store, use the ``OperationalStoreOptions`` "
 "options object passed to the configuration callback."
 msgstr ""
+"運用ストアを設定するOperationalStoreOptionsには、設定コールバックに渡された"
+"オプションオブジェクトを使用します。"
 
 #: ../../reference/ef.rst:84
 msgid "OperationalStoreOptions"
@@ -142,23 +174,25 @@ msgstr ""
 
 #: ../../reference/ef.rst:85
 msgid ""
-"This options class contains properties to control the operational store "
-"and ``PersistedGrantDbContext``."
+"This options class contains properties to control the operational store and "
+"``PersistedGrantDbContext``."
 msgstr ""
+"このオプションクラスには、操作可能なストアと操作を制御するプロパティが含まれ"
+"ていますPersistedGrantDbContext。"
 
 #: ../../reference/ef.rst:88
 msgid ""
-"Delegate of type ``Action<DbContextOptionsBuilder>`` used as a callback "
-"to configure the underlying ``PersistedGrantDbContext``. The delegate can"
-" configure the ``PersistedGrantDbContext`` in the same way if EF were "
-"being used directly with ``AddDbContext``, which allows any EF-supported "
-"database to be used."
+"Delegate of type ``Action<DbContextOptionsBuilder>`` used as a callback to "
+"configure the underlying ``PersistedGrantDbContext``. The delegate can "
+"configure the ``PersistedGrantDbContext`` in the same way if EF were being "
+"used directly with ``AddDbContext``, which allows any EF-supported database "
+"to be used."
 msgstr ""
 
 #: ../../reference/ef.rst:91
 msgid ""
-"Allows setting the default database schema name for all the tables in the"
-" ``PersistedGrantDbContext``."
+"Allows setting the default database schema name for all the tables in the "
+"``PersistedGrantDbContext``."
 msgstr ""
 
 #: ../../reference/ef.rst:92
@@ -167,9 +201,11 @@ msgstr ""
 
 #: ../../reference/ef.rst:93
 msgid ""
-"Indicates whether stale entries will be automatically cleaned up from the"
-" database. The default is ``false``."
+"Indicates whether stale entries will be automatically cleaned up from the "
+"database. The default is ``false``."
 msgstr ""
+"古いエントリがデータベースから自動的にクリーンアップされるかどうかを示しま"
+"す。デフォルトはfalseです。"
 
 #: ../../reference/ef.rst:96
 msgid "``TokenCleanupInterval``"
@@ -177,7 +213,7 @@ msgstr ""
 
 #: ../../reference/ef.rst:95
 msgid "The token cleanup interval (in seconds). The default is 3600 (1 hour)."
-msgstr ""
+msgstr "トークンクリーンアップ間隔（秒単位）。デフォルトは3600（1時間）です。"
 
 #: ../../reference/ef.rst:99
 msgid ""
@@ -187,32 +223,41 @@ msgstr ""
 
 #: ../../reference/ef.rst:101
 msgid ""
-"It is very likely that across different versions of IdentityServer (and "
-"the EF support) that the database schema will change to accommodate new "
-"and changing features."
+"It is very likely that across different versions of IdentityServer (and the "
+"EF support) that the database schema will change to accommodate new and "
+"changing features."
 msgstr ""
+"異なるバージョンのIdentityServer（およびEFサポート）では、新しく変化する機能"
+"に対応するためにデータベーススキーマが変更される可能性が非常に高いです。"
 
 #: ../../reference/ef.rst:103
 msgid ""
-"We do not provide any support for creating your database or migrating "
-"your data from one version to another. You are expected to manage the "
-"database creation, schema changes, and data migration in any way your "
-"organization sees fit."
+"We do not provide any support for creating your database or migrating your "
+"data from one version to another. You are expected to manage the database "
+"creation, schema changes, and data migration in any way your organization "
+"sees fit."
 msgstr ""
+"私たちはあなたのデータベースを作成したり、あるバージョンから別のバージョンに"
+"データを移行したりするためのサポートを提供していません。組織が適切と考える方"
+"法で、データベースの作成、スキーマの変更、およびデータの移行を管理することが"
+"求められます。"
 
 #: ../../reference/ef.rst:106
 msgid ""
-"Using EF migrations is one possible approach to this. If you do wish to "
-"use migrations, then see the :ref:`EF quickstart "
+"Using EF migrations is one possible approach to this. If you do wish to use "
+"migrations, then see the :ref:`EF quickstart "
 "<refEntityFrameworkQuickstart>` for samples on how to get started, or "
-"consult the Microsoft `documentation on EF migrations "
-"<https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet>`_."
+"consult the Microsoft `documentation on EF migrations <https://docs."
+"microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet>`_."
 msgstr ""
+"EFの移行を使用することがこれに可能なアプローチの1つです。移行を使用する場合"
+"は、EFクイックスタートでサンプルを入手してください。または、EF移行に関する "
+"Microsoftのマニュアルを参照してください。"
 
 #: ../../reference/ef.rst:109
 msgid ""
-"We also publish `sample SQL scripts "
-"<https://github.com/IdentityServer/IdentityServer4.EntityFramework/tree/release/src/Host/Migrations/IdentityServer>`_"
-" for the current version of the database schema."
+"We also publish `sample SQL scripts <https://github.com/IdentityServer/"
+"IdentityServer4.EntityFramework/tree/release/src/Host/Migrations/"
+"IdentityServer>`_ for the current version of the database schema."
 msgstr ""
-
+"現バージョンのデータベーススキーマのサンプルSQLスクリプトも公開しています。"

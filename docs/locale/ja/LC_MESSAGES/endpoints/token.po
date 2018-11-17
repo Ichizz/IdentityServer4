@@ -4,38 +4,48 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:38+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../endpoints/token.rst:2
 msgid "Token Endpoint"
-msgstr ""
+msgstr "トークンエンドポイント"
 
 #: ../../endpoints/token.rst:4
 msgid ""
 "The token endpoint can be used to programmatically request tokens. It "
-"supports the ``password``, ``authorization_code``, ``client_credentials``"
-" and ``refresh_token`` grant types). Furthermore the token endpoint can "
-"be extended to support extension grant types."
+"supports the ``password``, ``authorization_code``, ``client_credentials`` "
+"and ``refresh_token`` grant types). Furthermore the token endpoint can be "
+"extended to support extension grant types."
 msgstr ""
+"トークンエンドポイントは、プログラムでトークンを要求するために使用できます。"
+"それはサポートしていますpassword、authorization_code、client_credentials、"
+"refresh_tokenおよびurn:ietf:params:oauth:grant-type:device_code助成金の種類"
+"を。さらに、トークンエンドポイントは、拡張グラントタイプをサポートするように"
+"拡張することができます。"
 
 #: ../../endpoints/token.rst:8
 msgid ""
-"IdentityServer supports a subset of the OpenID Connect and OAuth 2.0 "
-"token request parameters. For a full list, see `here "
-"<http://openid.net/specs/openid-connect-core-1_0.html#TokenRequest>`_."
+"IdentityServer supports a subset of the OpenID Connect and OAuth 2.0 token "
+"request parameters. For a full list, see `here <http://openid.net/specs/"
+"openid-connect-core-1_0.html#TokenRequest>`_."
 msgstr ""
+"IdentityServerは、OpenID ConnectおよびOAuth 2.0トークン要求パラメータのサブ"
+"セットをサポートしています。完全なリストについては、こちらを参照してくださ"
+"い。"
 
 #: ../../endpoints/token.rst:10
 msgid "``client_id``"
@@ -43,7 +53,7 @@ msgstr ""
 
 #: ../../endpoints/token.rst:11
 msgid "client identifier (required)"
-msgstr ""
+msgstr "クライアント識別子（必須）"
 
 #: ../../endpoints/token.rst:12
 msgid "``client_secret``"
@@ -51,9 +61,11 @@ msgstr ""
 
 #: ../../endpoints/token.rst:13
 msgid ""
-"client secret either in the post body, or as a basic authentication "
-"header. Optional."
+"client secret either in the post body, or as a basic authentication header. "
+"Optional."
 msgstr ""
+"ポスト本体のクライアント秘密か、基本的な認証ヘッダーのどちらかです。オプショ"
+"ン。"
 
 #: ../../endpoints/token.rst:14
 msgid "``grant_type``"
@@ -64,6 +76,8 @@ msgid ""
 "``authorization_code``, ``client_credentials``, ``password``, "
 "``refresh_token`` or custom"
 msgstr ""
+"authorization_code、client_credentials、password、refresh_token、urn:ietf:"
+"params:oauth:grant-type:device_codeまたはカスタム"
 
 #: ../../endpoints/token.rst:16
 msgid "``scope``"
@@ -71,9 +85,11 @@ msgstr ""
 
 #: ../../endpoints/token.rst:17
 msgid ""
-"one or more registered scopes. If not specified, a token for all "
-"explicitly allowed scopes will be issued."
+"one or more registered scopes. If not specified, a token for all explicitly "
+"allowed scopes will be issued."
 msgstr ""
+"1つ以上の登録されたスコープ。指定しない場合は、明示的に許可されたすべてのス"
+"コープのトークンが発行されます。"
 
 #: ../../endpoints/token.rst:18
 msgid "``redirect_uri``"
@@ -81,7 +97,7 @@ msgstr ""
 
 #: ../../endpoints/token.rst:19
 msgid "required for the ``authorization_code`` grant type"
-msgstr ""
+msgstr "authorization_code付与タイプに必要"
 
 #: ../../endpoints/token.rst:20
 msgid "``code``"
@@ -89,7 +105,7 @@ msgstr ""
 
 #: ../../endpoints/token.rst:21
 msgid "the authorization code (required for ``authorization_code`` grant type)"
-msgstr ""
+msgstr "認可コード（authorization_code認可タイプに必要）"
 
 #: ../../endpoints/token.rst:22
 msgid "``code_verifier``"
@@ -97,7 +113,7 @@ msgstr ""
 
 #: ../../endpoints/token.rst:23
 msgid "PKCE proof key"
-msgstr ""
+msgstr "PKCEプルーフキー"
 
 #: ../../endpoints/token.rst:24
 msgid "``username``"
@@ -105,7 +121,7 @@ msgstr ""
 
 #: ../../endpoints/token.rst:25
 msgid "resource owner username (required for ``password`` grant type)"
-msgstr ""
+msgstr "リソース所有者のユーザー名（password付与タイプに必要）"
 
 #: ../../endpoints/token.rst:26
 msgid "``password``"
@@ -113,7 +129,7 @@ msgstr ""
 
 #: ../../endpoints/token.rst:27
 msgid "resource owner password (required for ``password`` grant type)"
-msgstr ""
+msgstr "リソース所有者のパスワード（password付与タイプに必要）"
 
 #: ../../endpoints/token.rst:32
 msgid "``acr_values``"
@@ -125,19 +141,26 @@ msgid ""
 "``password`` grant type - identityserver special cases the following "
 "proprietary acr_values:"
 msgstr ""
+"password認可タイプの追加の認証に関連する情報を渡すことができます- "
+"identityserverの特殊なケース次の独自のacr_values："
 
 #: ../../endpoints/token.rst:31
 msgid ""
-"``idp:name_of_idp`` bypasses the login/home realm screen and forwards the"
-" user directly to the selected identity provider (if allowed per client "
+"``idp:name_of_idp`` bypasses the login/home realm screen and forwards the "
+"user directly to the selected identity provider (if allowed per client "
 "configuration)"
 msgstr ""
+"idp:name_of_idp ログイン/ホーム領域の画面をバイパスし、選択したアイデンティ"
+"ティプロバイダに直接ユーザーを転送します（クライアント構成ごとに許可されてい"
+"る場合）"
 
 #: ../../endpoints/token.rst:33
 msgid ""
 "``tenant:name_of_tenant`` can be used to pass a tenant name to the token "
 "endpoint"
 msgstr ""
+"tenant:name_of_tenant テナント名をトークンエンドポイントに渡すために使用でき"
+"ます"
 
 #: ../../endpoints/token.rst:35
 msgid "``refresh_token``"
@@ -145,22 +168,24 @@ msgstr ""
 
 #: ../../endpoints/token.rst:35
 msgid "the refresh token (required for ``refresh_token`` grant type)"
-msgstr ""
+msgstr "リフレッシュトークン（refresh_token付与タイプに必要）"
 
 #: ../../endpoints/token.rst:38
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../endpoints/token.rst:50
 msgid "(Form-encoding removed and line breaks added for readability)"
 msgstr ""
+"（フォームエンコードが削除され、読みやすくするために改行が追加されました）"
 
 #: ../../endpoints/token.rst:52
 msgid ""
-"You can use the `IdentityModel "
-"<https://github.com/IdentityModel/IdentityModel2>`_ client library to "
-"programmatically access the token endpoint from .NET code. For more "
-"information check the IdentityModel `docs "
+"You can use the `IdentityModel <https://github.com/IdentityModel/"
+"IdentityModel2>`_ client library to programmatically access the token "
+"endpoint from .NET code. For more information check the IdentityModel `docs "
 "<https://identitymodel.readthedocs.io/en/latest/client/token.html>`_."
 msgstr ""
-
+"IdentityModelクライアントライブラリを使用して、.NETコードからトークンエンドポ"
+"イントにプログラムでアクセスできます。詳細については、IdentityModelのドキュメ"
+"ントを参照してください。"

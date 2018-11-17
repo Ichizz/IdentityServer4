@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:54+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../reference/grant_validation_result.rst:4
 msgid "GrantValidationResult"
@@ -27,20 +29,25 @@ msgid ""
 "The ``GrantValidationResult`` class models the outcome of grant "
 "validation for extensions grants and resource owner password grants."
 msgstr ""
+"このGrantValidationResultクラスは、エクステンショングラントとリソースオー"
+"ナーのパスワード付与のグラント検証の結果をモデル化します。"
 
 #: ../../reference/grant_validation_result.rst:8
 msgid ""
 "The most common usage is to either new it up using an identity (success "
 "case)::"
 msgstr ""
+"最も一般的な使用法は、アイデンティティーを使用して新しいものを作ることで"
+"す（成功例）。"
 
 #: ../../reference/grant_validation_result.rst:15
 msgid "...or using an error and description (failure case)::"
-msgstr ""
+msgstr "...またはエラーと説明を使用する（失敗の場合）："
 
 #: ../../reference/grant_validation_result.rst:21
 msgid ""
 "In both case you can pass additional custom values that will be included "
 "in the token response."
 msgstr ""
-
+"いずれの場合も、トークンレスポンスに追加される追加のカスタム値を渡すこと"
+"ができます。"

@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 21:59+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../reference/interactionservice.rst:4
 msgid "IdentityServer Interaction Service"
@@ -28,9 +30,14 @@ msgid ""
 "provide services to be used by the user interface to communicate with "
 "IdentityServer, mainly pertaining to user interaction. It is available "
 "from the dependency injection system and would normally be injected as a "
-"constructor parameter into your MVC controllers for the user interface of"
-" IdentityServer."
+"constructor parameter into your MVC controllers for the user interface of "
+"IdentityServer."
 msgstr ""
+"このIIdentityServerInteractionServiceインタフェースは、主にユーザ対話に関"
+"係するユーザインタフェースがIdentityServerと通信するために使用するサービス"
+"を提供することを目的としています。これは依存関係注入システムから利用でき、"
+"通常はIdentityServerのユーザーインターフェイス用のMVCコントローラにコンス"
+"トラクタパラメータとして注入されます。"
 
 #: ../../reference/interactionservice.rst:10
 msgid "IIdentityServerInteractionService APIs"
@@ -42,9 +49,11 @@ msgstr ""
 
 #: ../../reference/interactionservice.rst:13
 msgid ""
-"Returns the ``AuthorizationRequest`` based on the ``returnUrl`` passed to"
-" the login or consent pages."
+"Returns the ``AuthorizationRequest`` based on the ``returnUrl`` passed to "
+"the login or consent pages."
 msgstr ""
+"ログインまたは同意ページに渡された情報にAuthorizationRequest基づいて返しま"
+"すreturnUrl。"
 
 #: ../../reference/interactionservice.rst:16
 msgid "``IsValidReturnUrl``"
@@ -52,9 +61,11 @@ msgstr ""
 
 #: ../../reference/interactionservice.rst:16
 msgid ""
-"Indicates if the ``returnUrl`` is a valid URL for redirect after login or"
-" consent."
+"Indicates if the ``returnUrl`` is a valid URL for redirect after login or "
+"consent."
 msgstr ""
+"returnUrlログインまたは同意の後にリダイレクトの有効なURL かどうかを示しま"
+"す。"
 
 #: ../../reference/interactionservice.rst:19
 msgid "``GetErrorContextAsync``"
@@ -62,9 +73,9 @@ msgstr ""
 
 #: ../../reference/interactionservice.rst:19
 msgid ""
-"Returns the ``ErrorMessage`` based on the ``errorId`` passed to the error"
-" page."
-msgstr ""
+"Returns the ``ErrorMessage`` based on the ``errorId`` passed to the error "
+"page."
+msgstr "エラーページに渡されたデータにErrorMessage基づいて返しますerrorId。"
 
 #: ../../reference/interactionservice.rst:22
 msgid "``GetLogoutContextAsync``"
@@ -75,6 +86,7 @@ msgid ""
 "Returns the ``LogoutRequest`` based on the ``logoutId`` passed to the "
 "logout page."
 msgstr ""
+"ログアウトページに渡された値にLogoutRequest基づいて返しますlogoutId。"
 
 #: ../../reference/interactionservice.rst:28
 msgid "``CreateLogoutContextAsync``"
@@ -82,16 +94,24 @@ msgstr ""
 
 #: ../../reference/interactionservice.rst:25
 msgid ""
-"Used to create a ``logoutId`` if there is not one presently. This creates"
-" a cookie capturing all the current state needed for signout and the "
-"``logoutId`` identifies that cookie. This is typically used when there is"
-" no current ``logoutId`` and the logout page must capture the current "
+"Used to create a ``logoutId`` if there is not one presently. This creates "
+"a cookie capturing all the current state needed for signout and the "
+"``logoutId`` identifies that cookie. This is typically used when there is "
+"no current ``logoutId`` and the logout page must capture the current "
 "user's state needed for sign-out prior to redirecting to an external "
 "identity provider for signout. The newly created ``logoutId`` would need "
 "to be round-tripped to the external identity provider at signout time, "
-"and then used on the signout callback page in the same way it would be on"
-" the normal logout page."
+"and then used on the signout callback page in the same way it would be on "
+"the normal logout page."
 msgstr ""
+"logoutId現在存在しない場合にaを作成するために使用されます。これにより、サ"
+"インアウトに必要なすべての現在の状態をキャプチャしたCookieが作成logoutIdさ"
+"れ、そのCookie が識別されます。これは通常logoutId、現在のログがないときに"
+"使用され、サインアウトのために外部IDプロバイダにリダイレクトする前に、ログ"
+"アウトページでログアウトに必要な現在のユーザーの状態を取得する必要がありま"
+"す。新しく作成されたものlogoutIdは、サインアウト時に外部IDプロバイダにラウ"
+"ンドトリップされ、通常のログアウトページと同じ方法でサインアウトコールバッ"
+"クページで使用される必要があります。"
 
 #: ../../reference/interactionservice.rst:31
 msgid "``GrantConsentAsync``"
@@ -102,6 +122,8 @@ msgid ""
 "Accepts a ``ConsentResponse`` to inform IdentityServer of the user's "
 "consent to a particular ``AuthorizationRequest``."
 msgstr ""
+"ConsentResponseIdentityServerに特定のユーザーの同意を通知するためにa を受"
+"け入れAuthorizationRequestます。"
 
 #: ../../reference/interactionservice.rst:34
 msgid "``GetAllUserConsentsAsync``"
@@ -109,7 +131,7 @@ msgstr ""
 
 #: ../../reference/interactionservice.rst:34
 msgid "Returns a collection of ``Consent`` for the user."
-msgstr ""
+msgstr "Consentユーザーのコレクションを返します。"
 
 #: ../../reference/interactionservice.rst:37
 msgid "``RevokeUserConsentAsync``"
@@ -117,7 +139,7 @@ msgstr ""
 
 #: ../../reference/interactionservice.rst:37
 msgid "Revokes all of a user's consents and grants for a client."
-msgstr ""
+msgstr "クライアントに対するすべてのユーザーの同意と付与を取り消します。"
 
 #: ../../reference/interactionservice.rst:40
 msgid "``RevokeTokensForCurrentSessionAsync``"
@@ -128,6 +150,8 @@ msgid ""
 "Revokes all of a user's consents and grants for clients the user has "
 "signed into during their current session."
 msgstr ""
+"ユーザーが現在のセッション中にサインインしたクライアントに対するユーザーの"
+"同意と付与をすべて取り消します。"
 
 #: ../../reference/interactionservice.rst:43
 msgid "AuthorizationRequest"
@@ -142,7 +166,7 @@ msgstr ""
 #: ../../reference/interactionservice.rst:45
 #: ../../reference/interactionservice.rst:85
 msgid "The client identifier that initiated the request."
-msgstr ""
+msgstr "要求を開始したクライアント識別子。"
 
 #: ../../reference/interactionservice.rst:46
 msgid "``RedirectUri``"
@@ -361,4 +385,3 @@ msgstr ""
 #: ../../reference/interactionservice.rst:115
 msgid "The date and time when the consent will expire."
 msgstr ""
-
