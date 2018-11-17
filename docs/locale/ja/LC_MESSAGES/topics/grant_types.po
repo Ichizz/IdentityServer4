@@ -4,30 +4,35 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 20:13+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/grant_types.rst:2
 msgid "Grant Types"
-msgstr ""
+msgstr "グラントタイプ"
 
 #: ../../topics/grant_types.rst:4
 msgid ""
 "Grant types are a way to specify how a client wants to interact with "
-"IdentityServer. The OpenID Connect and OAuth 2 specs define the following"
-" grant types:"
+"IdentityServer. The OpenID Connect and OAuth 2 specs define the "
+"following grant types:"
 msgstr ""
+"許可タイプは、クライアントがIdentityServerとやり取りする方法を指定する方"
+"法です。OpenID ConnectとOAuth 2の仕様では、以下のグラントタイプが定義され"
+"ています。"
 
 #: ../../topics/grant_types.rst:7 ../../topics/grant_types.rst:63
 msgid "Implicit"
@@ -62,6 +67,8 @@ msgid ""
 "You can specify which grant type a client can use via the "
 "``AllowedGrantTypes`` property on the ``Client`` configuration."
 msgstr ""
+"構成AllowedGrantTypes上のプロパティーを使用して、クライアントが使用できる"
+"許可タイプを指定できますClient。"
 
 #: ../../topics/grant_types.rst:17
 msgid ""
@@ -70,22 +77,30 @@ msgid ""
 "server communication). The ``GrantTypes`` class can be used to pick from "
 "typical grant type combinations::"
 msgstr ""
+"クライアントは、2つ以上の認可タイプを使用するように構成できます（たとえ"
+"ば、ユーザー中心の操作の場合はハイブリッド、サーバー間の通信の場合はクラ"
+"イアント資格情報）。GrantTypesこのクラスは、典型的な補助金型の組み合わせ"
+"から選択するために使用することができます。"
 
 #: ../../topics/grant_types.rst:22
 msgid "You can also specify the grant types list manually::"
-msgstr ""
+msgstr "許可タイプリストを手動で指定することもできます。"
 
 #: ../../topics/grant_types.rst:31
 msgid ""
 "If you want to transmit access tokens via the browser channel, you also "
 "need to allow that explicitly on the client configuration::"
 msgstr ""
+"ブラウザのチャンネルを介してアクセストークンを送信する場合は、クライアン"
+"トの設定で明示的に許可する必要があります。"
 
 #: ../../topics/grant_types.rst:35
 msgid ""
 "For security reasons, not all grant type combinations are allowed. See "
 "below for more details."
 msgstr ""
+"セキュリティ上の理由から、すべての許可タイプの組み合わせが許可されるわけ"
+"ではありません。詳細は以下を参照してください。"
 
 #: ../../topics/grant_types.rst:37
 msgid ""
@@ -93,6 +108,9 @@ msgid ""
 "would use them. It is also recommended, that in addition you read the "
 "corresponding specs to get a better understanding of the differences."
 msgstr ""
+"残りの部分については、助成金の種類について簡単に説明し、使用する時期につ"
+"いても説明します。また、相違点の理解を深めるために、対応する仕様を読むこ"
+"とをお勧めします。"
 
 #: ../../topics/grant_types.rst:42
 msgid ""
@@ -100,28 +118,40 @@ msgid ""
 "communication - tokens are always requested on behalf of a client, not a "
 "user."
 msgstr ""
+"これは最も単純なグラント・タイプであり、サーバー間の通信に使用されます。"
+"トークンは、ユーザーではなくクライアントのために常に要求されます。"
 
 #: ../../topics/grant_types.rst:44
 msgid ""
 "With this grant type you send a token request to the token endpoint, and "
-"get an access token back that represents the client. The client typically"
-" has to authenticate with the token endpoint using its client ID and "
-"secret."
+"get an access token back that represents the client. The client "
+"typically has to authenticate with the token endpoint using its client "
+"ID and secret."
 msgstr ""
+"この許可タイプでは、トークン要求をトークンエンドポイントに送信し、クライ"
+"アントを表すアクセストークンバックを取得します。クライアントは通常、クラ"
+"イアントIDと秘密情報を使用してトークンエンドポイントで認証する必要があり"
+"ます。"
 
 #: ../../topics/grant_types.rst:47
 msgid ""
 "See the :ref:`Client Credentials Quick Start "
 "<refClientCredentialsQuickstart>` for a sample how to use it."
 msgstr ""
+"使用方法のサンプルについては、クライアントクレデンシャルのクイックスター"
+"トを参照してください。"
 
 #: ../../topics/grant_types.rst:52
 msgid ""
-"The resource owner password grant type allows to request tokens on behalf"
-" of a user by sending the user's name and password to the token endpoint."
-" This is so called \"non-interactive\" authentication and is generally "
-"not recommended."
+"The resource owner password grant type allows to request tokens on "
+"behalf of a user by sending the user's name and password to the token "
+"endpoint. This is so called \"non-interactive\" authentication and is "
+"generally not recommended."
 msgstr ""
+"リソース所有者のパスワード付与タイプを使用すると、ユーザーの名前とパス"
+"ワードをトークンエンドポイントに送信することによって、ユーザーの代わりに"
+"トークンを要求できます。これは「非対話型」認証と呼ばれ、一般的には推奨さ"
+"れません。"
 
 #: ../../topics/grant_types.rst:55
 msgid ""
@@ -130,6 +160,9 @@ msgid ""
 "recommendation is to use an interactive flow like implicit or hybrid for "
 "user authentication instead."
 msgstr ""
+"特定のレガシーまたはファーストパーティの統合シナリオには、このグラントタ"
+"イプが便利な理由があるかもしれませんが、代わりにユーザー認証のために暗黙"
+"またはハイブリッドのような対話型フローを使用することが推奨されます。"
 
 #: ../../topics/grant_types.rst:58
 msgid ""
@@ -164,17 +197,17 @@ msgstr ""
 
 #: ../../topics/grant_types.rst:74
 msgid ""
-"Authorization code flow was originally specified by OAuth 2, and provides"
-" a way to retrieve tokens on a back-channel as opposed to the browser "
-"front-channel. It also support client authentication."
+"Authorization code flow was originally specified by OAuth 2, and "
+"provides a way to retrieve tokens on a back-channel as opposed to the "
+"browser front-channel. It also support client authentication."
 msgstr ""
 
 #: ../../topics/grant_types.rst:77
 msgid ""
 "While this grant type is supported on its own, it is generally "
-"recommended you combine that with identity tokens which turns it into the"
-" so called hybrid flow. Hybrid flow gives you important extra features "
-"like signed protocol responses."
+"recommended you combine that with identity tokens which turns it into "
+"the so called hybrid flow. Hybrid flow gives you important extra "
+"features like signed protocol responses."
 msgstr ""
 
 #: ../../topics/grant_types.rst:83
@@ -187,10 +220,10 @@ msgstr ""
 #: ../../topics/grant_types.rst:85
 msgid ""
 "In hybrid flow the identity token is transmitted via the browser channel "
-"and contains the signed protocol response along with signatures for other"
-" artifacts like the authorization code. This mitigates a number of "
-"attacks that apply to the browser channel. After successful validation of"
-" the response, the back-channel is used to retrieve the access and "
+"and contains the signed protocol response along with signatures for "
+"other artifacts like the authorization code. This mitigates a number of "
+"attacks that apply to the browser channel. After successful validation "
+"of the response, the back-channel is used to retrieve the access and "
 "refresh token."
 msgstr ""
 
@@ -223,8 +256,8 @@ msgstr ""
 msgid ""
 "Refresh tokens allow requesting new access tokens without user "
 "interaction. Every time the client refreshes a token it needs to make an "
-"(authenticated) back-channel call to IdentityServer. This allows checking"
-" if the refresh token is still valid, or has been revoked in the "
+"(authenticated) back-channel call to IdentityServer. This allows "
+"checking if the refresh token is still valid, or has been revoked in the "
 "meantime."
 msgstr ""
 
@@ -238,8 +271,8 @@ msgstr ""
 
 #: ../../topics/grant_types.rst:109
 msgid ""
-"Extension grants allow extending the token endpoint with new grant types."
-" See :ref:`this <refExtensionGrants>` for more details."
+"Extension grants allow extending the token endpoint with new grant "
+"types. See :ref:`this <refExtensionGrants>` for more details."
 msgstr ""
 
 #: ../../topics/grant_types.rst:112
@@ -259,4 +292,3 @@ msgstr ""
 #: ../../topics/grant_types.rst:116
 msgid "Same concern exists for allowing both authorization code and hybrid"
 msgstr ""
-

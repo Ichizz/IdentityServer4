@@ -4,56 +4,60 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 13:51+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/apis.rst:4
 msgid "Protecting APIs"
-msgstr ""
+msgstr "APIの保護"
 
 #: ../../topics/apis.rst:5
 msgid ""
-"IdentityServer issues access tokens in the `JWT "
-"<https://tools.ietf.org/html/rfc7519>`_ (JSON Web Token) format by "
-"default."
+"IdentityServer issues access tokens in the `JWT <https://tools.ietf.org/html/"
+"rfc7519>`_ (JSON Web Token) format by default."
 msgstr ""
+"IdentityServerはデフォルトで `JWT <https://tools.ietf.org/html/rfc7519>`_ "
+"（JSON Webトークン）形式のアクセストークンを発行します。"
 
 #: ../../topics/apis.rst:7
 msgid ""
-"Every relevant platform today has support for validating JWT tokens, a "
-"good list of JWT libraries can be found `here <https://jwt.io>`_. Popular"
-" libraries are e.g.:"
+"Every relevant platform today has support for validating JWT tokens, a good "
+"list of JWT libraries can be found `here <https://jwt.io>`_. Popular "
+"libraries are e.g.:"
 msgstr ""
+"JWTのトークンを検証するための関連プラットフォームはすべて今日サポートされてい"
+"ます。JWTライブラリの一覧は `here <https://jwt.io>`_ からご覧いただけます。人"
+"気のあるライブラリは、例えば："
 
 #: ../../topics/apis.rst:10
 msgid ""
-"`JWT bearer authentication handler "
-"<https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer/>`_"
-" for ASP.NET Core"
+"`JWT bearer authentication handler <https://www.nuget.org/packages/Microsoft."
+"AspNetCore.Authentication.JwtBearer/>`_ for ASP.NET Core"
 msgstr ""
 
 #: ../../topics/apis.rst:11
 msgid ""
-"`JWT bearer authentication middleware "
-"<https://www.nuget.org/packages/Microsoft.Owin.Security.Jwt>`_ for Katana"
+"`JWT bearer authentication middleware <https://www.nuget.org/packages/"
+"Microsoft.Owin.Security.Jwt>`_ for Katana"
 msgstr ""
 
 #: ../../topics/apis.rst:12
 msgid ""
-"`IdentityServer authentication middleware "
-"<https://identityserver.github.io/Documentation/docsv2/consuming/overview.html>`_"
-" for Katana"
+"`IdentityServer authentication middleware <https://identityserver.github.io/"
+"Documentation/docsv2/consuming/overview.html>`_ for Katana"
 msgstr ""
 
 #: ../../topics/apis.rst:13
@@ -62,100 +66,120 @@ msgstr ""
 
 #: ../../topics/apis.rst:15
 msgid ""
-"Protecting a ASP.NET Core-based API is only a matter of configuring the "
-"JWT bearer authentication handler in DI, and adding the authentication "
+"Protecting a ASP.NET Core-based API is only a matter of configuring the JWT "
+"bearer authentication handler in DI, and adding the authentication "
 "middleware to the pipeline::"
 msgstr ""
+"ASP.NET CoreベースのAPIを保護することは、DIでJWTベアラ認証ハンドラを構成し、"
+"認証ミドルウェアをパイプラインに追加することだけです。 ::"
 
 #: ../../topics/apis.rst:42
 msgid "The IdentityServer authentication handler"
-msgstr ""
+msgstr "IdentityServer認証ハンドラ"
 
 #: ../../topics/apis.rst:43
 msgid ""
-"Our authentication handler serves the same purpose as the above handler "
-"(in fact it uses the Microsoft JWT library internally), but adds a couple"
-" of additional features:"
+"Our authentication handler serves the same purpose as the above handler (in "
+"fact it uses the Microsoft JWT library internally), but adds a couple of "
+"additional features:"
 msgstr ""
+"私たちの認証ハンドラは上記のハンドラと同じ目的を果たします（実際には"
+"Microsoft JWTライブラリを内部的に使用します）が、いくつかの追加機能を追加して"
+"います："
 
 #: ../../topics/apis.rst:46
 msgid "support for both JWTs and reference tokens"
-msgstr ""
+msgstr "JWTと参照トークンの両方のサポート"
 
 #: ../../topics/apis.rst:47
 msgid "extensible caching for reference tokens"
-msgstr ""
+msgstr "参照トークンのための拡張可能なキャッシング"
 
 #: ../../topics/apis.rst:48
 msgid "unified configuration model"
-msgstr ""
+msgstr "統一された構成モデル"
 
 #: ../../topics/apis.rst:49
 msgid "scope validation"
-msgstr ""
+msgstr "有効範囲の検証"
 
 #: ../../topics/apis.rst:51
 msgid ""
-"For the simplest case, our handler configuration looks very similar to "
-"the above snippet::"
+"For the simplest case, our handler configuration looks very similar to the "
+"above snippet::"
 msgstr ""
+"最も単純なケースでは、ハンドラの設定は上記のスニペットと非常に似ています："
 
 #: ../../topics/apis.rst:77
 msgid ""
-"You can get the package from `nuget "
-"<https://www.nuget.org/packages/IdentityServer4.AccessTokenValidation/>`_"
-" or `github "
-"<https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation>`_."
+"You can get the package from `nuget <https://www.nuget.org/packages/"
+"IdentityServer4.AccessTokenValidation/>`_ or `github <https://github.com/"
+"IdentityServer/IdentityServer4.AccessTokenValidation>`_."
 msgstr ""
+"あなたは `nuget <https://www.nuget.org/packages/IdentityServer4."
+"AccessTokenValidation/>`_ または `github <https://github.com/IdentityServer/"
+"IdentityServer4.AccessTokenValidation>`_ からパッケージを取得することができま"
+"す。"
 
 #: ../../topics/apis.rst:81
 msgid "Supporting reference tokens"
-msgstr ""
+msgstr "参照トークンのサポート"
 
 #: ../../topics/apis.rst:82
 msgid ""
 "If the incoming token is not a JWT, our middleware will contact the "
 "introspection endpoint found in the discovery document to validate the "
-"token. Since the introspection endpoint requires authentication, you need"
-" to supply the configured API secret, e.g.::"
+"token. Since the introspection endpoint requires authentication, you need to "
+"supply the configured API secret, e.g.::"
 msgstr ""
+"受信したトークンがJWTでない場合、ミドルウェアは検出文書にあるイントロスペク"
+"ションエンドポイントに連絡してトークンを検証します。イントロスペクションエン"
+"ドポイントでは認証が必要なため、設定済みのAPIシークレットを提供する必要があり"
+"ます。 ::"
 
 #: ../../topics/apis.rst:95
 msgid ""
-"Typically, you don't want to do a roundtrip to the introspection endpoint"
-" for each incoming request. The middleware has a built-in cache that you "
-"can enable like this::"
+"Typically, you don't want to do a roundtrip to the introspection endpoint "
+"for each incoming request. The middleware has a built-in cache that you can "
+"enable like this::"
 msgstr ""
+"通常、着信要求ごとにイントロスペクションエンドポイントへのラウンドトリップを"
+"実行する必要はありません。ミドルウェアには、次のように有効にできるビルトイン"
+"キャッシュがあります。 ::"
 
 #: ../../topics/apis.rst:110
 msgid ""
 "The handler will use whatever `IDistributedCache` implementation is "
-"registered in the DI container (e.g. the standard "
-"`MemoryDistributedCache`)."
+"registered in the DI container (e.g. the standard `MemoryDistributedCache`)."
 msgstr ""
+"ハンドラは、DIコンテナに登録されている `IDistributedCache` 実装（たとえば、標"
+"準の `MemoryDistributedCache` ）を使用します。"
 
 #: ../../topics/apis.rst:113
 msgid "Validating scopes"
-msgstr ""
+msgstr "スコープの検証"
 
 #: ../../topics/apis.rst:114
 msgid ""
-"The `ApiName` property checks if the token has a matching audience (or "
-"short ``aud``) claim."
+"The `ApiName` property checks if the token has a matching audience (or short "
+"``aud``) claim."
 msgstr ""
+"ApiNameのプロパティをチェックトークンは、一致する視聴者（又はショートがある場"
+"合aud）請求項を。"
 
 #: ../../topics/apis.rst:116
 msgid ""
-"In IdentityServer you can also sub-divide APIs into multiple scopes. If "
-"you need that granularity you can use the ASP.NET Core authorization "
-"policy system to check for scopes."
+"In IdentityServer you can also sub-divide APIs into multiple scopes. If you "
+"need that granularity you can use the ASP.NET Core authorization policy "
+"system to check for scopes."
 msgstr ""
+"IdentityServerでは、APIを複数のスコープに細分することもできます。細分性が必要"
+"な場合は、ASP.NETコア認可ポリシーシステムを使用してスコープを確認できます。"
 
 #: ../../topics/apis.rst:118
 msgid "**Creating a global policy**::"
-msgstr ""
+msgstr "**グローバルポリシーの作成**::"
 
 #: ../../topics/apis.rst:130
 msgid "**Composing a scope policy**::"
-msgstr ""
-
+msgstr "**スコープポリシーの作成**::"

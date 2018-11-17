@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 19:41+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/extension_grants.rst:4
 msgid "Extension Grants"
@@ -26,41 +28,51 @@ msgstr ""
 msgid ""
 "OAuth 2.0 defines standard grant types for the token endpoint, such as "
 "``password``, ``authorization_code`` and ``refresh_token``. Extension "
-"grants are a way to add support for non-standard token issuance scenarios"
-" like token translation, delegation, or custom credentials."
+"grants are a way to add support for non-standard token issuance "
+"scenarios like token translation, delegation, or custom credentials."
 msgstr ""
+"OAuth 2.0はpassword、authorization_codeとのようなトークンエンドポイントの"
+"標準認可タイプを定義しますrefresh_token。拡張機能グラントは、トークンの変"
+"換、委任、カスタム資格などの非標準トークン発行シナリオのサポートを追加す"
+"る方法です。"
 
 #: ../../topics/extension_grants.rst:8
 msgid ""
 "You can add support for additional grant types by implementing the "
 "``IExtensionGrantValidator`` interface::"
 msgstr ""
+"IExtensionGrantValidatorインタフェースを実装することによって、追加の許可"
+"タイプのサポートを追加することができます："
 
 #: ../../topics/extension_grants.rst:27
 msgid "The ``ExtensionGrantValidationContext`` object gives you access to:"
 msgstr ""
+"ExtensionGrantValidationContextオブジェクトは、あなたがにアクセスすること"
+"ができます："
 
 #: ../../topics/extension_grants.rst:29
 msgid ""
 "the incoming token request - both the well-known validated values, as "
 "well as any custom values (via the ``Raw`` collection)"
 msgstr ""
+"受信トークン要求（よく知られている検証済みの値）とカスタム値（Rawコレク"
+"ションを介したもの）"
 
 #: ../../topics/extension_grants.rst:30
 msgid "the result - either error or success"
-msgstr ""
+msgstr "結果 - エラーまたは成功"
 
 #: ../../topics/extension_grants.rst:31
 msgid "custom response parameters"
-msgstr ""
+msgstr "カスタム応答パラメータ"
 
 #: ../../topics/extension_grants.rst:33
 msgid "To register the extension grant, add it to DI::"
-msgstr ""
+msgstr "拡張グラントを登録するには、DIに追加します。"
 
 #: ../../topics/extension_grants.rst:39
 msgid "Example: Simple delegation using an extension grant"
-msgstr ""
+msgstr "例：拡張認可を使用する単純な委任"
 
 #: ../../topics/extension_grants.rst:40
 msgid ""
@@ -69,6 +81,10 @@ msgid ""
 "This middle tier API (API 1) now wants to call a back end API (API 2) on "
 "behalf of the interactive user:"
 msgstr ""
+"次のシナリオを想像してみましょう。フロントエンドクライアントは、インタラ"
+"クティブなフロー（例えば、ハイブリッドフロー）で取得したトークンを使用し"
+"て中間層のAPIを呼び出します。この中間層API（API 1）は、対話ユーザーの代わ"
+"りにバックエンドAPI（API 2）を呼び出す必要があります。"
 
 #: ../../topics/extension_grants.rst:45
 msgid ""
@@ -76,67 +92,83 @@ msgid ""
 "containing the user's identity, but with the scope of the back end API "
 "(API 2)."
 msgstr ""
+"言い換えると、中間層API（API 1）には、ユーザーの識別情報を含むアクセス"
+"トークンが必要ですが、バックエンドAPI（API 2）のスコープが必要です。"
 
 #: ../../topics/extension_grants.rst:47
 msgid ""
-"You might have heard of the term *poor man's delegation* where the access"
-" token from the front end is simply forwarded to the back end. This has "
-"some shortcomings, e.g. *API 2* must now accept the *API 1* scope which "
-"would allow the user to call *API 2* directly. Also - you might want to "
-"add some delegation specific claims into the token, e.g. the fact that "
-"the call path is via *API 1*."
+"You might have heard of the term *poor man's delegation* where the "
+"access token from the front end is simply forwarded to the back end. "
+"This has some shortcomings, e.g. *API 2* must now accept the *API 1* "
+"scope which would allow the user to call *API 2* directly. Also - you "
+"might want to add some delegation specific claims into the token, e.g. "
+"the fact that the call path is via *API 1*."
 msgstr ""
+"フロントエンドからのアクセストークンが単純にバックエンドに転送される、貧"
+"しい人の代表団という用語について聞いたことがあります。これにはいくつかの"
+"欠点があります。たとえば、API 2がAPI 1スコープを受け入れなければならない"
+"ため、ユーザーはAPI 2を直接呼び出すことができます。また、トークンにデリ"
+"ゲート固有のクレームをいくつか追加することもできます。たとえば、コールパ"
+"スがAPI 1経由であるという事実です。"
 
 #: ../../topics/extension_grants.rst:49
 msgid "**Implementing the extension grant**"
-msgstr ""
+msgstr "**拡張機能の実装**"
 
 #: ../../topics/extension_grants.rst:51
 msgid ""
 "The front end would send the token to API 1, and now this token needs to "
 "be exchanged at IdentityServer with a new token for API 2."
 msgstr ""
+"フロントエンドはトークンをAPI 1に送信し、このトークンをIdentityServerで"
+"API 2の新しいトークンと交換する必要があります。"
 
 #: ../../topics/extension_grants.rst:53
 msgid ""
 "On the wire the call to token service for the exchange could look like "
 "this::"
-msgstr ""
+msgstr "有線では、交換機のトークンサービスへのコールは次のようになります。"
 
 #: ../../topics/extension_grants.rst:63
 msgid ""
 "It's the job of the extension grant validator to handle that request by "
-"validating the incoming token, and returning a result that represents the"
-" new token::"
+"validating the incoming token, and returning a result that represents "
+"the new token::"
 msgstr ""
+"着信トークンを検証し、新しいトークンを表す結果を返すことによってその要求"
+"を処理するのは、拡張グラントバリデータの仕事です。"
 
 #: ../../topics/extension_grants.rst:101
 msgid "Don't forget to register the validator with DI."
-msgstr ""
+msgstr "DIにバリデーターを登録することを忘れないでください。"
 
 #: ../../topics/extension_grants.rst:103
 msgid "**Registering the delegation client**"
-msgstr ""
+msgstr "**委任クライアントの登録**"
 
 #: ../../topics/extension_grants.rst:105
 msgid ""
 "You need a client registration in IdentityServer that allows a client to "
 "use this new extension grant, e.g.::"
 msgstr ""
+"IdentityServerにクライアント登録が必要です。これにより、クライアントは次"
+"のような新しい拡張機能を使用できます。"
 
 #: ../../topics/extension_grants.rst:123
 msgid "**Calling the token endpoint**"
-msgstr ""
+msgstr "**トークンエンドポイントの呼び出し**"
 
 #: ../../topics/extension_grants.rst:125
 msgid ""
 "In API 1 you can now construct the HTTP payload yourself, or use the "
 "*IdentityModel* helper library::"
 msgstr ""
+"API 1では、HTTPペイロードを自分で作成することも、IdentityModelヘルパーラ"
+"イブラリを使用することもできます。"
 
 #: ../../topics/extension_grants.rst:142
 msgid ""
 "The ``TokenResponse.AccessToken`` will now contain the delegation access "
 "token."
 msgstr ""
-
+"これでTokenResponse.AccessToken、委任アクセストークンが含まれます。"

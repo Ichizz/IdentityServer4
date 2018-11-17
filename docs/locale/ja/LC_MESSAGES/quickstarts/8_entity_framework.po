@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 08:03+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../quickstarts/8_entity_framework.rst:4
 msgid "Using EntityFramework Core for configuration and operational data"
-msgstr ""
+msgstr "構成データと運用データにEntityFramework Coreを使用する"
 
 #: ../../quickstarts/8_entity_framework.rst:6
 msgid ""
@@ -31,15 +33,22 @@ msgid ""
 "this data (rather than using the in-memory implementations we had been "
 "using up until now)."
 msgstr ""
+"IdentityServerは拡張性のために設計されており、拡張性のポイントの1つは、"
+"IdentityServerが必要とするデータに使用される記憶メカニズムです。このクイッ"
+"クスタートでは、EntityFramework（EF）をこのデータのストレージメカニズムと"
+"して使用するようにIdentityServerを設定する方法を示します（今まで使用してい"
+"たインメモリ実装を使用するのではなく）。"
 
 #: ../../quickstarts/8_entity_framework.rst:9
 msgid ""
 "In addition to manually configuring EF support, there is also an "
 "IdentityServer template to create a new project with EF support. Use "
-"``dotnet new is4ef`` to create it. See `here "
-"<https://www.github.com/IdentityServer/IdentityServer4.Templates>`_ for "
-"more information."
+"``dotnet new is4ef`` to create it. See `here <https://www.github.com/"
+"IdentityServer/IdentityServer4.Templates>`_ for more information."
 msgstr ""
+"EFサポートを手動で設定するだけでなく、EFサポートで新しいプロジェクトを作成"
+"するためのIdentityServerテンプレートもあります。それを作成するために使用し"
+"ます。詳細はこちらを参照してください。dotnet new is4ef"
 
 #: ../../quickstarts/8_entity_framework.rst:12
 msgid "IdentityServer4.EntityFramework"
@@ -47,24 +56,30 @@ msgstr ""
 
 #: ../../quickstarts/8_entity_framework.rst:14
 msgid ""
-"There are two types of data that we are moving to the database. The first"
-" is the configuration data (resources and clients). The second is "
-"operational data that IdentityServer produces as it's being used (tokens,"
-" codes, and consents). These stores are modeled with interfaces, and we "
-"provide an EF implementation of these interfaces in the "
-"`IdentityServer4.EntityFramework` Nuget package."
+"There are two types of data that we are moving to the database. The first "
+"is the configuration data (resources and clients). The second is "
+"operational data that IdentityServer produces as it's being used (tokens, "
+"codes, and consents). These stores are modeled with interfaces, and we "
+"provide an EF implementation of these interfaces in the `IdentityServer4."
+"EntityFramework` Nuget package."
 msgstr ""
+"データベースに移動するデータには2種類あります。1つは設定データ（リソースと"
+"クライアント）です。2つ目はIdentityServerが使用中に生成する操作データ"
+"（トークン、コード、同意）です。これらのストアはインタフェースでモデル化さ"
+"れており、これらのインタフェースのEF実装をIdentityServer4.EntityFramework "
+"Nugetパッケージに提供しています。"
 
 #: ../../quickstarts/8_entity_framework.rst:19
 msgid ""
-"Get started by adding a reference to the "
-"`IdentityServer4.EntityFramework` Nuget package the IdentityServer "
-"project."
+"Get started by adding a reference to the `IdentityServer4."
+"EntityFramework` Nuget package the IdentityServer project."
 msgstr ""
+"まず、IdentityServerプロジェクトのIdentityServer4.EntityFramework Nuget"
+"パッケージへの参照を追加します。"
 
 #: ../../quickstarts/8_entity_framework.rst:24
 msgid "Using SqlServer"
-msgstr ""
+msgstr "SqlServerの使用"
 
 #: ../../quickstarts/8_entity_framework.rst:26
 msgid ""
@@ -72,16 +87,19 @@ msgid ""
 "this quickstart we will use the LocalDb version of SqlServer that comes "
 "with Visual Studio."
 msgstr ""
+"EFの柔軟性を考えると、EFでサポートされているデータベースを使用できます。こ"
+"のクイックスタートでは、Visual Studioに付属するLocalDbバージョンの"
+"SqlServerを使用します。"
 
 #: ../../quickstarts/8_entity_framework.rst:30
 msgid "Database Schema Changes and Using EF Migrations"
-msgstr ""
+msgstr "データベーススキーマの変更とEF移行の使用"
 
 #: ../../quickstarts/8_entity_framework.rst:32
 msgid ""
 "The `IdentityServer4.EntityFramework` package contains entity classes "
-"that map from IdentityServer's models. As IdentityServer's models change,"
-" so will the entity classes in `IdentityServer4.EntityFramework`. As you "
+"that map from IdentityServer's models. As IdentityServer's models change, "
+"so will the entity classes in `IdentityServer4.EntityFramework`. As you "
 "use `IdentityServer4.EntityFramework` and upgrade over time, you are "
 "responsible for your own database schema and changes necessary to that "
 "schema as the entity classes change. One approach for managing those "
@@ -89,28 +107,45 @@ msgid ""
 "can be done. If migrations are not your preference, then you can manage "
 "the schema changes in any way you see fit."
 msgstr ""
+"IdentityServer4.EntityFrameworkのパッケージには、IdentityServerのモデルか"
+"らマップするエンティティクラスが含まれています。IdentityServerのモデルが変"
+"更されると、IdentityServer4.EntityFrameworkのエンティティクラスも変更され"
+"ます。IdentityServer4.EntityFrameworkを使用して時間をかけてアップグレード"
+"するときには、独自のデータベーススキーマと、エンティティクラスの変更に応じ"
+"てそのスキーマに必要な変更を行う責任があります。これらの変更を管理するため"
+"の1つのアプローチは、EF移行を使用することです。このクイックスタートでは、"
+"その方法を示します。移行があなたの好みでない場合は、スキーマの変更を適切な"
+"方法で管理できます。"
 
 #: ../../quickstarts/8_entity_framework.rst:38
 msgid ""
 "SQL scripts for SqlServer are maintained for the entities in "
-"`IdentityServer4.EntityFramework`. They are located `here "
-"<https://github.com/IdentityServer/IdentityServer4.EntityFramework/tree/release/src/Host/Migrations/IdentityServer>`_."
+"`IdentityServer4.EntityFramework`. They are located `here <https://github."
+"com/IdentityServer/IdentityServer4.EntityFramework/tree/release/src/Host/"
+"Migrations/IdentityServer>`_."
 msgstr ""
+"SqlServer用のSQLスクリプトは、IdentityServer4.EntityFrameworkのエンティ"
+"ティ用にメンテナンスされています。彼らはここに位置しています。"
 
 #: ../../quickstarts/8_entity_framework.rst:41
 msgid "EF Tooling for Migrations"
-msgstr ""
+msgstr "移行のためのEFツーリング"
 
 #: ../../quickstarts/8_entity_framework.rst:43
 msgid ""
 "In addition to tracking schema changes with EF migrations, we will also "
 "use it to create the initial schema in the database. This requires the "
-"use of the EF Core tooling (more details `here "
-"<https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet>`_). "
-"We will add those now, and unfortunately this must be done by hand-"
-"editing your `.csproj` file. To edit the `.csproj` by right-click the "
-"project and select \"Edit projectname.csproj\":"
+"use of the EF Core tooling (more details `here <https://docs.microsoft."
+"com/en-us/ef/core/miscellaneous/cli/dotnet>`_). We will add those now, "
+"and unfortunately this must be done by hand-editing your `.csproj` file. "
+"To edit the `.csproj` by right-click the project and select \"Edit "
+"projectname.csproj\":"
 msgstr ""
+"EF移行を使用してスキーマの変更を追跡することに加えて、これを使用してデータ"
+"ベースに初期スキーマを作成します。これには、EFコアツールの使用が必要です"
+"（詳細はこちら）。これらを今追加します。残念ながら、これは.csprojファイル"
+"を手動で編集する必要があります。プロジェクトを右クリックし、 \"edit "
+"projectname.csproj\"を選択して.csprojを編集するには："
 
 #: ../../quickstarts/8_entity_framework.rst:48
 msgid ""
@@ -118,15 +153,18 @@ msgid ""
 "host, you might already have these tools configured in your `csproj` "
 "file. If they are, you can skip to the next section."
 msgstr ""
+"IdentityServerホストの初期プロジェクトの作成方法に応じて、csprojファイルで"
+"これらのツールを設定している可能性があります。そうであれば、次のセクション"
+"に進むことができます。"
 
 #: ../../quickstarts/8_entity_framework.rst:52
 msgid "And then add the below snippet before the end `</Project>` element::"
-msgstr ""
+msgstr "そして、最後の</ Project>要素の前にスニペットを追加します。"
 
 #: ../../quickstarts/8_entity_framework.rst:58
 #: ../../quickstarts/8_entity_framework.rst:130
 msgid "It should look something like this:"
-msgstr ""
+msgstr "これは次のようになります。"
 
 #: ../../quickstarts/8_entity_framework.rst:62
 msgid ""
@@ -134,6 +172,9 @@ msgid ""
 "installed, you can open a command shell in the same directory as the "
 "project and run `dotnet ef`. It should look like this:"
 msgstr ""
+"ファイルを保存して閉じます。ツールが正しくインストールされていることをテス"
+"トするには、プロジェクトと同じディレクトリにコマンドシェルを開き、dotnet "
+"efを実行します。これは次のようになります。"
 
 #: ../../quickstarts/8_entity_framework.rst:69
 msgid "Configuring the stores"
@@ -146,10 +187,13 @@ msgid ""
 "``ConfigureServices`` method in `Startup.cs`. We will replace them with "
 "this code::"
 msgstr ""
+"次のステップは、現在の通話交換することでAddInMemoryClients、"
+"AddInMemoryIdentityResources、そしてAddInMemoryApiResources内"
+"ConfigureServicesでの方法Startup.csを。このコードで置き換えます："
 
 #: ../../quickstarts/8_entity_framework.rst:100
 msgid "You might need these namespaces added to the file::"
-msgstr ""
+msgstr "これらの名前空間をファイルに追加する必要があるかもしれません："
 
 #: ../../quickstarts/8_entity_framework.rst:106
 msgid ""
@@ -158,6 +202,9 @@ msgid ""
 "and ``AddOperationalStore`` are registering the EF-backed store "
 "implementations."
 msgstr ""
+"上記のコードは、接続文字列をハードコーディングしています。必要に応じて変更"
+"することができます。また、への呼び出しAddConfigurationStoreとは、"
+"AddOperationalStoreEF-裏打ちされた店舗の実装を登録しています。"
 
 #: ../../quickstarts/8_entity_framework.rst:109
 msgid ""
@@ -169,6 +216,11 @@ msgid ""
 "SqlServer. As you can also tell, this is where the connection string is "
 "provided."
 msgstr ""
+"これらのAPIに渡される「ビルダー」コールバック関数は、これらの2つのストアの"
+"それぞれDbContextOptionsBuilderに対してfor を構成できるEFメカニズムです"
+"DbContext。これはDbContext、使用するデータベースプロバイダを使用してクラス"
+"を構成する方法です。この場合、UseSqlServer私たちはSqlServerを使用して呼び"
+"出します。また、これは接続文字列が提供される場所です。"
 
 #: ../../quickstarts/8_entity_framework.rst:114
 msgid ""
@@ -176,32 +228,43 @@ msgid ""
 "the assembly where the EF migrations are defined. EF requires the use of "
 "migrations to define the schema for the database."
 msgstr ""
+"in \"options\"コールバック関数UseSqlServerは、EF移行が定義されているアセン"
+"ブリを構成するものです。EFでは、データベースのスキーマを定義するためにマイ"
+"グレーションを使用する必要があります。"
 
 #: ../../quickstarts/8_entity_framework.rst:117
 msgid ""
 "It is the responsibility of your hosting application to define these "
 "migrations, as they are specific to your database and provider."
 msgstr ""
+"これらの移行は、データベースとプロバイダに固有のものであるため、ホスティン"
+"グ・アプリケーションでこれらの移行を定義する必要があります。"
 
 #: ../../quickstarts/8_entity_framework.rst:119
 msgid "We'll add the migrations next."
-msgstr ""
+msgstr "次に移行を追加します。"
 
 #: ../../quickstarts/8_entity_framework.rst:122
 msgid "Adding migrations"
-msgstr ""
+msgstr "移行の追加"
 
 #: ../../quickstarts/8_entity_framework.rst:124
 msgid ""
 "To create the migrations, open a command prompt in the IdentityServer "
 "project directory. In the command prompt run these two commands::"
 msgstr ""
+"移行を作成するには、IdentityServerプロジェクトディレクトリでコマンドプロン"
+"プトを開きます。コマンドプロンプトで、次の2つのコマンドを実行します。"
 
 #: ../../quickstarts/8_entity_framework.rst:134
 msgid ""
 "You should now see a `~/Data/Migrations/IdentityServer` folder in the "
 "project. This contains the code for the newly created migrations."
 msgstr ""
+"あなたは今見るべきである〜/データ/移行/ IdentityServerのプロジェクトにフォ"
+"ルダを。これには、新しく作成された移行のコードが含まれています。\n"
+"\n"
+"注意"
 
 #: ../../quickstarts/8_entity_framework.rst:137
 msgid ""
@@ -214,60 +277,86 @@ msgid ""
 "factory for both the PersistedGrantDbContext as well as the "
 "ConfigurationDbContext."
 msgstr ""
+"データベースプロジェクトが別のクラスライブラリで、 '<your-name> "
+"DbContext'型のオブジェクトを作成できませんでし"
+"た。'IDesignTimeDbContextFactory'の実装をプロジェクトに追加するか、デザイ"
+"ン時にサポートされている追加のパターンについてはhttps://go.microsoft.com/"
+"fwlink/?linkid=851728を参照してください。IDesignTimeDbContextFactoryの実装"
+"を追加することによって、PersistedGrantDbContextとConfigurationDbContextの"
+"両方のファクトリの実装が必要になります。"
 
 #: ../../quickstarts/8_entity_framework.rst:140
 msgid "Initialize the database"
-msgstr ""
+msgstr "データベースの初期化"
 
 #: ../../quickstarts/8_entity_framework.rst:142
 msgid ""
-"Now that we have the migrations, we can write code to create the database"
-" from the migrations. We will also seed the database with the in-memory "
+"Now that we have the migrations, we can write code to create the database "
+"from the migrations. We will also seed the database with the in-memory "
 "configuration data that we defined in the previous quickstarts."
 msgstr ""
+"これで移行が完了したため、移行からデータベースを作成するコードを記述できま"
+"す。また、前のクイックスタートで定義したメモリ内の構成データをデータベース"
+"にシードします。"
 
 #: ../../quickstarts/8_entity_framework.rst:145
 msgid "In `Startup.cs` add this method to help initialize the database::"
 msgstr ""
+"でStartup.csデータベースを初期化するために、このメソッドを追加します。"
 
 #: ../../quickstarts/8_entity_framework.rst:184
 msgid "And then we can invoke this from the ``Configure`` method::"
-msgstr ""
+msgstr "そして、Configureメソッドから呼び出すことができます："
 
 #: ../../quickstarts/8_entity_framework.rst:195
 msgid ""
-"Now if you run the IdentityServer project, the database should be created"
-" and seeded with the quickstart configuration data. You should be able to"
-" use SQL Server Management Studio or Visual Studio to connect and inspect"
-" the data."
+"Now if you run the IdentityServer project, the database should be created "
+"and seeded with the quickstart configuration data. You should be able to "
+"use SQL Server Management Studio or Visual Studio to connect and inspect "
+"the data."
 msgstr ""
+"IdentityServerプロジェクトを実行する場合は、データベースを作成し、クイック"
+"スタート構成データをシードします。SQL Server Management Studioまたは"
+"Visual Studioを使用して、データの接続および検査を行うことができます。"
 
 #: ../../quickstarts/8_entity_framework.rst:200
 msgid ""
 "The above ``InitializeDatabase`` helper API is convenient to seed the "
-"database, but this approach is not ideal to leave in to execute each time"
-" the applicaion runs. Once your database is populated, consider removing "
+"database, but this approach is not ideal to leave in to execute each time "
+"the applicaion runs. Once your database is populated, consider removing "
 "the call to the API."
 msgstr ""
+"上記のInitializeDatabaseヘルパーAPIは、データベースをシードするのに便利で"
+"すが、このアプローチは、アプリケーションが実行されるたびに実行するのが理想"
+"的ではありません。データベースが移入されたら、APIへの呼び出しを削除するこ"
+"とを検討してください。"
 
 #: ../../quickstarts/8_entity_framework.rst:203
 msgid "Run the client applications"
-msgstr ""
+msgstr "クライアントアプリケーションを実行する"
 
 #: ../../quickstarts/8_entity_framework.rst:205
 msgid ""
-"You should now be able to run any of the existing client applications and"
-" sign-in, get tokens, and call the API -- all based upon the database "
+"You should now be able to run any of the existing client applications and "
+"sign-in, get tokens, and call the API -- all based upon the database "
 "configuration."
 msgstr ""
+"これで、データベース構成に基づいて、既存のクライアントアプリケーションを実"
+"行してサインインし、トークンを取得し、APIを呼び出すことができるようになり"
+"ました。"
 
 #: ../../quickstarts/8_entity_framework.rst:207
 msgid ""
-"The code as it stands in this section still relies upon Config.cs and its"
-" fictitious users Alice and Bob. If your user list is short and static, "
-"an adjusted version of Config.cs may suffice, however you may wish to "
-"manage a larger and more fluid user list dynamically within a database. "
-"ASP.NET Identity is one option to consider, and a sample implementation "
-"of this solution is listed among the quickstarts in the next section."
+"The code as it stands in this section still relies upon Config.cs and its "
+"fictitious users Alice and Bob. If your user list is short and static, an "
+"adjusted version of Config.cs may suffice, however you may wish to manage "
+"a larger and more fluid user list dynamically within a database. ASP.NET "
+"Identity is one option to consider, and a sample implementation of this "
+"solution is listed among the quickstarts in the next section."
 msgstr ""
-
+"このセクションにあるコードは、Config.csとその架空のユーザーAliceとBobに依"
+"然として依存しています。ユーザーリストが短く静的な場合は、調整された"
+"Config.csのバージョンで十分ですが、データベース内でより大きくて流動的な"
+"ユーザーリストを動的に管理したい場合があります。ASP.NET IDは考慮すべきオプ"
+"ションの1つで、このソリューションのサンプル実装は次のセクションのクイック"
+"スタートに一覧表示されています。"

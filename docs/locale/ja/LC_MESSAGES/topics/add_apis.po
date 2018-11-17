@@ -4,56 +4,65 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 10:48+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/add_apis.rst:2
 msgid "Adding more API Endpoints"
-msgstr ""
+msgstr "より多くのAPIエンドポイントを追加する"
 
 #: ../../topics/add_apis.rst:3
 msgid "You can add more API endpoints to the application hosting IdentityServer4."
 msgstr ""
+"IdentityServer4をホスティングするアプリケーションに、より多くのAPIエンドポイント"
+"を追加できます。"
 
 #: ../../topics/add_apis.rst:5
 msgid ""
-"You typically want to protect those APIs by the very instance of "
-"IdentityServer they are hosted in. That's not a problem. Simply add the "
-"token validation handler to the host (see :ref:`here "
-"<refProtectingApis>`)::"
+"You typically want to protect those APIs by the very instance of IdentityServer "
+"they are hosted in. That's not a problem. Simply add the token validation "
+"handler to the host (see :ref:`here <refProtectingApis>`)::"
 msgstr ""
+"通常、これらのAPIは、ホストされているIdentityServerのインスタンスによって保護さ"
+"れます。これは問題ではありません。トークン検証ハンドラをホストに追加するだけです"
+"（ここを参照）。"
 
 #: ../../topics/add_apis.rst:23
 msgid ""
-"On your API, you need to add the ``[Authorize]`` attribute and explicitly"
-" reference the authentication scheme you want to use (this is ``token`` "
-"in this example, but you can choose whatever name you like)::"
+"On your API, you need to add the ``[Authorize]`` attribute and explicitly "
+"reference the authentication scheme you want to use (this is ``token`` in this "
+"example, but you can choose whatever name you like)::"
 msgstr ""
+"APIでは、[Authorize]属性を追加して、使用する認証方式を明示的に参照する必要があり"
+"ます（tokenこの例では、任意の名前を自由に選択できます）。"
 
 #: ../../topics/add_apis.rst:37
 msgid ""
-"If you want to call that API from browsers, you additionally need to "
-"configure CORS (see :ref:`here <refCors>`)."
+"If you want to call that API from browsers, you additionally need to configure "
+"CORS (see :ref:`here <refCors>`)."
 msgstr ""
+"ブラウザからそのAPIを呼び出す場合は、さらにCORSを設定する必要があります（こちら"
+"を参照）。"
 
 #: ../../topics/add_apis.rst:40
 msgid "Discovery"
-msgstr ""
+msgstr "発見"
 
 #: ../../topics/add_apis.rst:41
 msgid ""
-"You can also add your endpoints to the discovery document if you want, "
-"e.g like this::"
-msgstr ""
-
+"You can also add your endpoints to the discovery document if you want, e.g like "
+"this::"
+msgstr "また、エンドポイントを検出文書に追加することもできます（例 ::"

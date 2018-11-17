@@ -4,147 +4,168 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 10:53+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/add_protocols.rst:2
 msgid "Adding new Protocols"
-msgstr ""
+msgstr "新しいプロトコルの追加"
 
 #: ../../topics/add_protocols.rst:4
 msgid ""
-"IdentityServer4 allows adding support for other protocols besides the "
-"built-in support for OpenID Connect and OAuth 2.0."
+"IdentityServer4 allows adding support for other protocols besides the built-in "
+"support for OpenID Connect and OAuth 2.0."
 msgstr ""
+"IdentityServer4では、OpenID ConnectとOAuth 2.0のビルトインサポート以外の他のプロ"
+"トコルのサポートを追加することができます。"
 
 #: ../../topics/add_protocols.rst:7
 msgid ""
-"You can add those additional protocol endpoints either as middleware or "
-"using e.g. MVC controllers. In both cases you have access to the ASP.NET "
-"Core DI system which allows re-using our internal services like access to"
-" client definitions or key material."
+"You can add those additional protocol endpoints either as middleware or using e."
+"g. MVC controllers. In both cases you have access to the ASP.NET Core DI system "
+"which allows re-using our internal services like access to client definitions "
+"or key material."
 msgstr ""
+"これらの追加のプロトコルエンドポイントをミドルウェアまたはMVCコントローラなどを"
+"使用して追加できます。いずれの場合も、ASP.NET Core DIシステムにアクセスすること"
+"ができ、クライアント定義やキーマテリアルへのアクセスなどの内部サービスを再利用で"
+"きます。"
 
 #: ../../topics/add_protocols.rst:11
 msgid ""
-"A sample for adding WS-Federation support can be found `here "
-"<https://github.com/IdentityServer/IdentityServer4.WsFederation>`_."
-msgstr ""
+"A sample for adding WS-Federation support can be found `here <https://github."
+"com/IdentityServer/IdentityServer4.WsFederation>`_."
+msgstr "WS-Federationサポートを追加するためのサンプルがここにあります。"
 
 #: ../../topics/add_protocols.rst:14
 msgid "Typical authentication workflow"
-msgstr ""
+msgstr "典型的な認証ワークフロー"
 
 #: ../../topics/add_protocols.rst:15
 msgid "An authentication request typically works like this:"
-msgstr ""
+msgstr "認証リクエストは通常​​、次のように動作します。"
 
 #: ../../topics/add_protocols.rst:17
 msgid "authentication request arrives at protocol endpoint"
-msgstr ""
+msgstr "認証要求がプロトコルエンドポイントに到着する"
 
 #: ../../topics/add_protocols.rst:18
 msgid "protocol endpoint does input validation"
-msgstr ""
+msgstr "プロトコルエンドポイントは入力検証を行います"
 
 #: ../../topics/add_protocols.rst:22
 msgid ""
-"redirection to login page with a return URL set back to protocol endpoint"
-" (if user is anonymous)"
+"redirection to login page with a return URL set back to protocol endpoint (if "
+"user is anonymous)"
 msgstr ""
+"戻り値がプロトコルエンドポイントに設定されたログインページへのリダイレクト（ユー"
+"ザーが匿名の場合）"
 
 #: ../../topics/add_protocols.rst:20
 msgid ""
-"access to current request details via the "
-"``IIdentityServerInteractionService``"
-msgstr ""
+"access to current request details via the ``IIdentityServerInteractionService``"
+msgstr "現在のリクエストの詳細へのアクセス IIdentityServerInteractionService"
 
 #: ../../topics/add_protocols.rst:21
 msgid ""
 "authentication of user (either locally or via external authentication "
 "middleware)"
-msgstr ""
+msgstr "ユーザーの認証（ローカルまたは外部認証ミドルウェア経由）"
 
 #: ../../topics/add_protocols.rst:22
 msgid "signing in the user"
-msgstr ""
+msgstr "ユーザーのサインイン"
 
 #: ../../topics/add_protocols.rst:23
 msgid "redirect back to protocol endpoint"
-msgstr ""
+msgstr "プロトコルエンドポイントにリダイレクトする"
 
 #: ../../topics/add_protocols.rst:24
 msgid "creation of protocol response (token creation and redirect back to client)"
-msgstr ""
+msgstr "プロトコル応答の作成（トークンの作成とクライアントへのリダイレクト）"
 
 #: ../../topics/add_protocols.rst:27
 msgid "Useful IdentityServer services"
-msgstr ""
+msgstr "便利なIdentityServerサービス"
 
 #: ../../topics/add_protocols.rst:28
 msgid ""
-"To achieve the above workflow, some interaction points with "
-"IdentityServer are needed."
+"To achieve the above workflow, some interaction points with IdentityServer are "
+"needed."
 msgstr ""
+"上記のワークフローを実現するには、IdentityServerとのやりとりのポイントが必要で"
+"す。"
 
 #: ../../topics/add_protocols.rst:30
 msgid "**Access to configuration and redirecting to the login page**"
-msgstr ""
+msgstr "**設定へのアクセスとログインページへのリダイレクト**"
 
 #: ../../topics/add_protocols.rst:32
 msgid ""
 "You can get access to the IdentityServer configuration by injecting the "
-"``IdentityServerOptions`` class into your code. This, e.g. has the "
-"configured path to the login page::"
+"``IdentityServerOptions`` class into your code. This, e.g. has the configured "
+"path to the login page::"
 msgstr ""
+"IdentityServerOptions クラスにコードを注入することで、IdentityServer設定にアクセ"
+"スできます。これは、例えば、ログインページへの設定されたパスを持っています："
 
 #: ../../topics/add_protocols.rst:43
 msgid "**Interaction between the login page and current protocol request**"
-msgstr ""
+msgstr "**ログインページと現在のプロトコル要求との間の相互作用**"
 
 #: ../../topics/add_protocols.rst:45
 msgid ""
-"The ``IIdentityServerInteractionService`` supports turning a protocol "
-"return URL into a parsed and validated context object::"
+"The ``IIdentityServerInteractionService`` supports turning a protocol return "
+"URL into a parsed and validated context object::"
 msgstr ""
+"IIdentityServerInteractionServiceパースと検証コンテキストオブジェクトにプロトコ"
+"ルの戻りURLを回すサポート："
 
 #: ../../topics/add_protocols.rst:50
 msgid ""
-"By default the interaction service only understands OpenID Connect "
-"protocol messages. To extend support, you can write your own "
-"``IReturnUrlParser``::"
+"By default the interaction service only understands OpenID Connect protocol "
+"messages. To extend support, you can write your own ``IReturnUrlParser``::"
 msgstr ""
+"デフォルトでは、インタラクションサービスはOpenID Connectプロトコルメッセージのみ"
+"を認識します。サポートを拡張するには、あなた自身で書くことができます"
+"IReturnUrlParser："
 
 #: ../../topics/add_protocols.rst:59
 msgid "..and then register the parser in DI::"
-msgstr ""
+msgstr "そしてパーサーをDIに登録してください："
 
 #: ../../topics/add_protocols.rst:63
 msgid ""
-"This allows the login page to get to information like the client "
-"configuration and other protocol parameters."
+"This allows the login page to get to information like the client configuration "
+"and other protocol parameters."
 msgstr ""
+"これにより、ログインページはクライアントの設定やその他のプロトコルパラメータのよ"
+"うな情報にアクセスできます。"
 
 #: ../../topics/add_protocols.rst:66
 msgid ""
-"**Access to configuration and key material for creating the protocol "
-"response**"
+"**Access to configuration and key material for creating the protocol response**"
 msgstr ""
+"**プロトコル応答を作成するためのコンフィグレーションとキーマテリアルへのアクセス"
+"**"
 
 #: ../../topics/add_protocols.rst:68
 msgid ""
-"By injecting the ``IKeyMaterialService`` into your code, you get access "
-"to the configured signing credential and validation keys::"
+"By injecting the ``IKeyMaterialService`` into your code, you get access to the "
+"configured signing credential and validation keys::"
 msgstr ""
-
+"``IKeyMaterialService`` をコードに挿入すると、設定された署名資格情報と検証キーに"
+"アクセスできます。"

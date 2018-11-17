@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 20:16+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/crypto.rst:4
 msgid "Cryptography, Keys and HTTPS"
@@ -25,17 +27,22 @@ msgstr ""
 #: ../../topics/crypto.rst:6
 msgid "IdentityServer relies on a couple of crypto mechanisms to do its job."
 msgstr ""
+"IdentityServerは、その仕事をするためにいくつかの暗号化メカニズムに依存して"
+"います。"
 
 #: ../../topics/crypto.rst:9
 msgid "Token signing and validation"
-msgstr ""
+msgstr "トークンの署名と検証"
 
 #: ../../topics/crypto.rst:10
 msgid ""
 "IdentityServer needs an asymmetric key pair to sign and validate JWTs. "
-"This keypair can be a certificate/private key combination or raw RSA "
-"keys. In any case it must support RSA with SHA256."
+"This keypair can be a certificate/private key combination or raw RSA keys. "
+"In any case it must support RSA with SHA256."
 msgstr ""
+"IdentityServerには、JWTの署名と検証に非対称キーのペアが必要です。この鍵ペア"
+"は、証明書/秘密鍵の組み合わせまたは生のRSA鍵にすることができます。どんな場"
+"合でも、SHA256でRSAをサポートする必要があります。"
 
 #: ../../topics/crypto.rst:14
 msgid ""
@@ -44,84 +51,106 @@ msgid ""
 "``IValidationKeysStore``. If you want to customize the loading of the "
 "keys, you can implement those interfaces and register them with DI."
 msgstr ""
+"署名鍵と対応する検証部分の読み込みは、ISigningCredentialStoreとの実装によっ"
+"て行われますIValidationKeysStore。キーのロードをカスタマイズする場合は、こ"
+"れらのインターフェイスを実装してDIで登録することができます。"
 
 #: ../../topics/crypto.rst:17
 msgid ""
 "The DI builder extensions has a couple of convenience methods to set "
 "signing and validation keys - see :ref:`here <refStartupKeyMaterial>`."
 msgstr ""
+"DIビルダーの拡張機能には、署名と検証キーを設定する便利な方法がいくつかあり"
+"ます。"
 
 #: ../../topics/crypto.rst:20
 msgid "Signing key rollover"
-msgstr ""
+msgstr "署名鍵のロールオーバー"
 
 #: ../../topics/crypto.rst:21
 msgid ""
 "While you can only use one signing key at a time, you can publish more "
-"than one validation key to the discovery document. This is useful for key"
-" rollover."
+"than one validation key to the discovery document. This is useful for key "
+"rollover."
 msgstr ""
+"一度に1つの署名キーしか使用できませんが、ディスカバリドキュメントに複数の検"
+"証キーを発行できます。キーのロールオーバーに便利です。"
 
 #: ../../topics/crypto.rst:24
 msgid "A rollover typically works like this:"
-msgstr ""
+msgstr "ロールオーバは、通常次のように動作します。"
 
 #: ../../topics/crypto.rst:26
 msgid "you request/create new key material"
-msgstr ""
+msgstr "新しい鍵素材をリクエスト/作成する"
 
 #: ../../topics/crypto.rst:27
 msgid ""
-"you publish the new validation key in addition to the current one. You "
-"can use the ``AddValidationKeys`` builder extension method for that."
+"you publish the new validation key in addition to the current one. You can "
+"use the ``AddValidationKeys`` builder extension method for that."
 msgstr ""
+"現在の検証キーに加えて新しい検証キーを発行します。AddValidationKeysビルダー"
+"拡張メソッドを使用することができます。"
 
 #: ../../topics/crypto.rst:28
 msgid ""
-"all clients and APIs now have a chance to learn about the new key the "
-"next time they update their local copy of the discovery document"
+"all clients and APIs now have a chance to learn about the new key the next "
+"time they update their local copy of the discovery document"
 msgstr ""
+"すべてのクライアントとAPIは、次回ディスカバリドキュメントのローカルコピーを"
+"更新したときに、新しいキーについて学習する機会を得ます"
 
 #: ../../topics/crypto.rst:29
 msgid ""
-"after a certain amount of time (e.g. 24h) all clients and APIs should now"
-" accept both the old and the new key material"
+"after a certain amount of time (e.g. 24h) all clients and APIs should now "
+"accept both the old and the new key material"
 msgstr ""
+"一定の時間（例えば24時間）後に、すべてのクライアントおよびAPIは古いキー材料"
+"および新しいキー材料の両方を受け入れるべきである"
 
 #: ../../topics/crypto.rst:30
 msgid ""
 "keep the old key material around for as long as you like, maybe you have "
 "long-lived tokens that need validation"
 msgstr ""
+"あなたが好きなだけ古い鍵の素材を保管しておいてください。おそらく、検証が必"
+"要な長寿命のトークンがあります"
 
 #: ../../topics/crypto.rst:31
 msgid "retire the old key material when it is not used anymore"
-msgstr ""
+msgstr "古い鍵素材が使用されなくなった場合には廃棄する"
 
 #: ../../topics/crypto.rst:32
 msgid ""
 "all clients and APIs will \"forget\" the old key next time they update "
 "their local copy of the discovery document"
 msgstr ""
+"すべてのクライアントとAPIは、次にディスカバリ文書のローカルコピーを更新した"
+"ときに古いキーを「忘れる」"
 
 #: ../../topics/crypto.rst:34
 msgid ""
 "This requires that clients and APIs use the discovery document, and also "
 "have a feature to periodically refresh their configuration."
 msgstr ""
+"これには、クライアントとAPIがディスカバリ文書を使用する必要があります。ま"
+"た、構成を定期的に更新する機能も必要です。"
 
 #: ../../topics/crypto.rst:37
 msgid "Data protection"
-msgstr ""
+msgstr "データ保護"
 
 #: ../../topics/crypto.rst:38
 msgid ""
-"Cookie authentication in ASP.NET Core (or anti-forgery in MVC) use the "
-"ASP.NET Core data protection feature. Depending on your deployment "
-"scenario, this might require additional configuration. See the Microsoft "
-"`docs <https://docs.microsoft.com/en-us/aspnet/core/security/data-"
-"protection/configuration/overview>`_ for more information."
+"Cookie authentication in ASP.NET Core (or anti-forgery in MVC) use the ASP."
+"NET Core data protection feature. Depending on your deployment scenario, "
+"this might require additional configuration. See the Microsoft `docs "
+"<https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/"
+"configuration/overview>`_ for more information."
 msgstr ""
+"ASP.NETコア（またはMVCの偽造防止）のCookie認証は、ASP.NETコアデータ保護機能"
+"を使用します。展開シナリオに応じて、追加の設定が必要な場合があります。詳細"
+"については、Microsoftのドキュメントを参照してください。"
 
 #: ../../topics/crypto.rst:42
 msgid "HTTPS"
@@ -129,7 +158,8 @@ msgstr ""
 
 #: ../../topics/crypto.rst:43
 msgid ""
-"We don't enforce the use of HTTPS, but for production it is mandatory for"
-" every interaction with IdentityServer."
+"We don't enforce the use of HTTPS, but for production it is mandatory for "
+"every interaction with IdentityServer."
 msgstr ""
-
+"私たちはHTTPSの使用を強制しませんが、プロダクションではIdentityServerとのす"
+"べての対話に必須です。"

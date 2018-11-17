@@ -4,95 +4,114 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 10:19+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/clients.rst:2
 msgid "Defining Clients"
-msgstr ""
+msgstr "クライアントの定義"
 
 #: ../../topics/clients.rst:4
 msgid ""
 "Clients represent applications that can request tokens from your "
 "identityserver."
 msgstr ""
+"クライアントは、IDサーバーからトークンを要求できるアプリケーションを表しま"
+"す。"
 
 #: ../../topics/clients.rst:6
 msgid ""
 "The details vary, but you typically define the following common settings "
 "for a client:"
 msgstr ""
+"詳細は異なりますが、通常はクライアントに対して以下の共通設定を定義します。"
 
 #: ../../topics/clients.rst:8
 msgid "a unique client ID"
-msgstr ""
+msgstr "一意のクライアントID"
 
 #: ../../topics/clients.rst:9
 msgid "a secret if needed"
-msgstr ""
+msgstr "必要なら秘密"
 
 #: ../../topics/clients.rst:10
 msgid "the allowed interactions with the token service (called a grant type)"
-msgstr ""
+msgstr "トークンサービスとの許可された対話（許可タイプと呼ばれる）"
 
 #: ../../topics/clients.rst:11
 msgid ""
-"a network location where identity and/or access token gets sent to "
-"(called a redirect URI)"
+"a network location where identity and/or access token gets sent to (called "
+"a redirect URI)"
 msgstr ""
+"アイデンティティおよび/またはアクセストークンが送信される（リダイレクトURI"
+"と呼ばれる）ネットワークロケーションは、"
 
 #: ../../topics/clients.rst:12
 msgid "a list of scopes (aka resources) the client is allowed to access"
-msgstr ""
+msgstr "クライアントがアクセスできるスコープのリスト（別名リソース）"
 
 #: ../../topics/clients.rst:14
 msgid ""
 "At runtime, clients are retrieved via an implementation of the "
 "``IClientStore``. This allows loading them from arbitrary data sources "
 "like config files or databases. For this document we will use the in-"
-"memory version of the client store. You can wire up the in-memory store "
-"in ``ConfigureServices`` via the ``AddInMemoryClients`` extensions "
-"method."
+"memory version of the client store. You can wire up the in-memory store in "
+"``ConfigureServices`` via the ``AddInMemoryClients`` extensions method."
 msgstr ""
+"実行時に、クライアントは.htmlの実装を介して取得されますIClientStore。これに"
+"より、設定ファイルやデータベースなどの任意のデータソースから読み込むことが"
+"できます。このドキュメントでは、クライアントストアのメモリ内バージョンを使"
+"用します。拡張メソッドを使用しConfigureServicesてインメモリストアを配線する"
+"ことができAddInMemoryClientsます。"
 
 #: ../../topics/clients.rst:17
 msgid "Defining a client for server to server communication"
-msgstr ""
+msgstr "サーバ間通信のためのクライアントの定義"
 
 #: ../../topics/clients.rst:18
 msgid ""
 "In this scenario no interactive user is present - a service (aka client) "
 "wants to communicate with an API (aka scope)::"
 msgstr ""
+"このシナリオでは、対話ユーザーは存在しません。サービス（別名クライアント）"
+"はAPI（別名スコープ）と通信したいと考えています。"
 
 #: ../../topics/clients.rst:39
 msgid ""
 "Defining browser-based JavaScript client (e.g. SPA) for user "
 "authentication and delegated access and API"
 msgstr ""
+"ユーザ認証と委任されたアクセスとAPIのためのブラウザベースのJavaScriptクライ"
+"アント（例えばSPA）の定義"
 
 #: ../../topics/clients.rst:40
 msgid ""
 "This client uses the so called implicit flow to request an identity and "
 "access token from JavaScript::"
 msgstr ""
+"このクライアントは、暗黙のフローを使用して、JavaScriptからIDとアクセストー"
+"クンを要求します。"
 
 #: ../../topics/clients.rst:68
 msgid ""
 "Defining a server-side web application (e.g. MVC) for use authentication "
 "and delegated API access"
 msgstr ""
+"認証とデリゲートされたAPIアクセスを使用するためのサーバー側Webアプリケー"
+"ション（MVCなど）の定義"
 
 #: ../../topics/clients.rst:69
 msgid ""
@@ -101,4 +120,7 @@ msgid ""
 "tokens are transmitted via back-channel calls only (and gives you access "
 "to refresh tokens)::"
 msgstr ""
-
+"対話型サーバー側（またはネイティブデスクトップ/モバイル）アプリケーション"
+"は、ハイブリッドフローを使用します。このフローは、アクセストークンがバック"
+"チャネルコールのみで送信されるため（バックプレーントークンにアクセスできる"
+"ため）、最高のセキュリティを提供します。"

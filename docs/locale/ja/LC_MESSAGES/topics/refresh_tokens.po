@@ -4,41 +4,49 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 19:33+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/refresh_tokens.rst:2
 msgid "Refresh Tokens"
-msgstr ""
+msgstr "トークンをリフレッシュする"
 
 #: ../../topics/refresh_tokens.rst:3
 msgid ""
 "Since access tokens have finite lifetimes, refresh tokens allow "
 "requesting new access tokens without user interaction."
 msgstr ""
+"アクセストークンは寿命が限られているため、リフレッシュトークンによって"
+"ユーザーの介入なしに新しいアクセストークンを要求できます。"
 
 #: ../../topics/refresh_tokens.rst:5
 msgid ""
-"Refresh tokens are supported for the following flows: authorization code,"
-" hybrid and resource owner password credential flow. The clients needs to"
-" be explicitly authorized to request refresh tokens by setting "
+"Refresh tokens are supported for the following flows: authorization "
+"code, hybrid and resource owner password credential flow. The clients "
+"needs to be explicitly authorized to request refresh tokens by setting "
 "``AllowOfflineAccess`` to ``true``."
 msgstr ""
+"リフレッシュトークンは、認証コード、ハイブリッドおよびリソース所有者のパ"
+"スワード認証情報フローのためにサポートされています。クライアントは、に設"
+"定AllowOfflineAccessすることによってリフレッシュトークンを要求するよう明"
+"示的に許可されている必要がありますtrue。"
 
 #: ../../topics/refresh_tokens.rst:9
 msgid "Additional client settings"
-msgstr ""
+msgstr "追加のクライアント設定"
 
 #: ../../topics/refresh_tokens.rst:10
 msgid "``AbsoluteRefreshTokenLifetime``"
@@ -51,6 +59,9 @@ msgid ""
 "``RefreshTokenExpiration = Sliding`` only expire after the "
 "SlidingRefreshTokenLifetime is passed."
 msgstr ""
+"リフレッシュトークンの最大有効期間（秒単位）。デフォルトは2592000秒/ 30日"
+"です。ゼロは、SlidingRefreshTokenLifetimeが渡された後に期限切れでのみ使用"
+"されるリフレッシュトークンを許可します。RefreshTokenExpiration = Sliding"
 
 #: ../../topics/refresh_tokens.rst:12
 msgid "``SlidingRefreshTokenLifetime``"
@@ -61,6 +72,8 @@ msgid ""
 "Sliding lifetime of a refresh token in seconds. Defaults to 1296000 "
 "seconds / 15 days"
 msgstr ""
+"リフレッシュトークンの寿命を数秒でスライドします。デフォルトは1296000秒/ "
+"15日"
 
 #: ../../topics/refresh_tokens.rst:16
 msgid "``RefreshTokenUsage``"
@@ -71,12 +84,16 @@ msgid ""
 "``ReUse`` the refresh token handle will stay the same when refreshing "
 "tokens"
 msgstr ""
+"ReUse リフレッシュトークンハンドルは、トークンをリフレッシュするときに同"
+"じままになります"
 
 #: ../../topics/refresh_tokens.rst:17
 msgid ""
 "``OneTime`` the refresh token handle will be updated when refreshing "
 "tokens"
 msgstr ""
+"OneTime トークンをリフレッシュするとリフレッシュトークンハンドルが更新さ"
+"れます"
 
 #: ../../topics/refresh_tokens.rst:20
 msgid "``RefreshTokenExpiration``"
@@ -87,13 +104,19 @@ msgid ""
 "``Absolute`` the refresh token will expire on a fixed point in time "
 "(specified by the AbsoluteRefreshTokenLifetime)"
 msgstr ""
+"Absolute リフレッシュ・トークンは、一定の時点"
+"（AbsoluteRefreshTokenLifetimeで指定）で期限切れになります。"
 
 #: ../../topics/refresh_tokens.rst:21
 msgid ""
 "``Sliding`` when refreshing the token, the lifetime of the refresh token "
-"will be renewed (by the amount specified in SlidingRefreshTokenLifetime)."
-" The lifetime will not exceed `AbsoluteRefreshTokenLifetime`."
+"will be renewed (by the amount specified in "
+"SlidingRefreshTokenLifetime). The lifetime will not exceed "
+"`AbsoluteRefreshTokenLifetime`."
 msgstr ""
+"Slidingトークンをリフレッシュすると、リフレッシュトークンの有効期間が"
+"（SlidingRefreshTokenLifetimeで指定された量だけ）更新されます。寿命は"
+"AbsoluteRefreshTokenLifetimeを超えません。"
 
 #: ../../topics/refresh_tokens.rst:22
 msgid "``UpdateAccessTokenClaimsOnRefresh``"
@@ -101,7 +124,8 @@ msgstr ""
 
 #: ../../topics/refresh_tokens.rst:23
 msgid ""
-"Gets or sets a value indicating whether the access token (and its claims)"
-" should be updated on a refresh token request."
+"Gets or sets a value indicating whether the access token (and its "
+"claims) should be updated on a refresh token request."
 msgstr ""
-
+"アクセストークン（およびその要求）を更新トークン要求で更新する必要がある"
+"かどうかを示す値を取得または設定します。"

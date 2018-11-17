@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 10:39+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/tools.rst:2
 msgid "Tools"
-msgstr ""
+msgstr "ツール"
 
 #: ../../topics/tools.rst:4
 msgid ""
@@ -28,13 +30,20 @@ msgid ""
 "tools that you might need when writing extensibility code for "
 "IdentityServer. To use it, inject it into your code, e.g. a controller::"
 msgstr ""
+"この ``IdentityServerTools`` クラスは、IdentityServerの拡張コードを記述す"
+"る際に必要となる便利な内部ツールの集まりです。それを使用するには、あなた"
+"のコードにそれを注入します。例えば、コントローラ ::"
 
 #: ../../topics/tools.rst:12
 msgid ""
 "The ``IssueJwtAsync`` method allows creating JWT tokens using the "
 "IdentityServer token creation engine. The ``IssueClientJwtAsync`` is an "
 "easier version of that for creating tokens for server-to-server "
-"communication (e.g. when you have to call an IdentityServer protected API"
-" from your code)::"
+"communication (e.g. when you have to call an IdentityServer protected "
+"API from your code)::"
 msgstr ""
-
+"この ``IssueJwtAsync`` 方法では、IdentityServerトークン作成エンジンを使用"
+"してJWTトークンを作成できます。これ ``IssueClientJwtAsync`` は、サーバー"
+"からサーバーへの通信用のトークンを作成するための簡単なバージョンです（た"
+"とえば、コードからIdentityServerで保護されたAPIを呼び出す必要がある場"
+"合）。::"

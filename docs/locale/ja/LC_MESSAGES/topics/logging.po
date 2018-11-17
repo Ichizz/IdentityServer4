@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 14:02+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/logging.rst:3
 msgid "Logging"
@@ -24,63 +26,76 @@ msgstr ""
 
 #: ../../topics/logging.rst:4
 msgid ""
-"IdentityServer uses the standard logging facilities provided by ASP.NET "
-"Core. The Microsoft `documentation <https://docs.microsoft.com/en-"
-"us/aspnet/core/fundamentals/logging>`_ has a good intro and a description"
-" of the built-in logging providers."
+"IdentityServer uses the standard logging facilities provided by ASP.NET Core. "
+"The Microsoft `documentation <https://docs.microsoft.com/en-us/aspnet/core/"
+"fundamentals/logging>`_ has a good intro and a description of the built-in "
+"logging providers."
 msgstr ""
+"IdentityServerは、ASP.NET Coreが提供する標準のログ機能を使用します。Microsoftの"
+"ドキュメントには、優れたイントロと組み込みのロギングプロバイダの説明があります。"
 
 #: ../../topics/logging.rst:7
 msgid "We are roughly following the Microsoft guidelines for usage of log levels:"
-msgstr ""
+msgstr "ログレベルの使用に関するMicrosoftのガイドラインにほぼ従います。"
 
 #: ../../topics/logging.rst:9
 msgid ""
-"``Trace`` For information that is valuable only to a developer "
-"troubleshooting an issue. These messages may contain sensitive "
-"application data like tokens and should not be enabled in a production "
-"environment."
+"``Trace`` For information that is valuable only to a developer troubleshooting "
+"an issue. These messages may contain sensitive application data like tokens and "
+"should not be enabled in a production environment."
 msgstr ""
+"``Trace`` 開発者だけが問題をトラブルシューティングするための貴重な情報です。これ"
+"らのメッセージには、トークンなどの機密性の高いアプリケーションデータが含まれてい"
+"る可能性があり、運用環境で有効にするべきではありません。"
 
 #: ../../topics/logging.rst:10
 msgid ""
 "``Debug`` For following the internal flow and understanding why certain "
-"decisions are made. Has short-term usefulness during development and "
-"debugging."
+"decisions are made. Has short-term usefulness during development and debugging."
 msgstr ""
+"Debug内部の流れに従い、何らかの決定がなされた理由を理解するため。開発およびデ"
+"バッグ中に短期間の有用性があります。"
 
 #: ../../topics/logging.rst:11
 msgid ""
-"``Information`` For tracking the general flow of the application. These "
-"logs typically have some long-term value."
+"``Information`` For tracking the general flow of the application. These logs "
+"typically have some long-term value."
 msgstr ""
+"Informationアプリケーションの一般的な流れを追跡するため。これらのログには通常、"
+"長期的な価値があります。"
 
 #: ../../topics/logging.rst:12
 msgid ""
-"``Warning`` For abnormal or unexpected events in the application flow. "
-"These may include errors or other conditions that do not cause the "
-"application to stop, but which may need to be investigated."
+"``Warning`` For abnormal or unexpected events in the application flow. These "
+"may include errors or other conditions that do not cause the application to "
+"stop, but which may need to be investigated."
 msgstr ""
+"Warningアプリケーションフローの異常または予期しないイベントの場合。これらには、"
+"アプリケーションの停止を引き起こさないエラーやその他の条件が含まれる場合がありま"
+"すが、調査が必要な場合があります。"
 
 #: ../../topics/logging.rst:13
 msgid ""
-"``Error`` For errors and exceptions that cannot be handled. Examples: "
-"failed validation of a protocol request."
+"``Error`` For errors and exceptions that cannot be handled. Examples: failed "
+"validation of a protocol request."
 msgstr ""
+"Error処理できないエラーや例外について 例：プロトコル要求の検証に失敗しました。"
 
 #: ../../topics/logging.rst:14
 msgid ""
-"``Critical`` For failures that require immediate attention. Examples: "
-"missing store implementation, invalid key material..."
+"``Critical`` For failures that require immediate attention. Examples: missing "
+"store implementation, invalid key material..."
 msgstr ""
+"Critical直ちに注意が必要な障害の場合。例：不足しているストア実装、無効なキーマテ"
+"リアル..."
 
 #: ../../topics/logging.rst:17
 msgid "Setup for Serilog"
-msgstr ""
+msgstr "Serilogのセットアップ"
 
 #: ../../topics/logging.rst:18
 msgid "We personally like `Serilog <https://serilog.net/>`_ a lot. Give it a try."
-msgstr ""
+msgstr "私たちは個人的にはSerilogが大好きです。試してみる。"
 
 #: ../../topics/logging.rst:22
 msgid "ASP.NET Core 2.0+"
@@ -91,14 +106,16 @@ msgid ""
 "For the following configuration you need the ``Serilog.AspNetCore`` and "
 "``Serilog.Sinks.Console`` packages::"
 msgstr ""
+"次の設定では、Serilog.AspNetCoreとSerilog.Sinks.Consoleパッケージが必要です。"
 
 #: ../../topics/logging.rst:54
 msgid ".NET Core 1.0, 1.1"
-msgstr ""
+msgstr "ASP.NET Core 1.0, 1.1"
 
 #: ../../topics/logging.rst:55
 msgid ""
-"For the following configuration you need the "
-"``Serilog.Extensions.Logging`` and ``Serilog.Sinks.Console`` packages::"
+"For the following configuration you need the ``Serilog.Extensions.Logging`` and "
+"``Serilog.Sinks.Console`` packages::"
 msgstr ""
-
+"次の設定では、``Serilog.Extensions.Logging``と ``Serilog.Sinks.Console`` パッ"
+"ケージが必要です。"

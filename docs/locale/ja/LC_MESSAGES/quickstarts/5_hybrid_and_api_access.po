@@ -4,36 +4,42 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 07:42+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:4
 msgid "Switching to Hybrid Flow and adding API Access back"
-msgstr ""
+msgstr "ハイブリッドフローへの切り替えとAPIアクセスの追加"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:6
 msgid ""
 "In the previous quickstarts we explored both API access and user "
 "authentication. Now we want to bring the two parts together."
 msgstr ""
+"以前のクイックスタートでは、APIアクセスとユーザー認証の両方を検討しまし"
+"た。今度は2つの部分を一緒に持っていきたいと思っています。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:9
 msgid ""
-"The beauty of the OpenID Connect & OAuth 2.0 combination is, that you can"
-" achieve both with a single protocol and a single exchange with the token"
-" service."
+"The beauty of the OpenID Connect & OAuth 2.0 combination is, that you "
+"can achieve both with a single protocol and a single exchange with the "
+"token service."
 msgstr ""
+"OpenID ConnectとOAuth 2.0の組み合わせの美しさは、単一のプロトコルとトーク"
+"ンサービスとの単一の交換の両方で達成できるということです。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:12
 msgid ""
@@ -42,46 +48,67 @@ msgid ""
 "totally fine for the identity token. Now we also want to request an "
 "access token."
 msgstr ""
+"前回のクイックスタートでは、OpenID Connect暗黙のフローを使用しました。暗"
+"黙のフローでは、すべてのトークンがブラウザを介して送信されますが、これは"
+"アイデンティティトークンにとってはまったく問題ありません。今度は、アクセ"
+"ストークンを要求したい。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:16
 msgid ""
-"Access tokens are a bit more sensitive than identity tokens, and we don't"
-" want to expose them to the \"outside\" world if not needed. OpenID "
-"Connect includes a flow called \"Hybrid Flow\" which gives us the best of"
-" both worlds, the identity token is transmitted via the browser channel, "
-"so the client can validate it before doing any more work. And if "
-"validation is successful, the client opens a back-channel to the token "
-"service to retrieve the access token."
+"Access tokens are a bit more sensitive than identity tokens, and we "
+"don't want to expose them to the \"outside\" world if not needed. OpenID "
+"Connect includes a flow called \"Hybrid Flow\" which gives us the best "
+"of both worlds, the identity token is transmitted via the browser "
+"channel, so the client can validate it before doing any more work. And "
+"if validation is successful, the client opens a back-channel to the "
+"token service to retrieve the access token."
 msgstr ""
+"アクセストークンはアイデンティティトークンよりもはるかに敏感であり、必要"
+"でない場合には「外部」の世界にそれらを公開したくありません。OpenID "
+"Connectには「Hybrid Flow」というフローがあり、これは両方の世界のベストを"
+"提供し、アイデンティティトークンはブラウザチャネル経由で送信されるため、"
+"クライアントはそれ以上の作業を行う前に検証することができます。検証が成功"
+"すると、クライアントはトークンサービスのバックチャネルを開いてアクセス"
+"トークンを取得します。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:22
 msgid "Modifying the client configuration"
-msgstr ""
+msgstr "クライアント設定の変更"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:23
 msgid ""
 "There are not many modifications necessary. First we want to allow the "
 "client to use the hybrid flow, in addition we also want the client to "
 "allow doing server to server API calls which are not in the context of a "
-"user (this is very similar to our client credentials quickstart). This is"
-" expressed using the ``AllowedGrantTypes`` property."
+"user (this is very similar to our client credentials quickstart). This "
+"is expressed using the ``AllowedGrantTypes`` property."
 msgstr ""
+"多くの変更は必要ありません。最初に、クライアントがハイブリッドフローを使"
+"用できるようにしたいとします。さらに、クライアントがユーザーのコンテキス"
+"トに属さないサーバーからサーバーへのAPI呼び出しを許可するようにします（ク"
+"ライアントの資格情報のクイックスタートに非常に似ています）。これは"
+"AllowedGrantTypesプロパティを使用して表されます。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:27
 msgid ""
 "Next we need to add a client secret. This will be used to retrieve the "
 "access token on the back channel."
 msgstr ""
+"次に、クライアントシークレットを追加する必要があります。これは、バック"
+"チャンネルのアクセストークンを取得するために使用されます。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:29
 msgid ""
 "And finally, we also give the client access to the ``offline_access`` "
 "scope - this allows requesting refresh tokens for long lived API access::"
 msgstr ""
+"最後に、クライアントにoffline_accessスコープへのアクセスを許可します。こ"
+"れにより、長期間存続するAPIアクセスのリフレッシュトークンを要求できま"
+"す。 ::"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:56
 msgid "Modifying the MVC client"
-msgstr ""
+msgstr "MVCクライアントの変更"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:57
 msgid ""
@@ -89,15 +116,21 @@ msgid ""
 "OpenID Connect handler has built-in support for the hybrid flow, so we "
 "only need to change some configuration values."
 msgstr ""
+"MVCクライアントの変更も最小限に抑えられています。ASP.NET Core OpenID "
+"Connectハンドラには、ハイブリッドフローの組み込みサポートが含まれているた"
+"め、一部のコンフィグレーション値を変更するだけで済みます。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:60
 msgid ""
 "We configure the ``ClientSecret`` to match the secret at IdentityServer. "
 "Add the ``offline_access`` and ``api1`` scopes, and set the "
-"``ResponseType`` to ``code id_token`` (which basically means \"use hybrid"
-" flow\"). To keep the ``website`` claim in our mvc client identity we "
-"need to explicitly map the claim using ClaimActions."
+"``ResponseType`` to ``code id_token`` (which basically means \"use "
+"hybrid flow\"). To keep the ``website`` claim in our mvc client identity "
+"we need to explicitly map the claim using ClaimActions."
 msgstr ""
+"ClientSecretIdentityServerの秘密と一致するように設定します。スコープ"
+"offline_accessとapi1スコープを追加し、ResponseTypeを（これは基本的に「ハ"
+"イブリッドフローを使用する」という意味の）code id_token ."
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:85
 msgid ""
@@ -105,10 +138,12 @@ msgid ""
 "that the consent screen now asks you for the additional API and offline "
 "access scope."
 msgstr ""
+"MVCクライアントを実行すると、大きな違いはなく、同意画面に追加のAPIとオフ"
+"ラインアクセススコープが表示されるようになりました。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:89
 msgid "Using the access token"
-msgstr ""
+msgstr "アクセストークンの使用"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:90
 msgid ""
@@ -116,21 +151,27 @@ msgid ""
 "refresh in our case) automatically for you. That's what the "
 "``SaveTokens`` setting does."
 msgstr ""
+"OpenID Connectミドルウェアは自動的にあなたのためにトークン（私たちの場合"
+"はID、アクセス、更新）を保存します。それがSaveTokensセッティングです。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:93
 msgid ""
 "Technically the tokens are stored inside the properties section of the "
-"cookie. The easiest way to access them is by using extension methods from"
-" the ``Microsoft.AspNetCore.Authentication`` namespace."
+"cookie. The easiest way to access them is by using extension methods "
+"from the ``Microsoft.AspNetCore.Authentication`` namespace."
 msgstr ""
+"技術的には、トークンはクッキーのプロパティセクション内に格納されます。そ"
+"れらにアクセスする最も簡単な方法は、Microsoft.AspNetCore.Authentication名"
+"前空間の拡張メソッドを使用することです。"
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:96
 msgid "For example on your claims view::"
-msgstr ""
+msgstr "例えばあなたのクレームビューでは："
 
 #: ../../quickstarts/5_hybrid_and_api_access.rst:104
 msgid ""
 "For accessing the API using the access token, all you need to do is "
 "retrieve the token, and set it on your *HttpClient*::"
 msgstr ""
-
+"アクセストークンを使用してAPIにアクセスするには、トークンを取得して "
+"*HttpClient* に設定するだけです。 ::"

@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 20:37+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/windows.rst:2
 msgid "Windows Authentication"
-msgstr ""
+msgstr "Windows認証"
 
 #: ../../topics/windows.rst:4
 msgid ""
@@ -28,59 +30,72 @@ msgid ""
 "using Windows authentication (e.g. against Active Directory). Currently "
 "Windows authentication is available when you host IdentityServer using:"
 msgstr ""
+"サポートされているプラ​​ットフォームでは、Windows認証（Active Directoryな"
+"ど）を使用してIdentityServerを使用してユーザーを認証できます。現在、"
+"Windows認証は、IdentityServerを次の方法でホストする場合に使用できます。"
 
 #: ../../topics/windows.rst:7
 msgid ""
-"`Kestrel <https://docs.microsoft.com/en-"
-"us/aspnet/core/fundamentals/servers/kestrel>`_ on Windows using IIS and "
-"the IIS integration package"
-msgstr ""
+"`Kestrel <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/"
+"servers/kestrel>`_ on Windows using IIS and the IIS integration package"
+msgstr "IISとIIS統合パッケージを使用するWindows上のKestrel"
 
 #: ../../topics/windows.rst:8
 msgid ""
-"`HTTP.sys <https://docs.microsoft.com/en-"
-"us/aspnet/core/fundamentals/servers/httpsys>`_ server on Windows"
-msgstr ""
+"`HTTP.sys <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/"
+"servers/httpsys>`_ server on Windows"
+msgstr "Windows上のHTTP.sysサーバー"
 
 #: ../../topics/windows.rst:10
 msgid ""
 "In both cases, Windows authentication is triggered by using the "
-"``ChallengeAsync`` API on the ``HttpContext`` using the scheme "
-"``\"Windows\"``. The account controller in our `quickstart UI "
-"<https://github.com/IdentityServer/IdentityServer4.Quickstart.UI>`_ "
-"implements the necessary logic."
+"``ChallengeAsync`` API on the ``HttpContext`` using the scheme ``"
+"\"Windows\"``. The account controller in our `quickstart UI <https://"
+"github.com/IdentityServer/IdentityServer4.Quickstart.UI>`_ implements "
+"the necessary logic."
 msgstr ""
+"いずれの場合も、スキームChallengeAsyncのHttpContext使用でAPIを使用するこ"
+"とによってWindows認証がトリガーされます\"Windows\"。クイックスタートUIの"
+"アカウントコントローラには、必要なロジックが実装されています。"
 
 #: ../../topics/windows.rst:14
 msgid "Using Kestrel"
-msgstr ""
+msgstr "Kestrelの使用"
 
 #: ../../topics/windows.rst:15
 msgid ""
 "When using Kestrel, you must run \"behind\" IIS and use the IIS "
 "integration::"
 msgstr ""
+"Kestrelを使用する場合は、IISの背後で実行し、IIS統合を使用する必要がありま"
+"す。"
 
 #: ../../topics/windows.rst:26
 msgid ""
-"Kestrel is automatically configured when using the "
-"``WebHost.CreateDefaultBuilder`` approach for setting up the "
-"``WebHostBuilder``."
+"Kestrel is automatically configured when using the ``WebHost."
+"CreateDefaultBuilder`` approach for setting up the ``WebHostBuilder``."
 msgstr ""
+"KestrelはWebHost.CreateDefaultBuilder、設定方法を使用するときに自動的に設"
+"定されますWebHostBuilder。"
 
 #: ../../topics/windows.rst:28
 msgid ""
 "Also the virtual directory in IIS (or IIS Express) must have Windows and "
 "anonymous authentication enabled."
 msgstr ""
+"また、IIS（またはIIS Express）の仮想ディレクトリでWindowsと匿名認証を有効"
+"にする必要があります。"
 
 #: ../../topics/windows.rst:30
 msgid ""
-"The IIS integration layer will configure a Windows authentication handler"
-" into DI that can be invoked via the authentication service. Typically in"
-" IdentityServer it is advisable to disable this automatic behavior. This "
-"is done in ``ConfigureServices``::"
+"The IIS integration layer will configure a Windows authentication "
+"handler into DI that can be invoked via the authentication service. "
+"Typically in IdentityServer it is advisable to disable this automatic "
+"behavior. This is done in ``ConfigureServices``::"
 msgstr ""
+"IIS統合レイヤーは、Windows認証ハンドラーをDIに構成し、認証サービスを介し"
+"て呼び出すことができます。通常、IdentityServerではこの自動動作を無効にす"
+"ることをお勧めします。これは以下で行われConfigureServicesます："
 
 #: ../../topics/windows.rst:40
 msgid ""
@@ -88,4 +103,6 @@ msgid ""
 "button will not show up in the quickstart UI. You need to set a display "
 "name if you rely on automatic discovery of external providers."
 msgstr ""
-
+"既定では、表示名は空白で、Windows認証ボタンはクイックスタートUIに表示され"
+"ません。外部プロバイダの自動検出に頼っている場合は、表示名を設定する必要"
+"があります。"

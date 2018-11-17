@@ -4,30 +4,34 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 10:08+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/resources.rst:4
 msgid "Defining Resources"
-msgstr ""
+msgstr "リソースの定義"
 
 #: ../../topics/resources.rst:6
 msgid ""
 "The first thing you will typically define in your system are the "
-"resources that you want to protect. That could be identity information of"
-" your users, like profile data or email addresses, or access to APIs."
+"resources that you want to protect. That could be identity information "
+"of your users, like profile data or email addresses, or access to APIs."
 msgstr ""
+"システムで最初に定義するのは、保護したいリソースです。プロファイルデータ"
+"やメールアドレス、APIへのアクセスなど、ユーザーの身元情報になります。"
 
 #: ../../topics/resources.rst:9
 msgid ""
@@ -36,10 +40,13 @@ msgid ""
 "level details. For this document we are using the in-memory "
 "implementation."
 msgstr ""
+"C＃オブジェクトモデルを使用してリソースを定義することも、データストアから"
+"ロードすることもできます。IResourceStoreこれらの低レベルの詳細に関する取"
+"引の実装。このドキュメントでは、インメモリ実装を使用しています。"
 
 #: ../../topics/resources.rst:12
 msgid "Defining identity resources"
-msgstr ""
+msgstr "アイデンティティリソースの定義"
 
 #: ../../topics/resources.rst:13
 msgid ""
@@ -49,6 +56,11 @@ msgid ""
 "identity token for the user. The client will use the ``scope`` parameter "
 "to request access to an identity resource."
 msgstr ""
+"アイデンティティリソースは、ユーザーのID、名前、電子メールアドレスなどの"
+"データです。アイデンティティーリソースには一意の名前があり、任意のクレー"
+"ムタイプを割り当てることができます。これらの主張は、ユーザーのIDトークン"
+"に含まれます。クライアントは、このscopeパラメータを使用してIDリソースへの"
+"アクセスを要求します。"
 
 #: ../../topics/resources.rst:17
 msgid ""
@@ -59,6 +71,10 @@ msgid ""
 "This is done by exposing the standard identity resource called "
 "``openid``::"
 msgstr ""
+"OpenID Connect仕様では、いくつかの標準的なアイデンティティリソースが指定"
+"されています。最低要件は、ユーザーの一意のIDを発行するためのサポートを提"
+"供することです（サブジェクトIDとも呼ばれます）。これは、以下のような標準"
+"的なアイデンティティリソースを公開することによって行われopenidます。"
 
 #: ../../topics/resources.rst:29
 msgid ""
@@ -67,10 +83,14 @@ msgid ""
 "want to support them all, you can add them to your list of supported "
 "identity resources::"
 msgstr ""
+"IdentityResourcesのクラスは、仕様（OpenIDの、電子メール、プロフィール、電"
+"話、およびアドレス）で定義されたすべてのスコープをサポートしています。そ"
+"れらをすべてサポートしたい場合は、サポートされているIDリソースのリストに"
+"追加することができます。"
 
 #: ../../topics/resources.rst:45
 msgid "Defining custom identity resources"
-msgstr ""
+msgstr "カスタムIDリソースの定義"
 
 #: ../../topics/resources.rst:46
 msgid ""
@@ -79,38 +99,50 @@ msgid ""
 "and description and define which user claims should be included in the "
 "identity token when this resource gets requested::"
 msgstr ""
+"カスタムIDリソースを定義することもできます。新しいIdentityResourceクラス"
+"を作成し、名前とオプションで表示名と説明を指定し、このリソースが要求され"
+"たときにアイデンティティトークンに含めるユーザークレームを定義します。"
 
 #: ../../topics/resources.rst:64
 msgid ""
 "See the :ref:`reference <refIdentityResource>` section for more "
 "information on identity resource settings."
 msgstr ""
+"アイデンティティリソース設定の詳細については、リファレンスセクションを参"
+"照してください。"
 
 #: ../../topics/resources.rst:67
 msgid "Defining API resources"
-msgstr ""
+msgstr "APIリソースの定義"
 
 #: ../../topics/resources.rst:68
 msgid ""
 "To allow clients to request access tokens for APIs, you need to define "
 "API resources, e.g.::"
 msgstr ""
+"クライアントがAPIのアクセストークンを要求できるようにするには、APIリソー"
+"スを定義する必要があります。"
 
 #: ../../topics/resources.rst:70
 msgid ""
-"To get access tokens for APIs, you also need to register them as a scope."
-" This time the scope type is of type `Resource`::"
+"To get access tokens for APIs, you also need to register them as a "
+"scope. This time the scope type is of type `Resource`::"
 msgstr ""
+"APIのトークンにアクセスするには、スコープとして登録する必要があります。今"
+"回スコープのタイプはResourceタイプです："
 
 #: ../../topics/resources.rst:111
 msgid ""
-"See the :ref:`reference <refApiResource>` section for more information on"
-" API resource settings."
+"See the :ref:`reference <refApiResource>` section for more information "
+"on API resource settings."
 msgstr ""
+"APIリソース設定の詳細については、 :ref:`参照 <refApiResource>` セクション"
+"を参照してください。"
 
 #: ../../topics/resources.rst:113
 msgid ""
-"The user claims defined by resources are loaded by the "
-":ref:`IProfileService <refProfileService>` extensibility point."
+"The user claims defined by resources are loaded by the :ref:"
+"`IProfileService <refProfileService>` extensibility point."
 msgstr ""
-
+"リソースによって定義されたユーザークレームは、 :ref:`IProfileService "
+"<refProfileService>` の拡張性ポイントによって読み込まれます。"

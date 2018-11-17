@@ -4,46 +4,60 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 07:50+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../quickstarts/6_aspnet_identity.rst:4
 msgid "Using ASP.NET Core Identity"
-msgstr ""
+msgstr "ASP.NET Core Identityの使用"
 
 #: ../../quickstarts/6_aspnet_identity.rst:6
 msgid ""
 "IdentityServer is designed for flexibility and part of that is allowing "
-"you to use any database you want for your users and their data (including"
-" passwords). If you are starting with a new user database, then ASP.NET "
-"Identity is one option you could choose. This quickstart shows how to use"
-" ASP.NET Identity with IdentityServer."
+"you to use any database you want for your users and their data "
+"(including passwords). If you are starting with a new user database, "
+"then ASP.NET Identity is one option you could choose. This quickstart "
+"shows how to use ASP.NET Identity with IdentityServer."
 msgstr ""
+"IdentityServerは柔軟性を重視して設計されているため、ユーザーやデータ（パ"
+"スワードを含む）に必要なデータベースを使用できます。新しいユーザーデータ"
+"ベースを使用する場合は、ASP.NET IDを選択することができます。このクイック"
+"スタートでは、IdentityServerでASP.NET IDを使用する方法を示します。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:10
 msgid ""
-"This quickstart assumes you've been through all of the prior quickstarts."
-" The approach this quickstart takes to using ASP.NET Identity is to "
-"create a new project from the ASP.NET Identity template in Visual Studio."
-" This new project will replace the prior IdentityServer project we built "
-"up from scratch in the previous quickstarts. All the other projects in "
-"this solution (for the clients and the API) will remain the same."
+"This quickstart assumes you've been through all of the prior "
+"quickstarts. The approach this quickstart takes to using ASP.NET "
+"Identity is to create a new project from the ASP.NET Identity template "
+"in Visual Studio. This new project will replace the prior IdentityServer "
+"project we built up from scratch in the previous quickstarts. All the "
+"other projects in this solution (for the clients and the API) will "
+"remain the same."
 msgstr ""
+"このクイックスタートは、以前のクイックスタートをすべて完了したことを前提"
+"としています。このクイックスタートでASP.NETアイデンティティを使用するアプ"
+"ローチは、Visual StudioのASP.NETアイデンティティテンプレートから新しいプ"
+"ロジェクトを作成することです。この新しいプロジェクトは、以前のクイックス"
+"タートで作成した以前のIdentityServerプロジェクトに代わるものです。このソ"
+"リューションの他のプロジェクト（クライアントとAPI用）はすべて同じままで"
+"す。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:16
 msgid "New Project for ASP.NET Identity"
-msgstr ""
+msgstr "ASP.NETアイデンティティのための新しいプロジェクト"
 
 #: ../../quickstarts/6_aspnet_identity.rst:18
 msgid ""
@@ -51,89 +65,120 @@ msgid ""
 "solution. Given that a lot of code is required for ASP.NET Identity, it "
 "makes sense to use the template from Visual Studio. You will eventually "
 "delete the old project for IdentityServer (assuming you were following "
-"the other quickstarts), but there are several items that you will need to"
-" migrate over (or rewrite from scratch as described in the prior "
+"the other quickstarts), but there are several items that you will need "
+"to migrate over (or rewrite from scratch as described in the prior "
 "quickstarts)."
 msgstr ""
+"まず、ASP.NET Identity用の新しいプロジェクトをソリューションに追加しま"
+"す。ASP.NET IDには多くのコードが必要なので、Visual Studioのテンプレートを"
+"使用するのが理にかなっています。最終的にIdentityServerの古いプロジェクト"
+"を削除します（他のクイックスタートに従っていると仮定します）。ただし、移"
+"行する必要がある項目がいくつかあります（以前のクイックスタートで説明した"
+"ように、"
 
 #: ../../quickstarts/6_aspnet_identity.rst:22
 msgid "Start by creating a new \"ASP.NET Core Web Application\" project."
 msgstr ""
+"新しい \"ASP.NETコアWebアプリケーション\"プロジェクトを作成します。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:26
 msgid ""
 "Then select the \"Web Application Template (Model-View-Controller)\" "
 "option."
 msgstr ""
+"次に、 \"Webアプリケーションテンプレート（Model-View-Controller）\"オプ"
+"ションを選択します。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:30
 msgid ""
 "Then click the \"Change Authentication\" button, and choose \"Individual "
 "User Accounts\" (which means to use ASP.NET Identity):"
 msgstr ""
+"その後、 \"Change Authentication\"ボタンをクリックし、 \"Individual User "
+"Accounts\"（ASP.NET IDを使用することを意味します）を選択します："
 
 #: ../../quickstarts/6_aspnet_identity.rst:34
 msgid ""
-"Finally, your new project dialog should look something like this. Once it"
-" does, click \"OK\" to create the project."
+"Finally, your new project dialog should look something like this. Once "
+"it does, click \"OK\" to create the project."
 msgstr ""
+"最後に、新しいプロジェクトダイアログは次のようになります。それが終わった"
+"ら、「OK」をクリックしてプロジェクトを作成します。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:39
 msgid "Modify hosting"
-msgstr ""
+msgstr "ホスティングの変更"
 
 #: ../../quickstarts/6_aspnet_identity.rst:41
 msgid ""
-"Don't forget to modify the hosting (`as described here <0_overview.html"
-"#modify-hosting>`_) to run on port 5000. This is important so the "
+"Don't forget to modify the hosting (`as described here <0_overview."
+"html#modify-hosting>`_) to run on port 5000. This is important so the "
 "existing clients and api projects will continue to work."
 msgstr ""
+"ポート5000で実行するようにホスティングを変更することを忘れないでください"
+"（これはここで説明します）。これは既存のクライアントとapiプロジェクトが引"
+"き続き機能するように重要です。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:45
 msgid "Add IdentityServer packages"
-msgstr ""
+msgstr "IdentityServerパッケージを追加する"
 
 #: ../../quickstarts/6_aspnet_identity.rst:47
 msgid ""
-"Add the ``IdentityServer4.AspNetIdentity`` NuGet package. This depends on"
-" the ``IdentityServer4`` package, so that's automatically added as a "
+"Add the ``IdentityServer4.AspNetIdentity`` NuGet package. This depends "
+"on the ``IdentityServer4`` package, so that's automatically added as a "
 "transitive dependency."
 msgstr ""
+"IdentityServer4.AspNetIdentityNuGetパッケージを追加します。これは"
+"IdentityServer4パッケージに依存するため、自動的に推移的な依存関係として追"
+"加されます。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:54
 msgid "Scopes and Clients Configuration"
-msgstr ""
+msgstr "スコープとクライアントの設定"
 
 #: ../../quickstarts/6_aspnet_identity.rst:56
 msgid ""
 "Despite this being a new project for IdentityServer, we still need the "
 "same scope and client configuration as the prior quickstarts. Copy the "
-"configuration class (in `Config.cs "
-"<https://github.com/IdentityServer/IdentityServer4.Samples/blob/release/Quickstarts/5_HybridFlowAuthenticationWithApiAccess/src/QuickstartIdentityServer/Config.cs>`_)"
-" you used for the previous quickstarts into this new project."
+"configuration class (in `Config.cs <https://github.com/IdentityServer/"
+"IdentityServer4.Samples/blob/release/"
+"Quickstarts/5_HybridFlowAuthenticationWithApiAccess/src/"
+"QuickstartIdentityServer/Config.cs>`_) you used for the previous "
+"quickstarts into this new project."
 msgstr ""
+"これがIdentityServerの新しいプロジェクトであるにもかかわらず、従来のク"
+"イックスタートと同じスコープとクライアント構成が必要です。以前のクイック"
+"スタートで使用した構成クラス（Config.cs内）をこの新しいプロジェクトにコ"
+"ピーします。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:59
 msgid ""
-"One change to the configuration that is necessary (for now) is to disable"
-" consent for the MVC client. We've not yet copied over the consent code "
-"from the prior IdentityServer project, so for now make this one "
-"modification to the MVC client and set ``RequireConsent=false``::"
+"One change to the configuration that is necessary (for now) is to "
+"disable consent for the MVC client. We've not yet copied over the "
+"consent code from the prior IdentityServer project, so for now make this "
+"one modification to the MVC client and set ``RequireConsent=false``::"
 msgstr ""
+"（今のところ）必要な設定への変更の1つは、MVCクライアントの同意を無効にす"
+"ることです。以前のIdentityServerプロジェクトの同意コードをまだコピーして"
+"いないので、今度はこれをMVCクライアントに変更して設定し"
+"RequireConsent=falseます。 ::"
 
 #: ../../quickstarts/6_aspnet_identity.rst:88
 msgid "Configure IdentityServer"
-msgstr ""
+msgstr "IdentityServerの設定"
 
 #: ../../quickstarts/6_aspnet_identity.rst:90
 msgid ""
 "As before, IdentityServer needs to be configured in both "
 "``ConfigureServices`` and in ``Configure`` in `Startup.cs`."
 msgstr ""
+"前と同じように、IdentityServer はStartup.csConfigureServicesとの両方で設"
+"定する必要があります。Configure"
 
 #: ../../quickstarts/6_aspnet_identity.rst:92
 msgid "**ConfigureServices**"
-msgstr ""
+msgstr "**ConfigureServices**"
 
 #: ../../quickstarts/6_aspnet_identity.rst:94
 msgid ""
@@ -142,10 +187,17 @@ msgid ""
 "quickstarts, the ``AddTestUsers`` extension method was used to register "
 "the users, but in this situation we replace that extension method with "
 "``AddAspNetIdentity`` to use the ASP.NET Identity users instead. The "
-"``AddAspNetIdentity`` extension method requires a generic parameter which"
-" is your ASP.NET Identity user type (the same one needed in the "
+"``AddAspNetIdentity`` extension method requires a generic parameter "
+"which is your ASP.NET Identity user type (the same one needed in the "
 "``AddIdentity`` method from the template)."
 msgstr ""
+"これは、ASP.NET IDのために生成されたテンプレートコードと、IdentityServer"
+"に必要な追加（最後に）の両方を示しています。以前のクイックスタートでは、"
+"AddTestUsers拡張メソッドを使用してユーザーを登録しましたが、この状況で"
+"は、AddAspNetIdentity代わりにASP.NET IDユーザーを使用するように拡張メソッ"
+"ドを置き換えています。AddAspNetIdentity拡張メソッドは、あなたのASP.NETア"
+"イデンティティユーザタイプ（に必要なものと同じである一般的なパラメータが"
+"必要ですAddIdentityテンプレートからの方法を）。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:124
 msgid ""
@@ -153,10 +205,13 @@ msgid ""
 "registered *after* ASP.NET Identity in the DI system because "
 "IdentityServer is overwriting some configuration from ASP.NET Identity."
 msgstr ""
+"IdentityServerがASP.NET IDの一部の設定を上書きしているため、ASP.NET IDを"
+"使用する場合、IdentityServerがDIシステムに ASP.NET IDの後に登録されること"
+"が重要です。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:126
 msgid "**Configure**"
-msgstr ""
+msgstr "**設定**"
 
 #: ../../quickstarts/6_aspnet_identity.rst:128
 msgid ""
@@ -164,22 +219,29 @@ msgid ""
 "the call to ``UseIdentityServer`` which replaces the call to "
 "``UseAuthentication``."
 msgstr ""
+"これには、ASP.NET ID用に生成されたテンプレートコードと、その呼び出しを"
+"UseIdentityServer置き換える呼び出しの両方が表示されます"
+"UseAuthentication。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:160
 msgid "Creating the user database"
-msgstr ""
+msgstr "ユーザデータベースの作成"
 
 #: ../../quickstarts/6_aspnet_identity.rst:162
 msgid ""
 "Given that this is a new ASP.NET Identity project, you will need to "
-"create the database. You can do this by running a command prompt from the"
-" project directory and running ``dotnet ef database update -c "
+"create the database. You can do this by running a command prompt from "
+"the project directory and running ``dotnet ef database update -c "
 "ApplicationDbContext``, like this:"
 msgstr ""
+"これが新しいASP.NET IDプロジェクトであることを考えると、データベースを作"
+"成する必要があります。これを行うには、プロジェクトディレクトリからコマン"
+"ドプロンプトを実行し、次のように実行します。dotnet ef database update -c "
+"ApplicationDbContext"
 
 #: ../../quickstarts/6_aspnet_identity.rst:168
 msgid "Creating a user"
-msgstr ""
+msgstr "ユーザの作成"
 
 #: ../../quickstarts/6_aspnet_identity.rst:169
 msgid ""
@@ -187,32 +249,41 @@ msgid ""
 "a user in the database. Launch the application, and from the home page "
 "click the \"Register\" link:"
 msgstr ""
+"この時点で、プロジェクトを実行し、データベースにユーザーを作成/登録するこ"
+"とができます。アプリケーションを起動し、ホームページから「登録」リンクを"
+"クリックしてください："
 
 #: ../../quickstarts/6_aspnet_identity.rst:174
 msgid "And on the register page create a new user account:"
-msgstr ""
+msgstr "そして、登録ページで新しいユーザーアカウントを作成します："
 
 #: ../../quickstarts/6_aspnet_identity.rst:178
 msgid ""
 "Now that you have a user account, you should be able to login, use the "
 "clients, and invoke the APIs."
 msgstr ""
+"ユーザーアカウントがあるので、ログインし、クライアントを使用し、APIを呼び"
+"出すことができるはずです。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:181
 msgid "Logging in with the MVC client"
-msgstr ""
+msgstr "MVCクライアントを使用したログイン"
 
 #: ../../quickstarts/6_aspnet_identity.rst:183
 msgid ""
 "Launch the MVC client application, and you should be able to click the "
 "\"Secure\" link to get logged in."
 msgstr ""
+"MVCクライアントアプリケーションを起動すると、「安全な」リンクをクリックし"
+"てログインすることができるはずです。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:187
 msgid ""
 "You should be redirected to the ASP.NET Identity login page. Login with "
 "your newly created user:"
 msgstr ""
+"ASP.NET IDログインページにリダイレクトする必要があります。新しく作成され"
+"たユーザーとのログイン："
 
 #: ../../quickstarts/6_aspnet_identity.rst:192
 msgid ""
@@ -220,20 +291,25 @@ msgid ""
 "above), and be immediately redirected back to the MVC client application "
 "where your user's claims should be listed."
 msgstr ""
+"ログイン後、承諾ページをスキップして（上記の変更が加えられた場合）、ユー"
+"ザーのクレームを記載するMVCクライアントアプリケーションにすぐにリダイレク"
+"トされます。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:196
 msgid ""
 "You should also be able to click \"Call API using application identity\" "
 "to invoke the API on behalf of the user:"
 msgstr ""
+"ユーザーに代わってAPIを呼び出すには、「アプリケーションIDを使用してAPIを"
+"呼び出す」をクリックすることもできます。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:200
 msgid "And now you've logged in with a user from ASP.NET Identity."
-msgstr ""
+msgstr "そして、あなたはASP.NET Identityからのユーザでログインしました。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:203
 msgid "What's Next?"
-msgstr ""
+msgstr "次は何ですか？"
 
 #: ../../quickstarts/6_aspnet_identity.rst:205
 msgid ""
@@ -244,12 +320,19 @@ msgid ""
 "IdentityServer project. Also, once you've done this don't forget to re-"
 "enable the ``RequireConsent=true`` flag on the MVC client configuration."
 msgstr ""
+"IdentityServerの以前のクイックスタートプロジェクトでは、同意ページ、エ"
+"ラーページ、およびログアウトページが提供されていました。これらの欠けてい"
+"る部分のコードは、以前のクイックスタートプロジェクトからこれにコピーする"
+"ことができます。これを済ませたら、最終的に古いIdentityServerプロジェクト"
+"を削除/削除できます。また、これを済ませたらRequireConsent=true、MVCクライ"
+"アント設定でフラグを再度有効にすることを忘れないでください。"
 
 #: ../../quickstarts/6_aspnet_identity.rst:210
 msgid ""
-"The `sample code for this quickstart "
-"<https://github.com/IdentityServer/IdentityServer4.Samples/tree/dev/Quickstarts/6_AspNetIdentity>`_"
-" has already done these steps for you, so you can get started quickly "
-"with all of these features. Enjoy!"
+"The `sample code for this quickstart <https://github.com/IdentityServer/"
+"IdentityServer4.Samples/tree/dev/Quickstarts/6_AspNetIdentity>`_ has "
+"already done these steps for you, so you can get started quickly with "
+"all of these features. Enjoy!"
 msgstr ""
-
+"このクイックスタートのサンプルコードは既にこれらの手順を完了しているた"
+"め、これらの機能をすべて使い始めることができます。楽しい！"

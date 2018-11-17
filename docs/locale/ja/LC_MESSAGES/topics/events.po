@@ -4,40 +4,46 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 20:20+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/events.rst:4
 msgid "Events"
-msgstr ""
+msgstr "イベント"
 
 #: ../../topics/events.rst:5
 msgid ""
-"While logging is more low level \"printf\" style - events represent "
-"higher level information about certain operations in IdentityServer. "
-"Events are structured data and include event IDs, success/failure "
-"information, categories and details. This makes it easy to query and "
-"analyze them and extract useful information that can be used for further "
-"processing."
+"While logging is more low level \"printf\" style - events represent higher "
+"level information about certain operations in IdentityServer. Events are "
+"structured data and include event IDs, success/failure information, "
+"categories and details. This makes it easy to query and analyze them and "
+"extract useful information that can be used for further processing."
 msgstr ""
+"ログはより低レベルの \"printf\"スタイルですが、イベントはIdentityServerの特定"
+"の操作に関するより高いレベルの情報を表します。イベントは構造化されたデータで、"
+"イベントID、成功/失敗情報、カテゴリ、詳細が含まれます。これにより、それらを照"
+"会および分析し、さらなる処理に使用できる有用な情報を抽出することが容易になりま"
+"す。"
 
 #: ../../topics/events.rst:9
 msgid ""
-"Events work great with event stores like `ELK "
-"<https://www.elastic.co/webinars/introduction-elk-stack>`_, `Seq "
-"<https://getseq.net/>`_ or `Splunk <https://www.splunk.com/>`_."
-msgstr ""
+"Events work great with event stores like `ELK <https://www.elastic.co/"
+"webinars/introduction-elk-stack>`_, `Seq <https://getseq.net/>`_ or `Splunk "
+"<https://www.splunk.com/>`_."
+msgstr "イベントは、ELK、Seq、Splunkなどのイベントストアでうまく機能します。"
 
 #: ../../topics/events.rst:12
 msgid "Emitting events"
@@ -45,45 +51,54 @@ msgstr ""
 
 #: ../../topics/events.rst:13
 msgid ""
-"Events are not turned on by default - but can be globally configured in "
-"the ``ConfigureServices`` method, e.g.::"
+"Events are not turned on by default - but can be globally configured in the "
+"``ConfigureServices`` method, e.g.::"
 msgstr ""
+"イベントはデフォルトで有効になっていませんが、ConfigureServicesメソッド内でグ"
+"ローバルに設定することができます。例："
 
 #: ../../topics/events.rst:22
 msgid ""
-"To emit an event use the ``IEventService`` from the DI container and call"
-" the ``RaiseAsync`` method, e.g.::"
+"To emit an event use the ``IEventService`` from the DI container and call the "
+"``RaiseAsync`` method, e.g.::"
 msgstr ""
+"イベントを発生させるにIEventServiceは、DIコンテナからRaiseAsyncメソッドを呼び"
+"出し、メソッドを呼び出します。"
 
 #: ../../topics/events.rst:39
 msgid "Custom sinks"
-msgstr ""
+msgstr "カスタムシンク"
 
 #: ../../topics/events.rst:40
 msgid ""
 "Our default event sink will simply serialize the event class to JSON and "
-"forward it to the ASP.NET Core logging system. If you want to connect to "
-"a custom event store, implement the ``IEventSink`` interface and register"
-" it with DI."
+"forward it to the ASP.NET Core logging system. If you want to connect to a "
+"custom event store, implement the ``IEventSink`` interface and register it "
+"with DI."
 msgstr ""
+"デフォルトのイベントシンクはイベントクラスをJSONにシリアライズし、ASP.NET Core"
+"ロギングシステムに転送します。カスタム・イベント・ストアに接続する場合は、"
+"IEventSinkインターフェースを実装し、DIに登録してください。"
 
 #: ../../topics/events.rst:43
 msgid "The following example uses `Seq <https://getseq.net/>`_ to emit events::"
-msgstr ""
+msgstr "次の例では、Seqを使用してイベントを発行しています。"
 
 #: ../../topics/events.rst:78
 msgid ""
-"Add the ``Serilog.Sinks.Seq`` package to your host to make the above code"
-" work."
+"Add the ``Serilog.Sinks.Seq`` package to your host to make the above code "
+"work."
 msgstr ""
+"Serilog.Sinks.Seq上記のコードを動作させるためにあなたのホストにパッケージを追"
+"加してください。"
 
 #: ../../topics/events.rst:81
 msgid "Built-in events"
-msgstr ""
+msgstr "ビルトインイベント"
 
 #: ../../topics/events.rst:82
 msgid "The following events are defined in IdentityServer:"
-msgstr ""
+msgstr "IdentityServerには、次のイベントが定義されています。"
 
 #: ../../topics/events.rst:84
 msgid "``ApiAuthenticationFailureEvent`` & ``ApiAuthenticationSuccessEvent``"
@@ -91,21 +106,23 @@ msgstr ""
 
 #: ../../topics/events.rst:85
 msgid ""
-"Gets raised for successful/failed API authentication at the introspection"
-" endpoint."
+"Gets raised for successful/failed API authentication at the introspection "
+"endpoint."
 msgstr ""
+"イントロスペクションエンドポイントで成功または失敗したAPI認証のために生成され"
+"ます。"
 
 #: ../../topics/events.rst:86
 msgid ""
-"``ClientAuthenticationSuccessEvent`` & "
-"``ClientAuthenticationFailureEvent``"
+"``ClientAuthenticationSuccessEvent`` & ``ClientAuthenticationFailureEvent``"
 msgstr ""
 
 #: ../../topics/events.rst:87
 msgid ""
-"Gets raised for successful/failed client authentication at the token "
-"endpoint."
+"Gets raised for successful/failed client authentication at the token endpoint."
 msgstr ""
+"トークンエンドポイントで成功または失敗したクライアント認証のために生成されま"
+"す。"
 
 #: ../../topics/events.rst:88
 msgid "``TokenIssuedSuccessEvent`` & ``TokenIssuedFailureEvent``"
@@ -113,9 +130,11 @@ msgstr ""
 
 #: ../../topics/events.rst:89
 msgid ""
-"Gets raised for successful/failed attempts to request identity tokens, "
-"access tokens, refresh tokens and authorization codes."
+"Gets raised for successful/failed attempts to request identity tokens, access "
+"tokens, refresh tokens and authorization codes."
 msgstr ""
+"アイデンティティトークン、アクセストークン、リフレッシュトークン、および認証"
+"コードを要求する成功/失敗の試みに対して発生します。"
 
 #: ../../topics/events.rst:90
 msgid "``TokenIntrospectionSuccessEvent`` & ``TokenIntrospectionFailureEvent``"
@@ -123,7 +142,7 @@ msgstr ""
 
 #: ../../topics/events.rst:91
 msgid "Gets raised for successful token introspection requests."
-msgstr ""
+msgstr "成功したトークンイントロスペクション要求に対して発生します。"
 
 #: ../../topics/events.rst:92
 msgid "``TokenRevokedSuccessEvent``"
@@ -131,7 +150,7 @@ msgstr ""
 
 #: ../../topics/events.rst:93
 msgid "Gets raised for successful token revocation requests."
-msgstr ""
+msgstr "正常なトークン取り消し要求に対して発生します。"
 
 #: ../../topics/events.rst:94
 msgid "``UserLoginSuccessEvent`` & ``UserLoginFailureEvent``"
@@ -140,6 +159,7 @@ msgstr ""
 #: ../../topics/events.rst:95
 msgid "Gets raised by the quickstart UI for successful/failed user logins."
 msgstr ""
+"成功した/失敗したユーザーログインのクイックスタートUIによって発生します。"
 
 #: ../../topics/events.rst:96
 msgid "``UserLogoutSuccessEvent``"
@@ -147,7 +167,7 @@ msgstr ""
 
 #: ../../topics/events.rst:97
 msgid "Gets raised for successful logout requests."
-msgstr ""
+msgstr "成功したログアウト要求の場合に発生します。"
 
 #: ../../topics/events.rst:98
 msgid "``ConsentGrantedEvent`` & ``ConsentDeniedEvent``"
@@ -155,7 +175,7 @@ msgstr ""
 
 #: ../../topics/events.rst:99
 msgid "Gets raised in the consent UI."
-msgstr ""
+msgstr "同意UIで発生します。"
 
 #: ../../topics/events.rst:101
 msgid "``UnhandledExceptionEvent``"
@@ -163,20 +183,24 @@ msgstr ""
 
 #: ../../topics/events.rst:101
 msgid "Gets raised for unhandled exceptions."
-msgstr ""
+msgstr "未処理の例外に対して発生します。"
 
 #: ../../topics/events.rst:104
 msgid "Custom events"
-msgstr ""
+msgstr "カスタムイベント"
 
 #: ../../topics/events.rst:105
 msgid "You can create your own events and emit them via our infrastructure."
 msgstr ""
+"あなた自身のイベントを作成し、私たちのインフラを介してそれらを放出することがで"
+"きます。"
 
 #: ../../topics/events.rst:107
 msgid ""
-"You need to derive from our base ``Event`` class which injects contextual"
-" information like activity ID, timestamp, etc. Your derived class can "
-"then add arbitrary data fields specific to the event context::"
+"You need to derive from our base ``Event`` class which injects contextual "
+"information like activity ID, timestamp, etc. Your derived class can then add "
+"arbitrary data fields specific to the event context::"
 msgstr ""
-
+"Event派生クラスは、アクティビティID、タイムスタンプなどのコンテキスト情報を注"
+"入する基本クラスから派生する必要があります。派生クラスは、イベントコンテキスト"
+"に固有の任意のデータフィールドを追加できます。"

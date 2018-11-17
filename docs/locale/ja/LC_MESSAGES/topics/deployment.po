@@ -4,69 +4,76 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-11-17 13:58+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../topics/deployment.rst:2
 msgid "Deployment"
-msgstr ""
+msgstr "デプロイ"
 
 #: ../../topics/deployment.rst:3
 msgid ""
 "Your identity server is `just` a standard ASP.NET Core application "
 "including the IdentityServer middleware. Read the official Microsoft "
-"`documentation <https://docs.microsoft.com/en-"
-"us/aspnet/core/publishing>`_ on publishing and deployment first."
+"`documentation <https://docs.microsoft.com/en-us/aspnet/core/"
+"publishing>`_ on publishing and deployment first."
 msgstr ""
+"あなたのアイデンティティサーバーがあるだけ IdentityServerミドルウェアを含"
+"む、標準的なASP.NET Coreアプリケーション。まずパブリッシュとデプロイメン"
+"トに関する公式Microsoftのドキュメントをお読みください。"
 
 #: ../../topics/deployment.rst:7
 msgid "Typical architecture"
-msgstr ""
+msgstr "典型的なアーキテクチャ"
 
 #: ../../topics/deployment.rst:8
 msgid ""
 "Typically you will design your IdentityServer deployment for high "
 "availability:"
-msgstr ""
+msgstr "通常、高可用性のためにIdentityServerの配備を設計します。"
 
 #: ../../topics/deployment.rst:12
 msgid ""
-"IdentityServer itself is stateless and does not require server affinity -"
-" but there is data that needs to be shared between the instances."
+"IdentityServer itself is stateless and does not require server affinity "
+"- but there is data that needs to be shared between the instances."
 msgstr ""
+"IdentityServer自体はステートレスなので、サーバの親和性は必要ありません"
+"が、インスタンス間で共有する必要があるデータがあります。"
 
 #: ../../topics/deployment.rst:15
 msgid "Configuration data"
-msgstr ""
+msgstr "設定データ"
 
 #: ../../topics/deployment.rst:16
 msgid "This typically includes:"
-msgstr ""
+msgstr "これには、通常、"
 
 #: ../../topics/deployment.rst:18
 msgid "resources"
-msgstr ""
+msgstr "リソース"
 
 #: ../../topics/deployment.rst:19
 msgid "clients"
-msgstr ""
+msgstr "クライアント"
 
 #: ../../topics/deployment.rst:20
 msgid ""
 "startup configuration, e.g. key material, external provider settings "
 "etc..."
-msgstr ""
+msgstr "スタートアップ設定、例えばキーマテリアル、外部プロバイダ設定など"
 
 #: ../../topics/deployment.rst:22
 msgid ""
@@ -74,32 +81,41 @@ msgid ""
 "where configuration data rarely changes we recommend using the in-memory "
 "stores and code or configuration files."
 msgstr ""
+"そのデータを格納する方法は、使用環境によって異なります。構成データがほと"
+"んど変更されない状況では、メモリ内のストアとコードまたは構成ファイルを使"
+"用することをお勧めします。"
 
 #: ../../topics/deployment.rst:24
 msgid ""
 "In highly dynamic environments (e.g. Saas) we recommend using a database "
 "or configuration service to load configuration dynamically."
 msgstr ""
+"高度に動的な環境（Saasなど）では、データベースまたは構成サービスを使用し"
+"て構成を動的にロードすることを推奨します。"
 
 #: ../../topics/deployment.rst:26
 msgid ""
 "IdentityServer supports code configuration and configuration files (see "
-"`here <https://docs.microsoft.com/en-"
-"us/aspnet/core/fundamentals/configuration>`_) out of the box. For "
-"databases we provide support for `Entity Framework Core "
-"<https://github.com/IdentityServer/IdentityServer4.EntityFramework>`_ "
-"based databases."
+"`here <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/"
+"configuration>`_) out of the box. For databases we provide support for "
+"`Entity Framework Core <https://github.com/IdentityServer/"
+"IdentityServer4.EntityFramework>`_ based databases."
 msgstr ""
+"IdentityServerは、コード構成と構成ファイル（ここを参照）をそのまま使用で"
+"きます。データベースの場合は、Entity Framework Coreベースのデータベースを"
+"サポートします。"
 
 #: ../../topics/deployment.rst:29
 msgid ""
 "You can also build your own configuration stores by implementing "
 "``IResourceStore`` and ``IClientStore``."
 msgstr ""
+"また、実装することで独自の構成ストアを構築することができます"
+"IResourceStoreし、IClientStore。"
 
 #: ../../topics/deployment.rst:32
 msgid "Key material"
-msgstr ""
+msgstr "鍵素材"
 
 #: ../../topics/deployment.rst:34
 msgid ""
@@ -107,28 +123,32 @@ msgid ""
 "see :ref:`here <refCrypto>` for more details on key material and "
 "cryptography."
 msgstr ""
+"スタートアップコンフィギュレーションのもう一つの重要な部分は、キーマテリ"
+"アルです。キーマテリアルと暗号の詳細については、ここを参照してください。"
 
 #: ../../topics/deployment.rst:37
 msgid "Operational data"
-msgstr ""
+msgstr "運用データ"
 
 #: ../../topics/deployment.rst:38
 msgid ""
 "For certain operations, IdentityServer needs a persistence store to keep "
 "state, this includes:"
 msgstr ""
+"特定の操作では、IdentityServerに状態を保存するための永続ストアが必要で"
+"す。これには次のものがあります。"
 
 #: ../../topics/deployment.rst:40
 msgid "issuing authorization codes"
-msgstr ""
+msgstr "承認コードを発行する"
 
 #: ../../topics/deployment.rst:41
 msgid "issuing reference and refresh tokens"
-msgstr ""
+msgstr "参照およびリフレッシュトークンの発行"
 
 #: ../../topics/deployment.rst:42
 msgid "storing consent"
-msgstr ""
+msgstr "同意書を保管する"
 
 #: ../../topics/deployment.rst:44
 msgid ""
@@ -136,29 +156,40 @@ msgid ""
 "or use a cache with persistence features like Redis. The EF Core "
 "implementation mentioned above has also support for operational data."
 msgstr ""
+"運用データの保存に従来のデータベースを使用することも、Redisのような永続性"
+"機能を備えたキャッシュを使用することもできます。上記のEFコア実装は、運用"
+"データもサポートしています。"
 
 #: ../../topics/deployment.rst:47
 msgid ""
 "You can also implement support for your own custom storage mechanism by "
-"implementing ``IPersistedGrantStore`` - by default IdentityServer injects"
-" an in-memory version."
+"implementing ``IPersistedGrantStore`` - by default IdentityServer "
+"injects an in-memory version."
 msgstr ""
+"またIPersistedGrantStore、デフォルトでIdentityServerがメモリ内バージョン"
+"をインジェクトするように実装することで、独自のカスタムストレージメカニズ"
+"ムのサポートを実装することもできます。"
 
 #: ../../topics/deployment.rst:50
 msgid "ASP.NET Core data protection"
-msgstr ""
+msgstr "ASP.NET Coreデータ保護"
 
 #: ../../topics/deployment.rst:51
 msgid ""
 "ASP.NET Core itself needs shared key material for protecting sensitive "
 "data like cookies, state strings etc. See the official docs `here "
-"<https://docs.microsoft.com/en-us/aspnet/core/security/data-"
-"protection/>`_."
+"<https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/"
+">`_."
 msgstr ""
+"ASP.NET Core自体には、クッキー、状態文字列などの機密データを保護するため"
+"の共有キーマテリアルが必要です。 `ここの <https://docs.microsoft.com/en-"
+"us/aspnet/core/security/data-protection/>`_ 公式ドキュメントを参照してく"
+"ださい。"
 
 #: ../../topics/deployment.rst:54
 msgid ""
-"You can either re-use one of the above persistence store or use something"
-" simple like a shared file if possible."
+"You can either re-use one of the above persistence store or use "
+"something simple like a shared file if possible."
 msgstr ""
-
+"上記の永続ストアの1つを再利用するか、可能であれば共有ファイルのような単純"
+"なものを使用することができます。"
