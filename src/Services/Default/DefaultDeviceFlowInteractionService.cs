@@ -4,7 +4,6 @@
 
 using System;
 using System.Threading.Tasks;
-using IdentityServer4.Extensions;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
 using Microsoft.Extensions.Logging;
@@ -33,6 +32,7 @@ namespace IdentityServer4.Services
         public async Task<DeviceFlowAuthorizationRequest> GetAuthorizationContextAsync(string userCode)
         {
             var deviceAuth = await _devices.FindByUserCodeAsync(userCode);
+            if (deviceAuth == null) return null;
 
             return new DeviceFlowAuthorizationRequest
             {
