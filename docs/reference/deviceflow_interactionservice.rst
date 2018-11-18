@@ -14,9 +14,11 @@ IDeviceFlowInteractionService APIs
     Completes device authorization for the given ``userCode``.
 
 DeviceFlowAuthorizationRequest
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 ``ClientId``
     The client identifier that initiated the request.
+
 ``ScopesRequested``
     The scopes requested from the authorization request.
 

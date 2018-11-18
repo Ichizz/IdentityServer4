@@ -8,287 +8,236 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: 2018-11-17 20:13+0900\n"
+"POT-Creation-Date: 2018-11-18 07:58+0900\n"
+"PO-Revision-Date: 2018-11-18 11:47+0900\n"
+"Last-Translator: \n"
+"Language: ja_JP\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ja_JP\n"
 "X-Generator: Poedit 2.2\n"
 
 #: ../../topics/grant_types.rst:2
 msgid "Grant Types"
-msgstr "グラントタイプ"
+msgstr "付与タイプ"
 
 #: ../../topics/grant_types.rst:4
 msgid ""
-"Grant types are a way to specify how a client wants to interact with "
-"IdentityServer. The OpenID Connect and OAuth 2 specs define the "
+"Grant types are a way to specify how a client wants to interact with IdentityServer. The OpenID Connect and OAuth 2 specs define the "
 "following grant types:"
 msgstr ""
-"許可タイプは、クライアントがIdentityServerとやり取りする方法を指定する方"
-"法です。OpenID ConnectとOAuth 2の仕様では、以下のグラントタイプが定義され"
+"付与タイプは、クライアントがIdentityServerとやり取りする方法を指定する方法です。OpenID ConnectとOAuth 2の仕様では、以下の付与タイプが定義され"
 "ています。"
 
-#: ../../topics/grant_types.rst:7 ../../topics/grant_types.rst:63
+#: ../../topics/grant_types.rst:7 ../../topics/grant_types.rst:64
 msgid "Implicit"
 msgstr ""
 
-#: ../../topics/grant_types.rst:8 ../../topics/grant_types.rst:73
+#: ../../topics/grant_types.rst:8 ../../topics/grant_types.rst:74
 msgid "Authorization code"
 msgstr ""
 
-#: ../../topics/grant_types.rst:9 ../../topics/grant_types.rst:82
+#: ../../topics/grant_types.rst:9 ../../topics/grant_types.rst:83
 msgid "Hybrid"
 msgstr ""
 
-#: ../../topics/grant_types.rst:10 ../../topics/grant_types.rst:41
+#: ../../topics/grant_types.rst:10 ../../topics/grant_types.rst:42
 msgid "Client credentials"
 msgstr ""
 
-#: ../../topics/grant_types.rst:11 ../../topics/grant_types.rst:51
+#: ../../topics/grant_types.rst:11 ../../topics/grant_types.rst:52
 msgid "Resource owner password"
 msgstr ""
 
-#: ../../topics/grant_types.rst:12 ../../topics/grant_types.rst:95
+#: ../../topics/grant_types.rst:12 ../../topics/grant_types.rst:96
+msgid "Device flow"
+msgstr ""
+
+#: ../../topics/grant_types.rst:13 ../../topics/grant_types.rst:102
 msgid "Refresh tokens"
 msgstr ""
 
-#: ../../topics/grant_types.rst:13 ../../topics/grant_types.rst:108
+#: ../../topics/grant_types.rst:14 ../../topics/grant_types.rst:115
 msgid "Extension grants"
 msgstr ""
 
-#: ../../topics/grant_types.rst:15
-msgid ""
-"You can specify which grant type a client can use via the "
-"``AllowedGrantTypes`` property on the ``Client`` configuration."
-msgstr ""
-"構成AllowedGrantTypes上のプロパティーを使用して、クライアントが使用できる"
-"許可タイプを指定できますClient。"
+#: ../../topics/grant_types.rst:16
+msgid "You can specify which grant type a client can use via the ``AllowedGrantTypes`` property on the ``Client`` configuration."
+msgstr "構成AllowedGrantTypes上のプロパティーを使用して、クライアントが使用できる許可タイプを指定できますClient。"
 
-#: ../../topics/grant_types.rst:17
+#: ../../topics/grant_types.rst:18
 msgid ""
-"A client can be configured to use more than a single grant type (e.g. "
-"Hybrid for user centric operations and client credentials for server to "
-"server communication). The ``GrantTypes`` class can be used to pick from "
-"typical grant type combinations::"
+"A client can be configured to use more than a single grant type (e.g. Hybrid for user centric operations and client credentials for server "
+"to server communication). The ``GrantTypes`` class can be used to pick from typical grant type combinations::"
 msgstr ""
-"クライアントは、2つ以上の認可タイプを使用するように構成できます（たとえ"
-"ば、ユーザー中心の操作の場合はハイブリッド、サーバー間の通信の場合はクラ"
-"イアント資格情報）。GrantTypesこのクラスは、典型的な補助金型の組み合わせ"
-"から選択するために使用することができます。"
+"クライアントは、2つ以上の認可タイプを使用するように構成できます（たとえば、ユーザー中心の操作の場合はハイブリッド、サーバー間の通信の場合はク"
+"ライアント資格情報）。 ``GrantTypes`` このクラスは、典型的な補助金型の組み合わせから選択するために使用することができます。"
 
-#: ../../topics/grant_types.rst:22
+#: ../../topics/grant_types.rst:23
 msgid "You can also specify the grant types list manually::"
 msgstr "許可タイプリストを手動で指定することもできます。"
 
-#: ../../topics/grant_types.rst:31
-msgid ""
-"If you want to transmit access tokens via the browser channel, you also "
-"need to allow that explicitly on the client configuration::"
-msgstr ""
-"ブラウザのチャンネルを介してアクセストークンを送信する場合は、クライアン"
-"トの設定で明示的に許可する必要があります。"
+#: ../../topics/grant_types.rst:32
+msgid "If you want to transmit access tokens via the browser channel, you also need to allow that explicitly on the client configuration::"
+msgstr "ブラウザのチャンネルを介してアクセストークンを送信する場合は、クライアントの設定で明示的に許可する必要があります。"
 
-#: ../../topics/grant_types.rst:35
-msgid ""
-"For security reasons, not all grant type combinations are allowed. See "
-"below for more details."
-msgstr ""
-"セキュリティ上の理由から、すべての許可タイプの組み合わせが許可されるわけ"
-"ではありません。詳細は以下を参照してください。"
+#: ../../topics/grant_types.rst:36
+msgid "For security reasons, not all grant type combinations are allowed. See below for more details."
+msgstr "セキュリティ上の理由から、すべての許可タイプの組み合わせが許可されるわけではありません。詳細は以下を参照してください。"
 
-#: ../../topics/grant_types.rst:37
+#: ../../topics/grant_types.rst:38
 msgid ""
-"For the remainder, the grant types are briefly described, and when you "
-"would use them. It is also recommended, that in addition you read the "
+"For the remainder, the grant types are briefly described, and when you would use them. It is also recommended, that in addition you read the "
 "corresponding specs to get a better understanding of the differences."
 msgstr ""
-"残りの部分については、助成金の種類について簡単に説明し、使用する時期につ"
-"いても説明します。また、相違点の理解を深めるために、対応する仕様を読むこ"
-"とをお勧めします。"
+"残りの部分については、助成金の種類について簡単に説明し、使用する時期についても説明します。また、相違点の理解を深めるために、対応する仕様を読"
+"むことをお勧めします。"
 
-#: ../../topics/grant_types.rst:42
+#: ../../topics/grant_types.rst:43
 msgid ""
-"This is the simplest grant type and is used for server to server "
-"communication - tokens are always requested on behalf of a client, not a "
+"This is the simplest grant type and is used for server to server communication - tokens are always requested on behalf of a client, not a "
 "user."
 msgstr ""
-"これは最も単純なグラント・タイプであり、サーバー間の通信に使用されます。"
-"トークンは、ユーザーではなくクライアントのために常に要求されます。"
+"これは最も単純なグラント・タイプであり、サーバー間の通信に使用されます。トークンは、ユーザーではなくクライアントのために常に要求されます。"
 
-#: ../../topics/grant_types.rst:44
+#: ../../topics/grant_types.rst:45
 msgid ""
-"With this grant type you send a token request to the token endpoint, and "
-"get an access token back that represents the client. The client "
-"typically has to authenticate with the token endpoint using its client "
-"ID and secret."
+"With this grant type you send a token request to the token endpoint, and get an access token back that represents the client. The client "
+"typically has to authenticate with the token endpoint using its client ID and secret."
 msgstr ""
-"この許可タイプでは、トークン要求をトークンエンドポイントに送信し、クライ"
-"アントを表すアクセストークンバックを取得します。クライアントは通常、クラ"
-"イアントIDと秘密情報を使用してトークンエンドポイントで認証する必要があり"
-"ます。"
+"この許可タイプでは、トークン要求をトークンエンドポイントに送信し、クライアントを表すアクセストークンバックを取得します。クライアントは通常、"
+"クライアントIDと秘密情報を使用してトークンエンドポイントで認証する必要があります。"
 
-#: ../../topics/grant_types.rst:47
+#: ../../topics/grant_types.rst:48
+msgid "See the :ref:`Client Credentials Quick Start <refClientCredentialsQuickstart>` for a sample how to use it."
+msgstr "使用方法のサンプルについては、クライアントクレデンシャルのクイックスタートを参照してください。"
+
+#: ../../topics/grant_types.rst:53
 msgid ""
-"See the :ref:`Client Credentials Quick Start "
-"<refClientCredentialsQuickstart>` for a sample how to use it."
+"The resource owner password grant type allows to request tokens on behalf of a user by sending the user's name and password to the token "
+"endpoint. This is so called \"non-interactive\" authentication and is generally not recommended."
 msgstr ""
-"使用方法のサンプルについては、クライアントクレデンシャルのクイックスター"
-"トを参照してください。"
+"リソース所有者のパスワード付与タイプを使用すると、ユーザーの名前とパスワードをトークンエンドポイントに送信することによって、ユーザーの代わり"
+"にトークンを要求できます。これは「非対話型」認証と呼ばれ、一般的には推奨されません。"
 
-#: ../../topics/grant_types.rst:52
+#: ../../topics/grant_types.rst:56
 msgid ""
-"The resource owner password grant type allows to request tokens on "
-"behalf of a user by sending the user's name and password to the token "
-"endpoint. This is so called \"non-interactive\" authentication and is "
-"generally not recommended."
+"There might be reasons for certain legacy or first-party integration scenarios, where this grant type is useful, but the general "
+"recommendation is to use an interactive flow like implicit or hybrid for user authentication instead."
 msgstr ""
-"リソース所有者のパスワード付与タイプを使用すると、ユーザーの名前とパス"
-"ワードをトークンエンドポイントに送信することによって、ユーザーの代わりに"
-"トークンを要求できます。これは「非対話型」認証と呼ばれ、一般的には推奨さ"
-"れません。"
+"特定のレガシーまたはファーストパーティの統合シナリオには、このグラントタイプが便利な理由があるかもしれませんが、代わりにユーザー認証のために"
+"暗黙またはハイブリッドのような対話型フローを使用することが推奨されます。"
 
-#: ../../topics/grant_types.rst:55
+#: ../../topics/grant_types.rst:59
 msgid ""
-"There might be reasons for certain legacy or first-party integration "
-"scenarios, where this grant type is useful, but the general "
-"recommendation is to use an interactive flow like implicit or hybrid for "
-"user authentication instead."
-msgstr ""
-"特定のレガシーまたはファーストパーティの統合シナリオには、このグラントタ"
-"イプが便利な理由があるかもしれませんが、代わりにユーザー認証のために暗黙"
-"またはハイブリッドのような対話型フローを使用することが推奨されます。"
-
-#: ../../topics/grant_types.rst:58
-msgid ""
-"See the :ref:`Resource Owner Password Quick Start "
-"<_refResourceOwnerQuickstart>` for a sample how to use it. You also need "
-"to provide code for the username/password validation which can be "
-"supplied by implementing the ``IResourceOwnerPasswordValidator`` "
-"interface. You can find more information about this interface :ref:`here "
-"<refResourceOwnerPasswordValidator>`."
+"See the :ref:`Resource Owner Password Quick Start <_refResourceOwnerQuickstart>` for a sample how to use it. You also need to provide code "
+"for the username/password validation which can be supplied by implementing the ``IResourceOwnerPasswordValidator`` interface. You can find "
+"more information about this interface :ref:`here <refResourceOwnerPasswordValidator>`."
 msgstr ""
 
-#: ../../topics/grant_types.rst:64
+#: ../../topics/grant_types.rst:65
 msgid ""
-"The implicit grant type is optimized for browser-based applications. "
-"Either for user authentication-only (both server-side and JavaScript "
-"applications), or authentication and access token requests (JavaScript "
-"applications)."
+"The implicit grant type is optimized for browser-based applications. Either for user authentication-only (both server-side and JavaScript "
+"applications), or authentication and access token requests (JavaScript applications)."
 msgstr ""
 
-#: ../../topics/grant_types.rst:67
-msgid ""
-"In the implicit flow, all tokens are transmitted via the browser, and "
-"advanced features like refresh tokens are thus not allowed."
+#: ../../topics/grant_types.rst:68
+msgid "In the implicit flow, all tokens are transmitted via the browser, and advanced features like refresh tokens are thus not allowed."
 msgstr ""
 
-#: ../../topics/grant_types.rst:69
+#: ../../topics/grant_types.rst:70
 msgid ""
-":ref:`This <refImplicitQuickstart>` quickstart shows authentication for "
-"service-side web apps, and :ref:`this <refJavaScriptQuickstart>` shows "
-"JavaScript."
+":ref:`This <refImplicitQuickstart>` quickstart shows authentication for service-side web apps, and :ref:`this <refJavaScriptQuickstart>` "
+"shows JavaScript."
 msgstr ""
 
-#: ../../topics/grant_types.rst:74
+#: ../../topics/grant_types.rst:75
 msgid ""
-"Authorization code flow was originally specified by OAuth 2, and "
-"provides a way to retrieve tokens on a back-channel as opposed to the "
+"Authorization code flow was originally specified by OAuth 2, and provides a way to retrieve tokens on a back-channel as opposed to the "
 "browser front-channel. It also support client authentication."
 msgstr ""
 
-#: ../../topics/grant_types.rst:77
+#: ../../topics/grant_types.rst:78
 msgid ""
-"While this grant type is supported on its own, it is generally "
-"recommended you combine that with identity tokens which turns it into "
-"the so called hybrid flow. Hybrid flow gives you important extra "
-"features like signed protocol responses."
+"While this grant type is supported on its own, it is generally recommended you combine that with identity tokens which turns it into the so "
+"called hybrid flow. Hybrid flow gives you important extra features like signed protocol responses."
 msgstr ""
 
-#: ../../topics/grant_types.rst:83
+#: ../../topics/grant_types.rst:84
 msgid ""
-"Hybrid flow is a combination of the implicit and authorization code flow "
-"- it uses combinations of multiple grant types, most typically ``code "
-"id_token``."
+"Hybrid flow is a combination of the implicit and authorization code flow - it uses combinations of multiple grant types, most typically "
+"``code id_token``."
 msgstr ""
 
-#: ../../topics/grant_types.rst:85
+#: ../../topics/grant_types.rst:86
 msgid ""
-"In hybrid flow the identity token is transmitted via the browser channel "
-"and contains the signed protocol response along with signatures for "
-"other artifacts like the authorization code. This mitigates a number of "
-"attacks that apply to the browser channel. After successful validation "
-"of the response, the back-channel is used to retrieve the access and "
-"refresh token."
+"In hybrid flow the identity token is transmitted via the browser channel and contains the signed protocol response along with signatures for "
+"other artifacts like the authorization code. This mitigates a number of attacks that apply to the browser channel. After successful "
+"validation of the response, the back-channel is used to retrieve the access and refresh token."
 msgstr ""
 
-#: ../../topics/grant_types.rst:89
+#: ../../topics/grant_types.rst:90
 msgid ""
-"This is the recommended flow for native applications that want to "
-"retrieve access tokens (and possibly refresh tokens as well) and is used "
+"This is the recommended flow for native applications that want to retrieve access tokens (and possibly refresh tokens as well) and is used "
 "for server-side web applications and native desktop/mobile applications."
 msgstr ""
 
-#: ../../topics/grant_types.rst:92
-msgid ""
-"See :ref:`this <refHybridQuickstart>` quickstart for more information "
-"about using hybrid flow with MVC."
+#: ../../topics/grant_types.rst:93
+msgid "See :ref:`this <refHybridQuickstart>` quickstart for more information about using hybrid flow with MVC."
 msgstr ""
 
-#: ../../topics/grant_types.rst:96
+#: ../../topics/grant_types.rst:97
+msgid ""
+"Device flow is designed for browserless and input constrained devices, where the device is unable to securely capture user credentials. This "
+"flow outsources user authentication and consent to an external device (e.g. a smart phone)."
+msgstr ""
+
+#: ../../topics/grant_types.rst:99
+msgid "This flow is typically used by IoT devices and can request both identity and API resources."
+msgstr ""
+
+#: ../../topics/grant_types.rst:103
 msgid "Refresh tokens allow gaining long lived access to APIs."
 msgstr ""
 
-#: ../../topics/grant_types.rst:98
+#: ../../topics/grant_types.rst:105
 msgid ""
-"You typically want to keep the lifetime of access tokens as short as "
-"possible, but at the same time don't want to bother the user over and "
-"over again with doing a front-channel roundtrips to IdentityServer for "
-"requesting new ones."
+"You typically want to keep the lifetime of access tokens as short as possible, but at the same time don't want to bother the user over and "
+"over again with doing a front-channel roundtrips to IdentityServer for requesting new ones."
 msgstr ""
 
-#: ../../topics/grant_types.rst:101
+#: ../../topics/grant_types.rst:108
 msgid ""
-"Refresh tokens allow requesting new access tokens without user "
-"interaction. Every time the client refreshes a token it needs to make an "
-"(authenticated) back-channel call to IdentityServer. This allows "
-"checking if the refresh token is still valid, or has been revoked in the "
+"Refresh tokens allow requesting new access tokens without user interaction. Every time the client refreshes a token it needs to make an "
+"(authenticated) back-channel call to IdentityServer. This allows checking if the refresh token is still valid, or has been revoked in the "
 "meantime."
 msgstr ""
 
-#: ../../topics/grant_types.rst:104
+#: ../../topics/grant_types.rst:111
 msgid ""
-"Refresh tokens are supported in hybrid, authorization code and resource "
-"owner password flows. To request a refresh token, the client needs to "
-"include the ``offline_access`` scope in the token request (and must be "
-"authorized to request for that scope)."
-msgstr ""
-
-#: ../../topics/grant_types.rst:109
-msgid ""
-"Extension grants allow extending the token endpoint with new grant "
-"types. See :ref:`this <refExtensionGrants>` for more details."
-msgstr ""
-
-#: ../../topics/grant_types.rst:112
-msgid "Incompatible grant types"
-msgstr ""
-
-#: ../../topics/grant_types.rst:113
-msgid "Some grant type combinations are forbidden:"
-msgstr ""
-
-#: ../../topics/grant_types.rst:115
-msgid ""
-"Mixing implicit and authorization code or hybrid would allow a downgrade "
-"attack from the more secure code based flow to implicit."
+"Refresh tokens are supported in hybrid, authorization code, device flow and resource owner password flows. To request a refresh token, the "
+"client needs to include the ``offline_access`` scope in the token request (and must be authorized to request for that scope)."
 msgstr ""
 
 #: ../../topics/grant_types.rst:116
+msgid "Extension grants allow extending the token endpoint with new grant types. See :ref:`this <refExtensionGrants>` for more details."
+msgstr ""
+
+#: ../../topics/grant_types.rst:119
+msgid "Incompatible grant types"
+msgstr ""
+
+#: ../../topics/grant_types.rst:120
+msgid "Some grant type combinations are forbidden:"
+msgstr ""
+
+#: ../../topics/grant_types.rst:122
+msgid "Mixing implicit and authorization code or hybrid would allow a downgrade attack from the more secure code based flow to implicit."
+msgstr ""
+
+#: ../../topics/grant_types.rst:123
 msgid "Same concern exists for allowing both authorization code and hybrid"
 msgstr ""

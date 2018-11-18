@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Brock Allen & Dominick Baier
+# This file is distributed under the same license as the IdentityServer4
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: IdentityServer4 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 07:58+0900\n"
+"PO-Revision-Date: 2018-11-18 10:48+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 2.2\n"
+
+#: ../../endpoints/device_authorization.rst:2
+msgid "Device Authorization Endpoint"
+msgstr "デバイス認証エンドポイント"
+
+#: ../../endpoints/device_authorization.rst:4
+msgid ""
+"The device authorization endpoint can be used to request device and user "
+"codes. This endpoint is used to start the device flow authorization "
+"process."
+msgstr ""
+"デバイス認証エンドポイントは、デバイスコードとユーザーコードを要求するた"
+"めに使用できます。 このエンドポイントは、デバイスフロー許可プロセスを開始"
+"するために使用されます。"
+
+#: ../../endpoints/device_authorization.rst:7
+msgid ""
+"The URL for the end session endpoint is available via the :ref:"
+"`discovery endpoint <refDiscovery>`."
+msgstr ""
+"エンドセッションエンドポイントのURLは、 :ref:`discovery endpoint "
+"<refDiscovery>` で利用できます。"
+
+#: ../../endpoints/device_authorization.rst:9
+msgid "``client_id``"
+msgstr "``クライアントID``"
+
+#: ../../endpoints/device_authorization.rst:10
+msgid "client identifier (required)"
+msgstr "クライアント識別子(必須)"
+
+#: ../../endpoints/device_authorization.rst:11
+msgid "``client_secret``"
+msgstr ""
+
+#: ../../endpoints/device_authorization.rst:12
+msgid ""
+"client secret either in the post body, or as a basic authentication "
+"header. Optional."
+msgstr ""
+"ポスト本体のクライアント秘密か、基本的な認証ヘッダーのどちらかです。 オプ"
+"ション。"
+
+#: ../../endpoints/device_authorization.rst:14
+msgid "``scope``"
+msgstr ""
+
+#: ../../endpoints/device_authorization.rst:14
+msgid ""
+"one or more registered scopes. If not specified, a token for all "
+"explicitly allowed scopes will be issued."
+msgstr ""
+"106/5000\n"
+"1つ以上の登録されたスコープ。 指定しない場合は、明示的に許可されたすべて"
+"のスコープのトークンが発行されます。"
+
+#: ../../endpoints/device_authorization.rst:17
+msgid "Example"
+msgstr ""
+
+#: ../../endpoints/device_authorization.rst:27
+msgid "(Form-encoding removed and line breaks added for readability)"
+msgstr ""
+"(フォームエンコードが削除され、読みやすくするために改行が追加されました)"
+
+#: ../../endpoints/device_authorization.rst:29
+msgid ""
+"You can use the `IdentityModel <https://github.com/IdentityModel/"
+"IdentityModel2>`_ client library to programmatically access the device "
+"authorization endpoint from .NET code. For more information check the "
+"IdentityModel `docs <https://identitymodel.readthedocs.io/en/latest/"
+"client/device_authorize.html>`_."
+msgstr ""
+"`IdentityModel <https://github.com/IdentityModel/IdentityModel2>`_ クライ"
+"アントライブラリを使用して、.NETコードからデバイス認証エンドポイントにプ"
+"ログラムでアクセスすることができます。 詳細については、IdentityModel `ド"
+"キュメント <https://identitymodel.readthedocs.io/en/latest/client/"
+"device_authorize.html>`_ を確認してください。"

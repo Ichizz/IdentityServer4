@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IdentityServer4 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-04 15:21+0900\n"
-"PO-Revision-Date: 2018-11-17 21:52+0900\n"
+"POT-Creation-Date: 2018-11-18 07:58+0900\n"
+"PO-Revision-Date: 2018-11-18 11:44+0900\n"
+"Last-Translator: \n"
+"Language: ja_JP\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ja_JP\n"
 "X-Generator: Poedit 2.2\n"
 
 #: ../../reference/client.rst:4
@@ -96,7 +96,7 @@ msgid ""
 "send a proof key"
 msgstr ""
 "認可コードベースの認可タイプを使用するクライアントがプルーフキーを送信する必要"
-"があるかどうかを指定します。"
+"があるかどうかを指定します"
 
 #: ../../reference/client.rst:25
 msgid "``AllowPlainTextPkce``"
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../../reference/client.rst:28
 msgid "Specifies the allowed URIs to return tokens or authorization codes to"
-msgstr "許可されたURIがトークンまたは認証コードを返すように指定します。"
+msgstr "許可されたURIがトークンまたは認証コードを返すように指定します"
 
 #: ../../reference/client.rst:29
 msgid "``AllowedScopes``"
@@ -228,7 +228,7 @@ msgid ""
 "Defaults to `true`."
 msgstr ""
 
-#: ../../reference/client.rst:57
+#: ../../reference/client.rst:56
 msgid "``IdentityProviderRestrictions``"
 msgstr ""
 
@@ -238,229 +238,261 @@ msgid ""
 "all IdPs are allowed). Defaults to empty."
 msgstr ""
 
-#: ../../reference/client.rst:60
-msgid "Token"
+#: ../../reference/client.rst:59
+msgid "``UserSsoLifetime`` `added in 2.3`"
+msgstr ""
+
+#: ../../reference/client.rst:59
+msgid ""
+"The maximum duration (in seconds) since the last time the user authenticated. "
+"Defaults to ``null``."
 msgstr ""
 
 #: ../../reference/client.rst:62
+msgid "Token"
+msgstr ""
+
+#: ../../reference/client.rst:64
 msgid "``IdentityTokenLifetime``"
 msgstr ""
 
-#: ../../reference/client.rst:63
+#: ../../reference/client.rst:65
 msgid ""
 "Lifetime to identity token in seconds (defaults to 300 seconds / 5 minutes)"
 msgstr ""
 
-#: ../../reference/client.rst:64
+#: ../../reference/client.rst:66
 msgid "``AccessTokenLifetime``"
 msgstr ""
 
-#: ../../reference/client.rst:65
+#: ../../reference/client.rst:67
 msgid "Lifetime of access token in seconds (defaults to 3600 seconds / 1 hour)"
 msgstr ""
 
-#: ../../reference/client.rst:66
+#: ../../reference/client.rst:68
 msgid "``AuthorizationCodeLifetime``"
 msgstr ""
 
-#: ../../reference/client.rst:67
+#: ../../reference/client.rst:69
 msgid ""
 "Lifetime of authorization code in seconds (defaults to 300 seconds / 5 "
 "minutes)"
 msgstr ""
 
-#: ../../reference/client.rst:68
+#: ../../reference/client.rst:70
 msgid "``AbsoluteRefreshTokenLifetime``"
 msgstr ""
 
-#: ../../reference/client.rst:69
+#: ../../reference/client.rst:71
 msgid ""
 "Maximum lifetime of a refresh token in seconds. Defaults to 2592000 seconds / "
 "30 days"
 msgstr ""
 
-#: ../../reference/client.rst:70
+#: ../../reference/client.rst:72
 msgid "``SlidingRefreshTokenLifetime``"
 msgstr ""
 
-#: ../../reference/client.rst:71
+#: ../../reference/client.rst:73
 msgid ""
 "Sliding lifetime of a refresh token in seconds. Defaults to 1296000 seconds / "
 "15 days"
 msgstr ""
 
-#: ../../reference/client.rst:74
+#: ../../reference/client.rst:76
 msgid "``RefreshTokenUsage``"
 msgstr ""
 
-#: ../../reference/client.rst:73
+#: ../../reference/client.rst:75
 msgid ""
 "``ReUse`` the refresh token handle will stay the same when refreshing tokens"
 msgstr ""
 
-#: ../../reference/client.rst:75
+#: ../../reference/client.rst:77
 msgid ""
 "``OneTime`` the refresh token handle will be updated when refreshing tokens. "
 "This is the default."
 msgstr ""
 
-#: ../../reference/client.rst:78
+#: ../../reference/client.rst:80
 msgid "``RefreshTokenExpiration``"
 msgstr ""
 
-#: ../../reference/client.rst:77
+#: ../../reference/client.rst:79
 msgid ""
 "``Absolute`` the refresh token will expire on a fixed point in time "
 "(specified by the AbsoluteRefreshTokenLifetime)"
 msgstr ""
 
-#: ../../reference/client.rst:79
+#: ../../reference/client.rst:81
 msgid ""
 "``Sliding`` when refreshing the token, the lifetime of the refresh token will "
 "be renewed (by the amount specified in SlidingRefreshTokenLifetime). The "
 "lifetime will not exceed `AbsoluteRefreshTokenLifetime`."
 msgstr ""
 
-#: ../../reference/client.rst:80
+#: ../../reference/client.rst:82
 msgid "``UpdateAccessTokenClaimsOnRefresh``"
 msgstr ""
 
-#: ../../reference/client.rst:81
+#: ../../reference/client.rst:83
 msgid ""
 "Gets or sets a value indicating whether the access token (and its claims) "
 "should be updated on a refresh token request."
 msgstr ""
 
-#: ../../reference/client.rst:82
+#: ../../reference/client.rst:84
 msgid "``AccessTokenType``"
 msgstr ""
 
-#: ../../reference/client.rst:83
+#: ../../reference/client.rst:85
 msgid ""
 "Specifies whether the access token is a reference token or a self contained "
 "JWT token (defaults to `Jwt`)."
 msgstr ""
 
-#: ../../reference/client.rst:84
+#: ../../reference/client.rst:86
 msgid "``IncludeJwtId``"
 msgstr ""
 
-#: ../../reference/client.rst:85
+#: ../../reference/client.rst:87
 msgid ""
 "Specifies whether JWT access tokens should have an embedded unique ID (via "
 "the `jti` claim)."
 msgstr ""
 
-#: ../../reference/client.rst:86
+#: ../../reference/client.rst:88
 msgid "``AllowedCorsOrigins``"
 msgstr ""
 
-#: ../../reference/client.rst:87
+#: ../../reference/client.rst:89
 msgid ""
 "If specified, will be used by the default CORS policy service implementations "
 "(In-Memory and EF) to build a CORS policy for JavaScript clients."
 msgstr ""
 
-#: ../../reference/client.rst:88
+#: ../../reference/client.rst:90
 msgid "``Claims``"
 msgstr ""
 
-#: ../../reference/client.rst:89
+#: ../../reference/client.rst:91
 msgid ""
 "Allows settings claims for the client (will be included in the access token)."
 msgstr ""
 
-#: ../../reference/client.rst:90
+#: ../../reference/client.rst:92
 msgid "``AlwaysSendClientClaims``"
 msgstr ""
 
-#: ../../reference/client.rst:91
+#: ../../reference/client.rst:93
 msgid ""
 "If set, the client claims will be sent for every flow. If not, only for "
 "client credentials flow (default is `false`)"
 msgstr ""
 
-#: ../../reference/client.rst:92
+#: ../../reference/client.rst:94
 msgid "``AlwaysIncludeUserClaimsInIdToken``"
 msgstr ""
 
-#: ../../reference/client.rst:93
+#: ../../reference/client.rst:95
 msgid ""
 "When requesting both an id token and access token, should the user claims "
 "always be added to the id token instead of requring the client to use the "
 "userinfo endpoint. Default is `false`."
 msgstr ""
 
-#: ../../reference/client.rst:94
+#: ../../reference/client.rst:96
 msgid "``ClientClaimsPrefix``"
 msgstr ""
 
-#: ../../reference/client.rst:95
+#: ../../reference/client.rst:97
 msgid ""
 "If set, the prefix client claim types will be prefixed with. Defaults to "
 "`client_`. The intent is to make sure they don't accidentally collide with "
 "user claims."
 msgstr ""
 
-#: ../../reference/client.rst:97
+#: ../../reference/client.rst:99
 msgid "``PairWiseSubjectSalt``"
 msgstr ""
 
-#: ../../reference/client.rst:97
+#: ../../reference/client.rst:99
 msgid ""
 "Salt value used in pair-wise subjectId generation for users of this client."
 msgstr ""
 
-#: ../../reference/client.rst:100
+#: ../../reference/client.rst:102
 msgid "Consent Screen"
 msgstr ""
 
-#: ../../reference/client.rst:102
+#: ../../reference/client.rst:104
 msgid "``RequireConsent``"
 msgstr ""
 
-#: ../../reference/client.rst:103
+#: ../../reference/client.rst:105
 msgid "Specifies whether a consent screen is required. Defaults to `true`."
 msgstr ""
 
-#: ../../reference/client.rst:104
+#: ../../reference/client.rst:106
 msgid "``AllowRememberConsent``"
 msgstr ""
 
-#: ../../reference/client.rst:105
+#: ../../reference/client.rst:107
 msgid ""
 "Specifies whether user can choose to store consent decisions. Defaults to "
 "`true`."
 msgstr ""
 
-#: ../../reference/client.rst:106
+#: ../../reference/client.rst:108
 msgid "``ConsentLifetime``"
 msgstr ""
 
-#: ../../reference/client.rst:107
+#: ../../reference/client.rst:109
 msgid "Lifetime of a user consent in seconds. Defaults to null (no expiration)."
 msgstr ""
 
-#: ../../reference/client.rst:108
+#: ../../reference/client.rst:110
 msgid "``ClientName``"
 msgstr ""
 
-#: ../../reference/client.rst:109
+#: ../../reference/client.rst:111
 msgid "Client display name (used for logging and consent screen)"
 msgstr ""
 
-#: ../../reference/client.rst:110
+#: ../../reference/client.rst:112
 msgid "``ClientUri``"
 msgstr ""
 
-#: ../../reference/client.rst:111
+#: ../../reference/client.rst:113
 msgid "URI to further information about client (used on consent screen)"
 msgstr ""
 
-#: ../../reference/client.rst:112
+#: ../../reference/client.rst:115
 msgid "``LogoUri``"
 msgstr ""
 
-#: ../../reference/client.rst:113
+#: ../../reference/client.rst:115
 msgid "URI to client logo (used on consent screen)"
+msgstr ""
+
+#: ../../reference/client.rst:118
+msgid "Device flow"
+msgstr ""
+
+#: ../../reference/client.rst:120
+msgid "``UserCodeType``"
+msgstr ""
+
+#: ../../reference/client.rst:121
+msgid ""
+"Specifies the type of user code to use for the client. Otherwise falls back "
+"to default."
+msgstr ""
+
+#: ../../reference/client.rst:122
+msgid "``DeviceCodeLifetime``"
+msgstr ""
+
+#: ../../reference/client.rst:123
+msgid "Lifetime to device code in seconds (defaults to 300 seconds / 5 minutes)"
 msgstr ""
